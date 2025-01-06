@@ -1,0 +1,10 @@
+{
+  "SourceFile": "../../testdata/Apple iPhone 4 B9AEA6B8FE2068118083C9A827F66721.jpg",
+  "Skip": true,
+
+  "WantCameraModel": "Apple iPhone 4",
+  "WantCameraSerial": "fixme",
+  "WantPhotoID": "fixme",
+  "WantModelSerialPhotoID": "fixme",
+  "WantQuality": 0
+}

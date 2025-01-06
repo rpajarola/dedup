@@ -1,0 +1,10 @@
+{
+  "SourceFile": "../../testdata/NIKON COOLPIX AW100 none.jpg",
+  "Skip": true,
+
+  "WantCameraModel": "NIKON COOLPIX AW100",
+  "WantCameraSerial": "",
+  "WantPhotoID": "fixme",
+  "WantModelSerialPhotoID": "fixme",
+  "WantQuality": 0
+}

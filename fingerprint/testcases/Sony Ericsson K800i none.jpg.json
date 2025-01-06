@@ -1,0 +1,10 @@
+{
+  "SourceFile": "../../testdata/Sony Ericsson K800i none.jpg",
+  "Skip": true,
+
+  "WantCameraModel": "Sony Ericsson K800i",
+  "WantCameraSerial": "",
+  "WantPhotoID": "",
+  "WantModelSerialPhotoID": "",
+  "WantQuality": 0
+}

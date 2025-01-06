@@ -1,0 +1,9 @@
+{
+  "SourceFile": "../../testdata/NIKON D3000 7400454 939.jpg",
+
+  "WantCameraModel": "NIKON D3000",
+  "WantCameraSerial": "7400454",
+  "WantPhotoID": "939 BASIC",
+  "WantModelSerialPhotoID": "NIKON D3000 7400454 939 BASIC",
+  "WantQuality": 100
+}

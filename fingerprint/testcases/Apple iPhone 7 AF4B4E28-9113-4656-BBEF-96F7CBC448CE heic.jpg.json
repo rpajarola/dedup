@@ -1,0 +1,10 @@
+{
+  "SourceFile": "../../testdata/Apple iPhone 7 AF4B4E28-9113-4656-BBEF-96F7CBC448CE heic.jpg",
+  "Skip": true,
+
+  "WantCameraModel": "Apple iPhone 7",
+  "WantCameraSerial": "fixme",
+  "WantPhotoID": "fixme",
+  "WantModelSerialPhotoID": "fixme",
+  "WantQuality": 0
+}

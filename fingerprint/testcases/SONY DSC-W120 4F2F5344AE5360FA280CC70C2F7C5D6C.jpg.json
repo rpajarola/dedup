@@ -1,0 +1,10 @@
+{
+  "SourceFile": "../../testdata/SONY DSC-W120 4F2F5344AE5360FA280CC70C2F7C5D6C.jpg",
+  "Skip": true,
+
+  "WantCameraModel": "SONY DSC-W120",
+  "WantCameraSerial": "fixme",
+  "WantPhotoID": "fixme",
+  "WantModelSerialPhotoID": "fixme",
+  "WantQuality": 0
+}

@@ -1,0 +1,9 @@
+{
+  "SourceFile": "../../testdata/Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e.jpg",
+
+  "WantCameraModel": "Canon EOS 500D",
+  "WantCameraSerial": "330149244",
+  "WantPhotoID": "1752b77b422cfe7f97cb563f06b51c6e",
+  "WantModelSerialPhotoID": "Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e",
+  "WantQuality": 100
+}

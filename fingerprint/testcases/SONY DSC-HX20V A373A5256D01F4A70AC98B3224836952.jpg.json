@@ -1,0 +1,10 @@
+{
+  "SourceFile": "../../testdata/SONY DSC-HX20V A373A5256D01F4A70AC98B3224836952.jpg",
+  "Skip": true,
+
+  "WantCameraModel": "SONY DSC-HX20V",
+  "WantCameraSerial": "fixme",
+  "WantPhotoID": "fixme",
+  "WantModelSerialPhotoID": "fixme",
+  "WantQuality": 0
+}

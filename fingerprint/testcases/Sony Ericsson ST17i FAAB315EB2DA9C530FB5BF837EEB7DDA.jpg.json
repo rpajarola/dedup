@@ -1,0 +1,10 @@
+{
+  "SourceFile": "../../testdata/Sony Ericsson ST17i FAAB315EB2DA9C530FB5BF837EEB7DDA.jpg",
+  "Skip": true,
+
+  "WantCameraModel": "Sony Ericsson ST17i",
+  "WantCameraSerial": "",
+  "WantPhotoID": "",
+  "WantModelSerialPhotoID": "",
+  "WantQuality": 0
+}

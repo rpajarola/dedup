@@ -1,0 +1,11 @@
+{
+  "SourceFile": "../../testdata/Canon PowerShot A570 IS imageuniqueid.jpg",
+  "Note": "bad exif data?",
+  "Skip": true,
+
+  "WantCameraModel": "fixme",
+  "WantCameraSerial": "fixme",
+  "WantPhotoID": "fixme",
+  "WantModelSerialPhotoID": "fixme",
+  "WantQuality": 0
+}
