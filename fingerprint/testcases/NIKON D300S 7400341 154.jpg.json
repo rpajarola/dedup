@@ -1,9 +1,0 @@
-{
-  "SourceFile": "../../testdata/NIKON D300S 7400341 154.jpg",
-
-  "WantCameraModel": "NIKON D300S",
-  "WantCameraSerial": "7400341",
-  "WantPhotoID": "154 FINE",
-  "WantModelSerialPhotoID": "NIKON D300S 7400341 154 FINE",
-  "WantQuality": 90
-}

@@ -1,0 +1,8 @@
+source_file: "../../testdata/Panasonic DMC-FZ28 7f050b14-53d6-4d30-9672-20e3a0f6ff94.jpg"
+skip: true
+
+want_camera_model: "Panasonic DMC-FZ28"
+want_camera_serial: ""
+want_photo_id: "fixme"
+want_photo_id_fp: "Panasonic DMC-FZ28 fixme"
+want_photo_id_fp_quality: 0

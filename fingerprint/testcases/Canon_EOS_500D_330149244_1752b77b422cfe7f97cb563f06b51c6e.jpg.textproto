@@ -1,0 +1,8 @@
+source_file: "../../testdata/Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e.jpg"
+
+want_camera_model: "Canon EOS 500D"
+want_camera_serial: "330149244"
+want_photo_id: "1752b77b422cfe7f97cb563f06b51c6e"
+want_unique_photo_id: true
+want_photo_id_fp: "Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e"
+want_photo_id_fp_quality: 100

@@ -1,0 +1,8 @@
+source_file: "../../testdata/SONY Alpha 77 II 7613018102 24265.jpg"
+skip: true
+
+want_camera_model: "SONY ILCA-77M2"
+want_camera_serial: "7613018102"
+want_photo_id: "24265"
+want_photo_id_fp: "SONY ILCA-77M2 7613018102 24265"
+want_photo_id_fp_quality: 0

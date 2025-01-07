@@ -1,9 +1,0 @@
-{
-  "SourceFile": "../../testdata/Google Pixel 2 none.jpg",
-
-  "WantCameraModel": "Google Pixel 2",
-  "WantCameraSerial": "",
-  "WantPhotoID": "",
-  "WantModelSerialPhotoID": "",
-  "WantQuality": 0
-}

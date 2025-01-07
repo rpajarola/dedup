@@ -1,0 +1,9 @@
+source_file: "../../testdata/SONY A7s III 20221872 0.jpg"
+# pre-release model of SONY A7s III
+skip: true
+
+want_camera_model: "SONY MODEL-NAME"
+want_camera_serial: "45810378"
+want_photo_id: "fixme"
+want_photo_id_fp: "SONY MODEL-NAME 45810378"
+want_photo_id_fp_quality: 0

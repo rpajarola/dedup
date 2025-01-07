@@ -1,0 +1,8 @@
+source_file: "../../testdata/Sony Ericsson C905 none.jpg"
+skip: true
+
+want_camera_model: "Sony Ericsson C905"
+want_camera_serial: ""
+want_photo_id: ""
+want_photo_id_fp: ""
+want_photo_id_fp_quality: 0

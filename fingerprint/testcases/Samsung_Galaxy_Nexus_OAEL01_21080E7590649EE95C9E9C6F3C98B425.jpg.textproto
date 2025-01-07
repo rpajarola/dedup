@@ -1,0 +1,9 @@
+source_file: "../../testdata/Samsung Galaxy Nexus OAEL01 21080E7590649EE95C9E9C6F3C98B425.jpg"
+
+want_camera_model: "Samsung Galaxy Nexus"
+want_camera_serial: ""
+# photo id might be just the camera id"
+want_photo_id: "OAEL01"
+want_unique_photo_id: true
+want_photo_id_fp: "Samsung Galaxy Nexus  OAEL01"
+want_photo_id_fp_quality: 100

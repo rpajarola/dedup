@@ -1,0 +1,8 @@
+source_file: "../../testdata/Canon EOS 60D 570303637 07F841A781C68B8736F3B32FE3AD8E52.jpg"
+skip: true
+
+want_camera_model: "Canon EOS 60D"
+want_camera_serial: "0570303637"
+want_photo_id: "fixme"
+want_photo_id_fp: "Canon EOS 60D 0570303637 fixme"
+want_photo_id_fp_quality: 0

@@ -1,0 +1,8 @@
+source_file: "../../testdata/Canon EOS DIGITAL REBEL XSi 520116695 a24f0db7-9fc8-40b2-bbc2-9bc64758fb38.jpg"
+skip: true
+
+want_camera_model: "Canon EOS DIGITAL REBEL XSi"
+want_camera_serial: "520116695"
+want_photo_id: "fixme"
+want_photo_id_fp: "Canon EOS DIGITAL REBEL XSi 520116695 fixme"
+want_photo_id_fp_quality: 0

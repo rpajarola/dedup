@@ -1,2 +1,10 @@
-github.com/rpajarola/exiftools v0.0.0-20250106195335-2956b3b80847 h1:20ou8kW6gZohANltJJmhoYZDsUcP5/gyOwJzDdo+eC4=
-github.com/rpajarola/exiftools v0.0.0-20250106195335-2956b3b80847/go.mod h1:nBuNCWsjt46WpMXIbAfvlvKZB4z7TyrlhYxLL/CCiRU=
+github.com/google/go-cmp v0.5.5 h1:Khx7svrCpmxxtHBq5j2mp/xVjsi8hQMfNLvJFAlrGgU=
+github.com/google/go-cmp v0.5.5/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
+github.com/rpajarola/exiftools v0.0.0-20250106232441-8b7f9e736868 h1:H3t/Tx00tY1DfAhHOBKaQOTc1yRRujcBYsg7H6FDMis=
+github.com/rpajarola/exiftools v0.0.0-20250106232441-8b7f9e736868/go.mod h1:nBuNCWsjt46WpMXIbAfvlvKZB4z7TyrlhYxLL/CCiRU=
+github.com/trimmer-io/go-xmp v1.0.0 h1:zY8bolSga5kOjBAaHS6hrdxLgEoYuT875xTy0QDwZWs=
+github.com/trimmer-io/go-xmp v1.0.0/go.mod h1:Aaptr9sp1lLv7UnCAdQ+gSHZyY2miYaKmcNVj7HRBwA=
+golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 h1:go1bK/D/BFZV2I8cIQd1NKEZ+0owSTG1fDTci4IqFcE=
+golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
+google.golang.org/protobuf v1.36.1 h1:yBPeRvTftaleIgM3PZ/WBIZ7XM/eEYAaEyCwvyjq/gk=
+google.golang.org/protobuf v1.36.1/go.mod h1:9fA7Ob0pmnwhb644+1+CVWFRbNajQ6iRojtC/QF5bRE=

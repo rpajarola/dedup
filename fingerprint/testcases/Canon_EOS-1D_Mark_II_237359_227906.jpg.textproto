@@ -1,0 +1,8 @@
+source_file: "../../testdata/Canon EOS-1D Mark II 237359 227906.jpg"
+skip: true
+
+want_camera_model: "Canon EOS-1D Mark II"
+want_camera_serial: "237359"
+want_photo_id: "fixme"
+want_photo_id_fp: "Canon EOS-1D Mark II 237359 fixme"
+want_photo_id_fp_quality: 0

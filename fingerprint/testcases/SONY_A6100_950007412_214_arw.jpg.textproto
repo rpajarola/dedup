@@ -1,0 +1,8 @@
+source_file: "../../testdata/SONY A6100 950007412 214_arw.jpg"
+skip: true
+
+want_camera_model: "SONY ILCE-6100"
+want_camera_serial: "950007412 fixme"
+want_photo_id: "214"
+want_photo_id_fp: "SONY ILCE-6100 950007412 214 fixme"
+want_photo_id_fp_quality: 90

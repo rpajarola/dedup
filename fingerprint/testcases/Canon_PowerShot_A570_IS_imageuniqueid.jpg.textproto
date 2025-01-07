@@ -1,0 +1,9 @@
+source_file: "../../testdata/Canon PowerShot A570 IS imageuniqueid.jpg"
+# "bad exif data?"
+skip: true
+
+want_camera_model: "fixme"
+want_camera_serial: "fixme"
+want_photo_id: "fixme"
+want_photo_id_fp: "fixme"
+want_photo_id_fp_quality: 0

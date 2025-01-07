@@ -1,0 +1,8 @@
+source_file: "../../testdata/SONY DSC-HX20V A373A5256D01F4A70AC98B3224836952.jpg"
+skip: true
+
+want_camera_model: "SONY DSC-HX20V"
+want_camera_serial: "fixme"
+want_photo_id: "fixme"
+want_photo_id_fp: "fixme"
+want_photo_id_fp_quality: 0

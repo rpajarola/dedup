@@ -1,0 +1,8 @@
+source_file: "../../testdata/SONY DSC-HX30V E98D7E10665FCE21467A13D385232CB3.jpg"
+skip: true
+
+want_camera_model: "SONY DSC-HX30V"
+want_camera_serial: "fixme"
+want_photo_id: "fixme"
+want_photo_id_fp: "fixme"
+want_photo_id_fp_quality: 0
