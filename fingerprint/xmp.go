@@ -5,6 +5,7 @@ import (
 	"io"
 	"os"
 
+	_ "github.com/trimmer-io/go-xmp/models"
 	"github.com/trimmer-io/go-xmp/xmp"
 )
 
@@ -24,12 +25,15 @@ func (xfp *XMPFingerprinter) Init(filename string) error {
 	defer f.Close()
 
 	bb, err := xmp.ScanPackets(f)
-	if (err != nil && err != io.EOF) || len(bb) == 0 {
-		return err
+	if err != nil && err != io.EOF {
+		return fmt.Errorf("xmp.ScanPackets: %v", err)
+	}
+	if len(bb) == 0 {
+		return nil
 	}
 	xfp.xmp = &xmp.Document{}
 	if err := xmp.Unmarshal(bb[0], xfp.xmp); err != nil {
-		return err
+		return fmt.Errorf("xmp.Unmarshal: %v", err)
 	}
 	return nil
 }
@@ -41,7 +45,7 @@ func (xfp *XMPFingerprinter) Get() ([]Fingerprint, error) {
 
 	var res []Fingerprint
 	for _, f := range []func(*XMPFingerprinter) (Fingerprint, error){
-		(*XMPFingerprinter).getDocumentID,
+		(*XMPFingerprinter).getDocumentIDFP,
 	} {
 		if fp, err := f(xfp); err == nil && fp.Hash != "" {
 			res = append(res, fp)
@@ -51,12 +55,40 @@ func (xfp *XMPFingerprinter) Get() ([]Fingerprint, error) {
 	return res, nil
 }
 
-func (xfp *XMPFingerprinter) getDocumentID() (Fingerprint, error) {
-	//documentID := xfp.xmp.GetDocumentID()
-	documentID := 2
-	return Fingerprint{
-		Kind:    "XMPDocumentID",
-		Hash:    fmt.Sprintf("%v", documentID),
-		Quality: 100,
-	}, nil
+func (xfp *XMPFingerprinter) getDocumentIDFP() (Fingerprint, error) {
+	if xfp.xmp == nil {
+		return NoFingerprint, nil
+	}
+	documentID, isUnique, quality := xfp.getDocumentID()
+	if documentID != "" && isUnique && quality == 100 {
+		return Fingerprint{
+			Kind:    "XMPDocumentID",
+			Hash:    documentID,
+			Quality: quality,
+		}, nil
+	}
+	return NoFingerprint, nil
+}
+
+func (xfp *XMPFingerprinter) getDocumentID() (string, bool, int) {
+	if xfp.xmp == nil {
+		return "", false, 0
+	}
+	for _, path := range []string{
+		"xmpMM:OriginalDocumentID",
+		"xmpMM:DocumentID",
+		"xmpMM:InstanceID",
+		"exif:ImageUniqueID",
+		"digiKam:ImageUniqueID",
+		"iXML:fileUid",
+		"qt:ClipID",
+		"qt:ContentID",
+		"qt:GUID",
+	} {
+		if v, err := xfp.xmp.GetPath(xmp.Path(path)); err == nil {
+			return v, true, 100
+		}
+	}
+
+	return "", false, 0
 }

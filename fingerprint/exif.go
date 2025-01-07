@@ -42,7 +42,7 @@ func (xfp *EXIFFingerprinter) Get() ([]Fingerprint, error) {
 
 	var res []Fingerprint
 	for _, f := range []func(*EXIFFingerprinter) (Fingerprint, error){
-		(*EXIFFingerprinter).getModelSerialPhotoID,
+		(*EXIFFingerprinter).getModelSerialPhotoIDFP,
 	} {
 		if fp, err := f(xfp); err == nil && fp.Hash != "" {
 			res = append(res, fp)
@@ -52,7 +52,7 @@ func (xfp *EXIFFingerprinter) Get() ([]Fingerprint, error) {
 	return res, nil
 }
 
-func (xfp *EXIFFingerprinter) getModelSerialPhotoID() (Fingerprint, error) {
+func (xfp *EXIFFingerprinter) getModelSerialPhotoIDFP() (Fingerprint, error) {
 	cameraModel := xfp.getCameraModel()
 	cameraSerial := xfp.getCameraSerial()
 	photoID, photoIDIsUnique, photoIDQuality := xfp.getPhotoID()

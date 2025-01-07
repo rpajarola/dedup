@@ -1,9 +1,20 @@
 source_file: "../../testdata/SONY A7s III jpeg none 6d2a79cc-d7bf-416d-bdb4-643a667b1ef4.jpg"
 # pre-release model of SONY A7s III
-skip: true
 
-want_camera_model: "SONY MODEL-NAM"
-want_camera_serial: ""
-want_photo_id: "fixme"
-want_photo_id_fp: "fixme"
-want_photo_id_fp_quality: 0
+exif {
+	want_camera_model: "SONY MODEL-NAME"
+	want_camera_serial: ""
+	want_photo_id: "2022-09-09 21:29:51.627 +0000 UTC"
+}
+
+xmp {
+	# TODO
+	# OriginalDocumentID = A1B59EAF9BAAEC3F0C97603358445EF3
+	# DocumentID = xmp.did:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4
+	# InstanceID = xmp.iid:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4
+	# HistoryInstanceID = xmp.iid:58fe1404-10fe-4f7e-afc9-84155fa2fecc
+	# HistoryInstanceID = xmp.iid:29d5c88b-b77f-4175-9587-9e8cf3388f80
+	# HistoryInstanceID = xmp.iid:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4
+	# LookUUID = B952C231111CD8E0ECCF14B86BAA7077
+	want_document_id: "A1B59EAF9BAAEC3F0C97603358445EF3"
+}

@@ -1,7 +1,13 @@
 source_file: "../../testdata/NIKON D3000 7400454 939.jpg"
 
-want_camera_model: "NIKON D3000"
-want_camera_serial: "7400454"
-want_photo_id: "939 BASIC"
-want_photo_id_fp: "NIKON D3000 7400454 939 BASIC"
-want_photo_id_fp_quality: 90
+want_fingerprint {
+	want_kind: "EXIFModelSerialPhotoID"
+	want_hash: "NIKON D3000 7400454 939 BASIC"
+	want_quality: 90
+}
+
+exif {
+	want_camera_model: "NIKON D3000"
+	want_camera_serial: "7400454"
+	want_photo_id: "939 BASIC"
+}

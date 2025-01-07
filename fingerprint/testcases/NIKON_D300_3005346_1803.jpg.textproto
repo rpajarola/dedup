@@ -1,7 +1,13 @@
 source_file: "../../testdata/NIKON D300 3005346 1803.jpg"
 
-want_camera_model: "NIKON D300"
-want_camera_serial: "3005346"
-want_photo_id: "1803 FINE"
-want_photo_id_fp: "NIKON D300 3005346 1803 FINE"
-want_photo_id_fp_quality: 90
+want_fingerprint {
+	want_kind: "EXIFModelSerialPhotoID"
+	want_hash: "NIKON D300 3005346 1803 FINE"
+	want_quality: 90
+}
+
+exif {
+	want_camera_model: "NIKON D300"
+	want_camera_serial: "3005346"
+	want_photo_id: "1803 FINE"
+}

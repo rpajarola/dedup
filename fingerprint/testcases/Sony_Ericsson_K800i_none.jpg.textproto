@@ -1,8 +1,7 @@
 source_file: "../../testdata/Sony Ericsson K800i none.jpg"
-skip: true
 
-want_camera_model: "Sony Ericsson K800i"
-want_camera_serial: ""
-want_photo_id: ""
-want_photo_id_fp: ""
-want_photo_id_fp_quality: 0
+exif {
+	want_camera_model: "Sony Ericsson K800i"
+	want_camera_serial: ""
+	want_photo_id: "2006-03-07 15:55:10 +0000 UTC"
+}

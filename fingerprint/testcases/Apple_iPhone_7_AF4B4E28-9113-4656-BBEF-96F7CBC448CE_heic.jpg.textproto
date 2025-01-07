@@ -1,8 +1,16 @@
 source_file: "../../testdata/Apple iPhone 7 AF4B4E28-9113-4656-BBEF-96F7CBC448CE heic.jpg"
-skip: true
+skip: true  # TODO: implement MakerNoteApple
 
-want_camera_model: "Apple iPhone 7"
-want_camera_serial: "fixme"
-want_photo_id: "fixme"
-want_photo_id_fp: "fixme"
-want_photo_id_fp_quality: 0
+want_fingerprint {
+	want_kind: "EXIFModelSerialPhotoID"
+	want_hash: "AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
+	want_quality: 100
+}
+
+exif {
+	skip: true
+	want_camera_model: "Apple iPhone 7"
+	want_camera_serial: ""
+	# MakerNoteApple.ImageCaptureRequestID
+	want_photo_id: "AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
+}

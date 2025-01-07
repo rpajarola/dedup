@@ -1,7 +1,13 @@
 source_file: "../../testdata/NIKON D300 4085317 69139_nef.jpg"
 
-want_camera_model: "NIKON D300"
-want_camera_serial: "4085317"
-want_photo_id: "69139 RAW"
-want_photo_id_fp: "NIKON D300 4085317 69139 RAW"
-want_photo_id_fp_quality: 90
+want_fingerprint {
+	want_kind: "EXIFModelSerialPhotoID"
+	want_hash: "NIKON D300 4085317 69139 RAW"
+	want_quality: 90
+}
+
+exif {
+	want_camera_model: "NIKON D300"
+	want_camera_serial: "4085317"
+	want_photo_id: "69139 RAW"
+}

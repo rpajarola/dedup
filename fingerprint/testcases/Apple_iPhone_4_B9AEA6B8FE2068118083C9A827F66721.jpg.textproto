@@ -1,8 +1,16 @@
 source_file: "../../testdata/Apple iPhone 4 B9AEA6B8FE2068118083C9A827F66721.jpg"
-skip: true
 
-want_camera_model: "Apple iPhone 4"
-want_camera_serial: "fixme"
-want_photo_id: "fixme"
-want_photo_id_fp: "fixme"
-want_photo_id_fp_quality: 0
+want_fingerprint {
+	want_kind: "XMPDocumentID"
+	want_hash: "xmp.did:B9AEA6B8FE2068118083C9A827F66721"
+	want_quality: 100
+}
+
+exif {
+	want_camera_model: "Apple iPhone 4"
+	want_photo_id: "2011-08-04 14:40:14 +0000 UTC"
+}
+
+xmp {
+	want_document_id: "xmp.did:B9AEA6B8FE2068118083C9A827F66721"
+}

@@ -1,8 +1,7 @@
 source_file: "../../testdata/Sony Ericsson ST17i FAAB315EB2DA9C530FB5BF837EEB7DDA.jpg"
-skip: true
 
-want_camera_model: "Sony Ericsson ST17i"
-want_camera_serial: ""
-want_photo_id: ""
-want_photo_id_fp: ""
-want_photo_id_fp_quality: 0
+exif {
+	want_camera_model: "Sony Ericsson ST17i"
+	want_camera_serial: ""
+	want_photo_id: "2011-12-11 16:41:52 +0000 UTC"
+}

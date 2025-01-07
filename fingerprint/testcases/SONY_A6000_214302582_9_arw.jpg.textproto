@@ -1,7 +1,13 @@
 source_file: "../../testdata/SONY A6000 214302582 9_arw.jpg"
 
-want_camera_model: "SONY ILCE-6000"
-want_camera_serial: "214302582"
-want_photo_id: "9"
-want_photo_id_fp: "SONY ILCE-6000 214302582 9"
-want_photo_id_fp_quality: 90
+want_fingerprint {
+	want_kind: "EXIFModelSerialPhotoID"
+	want_hash: "SONY ILCE-6000 214302582 9"
+	want_quality: 90
+}
+
+exif {
+	want_camera_model: "SONY ILCE-6000"
+	want_camera_serial: "214302582"
+	want_photo_id: "9"
+}

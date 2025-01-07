@@ -1,8 +1,10 @@
 source_file: "../../testdata/Panasonic DMC-LX5 F101104180107 none rw2.jpg"
-skip: true
 
-want_camera_model: "Panasonic DMC-LX5"
-want_camera_serial: ""
-want_photo_id: "fixme"
-want_photo_id_fp: "fixme"
-want_photo_id_fp_quality: 0
+exif {
+	skip: true  # TODO: implement MakerNotePanasonic
+
+	want_camera_model: "Panasonic DMC-LX5"
+	# TODO: MakerNotePanasonic.InternalSerialNumber
+	want_camera_serial: "F101104180107"
+	want_photo_id: "2011-11-17 12:24:26 +0000 UTC"
+}
