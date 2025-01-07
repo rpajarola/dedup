@@ -2,7 +2,7 @@ source_file: "../../testdata/RICOH Caplio R6 E28C28641A206811822AD273C1F9B4D6.jp
 
 want_fingerprint {
 	want_kind: "XMPDocumentID"
-	want_hash: "xmp.did:E28C28641A206811822AD273C1F9B4D6"
+	want_hash: "E28C28641A206811822AD273C1F9B4D6"
 	want_quality: 100
 }
 
@@ -13,5 +13,5 @@ exif {
 }
 
 xmp {
-	want_document_id: "xmp.did:E28C28641A206811822AD273C1F9B4D6"
+	want_document_id: "E28C28641A206811822AD273C1F9B4D6"
 }

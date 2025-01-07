@@ -2,7 +2,7 @@ source_file: "../../testdata/OLYMPUS FE230_X790 000K81K52510 fdfffa7f-c983-4093-
 
 want_fingerprint {
 	want_kind: "XMPDocumentID"
-	want_hash: "xmp.did:fdfffa7f-c983-4093-a74f-e656616215fe"
+	want_hash: "fdfffa7f-c983-4093-a74f-e656616215fe"
 	want_quality: 100
 }
 
@@ -13,5 +13,5 @@ exif {
 }
 
 xmp {
-	want_document_id: "xmp.did:fdfffa7f-c983-4093-a74f-e656616215fe"
+	want_document_id: "fdfffa7f-c983-4093-a74f-e656616215fe"
 }

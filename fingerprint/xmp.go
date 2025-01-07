@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"strings"
 
 	_ "github.com/trimmer-io/go-xmp/models"
 	"github.com/trimmer-io/go-xmp/xmp"
@@ -86,6 +87,7 @@ func (xfp *XMPFingerprinter) getDocumentID() (string, bool, int) {
 		"qt:GUID",
 	} {
 		if v, err := xfp.xmp.GetPath(xmp.Path(path)); err == nil {
+			v = strings.TrimPrefix(v, "xmp.did:")
 			return v, true, 100
 		}
 	}
