@@ -18,6 +18,7 @@ type testCase struct {
 	WantCameraModel        string
 	WantCameraSerial       string
 	WantPhotoID            string
+	WantUniquePhotoID      bool
 	WantModelSerialPhotoID string
 	WantQuality            int
 }
@@ -76,8 +77,12 @@ func TestEXIFFingerprinter(t *testing.T) {
 			if fp.getCameraSerial() != tc.WantCameraSerial {
 				t.Errorf("unexpected camera serial, got %q, want %q", fp.getCameraSerial(), tc.WantCameraSerial)
 			}
-			if fp.getPhotoID() != tc.WantPhotoID {
-				t.Errorf("unexpected photo ID, got %q, want %q", fp.getPhotoID(), tc.WantPhotoID)
+			photoID, isUnique, _ := fp.getPhotoID()
+			if photoID != tc.WantPhotoID {
+				t.Errorf("unexpected photo ID, got %q, want %q", photoID, tc.WantPhotoID)
+			}
+			if isUnique != tc.WantUniquePhotoID {
+				t.Errorf("unexpected photo ID uniqueness, got %v, want %v", isUnique, tc.WantUniquePhotoID)
 			}
 			if f.Hash != tc.WantModelSerialPhotoID {
 				t.Errorf("got ModelSerialPhotoID %q, want %q", f.Hash, tc.WantModelSerialPhotoID)

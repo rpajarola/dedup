@@ -5,6 +5,7 @@
   "WantCameraSerial": "",
   "Note": "photo id might be just the camera id",
   "WantPhotoID": "OAEL01",
+  "WantUniquePhotoID": true,
   "WantModelSerialPhotoID": "Samsung Galaxy Nexus  OAEL01",
   "WantQuality": 100
 }

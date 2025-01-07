@@ -4,6 +4,7 @@
   "WantCameraModel": "Canon PowerShot SX230 HS",
   "WantCameraSerial": "",
   "WantPhotoID": "a0d2aa0209df07a36eb503a1e039ca22",
+  "WantUniquePhotoID": true,
   "WantModelSerialPhotoID": "Canon PowerShot SX230 HS  a0d2aa0209df07a36eb503a1e039ca22",
   "WantQuality": 100
 }
