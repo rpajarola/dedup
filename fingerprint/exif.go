@@ -111,6 +111,12 @@ func (xfp *EXIFFingerprinter) getCameraSerial() string {
 	if v, err := xfp.xf.Get(mknote.SonyInternalSerialNumber); err == nil {
 		return trim(v.String())
 	}
+	if v, err := xfp.xf.Get(mknote.SonyInternalSerialNumber2); err == nil {
+		return trim(v.String())
+	}
+	if v, err := xfp.xf.Get(mknote.SonyInternalSerialNumber3); err == nil {
+		return trim(v.String())
+	}
 	return ""
 }
 
@@ -130,6 +136,8 @@ func (xfp *EXIFFingerprinter) getPhotoID() (string, bool, int) {
 		{mknote.ApplePhotoIdentifier, true, 100, false},
 		{mknote.ShutterCount, false, 90, false},
 		{mknote.SonyShutterCount, false, 90, false},
+		{mknote.SonyShutterCount2, false, 90, false},
+		{mknote.SonyShutterCount3, false, 90, false},
 		{mknote.FileNumber, false, 90, false},
 	} {
 		if v, err := xfp.xf.Get(t.field); err == nil {
