@@ -119,21 +119,27 @@ func (xfp *EXIFFingerprinter) getPhotoID() (string, bool, int) {
 	if v, err := xfp.xf.Get(mknote.Quality); err == nil {
 		quality = " " + trim(v.String())
 	}
-	if v, err := xfp.xf.Get(exif.ImageUniqueID); err == nil {
-		return trim(v.String()) + quality, true, 100
+	for _, t := range []struct {
+		field   exif.FieldName
+		unique  bool
+		quality int
+		hexify  bool
+	}{
+		{exif.ImageUniqueID, true, 100, false},
+		{mknote.CanonImageUniqueID, true, 100, true},
+		{mknote.ApplePhotoIdentifier, true, 100, false},
+		{mknote.ShutterCount, false, 90, false},
+		{mknote.SonyShutterCount, false, 90, false},
+		{mknote.FileNumber, false, 90, false},
+	} {
+		if v, err := xfp.xf.Get(t.field); err == nil {
+			if t.hexify {
+				return hex.EncodeToString(v.Val) + quality, t.unique, t.quality
+			}
+			return trim(v.String()) + quality, t.unique, t.quality
+		}
 	}
-	if v, err := xfp.xf.Get(mknote.CanonImageUniqueID); err == nil {
-		return hex.EncodeToString(v.Val) + quality, true, 100
-	}
-	if v, err := xfp.xf.Get(mknote.ShutterCount); err == nil {
-		return trim(v.String()) + quality, false, 90
-	}
-	if v, err := xfp.xf.Get(mknote.SonyShutterCount); err == nil {
-		return trim(v.String()) + quality, false, 90
-	}
-	if v, err := xfp.xf.Get(mknote.FileNumber); err == nil {
-		return trim(v.String()) + quality, false, 90
-	}
+
 	if v, err := xfp.xf.DateTime(exif.DateTimeOriginal); err == nil {
 		return fmt.Sprintf("%v", v) + quality, false, 80
 	}
