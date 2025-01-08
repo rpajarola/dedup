@@ -70,9 +70,9 @@ func getTestCases(t *testing.T) []*FingerprintTestCase {
 
 func updateTestCase(t *testing.T, tc *FingerprintTestCase) {
 	t.Helper()
-	raw := []byte(prototext.Format(tc))
 	fname := filepath.Join(testDataDir, tc.Name) + ".new"
 	tc.Name = ""
+	raw := []byte(prototext.Format(tc))
 	if err := os.WriteFile(fname, raw, 0644); err != nil {
 		t.Fatalf("os.WriteFile(%v): %v", fname, err)
 	}
