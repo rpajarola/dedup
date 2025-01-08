@@ -1,4 +1,4 @@
-source_file: "../../testdata/Apple iPhone 4 B9AEA6B8FE2068118083C9A827F66721.jpg"
+source_file: "../testdata/Apple iPhone 4 B9AEA6B8FE2068118083C9A827F66721.jpg"
 
 want_fingerprint {
 	want_kind: "XMPDocumentID"

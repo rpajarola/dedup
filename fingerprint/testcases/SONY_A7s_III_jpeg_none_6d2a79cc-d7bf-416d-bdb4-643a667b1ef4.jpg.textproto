@@ -1,4 +1,4 @@
-source_file: "../../testdata/SONY A7s III jpeg none 6d2a79cc-d7bf-416d-bdb4-643a667b1ef4.jpg"
+source_file: "../testdata/SONY A7s III jpeg none 6d2a79cc-d7bf-416d-bdb4-643a667b1ef4.jpg"
 # pre-release model of SONY A7s III
 
 want_fingerprint {

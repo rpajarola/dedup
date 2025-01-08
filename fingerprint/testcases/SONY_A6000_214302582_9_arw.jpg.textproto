@@ -1,4 +1,4 @@
-source_file: "../../testdata/SONY A6000 214302582 9_arw.jpg"
+source_file: "../testdata/SONY A6000 214302582 9_arw.jpg"
 
 want_fingerprint {
 	want_kind: "EXIFModelSerialPhotoID"

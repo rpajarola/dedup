@@ -1,4 +1,4 @@
-source_file: "/Users/ricop/src/dedup/testdata/SONY SLT-A77V 999839100 886.jpg"
+source_file: "../testdata/SONY SLT-A77V 999839100 886.jpg"
 want_fingerprint: {
   want_kind: "EXIFModelSerialPhotoID"
   want_hash: "SONY SLT-A77V 0909622764 885"

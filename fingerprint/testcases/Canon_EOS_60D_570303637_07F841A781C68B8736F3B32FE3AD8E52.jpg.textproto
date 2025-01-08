@@ -1,4 +1,4 @@
-source_file: "../../testdata/Canon EOS 60D 570303637 07F841A781C68B8736F3B32FE3AD8E52.jpg"
+source_file: "../testdata/Canon EOS 60D 570303637 07F841A781C68B8736F3B32FE3AD8E52.jpg"
 
 want_fingerprint {
 	want_kind: "EXIFModelSerialPhotoID"

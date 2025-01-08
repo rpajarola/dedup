@@ -1,4 +1,4 @@
-source_file: "../../testdata/Apple iPhone 11 2.jpg"
+source_file: "../testdata/Apple iPhone 11 2.jpg"
 
 want_fingerprint {
 	want_kind: "XMPDocumentID"

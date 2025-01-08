@@ -1,4 +1,4 @@
-source_file: "../../testdata/RICOH Caplio R6 E28C28641A206811822AD273C1F9B4D6.jpg"
+source_file: "../testdata/RICOH Caplio R6 E28C28641A206811822AD273C1F9B4D6.jpg"
 
 want_fingerprint {
 	want_kind: "XMPDocumentID"

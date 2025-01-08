@@ -1,4 +1,4 @@
-source_file: "../../testdata/Sony Ericsson K800i none.jpg"
+source_file: "../testdata/Sony Ericsson K800i none.jpg"
 
 exif {
 	want_camera_model: "Sony Ericsson K800i"

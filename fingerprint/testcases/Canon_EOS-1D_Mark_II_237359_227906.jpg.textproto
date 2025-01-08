@@ -1,4 +1,4 @@
-source_file: "../../testdata/Canon EOS-1D Mark II 237359 227906.jpg"
+source_file: "../testdata/Canon EOS-1D Mark II 237359 227906.jpg"
 skip: true  # TODO: implement Canon Shutter Count
 
 exif {

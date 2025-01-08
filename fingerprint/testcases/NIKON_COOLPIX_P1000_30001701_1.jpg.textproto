@@ -1,4 +1,4 @@
-source_file: "../../testdata/NIKON COOLPIX P1000 30001701 1.jpg"
+source_file: "../testdata/NIKON COOLPIX P1000 30001701 1.jpg"
 
 want_fingerprint {
         want_kind: "EXIFModelSerialPhotoID"

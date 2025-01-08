@@ -1,4 +1,4 @@
-source_file: "../../testdata/Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e.jpg"
+source_file: "../testdata/Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e.jpg"
 
 want_fingerprint {
 	want_kind: "EXIFModelSerialPhotoID"

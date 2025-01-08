@@ -1,4 +1,4 @@
-source_file: "../../testdata/NIKON D300 3005346 1803_nef.jpg"
+source_file: "../testdata/NIKON D300 3005346 1803_nef.jpg"
 
 want_fingerprint {
 	want_kind: "EXIFModelSerialPhotoID"

@@ -1,4 +1,4 @@
-source_file: "../../testdata/SONY DSC-HX30V E98D7E10665FCE21467A13D385232CB3.jpg"
+source_file: "../testdata/SONY DSC-HX30V E98D7E10665FCE21467A13D385232CB3.jpg"
 
 want_fingerprint {
 	want_kind: "XMPDocumentID"

@@ -1,4 +1,4 @@
-source_file: "../../testdata/Panasonic DMC-LX5 F101104180107 none rw2.jpg"
+source_file: "../testdata/Panasonic DMC-LX5 F101104180107 none rw2.jpg"
 
 exif {
 	skip: true  # TODO: implement MakerNotePanasonic

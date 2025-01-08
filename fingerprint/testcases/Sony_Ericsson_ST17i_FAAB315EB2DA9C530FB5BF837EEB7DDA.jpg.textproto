@@ -1,4 +1,4 @@
-source_file: "../../testdata/Sony Ericsson ST17i FAAB315EB2DA9C530FB5BF837EEB7DDA.jpg"
+source_file: "../testdata/Sony Ericsson ST17i FAAB315EB2DA9C530FB5BF837EEB7DDA.jpg"
 
 want_fingerprint {
         want_kind: "XMPDocumentID"

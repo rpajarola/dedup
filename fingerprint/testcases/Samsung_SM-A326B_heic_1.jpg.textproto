@@ -1,4 +1,4 @@
-source_file: "../../testdata/Samsung SM-A326B heic 1.jpg"
+source_file: "../testdata/Samsung SM-A326B heic 1.jpg"
 
 exif {
 	want_camera_model: "samsung SM-A326B"

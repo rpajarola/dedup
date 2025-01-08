@@ -1,4 +1,4 @@
-source_file: "../../testdata/Google Pixel 2 none 2.jpg"
+source_file: "../testdata/Google Pixel 2 none 2.jpg"
 
 exif {
 	want_camera_model: "Google Pixel 2"

@@ -1,4 +1,4 @@
-source_file: "../../testdata/Apple iPhone 8 Plus dng 2.jpg"
+source_file: "../testdata/Apple iPhone 8 Plus dng 2.jpg"
 
 exif {
 	want_camera_model: "Apple iPhone 8 Plus"

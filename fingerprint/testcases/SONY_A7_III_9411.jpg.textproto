@@ -1,4 +1,4 @@
-source_file:  "/Users/ricop/src/dedup/testdata/SONY A7 III 9411.jpg"
+source_file:  "../testdata/SONY A7 III 9411.jpg"
 
 exif:  {
   want_camera_model:  "SONY ILCE-7M3"

@@ -1,2 +1,2 @@
-source_file: "../../testdata/Canon PowerShot A570 IS imageuniqueid.jpg"
+source_file: "../testdata/Canon PowerShot A570 IS imageuniqueid.jpg"
 skip: true  # TODO: bad exif data

@@ -1,4 +1,4 @@
-source_file: "../../testdata/NIKON COOLPIX AW100 none.jpg"
+source_file: "../testdata/NIKON COOLPIX AW100 none.jpg"
 
 exif {
 	want_camera_model: "NIKON COOLPIX AW100"

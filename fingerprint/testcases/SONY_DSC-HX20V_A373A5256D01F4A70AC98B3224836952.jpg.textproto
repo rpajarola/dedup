@@ -1,4 +1,4 @@
-source_file: "../../testdata/SONY DSC-HX20V A373A5256D01F4A70AC98B3224836952.jpg"
+source_file: "../testdata/SONY DSC-HX20V A373A5256D01F4A70AC98B3224836952.jpg"
 
 want_fingerprint {
         want_kind: "XMPDocumentID"

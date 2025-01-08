@@ -1,4 +1,4 @@
-source_file:  "/Users/ricop/src/dedup/testdata/Apple iPad Air 5th Gen heic.jpg"
+source_file:  "../testdata/Apple iPad Air 5th Gen heic.jpg"
 
 want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"

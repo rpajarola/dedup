@@ -1,4 +1,4 @@
-source_file: "/Users/ricop/src/dedup/testdata/SONY A7 III 27.jpg"
+source_file: "../testdata/SONY A7 III 27.jpg"
 want_fingerprint: {
   want_kind: "EXIFModelSerialPhotoID"
   want_hash: "SONY ILCE-7M3 28ff00008809 27"

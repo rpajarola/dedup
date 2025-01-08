@@ -1,4 +1,4 @@
-source_file: "../../testdata/OLYMPUS FE230_X790 000K81K52510 fdfffa7f-c983-4093-a74f-e656616215fe.jpg"
+source_file: "../testdata/OLYMPUS FE230_X790 000K81K52510 fdfffa7f-c983-4093-a74f-e656616215fe.jpg"
 
 want_fingerprint {
 	want_kind: "EXIFModelSerialPhotoID"

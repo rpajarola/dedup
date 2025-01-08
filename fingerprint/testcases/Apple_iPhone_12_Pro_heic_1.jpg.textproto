@@ -1,4 +1,4 @@
-source_file: "../../testdata/Apple iPhone 12 Pro heic 1.jpg"
+source_file: "../testdata/Apple iPhone 12 Pro heic 1.jpg"
 
 want_fingerprint {
 	want_kind: "EXIFModelSerialPhotoID"

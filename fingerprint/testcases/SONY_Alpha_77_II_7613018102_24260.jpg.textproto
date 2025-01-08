@@ -1,4 +1,4 @@
-source_file: "/Users/ricop/src/dedup/testdata/SONY Alpha 77 II 7613018102 24260.jpg"
+source_file: "../testdata/SONY Alpha 77 II 7613018102 24260.jpg"
 want_fingerprint: {
   want_kind: "EXIFModelSerialPhotoID"
   want_hash: "SONY ILCA-77M2 173014736 24260"
