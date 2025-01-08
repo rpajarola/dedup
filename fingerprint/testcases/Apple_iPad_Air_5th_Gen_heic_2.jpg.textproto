@@ -1,0 +1,17 @@
+source_file:  "/Users/ricop/src/dedup/testdata/Apple iPad Air 5th Gen heic 2.jpg"
+
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Apple iPad Air (5th generation)  39247AF2-FA9F-41B3-92DF-2E53D34D582B"
+  want_quality:  100
+}
+
+exif:  {
+  want_camera_model:  "Apple iPad Air (5th generation)"
+  want_photo_id:  "39247AF2-FA9F-41B3-92DF-2E53D34D582B"
+  want_unique_photo_id:  true
+}
+
+xmp:  {
+  # no XMP data
+}
