@@ -1,0 +1,10 @@
+source_file:  "/Users/ricop/src/dedup/testdata/SONY A7 III 9411.jpg"
+
+exif:  {
+  want_camera_model:  "SONY ILCE-7M3"
+  want_photo_id:  "2018-05-16 05:08:34 +0000 UTC"
+}
+
+xmp:  {
+  # no XMP data
+}
