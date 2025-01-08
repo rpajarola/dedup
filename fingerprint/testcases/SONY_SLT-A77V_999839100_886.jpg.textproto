@@ -1,0 +1,12 @@
+source_file: "/Users/ricop/src/dedup/testdata/SONY SLT-A77V 999839100 886.jpg"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY SLT-A77V 0909622764 885"
+  want_quality: 90
+}
+exif: {
+  want_camera_model: "SONY SLT-A77V"
+  want_camera_serial: "0909622764"
+  want_photo_id: "885"
+}
+xmp: {}
