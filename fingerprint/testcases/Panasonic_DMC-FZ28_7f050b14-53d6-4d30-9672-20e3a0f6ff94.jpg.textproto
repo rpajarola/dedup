@@ -1,5 +1,11 @@
 source_file: "../../testdata/Panasonic DMC-FZ28 7f050b14-53d6-4d30-9672-20e3a0f6ff94.jpg"
 
+want_fingerprint {
+        want_kind: "XMPDocumentID"
+        want_hash: "7f050b14-53d6-4d30-9672-20e3a0f6ff94"
+        want_quality: 100
+}
+
 exif {
 	want_camera_model: "Panasonic DMC-FZ28"
 	want_camera_serial: ""

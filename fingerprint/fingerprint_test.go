@@ -3,6 +3,7 @@ package fingerprint
 //go:generate protoc --go_out=. --go_opt=paths=source_relative fingerprint_test.proto
 
 import (
+	"fmt"
 	"maps"
 	"os"
 	"path/filepath"
@@ -23,7 +24,7 @@ func readTestCase(t *testing.T, fname string) *FingerprintTestCase {
 	}
 	tc := &FingerprintTestCase{}
 	if err := prototext.Unmarshal(raw, tc); err != nil {
-		t.Fatalf("json.Unmarshal(%v): %v", fname, err)
+		t.Fatalf("prototext.Unmarshal(%v): %v", fname, err)
 	}
 	return tc
 }
@@ -75,6 +76,7 @@ func TestGetFingerprint(t *testing.T) {
 				t.Fatalf("unexpected error: got %v (%v), want %v", gotIsErr, gotErr, tc.WantErr)
 			}
 			gotFpMap := make(map[string]Fingerprint)
+			wantFpMap := make(map[string]*WantFingerprint)
 			for _, gotFp := range gotFps {
 				if _, ok := gotFpMap[gotFp.Hash]; ok {
 					t.Errorf("duplicate fingerprint: %v", gotFp)
@@ -84,18 +86,29 @@ func TestGetFingerprint(t *testing.T) {
 			gotHashes := slices.Collect(maps.Keys(gotFpMap))
 
 			for _, wantFp := range tc.WantFingerprint {
-				if gotFp, ok := gotFpMap[wantFp.WantHash]; !ok {
-					t.Errorf("missing fingerprint: got %v, want %v (%v)", gotHashes, wantFp.WantKind, wantFp.WantHash)
-				} else {
-					if gotFp.Kind != wantFp.WantKind {
-						t.Errorf("unexpected fingerprint kind: got %v, want %v", gotFp.Kind, wantFp.WantKind)
-					}
-					if gotFp.Hash != wantFp.WantHash {
-						t.Errorf("unexpected fingerprint hash: got %v, want %v", gotFp.Hash, wantFp.WantHash)
-					}
-					if gotFp.Quality != int(wantFp.WantQuality) {
-						t.Errorf("unexpected fingerprint quality: got %v, want %v", gotFp.Quality, wantFp.WantQuality)
-					}
+				wantFpMap[wantFp.WantHash] = wantFp
+				gotFp, ok := gotFpMap[wantFp.WantHash]
+				if !ok {
+					t.Errorf("missing fingerprint: got %q, want %q (%v)", gotHashes, wantFp.WantHash, wantFp.WantKind)
+					continue
+				}
+				if gotFp.Kind != wantFp.WantKind {
+					t.Errorf("unexpected fingerprint kind for %v: got %v, want %v", gotFp.Hash, gotFp.Kind, wantFp.WantKind)
+				}
+				if gotFp.Quality != int(wantFp.WantQuality) {
+					t.Errorf("unexpected fingerprint quality for %v: got %v, want %v", gotFp.Hash, gotFp.Quality, wantFp.WantQuality)
+				}
+			}
+			for _, gotFp := range gotFpMap {
+				if _, ok := wantFpMap[gotFp.Hash]; !ok {
+					fmt.Printf("----- extra fingerprint %v -----\n", tc.Name)
+					fmt.Printf("want_fingerprint {\n")
+					fmt.Printf("	want_kind: %q\n", gotFp.Kind)
+					fmt.Printf("	want_hash: %q\n", gotFp.Hash)
+					fmt.Printf("	want_quality: %v\n", gotFp.Quality)
+					fmt.Printf("}\n")
+					fmt.Printf("----- /extra fingerprint -----\n")
+					t.Errorf("extra fingerprint kind=%v hash=%v quality=%v", gotFp.Kind, gotFp.Hash, gotFp.Quality)
 				}
 			}
 		})

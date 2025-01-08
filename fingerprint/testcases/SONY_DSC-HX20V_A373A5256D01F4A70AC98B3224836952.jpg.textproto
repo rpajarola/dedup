@@ -1,5 +1,11 @@
 source_file: "../../testdata/SONY DSC-HX20V A373A5256D01F4A70AC98B3224836952.jpg"
 
+want_fingerprint {
+        want_kind: "XMPDocumentID"
+        want_hash: "A373A5256D01F4A70AC98B3224836952"
+        want_quality: 100
+}
+
 exif {
 	want_camera_model: "SONY DSC-HX20V"
 	want_camera_serial: ""

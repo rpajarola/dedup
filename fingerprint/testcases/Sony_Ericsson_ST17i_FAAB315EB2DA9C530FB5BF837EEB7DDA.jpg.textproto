@@ -1,5 +1,11 @@
 source_file: "../../testdata/Sony Ericsson ST17i FAAB315EB2DA9C530FB5BF837EEB7DDA.jpg"
 
+want_fingerprint {
+        want_kind: "XMPDocumentID"
+        want_hash: "FAAB315EB2DA9C530FB5BF837EEB7DDA"
+        want_quality: 100
+}
+
 exif {
 	want_camera_model: "Sony Ericsson ST17i"
 	want_camera_serial: ""

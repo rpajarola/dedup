@@ -1,5 +1,11 @@
 source_file: "../../testdata/FUJIFILM FinePix S1600 592D34383231100921DDE50UD53192 A2E226D6E903AC01C7FFD532D1394930.jpg"
 
+want_fingerprint {
+        want_kind: "XMPDocumentID"
+        want_hash: "A2E226D6E903AC01C7FFD532D1394930"
+        want_quality: 100
+}
+
 exif {
 	want_camera_model: "FUJIFILM FinePix S1600"
 	want_camera_serial: ""

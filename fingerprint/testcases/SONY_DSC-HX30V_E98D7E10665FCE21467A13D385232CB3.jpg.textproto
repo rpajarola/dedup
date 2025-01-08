@@ -1,5 +1,11 @@
 source_file: "../../testdata/SONY DSC-HX30V E98D7E10665FCE21467A13D385232CB3.jpg"
 
+want_fingerprint {
+	want_kind: "XMPDocumentID"
+	want_hash: "E98D7E10665FCE21467A13D385232CB3"
+	want_quality: 100
+}
+
 xmp {
 	want_document_id: "E98D7E10665FCE21467A13D385232CB3"
 }

@@ -1,25 +1,36 @@
 #!/bin/bash
 
 for filename in "${@}"; do
-
-  tcfile="$(basename "${filename}").json"
+  tcfile=$(basename "${filename}").textproto
+  tcfile="${tcfile// /_}"
 
   if [ -f "${tcfile}" ]; then
-    echo "skipping ${tcfile}"
     continue
   fi
   echo creating "${tcfile}"
 
   cat<<EOF>"${tcfile}"
-{
-  "SourceFile": "${filename}",
-  "Skip": true,
+source_file: "${filename}"
 
-  "WantCameraModel": "fixme",
-  "WantCameraSerial": "fixme",
-  "WantPhotoID": "fixme",
-  "WantModelSerialPhotoID": "fixme",
-  "WantQuality": 0
+want_fingerprint {
+	want_kind: "EXIFModelSerialPhotoID"
+	want_hash: "fixme"
+	want_quality: 0
+}
+want_fingerprint {
+	want_kind: "XMPDocumentID"
+	want_hash: "fixme"
+	want_quality: 0
+}
+
+exif {
+	want_camera_model: "fixme"
+	want_camera_serial: "fixme"
+	want_photo_id: "fixme"
+}
+
+xmp {
+	want_document_id: "fixme"
 }
 EOF
 

@@ -1,5 +1,11 @@
 source_file: "../../testdata/NIKON COOLPIX P1000 30001701 0.jpg"
 
+want_fingerprint {
+        want_kind: "EXIFModelSerialPhotoID"
+        want_hash: "NIKON COOLPIX P1000 30001701 2019-03-13 02:52:52 +0000 UTC FINE"
+        want_quality: 80
+}
+
 exif {
 	want_camera_model: "NIKON COOLPIX P1000"
 	want_camera_serial: "30001701"
