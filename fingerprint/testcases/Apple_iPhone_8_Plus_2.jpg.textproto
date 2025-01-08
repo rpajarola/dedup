@@ -1,0 +1,12 @@
+source_file: "../../testdata/Apple iPhone 8 Plus 2.jpg"
+
+exif {
+	want_camera_model: "Apple iPhone 8 Plus"
+	want_camera_serial: ""
+	want_photo_id: "2017-10-10 12:07:41.184 +0000 UTC"
+}
+
+xmp {
+	# No XMP data
+	want_document_id: ""
+}
