@@ -115,9 +115,6 @@ func (xfp *EXIFFingerprinter) getCameraSerial() string {
 	if v, err := xfp.xf.Get(mknote.SonyInternalSerialNumber2); err == nil {
 		return trim(v.String())
 	}
-	if v, err := xfp.xf.Get(mknote.SonyInternalSerialNumber3); err == nil {
-		return trim(v.String())
-	}
 	return ""
 }
 
