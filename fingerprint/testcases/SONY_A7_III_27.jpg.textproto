@@ -1,10 +1,12 @@
-source_file:  "/Users/ricop/src/dedup/testdata/SONY A7 III 27.jpg"
-
-exif:  {
-  want_camera_model:  "SONY ILCE-7M3"
-  want_photo_id:  "2018-04-09 12:14:16 +0000 UTC"
+source_file: "/Users/ricop/src/dedup/testdata/SONY A7 III 27.jpg"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCE-7M3 28ff00008809 27"
+  want_quality: 90
 }
-
-xmp:  {
-  # no XMP data
+exif: {
+  want_camera_model: "SONY ILCE-7M3"
+  want_camera_serial: "28ff00008809"
+  want_photo_id: "27"
 }
+xmp: {}
