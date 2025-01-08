@@ -3,6 +3,11 @@ package fingerprint
 import (
 	"path/filepath"
 	"testing"
+
+	"github.com/google/go-cmp/cmp"
+	"google.golang.org/protobuf/encoding/prototext"
+	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/testing/protocmp"
 )
 
 func TestXMPFingerprinter(t *testing.T) {
@@ -15,9 +20,21 @@ func TestXMPFingerprinter(t *testing.T) {
 			if e := fp.Init(tc.SourceFile); e != nil {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
 			}
+
+			gotTc := proto.Clone(tc).(*FingerprintTestCase)
+
+			if e := fp.Init(tc.SourceFile); e != nil {
+				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
+			}
 			documentID, _, _ := fp.getDocumentID()
-			if documentID != tc.Xmp.WantDocumentId {
-				t.Errorf("unexpected Document ID, got %q, want %q", documentID, tc.Xmp.WantDocumentId)
+			gotTc.Xmp = &XMPTestCase{
+				WantDocumentId: documentID,
+			}
+			got := prototext.Format(gotTc)
+			want := prototext.Format(tc)
+			if diff := cmp.Diff(got, want, protocmp.Transform()); diff != "" {
+				t.Errorf("Unexpected test result, +=want, -=got:\n\n%v", diff)
+				updateTestCase(t, gotTc)
 			}
 		})
 	}

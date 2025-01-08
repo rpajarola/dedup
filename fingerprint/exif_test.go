@@ -5,6 +5,11 @@ package fingerprint
 import (
 	"path/filepath"
 	"testing"
+
+	"github.com/google/go-cmp/cmp"
+	"google.golang.org/protobuf/encoding/prototext"
+	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/testing/protocmp"
 )
 
 func TestEXIFFingerprinter(t *testing.T) {
@@ -14,23 +19,23 @@ func TestEXIFFingerprinter(t *testing.T) {
 			if tc.Exif.Skip {
 				t.Skip()
 			}
+			gotTc := proto.Clone(tc).(*FingerprintTestCase)
 
 			if e := fp.Init(tc.SourceFile); e != nil {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
 			}
-
-			if fp.getCameraModel() != tc.Exif.WantCameraModel {
-				t.Errorf("unexpected camera model, got %q, want %q", fp.getCameraModel(), tc.Exif.WantCameraModel)
-			}
-			if fp.getCameraSerial() != tc.Exif.WantCameraSerial {
-				t.Errorf("unexpected camera serial, got %q, want %q", fp.getCameraSerial(), tc.Exif.WantCameraSerial)
-			}
 			photoID, isUnique, _ := fp.getPhotoID()
-			if photoID != tc.Exif.WantPhotoId {
-				t.Errorf("unexpected photo ID, got %q, want %q", photoID, tc.Exif.WantPhotoId)
+			gotTc.Exif = &EXIFTestCase{
+				WantCameraModel:   fp.getCameraModel(),
+				WantCameraSerial:  fp.getCameraSerial(),
+				WantPhotoId:       photoID,
+				WantUniquePhotoId: isUnique,
 			}
-			if isUnique != tc.Exif.WantUniquePhotoId {
-				t.Errorf("unexpected photo ID uniqueness, got %v, want %v", isUnique, tc.Exif.WantUniquePhotoId)
+			got := prototext.Format(gotTc)
+			want := prototext.Format(tc)
+			if diff := cmp.Diff(got, want, protocmp.Transform()); diff != "" {
+				t.Errorf("Unexpected test result, +=want, -=got:\n\n%v", diff)
+				updateTestCase(t, gotTc)
 			}
 		})
 	}
