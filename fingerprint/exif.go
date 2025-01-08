@@ -21,6 +21,7 @@ func init() {
 }
 
 func (xfp *EXIFFingerprinter) Init(filename string) error {
+	xfp.xf = nil
 	f, err := os.Open(filename)
 	if err != nil {
 		return err

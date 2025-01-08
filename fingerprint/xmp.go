@@ -19,6 +19,7 @@ func init() {
 }
 
 func (xfp *XMPFingerprinter) Init(filename string) error {
+	xfp.xmp = nil
 	f, err := os.Open(filename)
 	if err != nil {
 		return err
