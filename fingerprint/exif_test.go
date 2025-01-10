@@ -33,8 +33,8 @@ func TestEXIFFingerprinter(t *testing.T) {
 			}
 			got := prototext.Format(gotTc)
 			want := prototext.Format(tc)
-			if diff := cmp.Diff(got, want, protocmp.Transform()); diff != "" {
-				t.Errorf("Unexpected test result, +=want, -=got:\n\n%v", diff)
+			if diff := cmp.Diff(want, got, protocmp.Transform()); diff != "" {
+				t.Errorf("Unexpected test result, +=got, -=want:\n\n%v", diff)
 				updateTestCase(t, gotTc)
 			}
 		})
