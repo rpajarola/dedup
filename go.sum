@@ -4,6 +4,8 @@ github.com/rpajarola/exiftools v0.0.0-20250108021308-8204ddfcf705 h1:c7ooFoTngxO
 github.com/rpajarola/exiftools v0.0.0-20250108021308-8204ddfcf705/go.mod h1:cQrmqO8HlkMgPfafRS71ivGtDIlxRp75hNv81DTNV5M=
 github.com/rpajarola/exiftools v0.0.0-20250108053955-587923a81134 h1:YN8Cvc6JlZSLADgWw8FicIucTi5Z/mD2BAwHQz+JbqM=
 github.com/rpajarola/exiftools v0.0.0-20250108053955-587923a81134/go.mod h1:cQrmqO8HlkMgPfafRS71ivGtDIlxRp75hNv81DTNV5M=
+github.com/rpajarola/exiftools v0.0.0-20250109185418-e88d1663784c h1:K/CLnMFigeKmMWSWtCZdx8kPTHAuh4OcJhlBQo5s4kI=
+github.com/rpajarola/exiftools v0.0.0-20250109185418-e88d1663784c/go.mod h1:cQrmqO8HlkMgPfafRS71ivGtDIlxRp75hNv81DTNV5M=
 github.com/trimmer-io/go-xmp v1.0.0 h1:zY8bolSga5kOjBAaHS6hrdxLgEoYuT875xTy0QDwZWs=
 github.com/trimmer-io/go-xmp v1.0.0/go.mod h1:Aaptr9sp1lLv7UnCAdQ+gSHZyY2miYaKmcNVj7HRBwA=
 golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
