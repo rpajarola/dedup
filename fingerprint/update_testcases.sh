@@ -1,4 +1,4 @@
-for f in *new; do
+for f in *testdata/*new; do
 	ORIG="${f%%.new}"
 	UPDATED="${f}"
 	diff -u -w "${ORIG}" "${UPDATED}"
