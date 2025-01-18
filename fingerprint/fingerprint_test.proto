@@ -6,29 +6,41 @@ option go_package = "github.com/rpajarola/dedup/fingerprint";
 message FingerprintTestCase {
 	string name = 1;
 	string source_file = 2;
-	bool skip = 3;
-	bool want_err = 4;
+	repeated string comment = 3;
+	bool skip = 4;
+	bool want_err = 5;
 
-	repeated WantFingerprint want_fingerprint = 5;
-	EXIFTestCase exif = 6;
-	XMPTestCase xmp = 7;
+	repeated WantFingerprint want_fingerprint = 6;
+	EXIFTestCase exif = 7;
+	XMPTestCase xmp = 8;
+	ImgPHashTestCase img_phash = 9;
 }
 
 message WantFingerprint {
-	string want_kind = 1;
-	string want_hash = 2;
-	int32 want_quality = 3;
+	repeated string comment = 1;
+	string want_kind = 2;
+	string want_hash = 3;
+	int32 want_quality = 4;
 }
 
 message EXIFTestCase {
-	bool skip = 1;
-	string want_camera_model = 2;
-	string want_camera_serial = 3;
-	string want_photo_id = 4;
-	bool want_unique_photo_id = 5;
+	repeated string comment = 1;
+	bool skip = 2;
+	string want_camera_model = 3;
+	string want_camera_serial = 4;
+	string want_photo_id = 5;
+	bool want_unique_photo_id = 6;
 }
 
 message XMPTestCase {
-	bool skip = 1;
-	string want_document_id = 2;
+	repeated string comment = 1;
+	bool skip = 2;
+	string want_document_id = 3;
+}
+
+message ImgPHashTestCase {
+	repeated string comment = 1;
+	bool skip = 2;
+	string want_duplo_hash = 3;
+	string want_azr_hash = 4;
 }

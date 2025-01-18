@@ -17,11 +17,20 @@ import (
 
 const testDataDir = "testcases"
 
+type TestCase struct {
+	Name       string
+	SourceFile string
+	Got        *FingerprintTestCase
+	Want       *FingerprintTestCase
+}
+
 func readTestCase(t *testing.T, fname string) *FingerprintTestCase {
 	t.Helper()
-	raw, err := os.ReadFile(fname)
+	raw, err := os.ReadFile(fname + ".new")
 	if err != nil {
-		t.Fatal(err)
+		if raw, err = os.ReadFile(fname); err != nil {
+			t.Fatal(err)
+		}
 	}
 	tc := &FingerprintTestCase{}
 	if err := prototext.Unmarshal(raw, tc); err != nil {
@@ -30,7 +39,7 @@ func readTestCase(t *testing.T, fname string) *FingerprintTestCase {
 	return tc
 }
 
-func getTestCases(t *testing.T) []*FingerprintTestCase {
+func getTestCases(t *testing.T) []TestCase {
 	t.Helper()
 	cwd, err := os.Getwd()
 	if err != nil {
@@ -39,7 +48,7 @@ func getTestCases(t *testing.T) []*FingerprintTestCase {
 	defer os.Chdir(cwd)
 	os.Chdir(testDataDir)
 
-	var res []*FingerprintTestCase
+	var res []TestCase
 
 	f, err := os.Open(".")
 	if err != nil {
@@ -54,52 +63,59 @@ func getTestCases(t *testing.T) []*FingerprintTestCase {
 		if !strings.HasSuffix(fname, ".textproto") {
 			continue
 		}
-		tc := readTestCase(t, fname)
-		if tc.Skip {
+		want := readTestCase(t, fname)
+		if want.Skip {
 			continue
 		}
-		tc.Name = fname
-		tc.SourceFile, err = filepath.Abs(tc.SourceFile)
+		got := proto.Clone(want).(*FingerprintTestCase)
+		tc := TestCase{
+			Name: fname,
+			Got:  got,
+			Want: want,
+		}
+		tc.SourceFile, err = filepath.Abs(want.SourceFile)
 		if err != nil {
-			t.Fatalf("filepath.Abs(%v): %v", tc.SourceFile, err)
+			t.Fatalf("filepath.Abs(%v): %v", want.SourceFile, err)
 		}
 		res = append(res, tc)
 	}
 	return res
 }
 
-func updateTestCase(t *testing.T, tc *FingerprintTestCase) {
+func updateTestCase(t *testing.T, tc TestCase) {
 	t.Helper()
 	fname := filepath.Join(testDataDir, tc.Name) + ".new"
-	tc.Name = ""
-	raw := []byte(prototext.Format(tc))
+	raw := []byte(prototext.Format(tc.Got))
 	if err := os.WriteFile(fname, raw, 0644); err != nil {
 		t.Fatalf("os.WriteFile(%v): %v", fname, err)
 	}
 	fmt.Printf("updated test case: %v\n", fname)
 }
 
+func maybeUpdateTestCase(t *testing.T, tc TestCase) {
+	t.Helper()
+	got := prototext.Format(tc.Got)
+	want := prototext.Format(tc.Want)
+	if diff := cmp.Diff(want, got, protocmp.Transform()); diff != "" {
+		t.Errorf("Unexpected test result, +=got, -=want:\n\n%v", diff)
+		updateTestCase(t, tc)
+	}
+}
+
 func TestGetFingerprint(t *testing.T) {
 	for _, tc := range getTestCases(t) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			gotFps, gotErr := GetFingerprint(tc.SourceFile)
-			gotTc := proto.Clone(tc).(*FingerprintTestCase)
-
-			gotTc.WantErr = gotErr != nil
-			gotTc.WantFingerprint = nil
+			tc.Got.WantErr = gotErr != nil
+			tc.Got.WantFingerprint = nil
 			for _, gotFp := range gotFps {
-				gotTc.WantFingerprint = append(gotTc.WantFingerprint, &WantFingerprint{
+				tc.Got.WantFingerprint = append(tc.Got.WantFingerprint, &WantFingerprint{
 					WantKind:    gotFp.Kind,
 					WantHash:    gotFp.Hash,
 					WantQuality: int32(gotFp.Quality),
 				})
 			}
-			got := prototext.Format(gotTc)
-			want := prototext.Format(tc)
-			if diff := cmp.Diff(want, got, protocmp.Transform()); diff != "" {
-				t.Errorf("Unexpected test result, +=got, -=want:\n\n%v", diff)
-				updateTestCase(t, gotTc)
-			}
+			maybeUpdateTestCase(t, tc)
 		})
 	}
 }
