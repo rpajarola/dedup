@@ -1,1 +1,28 @@
-source_file: "iPhone15ProMax-0003-tele-5x.jpg"
+source_file:  "iPhone15ProMax-0003-tele-5x.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_quality:  100
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "cc3339cc269966c9"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "7ffffffff.80404249b930000"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Apple iPhone 15 Pro Max"
+  want_photo_id:  "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_unique_photo_id:  true
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "cc3339cc269966c9"
+  want_nr90_hash:  "7ffffffff.80404249b930000"
+}

@@ -1,1 +1,27 @@
-source_file: "sony_a7s_iii_07.jpg"
+source_file:  "sony_a7s_iii_07.jpg"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "fc260606f8f8fc06"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "10f0f0f02020e02.100151415151a721"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "A1B59EAF9BAAEC3F0C97603358445EF3"
+  want_quality:  100
+}
+exif:  {
+  want_camera_model:  "SONY MODEL-NAME"
+  want_photo_id:  "2022-09-09 21:29:51.627 +0000 UTC"
+}
+xmp:  {
+  want_document_id:  "A1B59EAF9BAAEC3F0C97603358445EF3"
+}
+img_phash:  {
+  want_azr_hash:  "fc260606f8f8fc06"
+  want_nr90_hash:  "10f0f0f02020e02.100151415151a721"
+}

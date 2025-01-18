@@ -1,1 +1,20 @@
-source_file: "Y-DP-105mm-9411.jpeg"
+source_file:  "Y-DP-105mm-9411.jpeg"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "a59a2a52aaa955b3"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "10003cffffff7e00.71307051b030b0f"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "SONY ILCE-7M3"
+  want_photo_id:  "2018-05-16 05:08:34 +0000 UTC"
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "a59a2a52aaa955b3"
+  want_nr90_hash:  "10003cffffff7e00.71307051b030b0f"
+}

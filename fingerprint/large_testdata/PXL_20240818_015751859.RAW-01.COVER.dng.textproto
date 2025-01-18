@@ -1,1 +1,7 @@
-source_file: "PXL_20240818_015751859.RAW-01.COVER.dng"
+source_file:  "PXL_20240818_015751859.RAW-01.COVER.dng"
+want_err:  true
+exif:  {
+  want_camera_model:  "Google Pixel 9 Pro"
+  want_photo_id:  "2024-08-17 19:57:51.89255 +0000 UTC"
+}
+xmp:  {}

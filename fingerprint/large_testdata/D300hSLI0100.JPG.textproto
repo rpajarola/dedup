@@ -1,1 +1,28 @@
-source_file: "D300hSLI0100.JPG"
+source_file:  "D300hSLI0100.JPG"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "NIKON D300 3005346 1803 FINE"
+  want_quality:  90
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "6c49968b07a74d5c"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "9f8581c3e78391fb.8a92984871d8dacc"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "NIKON D300"
+  want_camera_serial:  "3005346"
+  want_photo_id:  "1803 FINE"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "6c49968b07a74d5c"
+  want_nr90_hash:  "9f8581c3e78391fb.8a92984871d8dacc"
+}

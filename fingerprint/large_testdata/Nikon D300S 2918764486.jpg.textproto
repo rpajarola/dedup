@@ -1,1 +1,28 @@
-source_file: "Nikon D300S 2918764486.jpg"
+source_file:  "Nikon D300S 2918764486.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "NIKON D300S 7400341 154 FINE"
+  want_quality:  90
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "ae26a2287619779c"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "7cfffffffe.ff30f0f3fffffff"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "NIKON D300S"
+  want_camera_serial:  "7400341"
+  want_photo_id:  "154 FINE"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "ae26a2287619779c"
+  want_nr90_hash:  "7cfffffffe.ff30f0f3fffffff"
+}

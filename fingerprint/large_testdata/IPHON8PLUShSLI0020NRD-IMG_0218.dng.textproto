@@ -1,1 +1,9 @@
-source_file: "IPHON8PLUShSLI0020NRD-IMG_0218.dng"
+source_file:  "IPHON8PLUShSLI0020NRD-IMG_0218.dng"
+want_err:  true
+exif:  {
+  want_camera_model:  "Apple iPhone 8 Plus"
+  want_photo_id:  "2017-10-10 12:07:28.526 +0000 UTC"
+}
+xmp:  {
+  comment:  "No XMP data"
+}

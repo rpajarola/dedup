@@ -1,1 +1,26 @@
-source_file: "Canon PowerShot SX230.JPG"
+source_file:  "Canon PowerShot SX230.JPG"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Canon PowerShot SX230 HS  a0d2aa0209df07a36eb503a1e039ca22"
+  want_quality:  100
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "de3b4bf583071902"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "373b3be0c1c1b1f1.98880cb4fad29c9a"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Canon PowerShot SX230 HS"
+  want_photo_id:  "a0d2aa0209df07a36eb503a1e039ca22"
+  want_unique_photo_id:  true
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "de3b4bf583071902"
+  want_nr90_hash:  "373b3be0c1c1b1f1.98880cb4fad29c9a"
+}

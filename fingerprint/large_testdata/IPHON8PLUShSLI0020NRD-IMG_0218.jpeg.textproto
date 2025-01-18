@@ -1,1 +1,22 @@
-source_file: "IPHON8PLUShSLI0020NRD-IMG_0218.jpeg"
+source_file:  "IPHON8PLUShSLI0020NRD-IMG_0218.jpeg"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "44cd36094724d9fe"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "ff8181c3c38380db.9e9a946861c9cecc"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Apple iPhone 8 Plus"
+  want_photo_id:  "2017-10-10 12:07:28.518 +0000 UTC"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "44cd36094724d9fe"
+  want_nr90_hash:  "ff8181c3c38380db.9e9a946861c9cecc"
+}

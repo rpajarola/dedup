@@ -1,1 +1,20 @@
-source_file: "Sony Ericsson C905.JPG"
+source_file:  "Sony Ericsson C905.JPG"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "dc98ad46724b158e"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "1f0f0f0717802b3f.4745a3a292d51555"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Sony Ericsson C905"
+  want_photo_id:  "2009-02-05 10:37:36 +0000 UTC"
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "dc98ad46724b158e"
+  want_nr90_hash:  "1f0f0f0717802b3f.4745a3a292d51555"
+}

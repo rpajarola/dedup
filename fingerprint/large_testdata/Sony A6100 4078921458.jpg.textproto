@@ -1,1 +1,20 @@
-source_file: "Sony A6100 4078921458.jpg"
+source_file:  "Sony A6100 4078921458.jpg"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "74ab07f1f083067c"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "8f0f0f0fffccf1ff.c0c080c7d7463037"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "SONY ILCE-6100"
+  want_photo_id:  "2019-11-04 16:02:21 +0000 UTC"
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "74ab07f1f083067c"
+  want_nr90_hash:  "8f0f0f0fffccf1ff.c0c080c7d7463037"
+}

@@ -1,1 +1,8 @@
-source_file: "Adobe Photoshop Lightroom.XMP"
+source_file:  "Adobe Photoshop Lightroom.XMP"
+want_err:  true
+exif:  {
+  comment:  "No EXIF data"
+}
+xmp:  {
+  comment:  "No XMP data"
+}

@@ -1,1 +1,22 @@
-source_file: "Y-GooglePixel2-PortraitMode-005.jpg"
+source_file:  "Y-GooglePixel2-PortraitMode-005.jpg"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "8992ac9e535c3c1d"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "f979692b2b181c3f.e743435a48d8704"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Google Pixel 2"
+  want_photo_id:  "2018-03-22 13:17:17.68342 +0000 UTC"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "8992ac9e535c3c1d"
+  want_nr90_hash:  "f979692b2b181c3f.e743435a48d8704"
+}

@@ -1,1 +1,5 @@
-source_file: "heic.digital Samsung Galaxy A32 3.heic"
+source_file:  "heic.digital Samsung Galaxy A32 3.heic"
+want_err:  true
+xmp:  {
+  comment:  "No XMP data"
+}

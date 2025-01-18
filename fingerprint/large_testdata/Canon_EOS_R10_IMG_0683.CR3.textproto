@@ -1,1 +1,2 @@
-source_file: "Canon_EOS_R10_IMG_0683.CR3"
+source_file:  "Canon_EOS_R10_IMG_0683.CR3"
+want_err:  true
