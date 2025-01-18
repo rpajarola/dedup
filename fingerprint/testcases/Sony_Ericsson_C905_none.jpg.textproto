@@ -1,7 +1,6 @@
-source_file: "../testdata/Sony Ericsson C905 none.jpg"
-
-exif {
-	want_camera_model: "Sony Ericsson C905"
-	want_camera_serial: ""
-	want_photo_id: "2009-02-05 10:37:36 +0000 UTC"
+source_file:  "../testdata/Sony Ericsson C905 none.jpg"
+exif:  {
+  want_camera_model:  "Sony Ericsson C905"
+  want_photo_id:  "2009-02-05 10:37:36 +0000 UTC"
 }
+xmp:  {}

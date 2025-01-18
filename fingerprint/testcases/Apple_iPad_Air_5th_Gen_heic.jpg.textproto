@@ -13,5 +13,10 @@ exif:  {
 }
 
 xmp:  {
-  # no XMP data
+  comment: "no XMP data"
+}
+
+img_phash: {
+  comment: "no image data"
+  skip: true
 }

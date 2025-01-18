@@ -15,7 +15,7 @@ want_fingerprint {
 exif {
 	want_camera_model: "Canon EOS 60D"
 	want_camera_serial: "0570303637"
-	# TODO: CanonCameraInfo60D?
+	comment: "TODO: CanonCameraInfo60D?"
 	want_photo_id: "2014-11-25 09:03:21.37 +0000 UTC"
 }
 

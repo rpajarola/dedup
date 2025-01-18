@@ -13,6 +13,5 @@ exif {
 }
 
 xmp {
-	# No XMP data
-	want_document_id: ""
+	comment: "No XMP data"
 }

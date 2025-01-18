@@ -1,7 +1,6 @@
-source_file: "../testdata/Google Pixel 2 none 2.jpg"
-
-exif {
-	want_camera_model: "Google Pixel 2"
-	want_camera_serial: ""
-	want_photo_id: "2018-03-22 12:42:17.318446 +0000 UTC"
+source_file:  "../testdata/Google Pixel 2 none 2.jpg"
+exif:  {
+  want_camera_model:  "Google Pixel 2"
+  want_photo_id:  "2018-03-22 12:42:17.318446 +0000 UTC"
 }
+xmp:  {}

@@ -12,3 +12,7 @@ exif {
 	want_photo_id: "AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
 	want_unique_photo_id: true
 }
+
+xmp {
+  comment: "No XMP data"
+}

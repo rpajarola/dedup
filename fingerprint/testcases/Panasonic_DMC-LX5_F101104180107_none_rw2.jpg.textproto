@@ -1,10 +1,12 @@
-source_file: "../testdata/Panasonic DMC-LX5 F101104180107 none rw2.jpg"
-
-exif {
-	skip: true  # TODO: implement MakerNotePanasonic
-
-	want_camera_model: "Panasonic DMC-LX5"
-	# TODO: MakerNotePanasonic.InternalSerialNumber
-	want_camera_serial: "F101104180107"
-	want_photo_id: "2011-11-17 12:24:26 +0000 UTC"
+source_file:  "../testdata/Panasonic DMC-LX5 F101104180107 none rw2.jpg"
+exif:  {
+  comment:  "TODO: implement MakerNotePanasonic"
+  comment:  "TODO: MakerNotePanasonic.InternalSerialNumber"
+  skip:  true
+  want_camera_model:  "Panasonic DMC-LX5"
+  want_camera_serial:  "F101104180107"
+  want_photo_id:  "2011-11-17 12:24:26 +0000 UTC"
+}
+xmp:  {
+  comment:  "No XMP data"
 }

@@ -11,6 +11,6 @@ exif:  {
   want_camera_serial:  "28ff00008809"
   want_photo_id:  "6020"
 }
-xmp:  {
-  # no XMP data
+xmp: {
+  comment: "No EXIF data"
 }

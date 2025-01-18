@@ -1,2 +1,3 @@
 source_file: "../testdata/Canon PowerShot A570 IS imageuniqueid.jpg"
-skip: true  # TODO: bad exif data
+skip: true
+comment: "TODO: bad exif data"
