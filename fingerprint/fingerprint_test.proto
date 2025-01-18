@@ -41,6 +41,6 @@ message XMPTestCase {
 message ImgPHashTestCase {
 	repeated string comment = 1;
 	bool skip = 2;
-	string want_duplo_hash = 3;
-	string want_azr_hash = 4;
+	string want_azr_hash = 3;
+	string want_nr90_hash = 4;
 }

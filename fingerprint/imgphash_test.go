@@ -25,13 +25,19 @@ func TestImgPHashFingerprinter(t *testing.T) {
 			if err != nil {
 				t.Fatalf("getAzr(%v): %v", tc.SourceFile, err)
 			}
+			nr90Hash, err := fp.getNr90()
+			if err != nil {
+				t.Fatalf("getNr90(%v): %v", tc.SourceFile, err)
+			}
 
 			if azrHash.Hash == "00000000" {
 				tc.Got.ImgPhash.Comment = append(tc.Got.ImgPhash.Comment, "no image data")
 				tc.Got.ImgPhash.Skip = true
 				tc.Got.ImgPhash.WantAzrHash = ""
+				tc.Got.ImgPhash.WantNr90Hash = ""
 			} else {
 				tc.Got.ImgPhash.WantAzrHash = azrHash.Hash
+				tc.Got.ImgPhash.WantNr90Hash = nr90Hash.Hash
 			}
 			maybeUpdateTestCase(t, tc)
 		})
