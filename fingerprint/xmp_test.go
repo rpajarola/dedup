@@ -7,7 +7,7 @@ import (
 
 func TestXMPFingerprinter(t *testing.T) {
 	fp := &XMPFingerprinter{}
-	for _, tc := range getTestCases(t) {
+	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			if tc.Got.GetXmp() == nil {
 				tc.Got.Xmp = &XMPTestCase{}

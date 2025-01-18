@@ -15,7 +15,8 @@ import (
 	"google.golang.org/protobuf/testing/protocmp"
 )
 
-const testDataDir = "testcases"
+const largeTestDataDir = "large_testdata"
+const testDataDir = "testdata"
 
 type TestCase struct {
 	Name       string
@@ -39,43 +40,44 @@ func readTestCase(t *testing.T, fname string) *FingerprintTestCase {
 	return tc
 }
 
-func getTestCases(t *testing.T) []TestCase {
-	t.Helper()
-	cwd, err := os.Getwd()
-	if err != nil {
-		t.Fatalf("os.Getwd: %v", err)
+func getTestCases(t *testing.T, tcDirs ...string) []TestCase {
+	var res []TestCase
+	for _, tcDir := range tcDirs {
+		tcs := getTestCasesFromDir(t, tcDir)
+		res = append(res, tcs...)
 	}
-	defer os.Chdir(cwd)
-	os.Chdir(testDataDir)
+	return res
+}
 
+func getTestCasesFromDir(t *testing.T, tcDir string) []TestCase {
+	t.Helper()
 	var res []TestCase
 
-	f, err := os.Open(".")
+	f, err := os.Open(tcDir)
 	if err != nil {
-		t.Fatalf("os.Open(%v): %v", testDataDir, err)
+		t.Fatalf("os.Open(%v): %v", tcDir, err)
 	}
 	fnames, err := f.Readdirnames(0)
 	if err != nil {
-		t.Fatalf("Readdirnames(%v): %v", testDataDir, err)
+		t.Fatalf("Readdirnames(%v): %v", tcDir, err)
 	}
 	for _, fname := range fnames {
 
 		if !strings.HasSuffix(fname, ".textproto") {
 			continue
 		}
+		fname = filepath.Join(tcDir, fname)
 		want := readTestCase(t, fname)
 		if want.Skip {
 			continue
 		}
+		sourceFile := filepath.Join(tcDir, want.SourceFile)
 		got := proto.Clone(want).(*FingerprintTestCase)
 		tc := TestCase{
-			Name: fname,
-			Got:  got,
-			Want: want,
-		}
-		tc.SourceFile, err = filepath.Abs(want.SourceFile)
-		if err != nil {
-			t.Fatalf("filepath.Abs(%v): %v", want.SourceFile, err)
+			Name:       fname,
+			SourceFile: sourceFile,
+			Got:        got,
+			Want:       want,
 		}
 		res = append(res, tc)
 	}
@@ -84,7 +86,7 @@ func getTestCases(t *testing.T) []TestCase {
 
 func updateTestCase(t *testing.T, tc TestCase) {
 	t.Helper()
-	fname := filepath.Join(testDataDir, tc.Name) + ".new"
+	fname := tc.Name + ".new"
 	raw := []byte(prototext.Format(tc.Got))
 	if err := os.WriteFile(fname, raw, 0644); err != nil {
 		t.Fatalf("os.WriteFile(%v): %v", fname, err)
@@ -103,7 +105,7 @@ func maybeUpdateTestCase(t *testing.T, tc TestCase) {
 }
 
 func TestGetFingerprint(t *testing.T) {
-	for _, tc := range getTestCases(t) {
+	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			gotFps, gotErr := GetFingerprint(tc.SourceFile)
 			tc.Got.WantErr = gotErr != nil

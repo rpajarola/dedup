@@ -7,7 +7,7 @@ import (
 
 func TestEXIFFingerprinter(t *testing.T) {
 	fp := &EXIFFingerprinter{}
-	for _, tc := range getTestCases(t) {
+	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			if tc.Got.GetExif() == nil {
 				tc.Got.Exif = &EXIFTestCase{}
