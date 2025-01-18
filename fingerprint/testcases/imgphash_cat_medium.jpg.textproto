@@ -1,0 +1,25 @@
+source_file: "../testdata/imgphash_cat_medium.jpg"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "f4d05e07c1a43aad"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "fff83838b8183800.919b8d8f9e9f5d97"
+  want_quality: 20
+}
+exif: {
+  comment: "No EXIF data"
+  want_camera_model: "fixme"
+  want_camera_serial: "fixme"
+  want_photo_id: "fixme"
+}
+xmp: {
+  comment: "No XMP data"
+  want_document_id: "fixme"
+}
+img_phash: {
+  want_azr_hash: "f4d05e07c1a43aad"
+  want_nr90_hash: "fff83838b8183800.919b8d8f9e9f5d97"
+}
