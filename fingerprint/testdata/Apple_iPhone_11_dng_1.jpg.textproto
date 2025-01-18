@@ -1,0 +1,23 @@
+source_file:  "Apple iPhone 11 dng 1.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Apple iPhone 11  2ABA6EB7-5DF7-44CA-BD23-590BE8B4D533"
+  want_quality:  100
+}
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "659BC91A3E511BBC12D0BB30818DF9CB"
+  want_quality:  100
+}
+exif:  {
+  want_camera_model:  "Apple iPhone 11"
+  want_photo_id:  "2ABA6EB7-5DF7-44CA-BD23-590BE8B4D533"
+  want_unique_photo_id:  true
+}
+xmp:  {
+  want_document_id:  "659BC91A3E511BBC12D0BB30818DF9CB"
+}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

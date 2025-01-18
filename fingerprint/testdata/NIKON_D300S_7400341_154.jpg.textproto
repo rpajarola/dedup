@@ -1,0 +1,18 @@
+source_file:  "NIKON D300S 7400341 154.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "NIKON D300S 7400341 154 FINE"
+  want_quality:  90
+}
+exif:  {
+  want_camera_model:  "NIKON D300S"
+  want_camera_serial:  "7400341"
+  want_photo_id:  "154 FINE"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

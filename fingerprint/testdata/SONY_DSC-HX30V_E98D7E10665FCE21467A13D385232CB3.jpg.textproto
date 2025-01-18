@@ -1,0 +1,17 @@
+source_file:  "SONY DSC-HX30V E98D7E10665FCE21467A13D385232CB3.jpg"
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "E98D7E10665FCE21467A13D385232CB3"
+  want_quality:  100
+}
+exif:  {
+  want_camera_model:  "SONY DSC-HX30V"
+  want_photo_id:  "2012-12-17 19:34:17 +0000 UTC"
+}
+xmp:  {
+  want_document_id:  "E98D7E10665FCE21467A13D385232CB3"
+}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

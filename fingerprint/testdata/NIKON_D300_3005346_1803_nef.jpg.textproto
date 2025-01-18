@@ -1,0 +1,18 @@
+source_file:  "NIKON D300 3005346 1803_nef.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "NIKON D300 3005346 1803 RAW"
+  want_quality:  90
+}
+exif:  {
+  want_camera_model:  "NIKON D300"
+  want_camera_serial:  "3005346"
+  want_photo_id:  "1803 RAW"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

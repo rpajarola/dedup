@@ -1,0 +1,23 @@
+source_file:  "OLYMPUS FE230_X790 000K81K52510 fdfffa7f-c983-4093-a74f-e656616215fe.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "OLYMPUS FE230/X790 000K81K52510 2009-08-04 10:50:40 +0000 UTC"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "fdfffa7f-c983-4093-a74f-e656616215fe"
+  want_quality:  100
+}
+exif:  {
+  want_camera_model:  "OLYMPUS FE230/X790"
+  want_camera_serial:  "000K81K52510"
+  want_photo_id:  "2009-08-04 10:50:40 +0000 UTC"
+}
+xmp:  {
+  want_document_id:  "fdfffa7f-c983-4093-a74f-e656616215fe"
+}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

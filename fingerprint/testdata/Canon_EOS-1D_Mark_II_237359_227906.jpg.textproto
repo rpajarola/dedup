@@ -1,0 +1,13 @@
+source_file: "Canon EOS-1D Mark II 237359 227906.jpg"
+skip: true
+comment: "TODO: implement Canon Shutter Count"
+
+exif {
+	want_camera_model: "Canon EOS-1D Mark II"
+	want_camera_serial: "237359"
+	comment: "photo_id = shutter count"
+	want_photo_id: "227906"
+}
+xmp {
+  comment: "No XMP data"
+}

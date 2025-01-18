@@ -1,0 +1,25 @@
+source_file: "imgphash_cat_sky.jpg"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "c80126ef91b87cad"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "fff07fffff181800.d5df3a39d98a1715"
+  want_quality: 20
+}
+exif: {
+  comment: "No EXIF data"
+  want_camera_model: "fixme"
+  want_camera_serial: "fixme"
+  want_photo_id: "fixme"
+}
+xmp: {
+  comment: "No XMP data"
+  want_document_id: "fixme"
+}
+img_phash: {
+  want_azr_hash: "c80126ef91b87cad"
+  want_nr90_hash: "fff07fffff181800.d5df3a39d98a1715"
+}
