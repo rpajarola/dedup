@@ -10,3 +10,7 @@ exif:  {
   want_photo_id:  "1803 FINE"
 }
 xmp:  {}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

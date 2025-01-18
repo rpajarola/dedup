@@ -11,3 +11,7 @@ exif:  {
   want_unique_photo_id:  true
 }
 xmp:  {}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

@@ -1,10 +1,12 @@
-source_file: "../testdata/Apple iPhone 8 Plus dng 1.jpg"
-
-exif {
-	want_camera_model: "Apple iPhone 8 Plus"
-	want_camera_serial: ""
-	want_photo_id: "2017-10-10 12:07:28.526 +0000 UTC"
+source_file:  "../testdata/Apple iPhone 8 Plus dng 1.jpg"
+exif:  {
+  want_camera_model:  "Apple iPhone 8 Plus"
+  want_photo_id:  "2017-10-10 12:07:28.526 +0000 UTC"
 }
-xmp {
-  comment: "No XMP data"
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
 }

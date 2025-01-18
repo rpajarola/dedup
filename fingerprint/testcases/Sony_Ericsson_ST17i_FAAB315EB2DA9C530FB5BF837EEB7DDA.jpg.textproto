@@ -11,3 +11,7 @@ exif:  {
 xmp:  {
   want_document_id:  "FAAB315EB2DA9C530FB5BF837EEB7DDA"
 }
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

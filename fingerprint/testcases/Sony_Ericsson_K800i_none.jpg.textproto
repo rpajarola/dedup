@@ -4,3 +4,7 @@ exif:  {
   want_photo_id:  "2006-03-07 15:55:10 +0000 UTC"
 }
 xmp:  {}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
+}

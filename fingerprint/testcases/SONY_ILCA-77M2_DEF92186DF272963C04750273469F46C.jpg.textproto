@@ -1,13 +1,17 @@
-source_file: "../testdata/SONY ILCA-77M2 DEF92186DF272963C04750273469F46C.jpg"
-want_fingerprint: {
-  want_kind: "XMPDocumentID"
-  want_hash: "DEF92186DF272963C04750273469F46C"
-  want_quality: 100
+source_file:  "../testdata/SONY ILCA-77M2 DEF92186DF272963C04750273469F46C.jpg"
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "DEF92186DF272963C04750273469F46C"
+  want_quality:  100
 }
-exif: {
-  want_camera_model: "SONY ILCA-77M2"
-  want_photo_id: "2015-01-28 20:24:27 +0000 UTC"
+exif:  {
+  want_camera_model:  "SONY ILCA-77M2"
+  want_photo_id:  "2015-01-28 20:24:27 +0000 UTC"
 }
-xmp: {
-  want_document_id: "DEF92186DF272963C04750273469F46C"
+xmp:  {
+  want_document_id:  "DEF92186DF272963C04750273469F46C"
+}
+img_phash:  {
+  comment:  "no image data"
+  skip:  true
 }
