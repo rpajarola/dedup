@@ -2,7 +2,9 @@ package fingerprint
 
 import (
 	"encoding/hex"
+	"errors"
 	"fmt"
+	"io"
 	"os"
 	"strings"
 
@@ -29,7 +31,7 @@ func (xfp *EXIFFingerprinter) Init(filename string) error {
 	defer f.Close()
 
 	xfp.xf, err = exif.Decode(f)
-	if err != nil {
+	if err != nil && !errors.Is(err, io.EOF) {
 		return err
 	}
 
