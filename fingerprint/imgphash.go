@@ -10,7 +10,7 @@ import (
 	"os"
 
 	nr90 "github.com/Nr90/imgsim"
-	"github.com/azr/phash"
+	azr "github.com/azr/phash"
 )
 
 var (
@@ -77,7 +77,7 @@ func (d *ImgPHashFingerprinter) Get() ([]Fingerprint, error) {
 }
 
 func (d *ImgPHashFingerprinter) getAzr() (Fingerprint, error) {
-	h := phash.DTC(d.img)
+	h := azr.DTC(d.img)
 	return Fingerprint{
 		Kind:    "ImgPHashAzr",
 		Hash:    fmt.Sprintf("%08x", h),
