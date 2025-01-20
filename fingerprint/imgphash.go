@@ -9,7 +9,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/Nr90/imgsim"
+	nr90 "github.com/Nr90/imgsim"
 	"github.com/azr/phash"
 )
 
@@ -86,8 +86,8 @@ func (d *ImgPHashFingerprinter) getAzr() (Fingerprint, error) {
 }
 
 func (d *ImgPHashFingerprinter) getNr90() (Fingerprint, error) {
-	avg := imgsim.AverageHash(d.img)
-	dif := imgsim.DifferenceHash(d.img)
+	avg := nr90.AverageHash(d.img)
+	dif := nr90.DifferenceHash(d.img)
 	return Fingerprint{
 		Kind:    "ImgPHashNr90",
 		Hash:    fmt.Sprintf("%08x.%08x", uint64(avg), uint64(dif)),
