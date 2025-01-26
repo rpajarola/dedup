@@ -74,7 +74,7 @@ func (d *ImgPHashFingerprinter) Get() ([]Fingerprint, error) {
 	for _, f := range []func(*ImgPHashFingerprinter) (Fingerprint, error){
 		(*ImgPHashFingerprinter).getAzr,
 		(*ImgPHashFingerprinter).getNr90,
-		(*ImgPHashFingerprinter).getAjdnikCM,
+		// TODO: unstable between platforms (arm/x86) (*ImgPHashFingerprinter).getAjdnikCM,
 		(*ImgPHashFingerprinter).getAjdnikMH,
 	} {
 		if fp, err := f(d); err == nil && fp.Hash != "" {
