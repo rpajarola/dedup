@@ -11,14 +11,17 @@ import (
 
 	nr90 "github.com/Nr90/imgsim"
 	azr "github.com/azr/phash"
+	heif "github.com/jdeng/goheif"
 )
 
 var (
 	extensions = map[string]func(io.Reader) (image.Image, error){
-		"jpg":  jpeg.Decode,
-		"jpeg": jpeg.Decode,
-		"png":  png.Decode,
 		"gif":  gif.Decode,
+		"heic": heif.Decode,
+		"heif": heif.Decode,
+		"jpeg": jpeg.Decode,
+		"jpg":  jpeg.Decode,
+		"png":  png.Decode,
 	}
 )
 

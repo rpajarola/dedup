@@ -1,5 +1,19 @@
 source_file:  "heic.digital iPhone 12 Pro 1.heic"
 want_err:  true
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "255fa7ad5a6205a4"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "f19307e7e6c680e5.38d8a3e3a3a1a2f2"
+  want_quality:  20
+}
 xmp:  {
   comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "255fa7ad5a6205a4"
+  want_nr90_hash:  "f19307e7e6c680e5.38d8a3e3a3a1a2f2"
 }

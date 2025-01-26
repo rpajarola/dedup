@@ -1,5 +1,19 @@
 source_file:  "heic.digital Samsung Galaxy A32 2.heic"
 want_err:  true
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "c40aa8df24dd3987"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "45cfcfe6eee464e.5353ab2b57375755"
+  want_quality:  20
+}
 xmp:  {
   comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "c40aa8df24dd3987"
+  want_nr90_hash:  "45cfcfe6eee464e.5353ab2b57375755"
 }

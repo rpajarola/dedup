@@ -1,5 +1,19 @@
 source_file:  "heic.digital iPad Air 5th gen 2.heic"
 want_err:  true
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "4cf0f8c7c3121ed4"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "ffff7f143c3c1800.1a1a0b0a1a1a0e00"
+  want_quality:  20
+}
 xmp:  {
   comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "4cf0f8c7c3121ed4"
+  want_nr90_hash:  "ffff7f143c3c1800.1a1a0b0a1a1a0e00"
 }
