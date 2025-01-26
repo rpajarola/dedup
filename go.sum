@@ -14,6 +14,8 @@ github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 h1:zYyBkD/k9seD2A7fsi6
 github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646/go.mod h1:jpp1/29i3P1S/RLdc7JQKbRpFeM1dOBd8T9ki5s+AY8=
 github.com/rpajarola/exiftools v0.0.0-20250111073339-725e0814492b h1:TR0G+RZCVkgBWHkCaOfJ+8x0f+96GBS4ob0quT6LmQQ=
 github.com/rpajarola/exiftools v0.0.0-20250111073339-725e0814492b/go.mod h1:cQrmqO8HlkMgPfafRS71ivGtDIlxRp75hNv81DTNV5M=
+github.com/rpajarola/exiftools v0.0.0-20250126081159-71fe7efbba5a h1:jYDjV/Txuye1Kk7yQvP1ebp1E6vDgjBK809kSVgFeKg=
+github.com/rpajarola/exiftools v0.0.0-20250126081159-71fe7efbba5a/go.mod h1:VVzqwLHih4eEgAlLIg14eaQRnHnGvR6U08oXB88Yb2c=
 github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd h1:CmH9+J6ZSsIjUK3dcGsnCnO41eRBOnY12zwkn5qVwgc=
 github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd/go.mod h1:hPqNNc0+uJM6H+SuU8sEs5K5IQeKccPqeSjfgcKGgPk=
 github.com/trimmer-io/go-xmp v1.0.0 h1:zY8bolSga5kOjBAaHS6hrdxLgEoYuT875xTy0QDwZWs=
@@ -27,3 +29,5 @@ golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 h1:go1bK/D/BFZV2I8cIQd1N
 golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
 google.golang.org/protobuf v1.36.3 h1:82DV7MYdb8anAVi3qge1wSnMDrnKK7ebr+I0hHRN1BU=
 google.golang.org/protobuf v1.36.3/go.mod h1:9fA7Ob0pmnwhb644+1+CVWFRbNajQ6iRojtC/QF5bRE=
+google.golang.org/protobuf v1.36.4 h1:6A3ZDJHn/eNqc1i+IdefRzy/9PokBTPvcqMySR7NNIM=
+google.golang.org/protobuf v1.36.4/go.mod h1:9fA7Ob0pmnwhb644+1+CVWFRbNajQ6iRojtC/QF5bRE=
