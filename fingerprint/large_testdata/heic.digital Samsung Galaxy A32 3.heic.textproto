@@ -1,5 +1,4 @@
 source_file:  "heic.digital Samsung Galaxy A32 3.heic"
-want_err:  true
 want_fingerprint:  {
   want_kind:  "ImgPHashAzr"
   want_hash:  "c58c6a9da54c24ed"
@@ -9,6 +8,10 @@ want_fingerprint:  {
   want_kind:  "ImgPHashNr90"
   want_hash:  "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
   want_quality:  20
+}
+exif:  {
+  want_camera_model:  "samsung SM-A326B"
+  want_photo_id:  "2024-01-21 18:27:07.962 +0000 UTC"
 }
 xmp:  {
   comment:  "No XMP data"

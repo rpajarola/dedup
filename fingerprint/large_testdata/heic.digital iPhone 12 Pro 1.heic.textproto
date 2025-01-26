@@ -1,5 +1,9 @@
 source_file:  "heic.digital iPhone 12 Pro 1.heic"
-want_err:  true
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Apple iPhone 12 Pro  3A0C50F8-C0D5-4C4A-B746-0329F218B46E"
+  want_quality:  100
+}
 want_fingerprint:  {
   want_kind:  "ImgPHashAzr"
   want_hash:  "255fa7ad5a6205a4"
@@ -9,6 +13,11 @@ want_fingerprint:  {
   want_kind:  "ImgPHashNr90"
   want_hash:  "f19307e7e6c680e5.38d8a3e3a3a1a2f2"
   want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Apple iPhone 12 Pro"
+  want_photo_id:  "3A0C50F8-C0D5-4C4A-B746-0329F218B46E"
+  want_unique_photo_id:  true
 }
 xmp:  {
   comment:  "No XMP data"

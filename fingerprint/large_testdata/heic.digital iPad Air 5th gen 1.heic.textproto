@@ -1,5 +1,9 @@
 source_file:  "heic.digital iPad Air 5th gen 1.heic"
-want_err:  true
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Apple iPad Air (5th generation)  4D481A26-0D20-441E-B467-AA57627B73DD"
+  want_quality:  100
+}
 want_fingerprint:  {
   want_kind:  "ImgPHashAzr"
   want_hash:  "cc622b0ccb946767"
@@ -9,6 +13,11 @@ want_fingerprint:  {
   want_kind:  "ImgPHashNr90"
   want_hash:  "ff7b7b7178000000.393d18383c0f3991"
   want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Apple iPad Air (5th generation)"
+  want_photo_id:  "4D481A26-0D20-441E-B467-AA57627B73DD"
+  want_unique_photo_id:  true
 }
 xmp:  {}
 img_phash:  {
