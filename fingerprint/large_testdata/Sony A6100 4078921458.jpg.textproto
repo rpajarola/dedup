@@ -1,30 +1,25 @@
-source_file:  "Sony A6100 4078921458.jpg"
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "74ab07f1f083067c"
-  want_quality:  20
+source_file: "Sony A6100 4078921458.jpg"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "74ab07f1f083067c"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "8f0f0f0fffccf1ff.c0c080c7d7463037"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "8f0f0f0fffccf1ff.c0c080c7d7463037"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "akYxDHmZXT90SaB1jcZfPqXH09Tw/7Q9sK+jgLQIkj1tk+Uz0s5Eu2KjGF7QXcm8cmpbfHnBK7sRhlzv9MNxP5mvICX4K9c+XTLJY5ZSID7lPJJed0UUPsBq1cPSHEA8v+X/qa2Vgj2I4RpHkoITvO4QXxI86VI/ZrXutdjXUT5VVpkLyVWvPcyhU6Hyu6g9J+3xN3xNV7vmzHOhQR7VvMNV939YF2K75h1/QGMVVD+GkMID4aRaPpiK5M+m0bE9DIjGk4x7qT0VSFQgiTJUu1kklGMTOtm8OeWvqP/EZbv54A+CdnpUP+Zk3GHgFOo9up8smNzoNz3ITVlvfGhMPfme57YCQKC635JjvzVaSDwQ1xzlc09uOnju3LdS3lU/H/6nCnx62T1YHNR827oNPbJ+h7OSYQE9DIVCcOZaEDoFcZyCna70OxHhPiJwgBI6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "2mmB7s5O0GxL2jb5FpZPJ2xL0jb2hZ/JLG5bkjbkrZYxbDZbDH4HY4Ha4H4+kxJbY/bY+D82mxtYBLbYbbH0mwmLZLZPw4GA"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "2mmB7s5O0GxL2jb5FpZPJ2xL0jb2hZ/JLG5bkjbkrZYxbDZbDH4HY4Ha4H4+kxJbY/bY+D82mxtYBLbYbbH0mwmLZLZPw4GA"
-  want_quality:  20
+exif: {
+  want_camera_model: "SONY ILCE-6100"
+  want_photo_id: "2019-11-04 16:02:21 +0000 UTC"
 }
-exif:  {
-  want_camera_model:  "SONY ILCE-6100"
-  want_photo_id:  "2019-11-04 16:02:21 +0000 UTC"
-}
-xmp:  {}
-img_phash:  {
-  want_azr_hash:  "74ab07f1f083067c"
-  want_nr90_hash:  "8f0f0f0fffccf1ff.c0c080c7d7463037"
+xmp: {}
+img_phash: {
+  want_azr_hash: "74ab07f1f083067c"
+  want_nr90_hash: "8f0f0f0fffccf1ff.c0c080c7d7463037"
 }

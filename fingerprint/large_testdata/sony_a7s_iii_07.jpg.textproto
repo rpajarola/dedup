@@ -1,37 +1,32 @@
-source_file:  "sony_a7s_iii_07.jpg"
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "fc260606f8f8fc06"
-  want_quality:  20
+source_file: "sony_a7s_iii_07.jpg"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "fc260606f8f8fc06"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "10f0f0f02020e02.100151415151a721"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "10f0f0f02020e02.100151415151a721"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "dG9CIL0pcj+32qsbpkuNPoOx6aEz1CY+3s0rwzpPPD4gRgh40Hl5vCgBZ98xEos9pFE5Va8KczxIG1YJ/4xLPykcUc6ByRQ+b/p3vmEzhj37sPLW7OiLPVaZW6//SvW6xKaljxXzi7zyl/Az94slO4xm8yKze4g/rLE8FNKe0j6kXATHMr2JPuob0oHUJoc+KNJm2uaT0TwMFx03dJjmvffSQyUUpyG9I+lHlCcakj/CgrsUHdzYPplH+iAxVqs+UnWx6BoanD4+toJI3DFRPToUqn1NCRC+WIIuF8keCL2uhe/JTCBVP2xpE23Z0Ks9BWFNujJDHj3XlmWx9I4jPRSqFeHuUEM6ofP2mDhs9TvjKn4bD65SupKHYqZsm1U/ViL5+tZV0T3XSFlZrEoIPcE3hyCImTc90k6YwgqsZbqSlXK/NJ4QPIc7qUU/0Fg6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "ObJI+wkmyp/Q8HA5O0wTJ8obG3oH4bmiZJrb3g/H42A4HMo/20k4LY+HJtnYaG0H+mB5fm4PbRa8G00nLTcmbfAbE2GwPZc2"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "ObJI+wkmyp/Q8HA5O0wTJ8obG3oH4bmiZJrb3g/H42A4HMo/20k4LY+HJtnYaG0H+mB5fm4PbRa8G00nLTcmbfAbE2GwPZc2"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "A1B59EAF9BAAEC3F0C97603358445EF3"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "A1B59EAF9BAAEC3F0C97603358445EF3"
-  want_quality:  100
+exif: {
+  want_camera_model: "SONY MODEL-NAME"
+  want_photo_id: "2022-09-09 21:29:51.627 +0000 UTC"
 }
-exif:  {
-  want_camera_model:  "SONY MODEL-NAME"
-  want_photo_id:  "2022-09-09 21:29:51.627 +0000 UTC"
+xmp: {
+  want_document_id: "A1B59EAF9BAAEC3F0C97603358445EF3"
 }
-xmp:  {
-  want_document_id:  "A1B59EAF9BAAEC3F0C97603358445EF3"
-}
-img_phash:  {
-  want_azr_hash:  "fc260606f8f8fc06"
-  want_nr90_hash:  "10f0f0f02020e02.100151415151a721"
+img_phash: {
+  want_azr_hash: "fc260606f8f8fc06"
+  want_nr90_hash: "10f0f0f02020e02.100151415151a721"
 }

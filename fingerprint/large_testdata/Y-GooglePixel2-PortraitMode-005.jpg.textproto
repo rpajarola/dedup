@@ -1,32 +1,27 @@
-source_file:  "Y-GooglePixel2-PortraitMode-005.jpg"
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "8992ac9e535c3c1d"
-  want_quality:  20
+source_file: "Y-GooglePixel2-PortraitMode-005.jpg"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "8992ac9e535c3c1d"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "f979692b2b181c3f.e743435a48d8704"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "f979692b2b181c3f.e743435a48d8704"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "HFeIOfR7aT90vthnouN8PtBxTwpbNeY94kza3V7WCz7dqMlqOJcCPHW1mLSvn0S9oMK8YdKHEzy2raPcgsxmP7IdbMMfhvs9an+WJGNb9z2+c1Ir9LsEPtrw2iWsgO07Bsz3ACRO+jw96FS5P9MTvLbE/JQOdlY/0m5Hrh+GcT40Atwmaru8PfQYtTonB0I99z1FSaC0xzpabWsRe71/vPptMwEPcsu6j8VDjOIpWD/uT8UUejNwPnj8KQv2hsY9QouQtTrWlz3cYizLSu8xOzKyTadQtdc8IWip1fv+VzukkS+186VVPy/u6BLhUwA+v+2GStCVYj3Gg9rjd7llPWm2zydgwsg6FbOrkqUlXbx6WIYF+U/YOt1+prBP91U/YANUC+cVGD6uhDsK4TNtPaxS2qWLNYE9tGI5ceKGBTvZ98pFcbZ9vNQFMk8mufW6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "tHanEkJcJE4P/DZ8hm+DbB70/H4fH4HA4/G4mwPZPk4XHA3A/G4JJ4ZP40gbkpbfH28DbDZHl5fB4/G4HbHYg6B45HB/Jn4n"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "tHanEkJcJE4P/DZ8hm+DbB70/H4fH4HA4/G4mwPZPk4XHA3A/G4JJ4ZP40gbkpbfH28DbDZHl5fB4/G4HbHYg6B45HB/Jn4n"
-  want_quality:  20
+exif: {
+  want_camera_model: "Google Pixel 2"
+  want_photo_id: "2018-03-22 13:17:17.68342 +0000 UTC"
 }
-exif:  {
-  want_camera_model:  "Google Pixel 2"
-  want_photo_id:  "2018-03-22 13:17:17.68342 +0000 UTC"
+xmp: {
+  comment: "No XMP data"
 }
-xmp:  {
-  comment:  "No XMP data"
-}
-img_phash:  {
-  want_azr_hash:  "8992ac9e535c3c1d"
-  want_nr90_hash:  "f979692b2b181c3f.e743435a48d8704"
+img_phash: {
+  want_azr_hash: "8992ac9e535c3c1d"
+  want_nr90_hash: "f979692b2b181c3f.e743435a48d8704"
 }

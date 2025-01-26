@@ -1,38 +1,33 @@
-source_file:  "YDSC00059.JPG"
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY SLT-A77V 0909622764 885"
-  want_quality:  90
+source_file: "YDSC00059.JPG"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY SLT-A77V 0909622764 885"
+  want_quality: 90
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "59ad6ece2c1b1521"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "59ad6ece2c1b1521"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "f8e08199f30301f7.1ef7d4ce98407872"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "f8e08199f30301f7.1ef7d4ce98407872"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "BvBG/u25aj/xIkTab1ybPqm/DNcakCQ+hKdpQlxcAj43w48yl/IiPOpJE4hk8FY9eHugmmeCF7w9OkglVvBSP9YkhwAyaGM+qd6S5O0EyT2uAQVMxzeNPZBuWUkKsUe7bj5SDT0FuryealRVfMAru89I08JMBVg/o5uSWaGlYz55buHOt6ixPcPVdT1I4cQ9ErtRTh9mjLtlOAhAHNfRPOSWxAHfMoU78L0wRs/MYD/Ebn5o0zR6Pnc/B9Wwp9M9BVORIKZz2D3yZ94t+ta7u67peHdZvQo9o0ym9m6jsjtc0xP5qVhSPxdhZxV/zwk+FxF98No/PT2Z/RSMIcVrPbAlgqwiDKW6u8Lt/428d7zxgxH6KkrROhAMF8zOnFc/wkXd4MkhIj5llayJsSOJPb4mAd2n0nE9IxDUIlqI/rrujPdjDkOIvHFaYD1Rz+q6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "5DJkkkJMkD43HY2k1tW03ZE2ZIf3BP0hJH+2Lbb23IpKbA+kZLbkz0bZP6XkZLb2jNLYJ0k2JLbkkmbLQLIPZLZ2hLbGAJs8"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "5DJkkkJMkD43HY2k1tW03ZE2ZIf3BP0hJH+2Lbb23IpKbA+kZLbkz0bZP6XkZLb2jNLYJ0k2JLbkkmbLQLIPZLZ2hLbGAJs8"
-  want_quality:  20
+exif: {
+  want_camera_model: "SONY SLT-A77V"
+  want_camera_serial: "0909622764"
+  want_photo_id: "885"
 }
-exif:  {
-  want_camera_model:  "SONY SLT-A77V"
-  want_camera_serial:  "0909622764"
-  want_photo_id:  "885"
+xmp: {
+  comment: "No XMP data"
 }
-xmp:  {
-  comment:  "No XMP data"
-}
-img_phash:  {
-  want_azr_hash:  "59ad6ece2c1b1521"
-  want_nr90_hash:  "f8e08199f30301f7.1ef7d4ce98407872"
+img_phash: {
+  want_azr_hash: "59ad6ece2c1b1521"
+  want_nr90_hash: "f8e08199f30301f7.1ef7d4ce98407872"
 }

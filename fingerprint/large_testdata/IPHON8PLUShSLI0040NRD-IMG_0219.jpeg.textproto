@@ -1,32 +1,27 @@
-source_file:  "IPHON8PLUShSLI0040NRD-IMG_0219.jpeg"
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "44cf36094724d9fc"
-  want_quality:  20
+source_file: "IPHON8PLUShSLI0040NRD-IMG_0219.jpeg"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "44cf36094724d9fc"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "ff8181c3c38380db.9e9a946861c9cecc"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ff8181c3c38380db.9e9a946861c9cecc"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "kvMG+kRwZz93wbQ84IKAPqStp/ht2fw9bgikIZsZBj6chqzwfqQYvKJOcY/c8kO9kKrg/NUJz7tErfEFjUheP1ZUr7DIkmo+FOrCTz7ayT0OvPttHxHgPbw0MGzoCLe7kM2aS/BFHb3eO6HH2+rAu0RU+wqnE1Q/Yl23O3CzJz576PWW0iKKPYgcSyPHo3Y96vxGo3NRB7tEN97PpMuKvLJGoEVI5Os6fidgpL3nVj8rzCfKrhAxPrztcmpZPo89pscoXARnVT2kGvj+G7jVus0XxIuGGGG8zrbrXRF/xjr067YqpfpTPyoDMj3zgPg9O85KTzgkST3MlUj01NpkPcbYgpR7GsE6AMP/Q2XOaLy5mjK6i3XIOqM/xujFDlc/ovcYetynAT6d16ucNIFtPV8q0r3REnk9C70tkmIV+bpBDGJhJjFxvIw+nFqJtfA6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "BYPH04A4PDckJbZmwLHKWP8kbJP2w7H82A8mZHY/AbbOmS0mJ4/PWHmz83O0H4vH/ZTXHTcm5PI8Hg4Bbm0kZGw5E7H/IyGg"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "BYPH04A4PDckJbZmwLHKWP8kbJP2w7H82A8mZHY/AbbOmS0mJ4/PWHmz83O0H4vH/ZTXHTcm5PI8Hg4Bbm0kZGw5E7H/IyGg"
-  want_quality:  20
+exif: {
+  want_camera_model: "Apple iPhone 8 Plus"
+  want_photo_id: "2017-10-10 12:07:41.184 +0000 UTC"
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 8 Plus"
-  want_photo_id:  "2017-10-10 12:07:41.184 +0000 UTC"
+xmp: {
+  comment: "No XMP data"
 }
-xmp:  {
-  comment:  "No XMP data"
-}
-img_phash:  {
-  want_azr_hash:  "44cf36094724d9fc"
-  want_nr90_hash:  "ff8181c3c38380db.9e9a946861c9cecc"
+img_phash: {
+  want_azr_hash: "44cf36094724d9fc"
+  want_nr90_hash: "ff8181c3c38380db.9e9a946861c9cecc"
 }

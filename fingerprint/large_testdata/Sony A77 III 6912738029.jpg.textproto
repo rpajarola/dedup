@@ -1,37 +1,32 @@
-source_file:  "Sony A77 III 6912738029.jpg"
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "87ed2b33e58a0a0b"
-  want_quality:  20
+source_file: "Sony A77 III 6912738029.jpg"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "87ed2b33e58a0a0b"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "204143f7f7f3f.2025c35b13442326"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "204143f7f7f3f.2025c35b13442326"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "z5d5cTcCZD96y5KgcvhGPglqOfI3KKc9kcpgEz0cwD0hHuvdJlNyO4wHtzslC+W8oTHkeZMngbvsCHeu6j5UP6ozYa536wY+JGioQzgxrT2XMBDrgXWKPWXE6+2HDiQ7xl8IYGM8ibyuAlpnEK00uxZ3UTG9gFg/ecZOcVhiKz4/Sok65CzQPUHd/BBCpsI9xE9A1aArlLu3paUsu5HdvLMtHjx1UZQ7SkyQYrzQXD8dbSdDhJg2PklIURl5it89ROPDuUUV0z3Kw2sL8Mi2u/ZMPvRRYfK83n26j/FbsjsWIIlFCapYP2+S+UwdX9I9oGlo7a4MRD0t2KZzxY0jPQtKmtEi92Q6mswhl1wkDDwgj1E8ZypYOk7MQeL7sVY/jL+kmgH86j39+GbUYn9RPYoWIY19OXQ9RopMLHixzzoQOMWjBrVwvK62kiZ5a+a6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "i6Jtm4LYfPkhm8m2Ev0NJ0hL0k7PwjU5ZzANJbbH5M6BJDZLH4bJbY5LG4gPqWwLcjDab+DJD5ZbA2bXgNhLJbJA4LGxJmZf"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "i6Jtm4LYfPkhm8m2Ev0NJ0hL0k7PwjU5ZzANJbbH5M6BJDZLH4bJbY5LG4gPqWwLcjDab+DJD5ZbA2bXgNhLJbJA4LGxJmZf"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "914F94B59194DECE1E03735B53FE61F9"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "914F94B59194DECE1E03735B53FE61F9"
-  want_quality:  100
+exif: {
+  want_camera_model: "SONY ILCA-77M2"
+  want_photo_id: "2014-07-06 15:24:32 +0000 UTC"
 }
-exif:  {
-  want_camera_model:  "SONY ILCA-77M2"
-  want_photo_id:  "2014-07-06 15:24:32 +0000 UTC"
+xmp: {
+  want_document_id: "914F94B59194DECE1E03735B53FE61F9"
 }
-xmp:  {
-  want_document_id:  "914F94B59194DECE1E03735B53FE61F9"
-}
-img_phash:  {
-  want_azr_hash:  "87ed2b33e58a0a0b"
-  want_nr90_hash:  "204143f7f7f3f.2025c35b13442326"
+img_phash: {
+  want_azr_hash: "87ed2b33e58a0a0b"
+  want_nr90_hash: "204143f7f7f3f.2025c35b13442326"
 }

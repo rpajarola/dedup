@@ -1,38 +1,33 @@
-source_file:  "heic.digital iPhone 12 Pro 2.heic"
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPhone 12 Pro  8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
-  want_quality:  100
+source_file: "heic.digital iPhone 12 Pro 2.heic"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 12 Pro  8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "788e0831fcff1f00"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "788e0831fcff1f00"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "7070f0f0f0f0f03.93c3c2c2c3c39119"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "7070f0f0f0f0f03.93c3c2c2c3c39119"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "px5JK3PgYj9BI4oOTRWIPvmLxTfkcAQ+25kPXh+z5D21Rhp/TWzkO7TSfCE1mNG8oYxWV78P4bsmrDVZ6f5rP5LJqpmc3KQ+wCm8hh8jhj0AG2WO1IIqPt7OsEES+gw85MT2ZMWNc70WSF3DEccLvJw9wveVpVU/3l+eajxzWD6gl5F6/83cPRsYBrVneOs9WfEi70r64Dsct8PSCy8dvWQACWgeIq2734xdCPhNVj9/YUMKvBpcPlDA3yIwUuE9ohPxYDZH8D1leXkjIKznO8/b0jQKdSK9ADAGwqtPw7twHJVpEVZVP5rQ2lxrlL498MOHVAg3Lz1iFOrzNbkRPWRzn6CLmkG6VR8ZAuwBwrvrmksswbwlugRUHCJCiFU/cw3dQbCsuj3BtgPeXCZGPfCwK61hKzc9RvtrdzAeezoJif5JXj4cvAVTwZ840oK6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "LjI0Hw23I7HYk00+nI7A7H5P2w3k3IZJbk5b2QHgoHA4HA4fZHYDYHA8H4PAG5LLcDE4PA3AB4bJ7J7H4/HwH4/NjY5Hg8HA"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "LjI0Hw23I7HYk00+nI7A7H5P2w3k3IZJbk5b2QHgoHA4HA4fZHYDYHA8H4PAG5LLcDE4PA3AB4bJ7J7H4/HwH4/NjY5Hg8HA"
-  want_quality:  20
+exif: {
+  want_camera_model: "Apple iPhone 12 Pro"
+  want_photo_id: "8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
+  want_unique_photo_id: true
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 12 Pro"
-  want_photo_id:  "8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
-  want_unique_photo_id:  true
+xmp: {
+  comment: "No XMP data"
 }
-xmp:  {
-  comment:  "No XMP data"
-}
-img_phash:  {
-  want_azr_hash:  "788e0831fcff1f00"
-  want_nr90_hash:  "7070f0f0f0f0f03.93c3c2c2c3c39119"
+img_phash: {
+  want_azr_hash: "788e0831fcff1f00"
+  want_nr90_hash: "7070f0f0f0f0f03.93c3c2c2c3c39119"
 }

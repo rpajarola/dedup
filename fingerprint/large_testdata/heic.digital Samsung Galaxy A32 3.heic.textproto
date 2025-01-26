@@ -1,32 +1,27 @@
-source_file:  "heic.digital Samsung Galaxy A32 3.heic"
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "c58c6a9da54c24ed"
-  want_quality:  20
+source_file: "heic.digital Samsung Galaxy A32 3.heic"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "c58c6a9da54c24ed"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "NH4RNvpObD8xppCcV3eIPjSPB+Z+1CE+n1TwQB8EID51dRwOZY9QPNQ63UF0vGq9MurtC1uaKzxzkBBaYJtgP5g3KJj6p/89dJXw4TAG7j2fNDNmxs/HPUabuwo5HbE7jWgWtyrDzzw0Lbg6SkukO3Y63s1Bf1c/WZP0ZFFyWz5FcCnR75aCPeQWIpStL5Y9NPf4FmxaLztGfiwmRxawvAdJD1Bhjii7PrLQVJQ1Wz8dpq6qkNdiPp4yi2ZEkYA9NFKpiz3uoz1s3ksUll8puz4JRBj+hpq8hDgVQXy6RbsUH6+AvclUPzNyTy3k+gw+UGCOPMRwRz0WtUcVspuLPbeKzEhLtfc6rEoAbmRfmLwW7hq1n3gCu7EBTCYFdFY/WDDdv1Ks1j2+YDLgiBVyPaVOmH7034c9vtTfeyr9EjvdiswrWvV6POgzZ9HR6gW7"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "2gnG3A4HBB70bH4+HY/DIyPGH4HH4+F4fD4fB/k2g0C7c/LGhejLz0pYbH44jeg+hL8D06R50j0gOgJfA2HJk+2+AF2hLm7L"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "2gnG3A4HBB70bH4+HY/DIyPGH4HH4+F4fD4fB/k2g0C7c/LGhejLz0pYbH44jeg+hL8D06R50j0gOgJfA2HJk+2+AF2hLm7L"
-  want_quality:  20
+exif: {
+  want_camera_model: "samsung SM-A326B"
+  want_photo_id: "2024-01-21 18:27:07.962 +0000 UTC"
 }
-exif:  {
-  want_camera_model:  "samsung SM-A326B"
-  want_photo_id:  "2024-01-21 18:27:07.962 +0000 UTC"
+xmp: {
+  comment: "No XMP data"
 }
-xmp:  {
-  comment:  "No XMP data"
-}
-img_phash:  {
-  want_azr_hash:  "c58c6a9da54c24ed"
-  want_nr90_hash:  "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
+img_phash: {
+  want_azr_hash: "c58c6a9da54c24ed"
+  want_nr90_hash: "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
 }

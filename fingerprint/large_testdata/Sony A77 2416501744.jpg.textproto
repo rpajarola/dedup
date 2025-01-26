@@ -1,37 +1,32 @@
-source_file:  "Sony A77 2416501744.jpg"
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "fd38a1ca383ea605"
-  want_quality:  20
+source_file: "Sony A77 2416501744.jpg"
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "fd38a1ca383ea605"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "ff52161e141e0606.4d4d4bcb8a83a32b"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ff52161e141e0606.4d4d4bcb8a83a32b"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "UC1mDNfMaz/oWykbk06SPgnMd7+6RQs+GhLK2UTzCj5ir5iLIyoPPHqODuU9mVQ9XEjTJ1V2JbzerkeD1jBZP6uW/W+0n08+3G9y52C/yD2KxVs9/qHHPXuvBT2MaqA7m/GhHeHl8zxdDsVMXySMO+o0Z9kyx1Q/x2UkjbaLSz4sDI2SUq8bPTSII0B8jKo9KN9JKt48ETvb8ZzqiaPWvKXIbHTMuxq7xXG//+80WT90cSV+Fy5oPs7na3PFva49Em0Fyaslxj1vhHK3XbiLO5r0mjaY0QG9BdKL1zInhztdr2ef5nBTPxm8gRSv5BQ+EbefTAQ8dz0b157/16lcPU/OdOWbDtI6wJldMWl8ZTw8YZw6Lt3MOogs0LNf6VY/w+EGqOJUEz5XbF3TosdlPU5+BEZpEGw92HH7772B4LrJI6qJYaJsPACelFoDHtw6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "2HZzDHB4/2Hw3B47H4nH5wMHQ4GB/4/BLY0lcwPJo+GxP0mk2zPkmD4/Hw3b0HAzInTDEk4+J4PJ7D4nE2mkDfg9GsPIZm4n"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "2HZzDHB4/2Hw3B47H4nH5wMHQ4GB/4/BLY0lcwPJo+GxP0mk2zPkmD4/Hw3b0HAzInTDEk4+J4PJ7D4nE2mkDfg9GsPIZm4n"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "DEF92186DF272963C04750273469F46C"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "DEF92186DF272963C04750273469F46C"
-  want_quality:  100
+exif: {
+  want_camera_model: "SONY ILCA-77M2"
+  want_photo_id: "2015-01-28 20:24:27 +0000 UTC"
 }
-exif:  {
-  want_camera_model:  "SONY ILCA-77M2"
-  want_photo_id:  "2015-01-28 20:24:27 +0000 UTC"
+xmp: {
+  want_document_id: "DEF92186DF272963C04750273469F46C"
 }
-xmp:  {
-  want_document_id:  "DEF92186DF272963C04750273469F46C"
-}
-img_phash:  {
-  want_azr_hash:  "fd38a1ca383ea605"
-  want_nr90_hash:  "ff52161e141e0606.4d4d4bcb8a83a32b"
+img_phash: {
+  want_azr_hash: "fd38a1ca383ea605"
+  want_nr90_hash: "ff52161e141e0606.4d4d4bcb8a83a32b"
 }

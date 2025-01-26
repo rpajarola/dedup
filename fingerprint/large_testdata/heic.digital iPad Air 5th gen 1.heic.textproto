@@ -1,36 +1,31 @@
-source_file:  "heic.digital iPad Air 5th gen 1.heic"
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPad Air (5th generation)  4D481A26-0D20-441E-B467-AA57627B73DD"
-  want_quality:  100
+source_file: "heic.digital iPad Air 5th gen 1.heic"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPad Air (5th generation)  4D481A26-0D20-441E-B467-AA57627B73DD"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "cc622b0ccb946767"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "cc622b0ccb946767"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "ff7b7b7178000000.393d18383c0f3991"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ff7b7b7178000000.393d18383c0f3991"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikCM"
-  want_hash:  "Tcf6RMb2YD8f1GBYkxSFPhn4LAr0e9M9GpKfV5pa4D21qHB/zErAu1Z+hoomfBy9aN8CnUYCxLuMJwmR11RPP5V2f5/MBxU+HHz/bNYxqz0uMMp+kYO/PeSIbvKjQX67i8vKjNg+ybyREr/vVVR7O+4wFXEkblc/wmfv4plzVz6gJuNRxpPzPdm2Qj/J7fY9xFyE4mtqzDuYMaMPhuAgPbCdmc5HJ/47FWVYzn+jXD9pQGpqr+hsPhUQIQNN8fo9axKkY2ZxCz46hYLI9LwevClJ53zUQUA9CtysflDlBzy6uLMrw9FSP/WYO/KGbvA9hKAej4OIkD2WkzJamhB2PVAJSHOxWs26syLZwE73czwKC4k8lkYKu/Y4d3YUrFY/gRR6cCGk0D1A8SYJUvw1PYNel92R1YU9so08mbVK8zowUvHgwd1zvJRX2qEqTOE6"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "7LJbDZkxP6GwJ5LZLZmg/23YHgPexLH4/GxbH4fG/k/HA2zZ4HQ2+0Ze4E5LG4d2ek+A3B5P2g/G4nA/GZLJ/HZZ7bHY/2w/"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "7LJbDZkxP6GwJ5LZLZmg/23YHgPexLH4/GxbH4fG/k/HA2zZ4HQ2+0Ze4E5LG4d2ek+A3B5P2g/G4nA/GZLJ/HZZ7bHY/2w/"
-  want_quality:  20
+exif: {
+  want_camera_model: "Apple iPad Air (5th generation)"
+  want_photo_id: "4D481A26-0D20-441E-B467-AA57627B73DD"
+  want_unique_photo_id: true
 }
-exif:  {
-  want_camera_model:  "Apple iPad Air (5th generation)"
-  want_photo_id:  "4D481A26-0D20-441E-B467-AA57627B73DD"
-  want_unique_photo_id:  true
-}
-xmp:  {}
-img_phash:  {
-  want_azr_hash:  "cc622b0ccb946767"
-  want_nr90_hash:  "ff7b7b7178000000.393d18383c0f3991"
+xmp: {}
+img_phash: {
+  want_azr_hash: "cc622b0ccb946767"
+  want_nr90_hash: "ff7b7b7178000000.393d18383c0f3991"
 }
