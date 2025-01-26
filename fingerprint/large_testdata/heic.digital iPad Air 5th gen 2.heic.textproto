@@ -14,6 +14,16 @@ want_fingerprint:  {
   want_hash:  "ffff7f143c3c1800.1a1a0b0a1a1a0e00"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "+KeOSKu1az+rYAgCwBSaPpwsCofki0M+0jJ0cX+1GT6Si9odwoNWvFDqq6YlJzy9UwP07+zQRzzmapgbZKVRPx2Ns4UpxFE+npnAOW1Ioz1Y4WQ8Fku3PXU/ayzv9HM7hS2wAdcd5LzZqjIbm6FhO/wvBCO7EFk/XGm+ShlKRz64ozi3rfUaPh/av5Nf3pc9TveQ1dkxgjtAkym1CUXDPEUMkXBWxWQ7IEjp1EfVXj8I7En+c+xRPjJnWZJ7Pik+S6oC97f2wD1oJvlKGLm7uwC3fK20RGE8WeTaPcQBwTuyGxlu+otTP8ZaDaAZWdc9EXlKJspufD3Un882RVUOPQVsp2+ZcGO6Bx5zCn6J/zvrKYsaar04OokU6ahqBlc/3smF4OapFT6b6eaUAi6CPc3NQtk/vG09NUXKFuQB1rrgTdDvOImAPAlo0deF5PS6"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "L5LA4HG3kE5LJZJ7Ho2m0LLaH+24HH4HIZLL8G07PZ/EmnX4E823A7H4+8HI2A3E4HA8M/GbD5Pg8nw0mtuXG4Hw0nm02E4T"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "Apple iPad Air (5th generation)"
   want_photo_id:  "39247AF2-FA9F-41B3-92DF-2E53D34D582B"
