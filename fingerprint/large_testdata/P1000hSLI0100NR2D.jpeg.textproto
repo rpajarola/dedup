@@ -14,6 +14,16 @@ want_fingerprint:  {
   want_hash:  "bf03a1c3e78190db.929ab44861c8cacc"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "EN/BGVdPaz9iuz1ZmnpCPgsj9t3Jyvk9nNjxhfzXBz7xHetZVxwYvMDSUt/wUy69ZzJXnWAnBLzizcOOgHVbP40mPws97Hc+Dt6GX0ON3z0GgJOuK1TTPRBhE5Ry9Gs7ps3eT++XE72bP0tSA9K9u9nyHFULtlM/kfaT4VbSQT50kd1fIDWJPfTHsm/iko49cq7lJxIOJbtsFQQ3+KK2vPs2ohKKISA7LaE2o8YhVz8U28SfaWxJPtEjkmzY94Q991t3hDF/VT2KR3qlB5fEOkfRDpPvmH+81M9Q/ElY0Tp4ZjI/ALBTPwswgyHosv49jqXN5LGaSz3BLj3v/cxpPTKHeL4s3cg6kSUuEwQabrwtnVIj+Y/ROvC0KEbAXVc/4vSqRB9oDT7xuuJXNXF4PSPc9u96nYA9+PhEQtfABbsEv41kaHOAvJf71OcUEQQ7"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "BYfmnwjYLLMmLbZmwL/BbJe0bI/3hYH6flYmZHY/BJbemZckJ4/HfHSx+1EkB4vH/YbfkZcm5NI4Hk4DL2+2ZGwbEzA7Y6C0"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "NIKON COOLPIX P1000"
   want_camera_serial:  "30001701"

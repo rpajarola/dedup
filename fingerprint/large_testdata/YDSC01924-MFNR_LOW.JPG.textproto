@@ -14,6 +14,16 @@ want_fingerprint:  {
   want_hash:  "ffeeefff28212100.15e36761a530b8f8"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "9hvE0C4SZj8q9LEIR+WbPvyGzOmHVBw+frlsaiEZ+D1Mbl9UVd8QvFKmOBKNck+9drKyeWg/BDw6nl3V46hWPz6Bs/kFJio+HyW3xgIr0T0egMWwapHDPXqTYkHyz507iGy6tQxDrbzI2uYXBI+Fu2jA0Kp6CF0/KXvAeSPaZD448B68G5vePScyg0BzAeY9q5kTvgMj0bvgN6u+b5YgvfDVxst2h9I75q99y7NzYj99N4dETwB6PjN6LCdnPMY9e0f+WiKi9T1qF4oqUzHZu7PRcFzM2zm9mpNLMZbD4DuhTJ3Qzp5TP3zVRtRang8+TEIK8hpwkD2WeaVWRH1zPXPqk3aUwAK79PeaZaKegTyGs2LiIT72OrcO1/sOg1c/mKFgAiVHNT6UgcfZ/KmjPbSDA9jbpo89uHzycfdTOLvdbfiUk5SvvFoDo5jHhxC7"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "H82J620jJkn0kovm22kjb6E221kmwam3wJf40jbk2mE4HB5023g8Gm0mDJck5Hg+HI5H48EnxM0DckknNbNLkgPbckkwmbKL"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "SONY ILCA-77M2"
   want_camera_serial:  "173014736"

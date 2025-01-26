@@ -14,6 +14,16 @@ want_fingerprint:  {
   want_hash:  "bf8181c3e78391db.9692986861c8cacc"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "RhgXzMmrZT9CkKiESNVPPsN16uIGOaw9oYrW2aQP8T2xvPssamLPu2ZVFEVyaBi9r41VSSf6tLuktJxma1VcP5Me5vZ65W4+9r3mB9xqlz3uSuKdH+7SPcVYBgK+h5A7wlshjKLPEL311opPrqKSuwKsPPF6uFM/mPfydu5vQT5Dy3ERUVeKPVeYsOXfiYc9PVY/YqK9F7seDhkP/UOvvGr4VK775Rs7HqqtcEDqVj9tyq94fPRLPlo5r7X7cpM9RttxkpbYVz3l9Bjq6GPZuoTdlA4HfX28UEbU1WKi0zquCTnhWfBTP31nsgzEsPs93hxiv9VAPD3K8PRBdjBdPSQyDBtjeaU65IPq8FIUY7yNx75tuuS3OgAtED0rBlc/4/CcVmGBAD7kTLCRWSRhPYCH81Tg1HE9jV2kgYMO6rrirJ6OjEpivKAw1Fmw7dE6"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "+AHA4H4gbJekJZb02BA5bJ8kbbH24/A6f8uWZHY/A/bembckB4/H/HWxe+MkD4vF/YbeHJcm5P4/Hk4Lb22yZHA4DZH/A5Og"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "SONY ILCE-7M3"
   want_camera_serial:  "28ff00008809"

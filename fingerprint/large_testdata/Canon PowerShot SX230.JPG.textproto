@@ -14,6 +14,16 @@ want_fingerprint:  {
   want_hash:  "373b3be0c1c1b1f1.98880cb4fad29c9a"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "5Uo00fYVcz+DEglinT7DPtqJN2g7yT8+FCHdNkcr8D23j4AQmaQFvCXjuwXIkUe9DTFy6nMxFLz4HYKzB6FbP3p2gtkPb2I+Ijfewet99D2qyu3KWzvsPa/cKIhoe7W750v3b8RCIj03O3Zeu+Ptu2SkvAyOkFM/8m/pJQL9ZT4COzaPEJSYPTv00bpGA649+ZCGTVT5VbsB1yRhD/agvDxDoaEHjFy7Ti94jjVXVz+uc71IwwBhPmKD+6qppMA9jqXx0+s/oz2YDjADRmNlO0mmxL9OUdi8clDKt+MSNDteKFrs5XtTPynuhHh+S0c+/T2yqbVqlj0/XDLKyLCVPVnf/uLcxze7RCjWZxiLwDxnD/yY9Rwyu2BebLhDYVg/yMgjHL+mYD4o9+2Y0TbEPUOc51Dy6449Gil0fFKfQbvLfpzOU1XAvGyTAiWFhkC7"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "mzJA5LLUi0nI2A/D/4CYmkxPB/Z0g3+nYE4m7O0Dfw2ZGZOYLHY7LZeEnLfkBYZMvY8A7L2hZI3Y34HJfD+kB/A5E3ZBbbH4"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "Canon PowerShot SX230 HS"
   want_photo_id:  "a0d2aa0209df07a36eb503a1e039ca22"

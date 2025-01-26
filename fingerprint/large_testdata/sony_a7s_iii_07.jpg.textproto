@@ -10,6 +10,16 @@ want_fingerprint:  {
   want_quality:  20
 }
 want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "dG9CIL0pcj+32qsbpkuNPoOx6aEz1CY+3s0rwzpPPD4gRgh40Hl5vCgBZ98xEos9pFE5Va8KczxIG1YJ/4xLPykcUc6ByRQ+b/p3vmEzhj37sPLW7OiLPVaZW6//SvW6xKaljxXzi7zyl/Az94slO4xm8yKze4g/rLE8FNKe0j6kXATHMr2JPuob0oHUJoc+KNJm2uaT0TwMFx03dJjmvffSQyUUpyG9I+lHlCcakj/CgrsUHdzYPplH+iAxVqs+UnWx6BoanD4+toJI3DFRPToUqn1NCRC+WIIuF8keCL2uhe/JTCBVP2xpE23Z0Ks9BWFNujJDHj3XlmWx9I4jPRSqFeHuUEM6ofP2mDhs9TvjKn4bD65SupKHYqZsm1U/ViL5+tZV0T3XSFlZrEoIPcE3hyCImTc90k6YwgqsZbqSlXK/NJ4QPIc7qUU/0Fg6"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "ObJI+wkmyp/Q8HA5O0wTJ8obG3oH4bmiZJrb3g/H42A4HMo/20k4LY+HJtnYaG0H+mB5fm4PbRa8G00nLTcmbfAbE2GwPZc2"
+  want_quality:  20
+}
+want_fingerprint:  {
   want_kind:  "XMPDocumentID"
   want_hash:  "A1B59EAF9BAAEC3F0C97603358445EF3"
   want_quality:  100

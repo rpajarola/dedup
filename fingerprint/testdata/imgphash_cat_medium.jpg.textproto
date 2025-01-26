@@ -1,25 +1,35 @@
-source_file: "imgphash_cat_medium.jpg"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "f4d05e07c1a43aad"
-  want_quality: 20
+source_file:  "imgphash_cat_medium.jpg"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "f4d05e07c1a43aad"
+  want_quality:  20
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "fff83838b8183800.919b8d8f9e9f5d97"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "fff83838b8183800.919b8d8f9e9f5d97"
+  want_quality:  20
 }
-exif: {
-  comment: "No EXIF data"
-  want_camera_model: "fixme"
-  want_camera_serial: "fixme"
-  want_photo_id: "fixme"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "By4SWU6ydD/cmm7c346PPqwg5agaRxE+S5GPsE98CT4gl3V3HcbzO+5WFMEx+la9ZPl4HlCBJzyUqFWZti1WP4oAibeidWA+hRm+N0b/qz1xYWHncdmqPZlna4NdDU674eBbYWE847xKmkwUK75lO+8qVvYoaFE/sXTNM8kEIT6mdHaMN1OwPbBjFxM/PYw9X09sHNq0NrumO9cpiMiRvDzIhTD7dCy7xToGoqDAUz+T3rQneI0jPuIF6PQ1vsA9UoCwlm7DnT1WNdQzHLRbu1QaC2V3LZE8dlLZMf92QzsjbrcFYQxVPwPiR97APQA+9+CQ73wEdj1Enm3ug6dkPfgHAhOnaNE6WtdK46BMbTzrh9xYNGnhOq1R6A86w1o/oqx8l/J6Jz577IxptZEVPWAAbNOL9G09GRdXWO9BtLoAVw+E3dU2vJd6tf2r3ro6"
+  want_quality:  20
 }
-xmp: {
-  comment: "No XMP data"
-  want_document_id: "fixme"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "7H520kZI3Lfg/hP2BLG4v7E02z42F4bAL4gnm7MDfw8HI2H42m2BMmLeZb34EwnH4n43BA4Ww3JyxPkxZ220F05wPJ6LJkzJ"
+  want_quality:  20
 }
-img_phash: {
-  want_azr_hash: "f4d05e07c1a43aad"
-  want_nr90_hash: "fff83838b8183800.919b8d8f9e9f5d97"
+exif:  {
+  comment:  "No EXIF data"
+  want_camera_model:  "fixme"
+  want_camera_serial:  "fixme"
+  want_photo_id:  "fixme"
+}
+xmp:  {
+  comment:  "No XMP data"
+  want_document_id:  "fixme"
+}
+img_phash:  {
+  want_azr_hash:  "f4d05e07c1a43aad"
+  want_nr90_hash:  "fff83838b8183800.919b8d8f9e9f5d97"
 }

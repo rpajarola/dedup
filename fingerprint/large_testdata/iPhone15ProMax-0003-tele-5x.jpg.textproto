@@ -14,6 +14,16 @@ want_fingerprint:  {
   want_hash:  "7ffffffff.80404249b930000"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "b0Ff1HMxgj/MTiiOKvCqPpeDT2ZAFls+pGV0WhCgRT6DYRbzsQ2XvEU77UrReJs97AacmcoNpDxmbbKDq/NIP2uRHSIBGEQ+4z42LER+pD1zbYofijaSPURQxWoJuD47BskwKciovLxxYWISuXATO65wEIqYM1c/v27XiTF2oT4Ry5YEd1m1PVI2obdIm6890T3i1LTEVzt/xjlqiLD4PP+I+D9HJHE7/0lvo1CfXj9TPiDghFyuPvIXrdWgQs49yA2m4Wg5vj2qWV/WI8OLO5VFrngTGxU9KM00kgxYjTvzMN8wcfdSP8iSF7sqtgI+OmdsVRHqZj3r4oTxWA1yPRw1EEElmus6oEN2lkRVd7zw0/pG8hDhOsyCXSv7rVk/USUsC4DnIz6chKLhhy+OPXPkDsBWw509+zluryf9QTs4+q8xEMezPKZ91t3fHzA7"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "k0m2kmLazbegk022mkbLbA4Xm0k0mkZPIzcm20mA42LbZbHg2028nILYbLY9202m0m5IPZn420mk4HL7U4DMm022wLLfCPM2"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "Apple iPhone 15 Pro Max"
   want_photo_id:  "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"

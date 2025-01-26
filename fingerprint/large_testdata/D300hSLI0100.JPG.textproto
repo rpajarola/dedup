@@ -14,6 +14,16 @@ want_fingerprint:  {
   want_hash:  "9f8581c3e78391fb.8a92984871d8dacc"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "wUXhC6OsZj8laU9dTmF0PrIdqVgPHtk9fJEmDy9b+z0/V4xqolj2u1omQTpwnCy9REwOPuPMujv+Jg7GDplbP/qVgrrqlYA+TM0SneMNxD0V0d1BhfvJPWajNcwC4pE7PiCfJMNrD73+cusZHDygu0xyzQqzkVE/lsnHBxRGPD6KUgqmi1OGPacRHYaHcIo9gmM3gBaPGLvNVllA6mmxvJ8TJrrYwh87eKo+6VWNVD8mCXzOBqVDPvxwrz09z4k9pJf1b2JRdT1IrgPNN/vluou+m8aqfaC8pSCaMaFnBTsQQcEvnqRTP4TmM7QJhwE+eJJgVz5qOT3420NNj+dcPciJuYpehXC6lpCAjfDBXbyg+B1AxnW4Opa8+6YUalc/o7/GwZUFBz7+svzI40xtPcd7MnCqn349/B9yJuZEBLu0A20oDQ+BvKDANVf6cJq6"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "G4HA4HB5bJcmBZb02BA5bJ82LbF2I3A7b8nCZHZ/Av5O2JMkB4vHfAbZP/Ek5IPD9sLfk5MkJNI8Hk4DbH+2ZHA4EZH7A4Gw"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "NIKON D300"
   want_camera_serial:  "3005346"

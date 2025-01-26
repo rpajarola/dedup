@@ -9,6 +9,16 @@ want_fingerprint:  {
   want_hash:  "190011a10113fbfb.c4eacbcac087c9c"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "pHbeOB6ncT+I0NU4cRBsPvTpiLzZsC8+6CMQQEN20D2PchfjYA/VO4QAoyraLOM8Yp/uP6S12bsTcMZFnyhUP70mO/Pn+Ss+bDa3sWDMyj3bsnarE3yiPasIqMAKqU27Ef55g2P2sjzxWvUQ3Z5ou/741gBZ2Vw/afUx+k0tTj5zqUQnkfrUPWXTSXe4E7w92NIQHAVClTvUG7CI76DBPPc6A5aW9lM76Lix6JzaYD9TTC0swxlcPgYln0825OM9VF01tJVRyj0l9cpk4Z+yO/fNspg+Fds8jMzwUPSLhbuyGQGDI5FUP0Jy6QpSut09q6AnnB1IZj2AusW5sXb4PMDz2Dcb/jc6YcfYn+YO7ruwfQiHxl4fOqom4npR5Vc/zDQjnyHlpz0YLjeb/pN/PSm1JjvU0E09DzM47ECsuDqAKAS5qKEnvPKAbyICBMC6"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "JMk2xLkxtLM2E+0hJzG4Hbc2c05J7Q/HMbOG4Ek5DY2HoZG20jbJpt2xLMw2kjbP/o0hbJfQXzbaYnw4X5Gymybb/A+HJL4L"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "Google Pixel 2"
   want_photo_id:  "2018-03-22 12:42:17.318446 +0000 UTC"

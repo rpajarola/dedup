@@ -9,6 +9,16 @@ want_fingerprint:  {
   want_hash:  "1f0f0f0717802b3f.4745a3a292d51555"
   want_quality:  20
 }
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikCM"
+  want_hash:  "2w5FgzXrZz9BMW8ULq2APhosy+83AQo+sP+2DJRb9D3aR5+U68L9O8Y1CL91GDO9AtGs7uXH/Ltk+a+f99BrP5YBPDSt5Vc+cpG4pdEFFj6sXqRUjvXwPeTGZBeGFsw7ymP28XzsEj2ZQwpZuGgEPPrj7lQj41c/SmYHADcpbz4GW3FbTxDQPSDzYOescs89uCYwGLFahTvAfRtXt5H8PFZJYZwnx647B753xijuWT+OLYtCANlyPgKEfdKQNdk9qgn9qPAP0T0AvhXkyTGnO+cxy9GsffM8n+sDF/fUsjtKFn1oNbpUP3AXp0Krx909OWJghqVzED3UjB9GswZTPZJlWLr5bpO6UaKO/kwDQzxQt2wNbR6AOnTYEcNDL1Y/OXEk7LMBwj3i/eD1WOtRPbP1zEXOuik909IMg8xmeLpRPogymw4LPPi+VE2CDyu6"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "7FsQ+kA44HHwBY/G/E4XE5I2JMkbMkwwbJMkZMnB4f2gnbGkfHA4FkB4fk4mA4nB8m7H4fE30kmbMbD42mfIH430zJ5HgZYH"
+  want_quality:  20
+}
 exif:  {
   want_camera_model:  "Sony Ericsson C905"
   want_photo_id:  "2009-02-05 10:37:36 +0000 UTC"

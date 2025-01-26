@@ -1,15 +1,19 @@
 package fingerprint
 
 import (
+	"encoding/binary"
+	"encoding/base64"
 	"fmt"
 	"image"
 	"image/gif"
 	"image/jpeg"
 	"image/png"
 	"io"
+	"math"
 	"os"
 
 	nr90 "github.com/Nr90/imgsim"
+	ajdnik "github.com/ajdnik/imghash"
 	azr "github.com/azr/phash"
 	heif "github.com/jdeng/goheif"
 )
@@ -70,6 +74,8 @@ func (d *ImgPHashFingerprinter) Get() ([]Fingerprint, error) {
 	for _, f := range []func(*ImgPHashFingerprinter) (Fingerprint, error){
 		(*ImgPHashFingerprinter).getAzr,
 		(*ImgPHashFingerprinter).getNr90,
+		(*ImgPHashFingerprinter).getAjdnikCM,
+		(*ImgPHashFingerprinter).getAjdnikMH,
 	} {
 		if fp, err := f(d); err == nil && fp.Hash != "" {
 			res = append(res, fp)
@@ -94,6 +100,31 @@ func (d *ImgPHashFingerprinter) getNr90() (Fingerprint, error) {
 	return Fingerprint{
 		Kind:    "ImgPHashNr90",
 		Hash:    fmt.Sprintf("%08x.%08x", uint64(avg), uint64(dif)),
+		Quality: 20,
+	}, nil
+}
+
+func (d *ImgPHashFingerprinter) getAjdnikCM() (Fingerprint, error) {
+	cmhash := ajdnik.NewColorMoment()
+	h := cmhash.Calculate(d.img)
+	buf := make([]byte, 8*len(h))
+	for i, f := range h {
+		binary.LittleEndian.PutUint64(buf[8*i:], math.Float64bits(f))
+	}
+	res := base64.StdEncoding.EncodeToString(buf)
+	return Fingerprint{
+		Kind:    "ImgPHashAjdnikCM",
+		Hash:    res,
+		Quality: 20,
+	}, nil
+}
+
+func (d *ImgPHashFingerprinter) getAjdnikMH() (Fingerprint, error) {
+	mhhash := ajdnik.NewMarrHildreth()
+	h := mhhash.Calculate(d.img)
+	return Fingerprint{
+		Kind:    "ImgPHashAjdnikMH",
+		Hash:    base64.StdEncoding.EncodeToString(h),
 		Quality: 20,
 	}, nil
 }
