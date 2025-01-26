@@ -11,3 +11,4 @@ git annex list | while read where fname; do
     ;;
   esac
 done
+git annex sync
