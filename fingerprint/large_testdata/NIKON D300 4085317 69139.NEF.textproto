@@ -1,9 +1,23 @@
 source_file:  "NIKON D300 4085317 69139.NEF"
-want_err:  true
 want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "NIKON D300 4085317 69139 RAW"
   want_quality:  90
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "1c78610709f0fe3e"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "2038bcf8fc08.9b1bbf9e8f174787"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "23ol4/bcn+BJ23Y4HJbO05BJ23I/DJ7Bb0JL2wHJbI6DJ2jJ2xf8nJbDa8DJ203E4HY/BLJL21JA6bE70L7Z2n44GDY/B5ZL"
+  want_quality:  20
 }
 exif:  {
   want_camera_model:  "NIKON D300"
@@ -12,4 +26,8 @@ exif:  {
 }
 xmp:  {
   comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "1c78610709f0fe3e"
+  want_nr90_hash:  "2038bcf8fc08.9b1bbf9e8f174787"
 }

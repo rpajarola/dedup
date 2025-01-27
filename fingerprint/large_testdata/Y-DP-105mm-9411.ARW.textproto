@@ -1,5 +1,4 @@
 source_file:  "Y-DP-105mm-9411.ARW"
-want_err:  true
 want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "SONY ILCE-7M3 28ff00008809 6020"
@@ -11,3 +10,7 @@ exif:  {
   want_photo_id:  "6020"
 }
 xmp:  {}
+img_phash:  {
+  comment:  "TODO: no thumbnail?"
+  skip:  true
+}

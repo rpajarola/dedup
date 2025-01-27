@@ -1,5 +1,4 @@
 source_file:  "SONY ILCE-6000 214302582 9.ARW"
-want_err:  true
 want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "SONY ILCE-6000 214302582 9"
@@ -12,4 +11,8 @@ exif:  {
 }
 xmp:  {
   comment:  "No XMP data"
+}
+img_phash:  {
+  comment:  "TODO: no thumbnail?"
+  skip:  true
 }

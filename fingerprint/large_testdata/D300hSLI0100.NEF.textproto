@@ -1,9 +1,23 @@
 source_file:  "D300hSLI0100.NEF"
-want_err:  true
 want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "NIKON D300 3005346 1803 RAW"
   want_quality:  90
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "4cc9b6cb63a34d14"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "87a1c7efd1f900.909a9048f1d8c82c"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "2wPA4HJ5bLZJ2xb02BJ4bZ5J2xmzAnA6W8hJ23Z/EnbOkbZJ2w/Hbgy5O3JJ2wbD8kLfkbZJ2zb+Hk4BbkhJ23AZGZH/A5BJ"
+  want_quality:  20
 }
 exif:  {
   want_camera_model:  "NIKON D300"
@@ -12,4 +26,8 @@ exif:  {
 }
 xmp:  {
   comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "4cc9b6cb63a34d14"
+  want_nr90_hash:  "87a1c7efd1f900.909a9048f1d8c82c"
 }

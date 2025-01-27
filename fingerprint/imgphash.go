@@ -1,8 +1,8 @@
 package fingerprint
 
 import (
-	"encoding/binary"
 	"encoding/base64"
+	"encoding/binary"
 	"fmt"
 	"image"
 	"image/gif"
@@ -16,6 +16,7 @@ import (
 	ajdnik "github.com/ajdnik/imghash"
 	azr "github.com/azr/phash"
 	heif "github.com/jdeng/goheif"
+	tiff "golang.org/x/image/tiff"
 )
 
 var (
@@ -26,6 +27,7 @@ var (
 		"jpeg": jpeg.Decode,
 		"jpg":  jpeg.Decode,
 		"png":  png.Decode,
+		"tiff": tiff.Decode,
 	}
 )
 

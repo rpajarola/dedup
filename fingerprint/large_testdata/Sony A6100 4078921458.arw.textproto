@@ -1,5 +1,4 @@
 source_file:  "Sony A6100 4078921458.arw"
-want_err:  true
 want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "SONY ILCE-6100 5f0000004a0c 214"
@@ -11,3 +10,7 @@ exif:  {
   want_photo_id:  "214"
 }
 xmp:  {}
+img_phash:  {
+  comment:  "TODO: no thumbnail?"
+  skip:  true
+}
