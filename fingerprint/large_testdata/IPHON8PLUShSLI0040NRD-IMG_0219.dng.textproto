@@ -7,3 +7,7 @@ exif:  {
 xmp:  {
   comment:  "No XMP data"
 }
+img_phash: {
+  comment: "TODO: implement decoding dng"
+  skip: true
+}

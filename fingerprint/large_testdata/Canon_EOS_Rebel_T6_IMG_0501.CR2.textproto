@@ -11,3 +11,7 @@ exif:  {
   want_photo_id:  "2023-07-21 12:43:29.44 +0000 UTC"
 }
 xmp:  {}
+img_phash: {
+  comment: "TODO: decode CR2 format"
+  skip: true
+}

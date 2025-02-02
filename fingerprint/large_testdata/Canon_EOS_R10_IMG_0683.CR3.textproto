@@ -1,2 +1,14 @@
 source_file:  "Canon_EOS_R10_IMG_0683.CR3"
 want_err:  true
+comment: "TODO: implement reading CR3"
+
+xmp: {
+	skip: true
+}
+
+exif: {
+	skip: true
+}
+img_phash: {
+  skip: true
+}

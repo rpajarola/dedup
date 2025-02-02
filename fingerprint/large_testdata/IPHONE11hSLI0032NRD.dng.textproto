@@ -18,3 +18,7 @@ exif:  {
 xmp:  {
   want_document_id:  "659BC91A3E511BBC12D0BB30818DF9CB"
 }
+img_phash: {
+  comment: "TODO: implement decoding dng"
+  skip: true
+}

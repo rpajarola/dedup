@@ -4,4 +4,10 @@ exif:  {
   want_camera_model:  "Google Pixel 9 Pro"
   want_photo_id:  "2024-08-17 19:57:51.89255 +0000 UTC"
 }
-xmp:  {}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash: {
+  comment: "TODO: implement decoding dng"
+  skip: true
+}
