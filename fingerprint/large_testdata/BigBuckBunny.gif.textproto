@@ -1,0 +1,32 @@
+source_file:  "BigBuckBunny.gif"
+want_err:  true
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "1a7344a9395c576a"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "efe0e0f8c8ccc4c0.eb793454e6c7e6fc"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "k5ZmzZbJp2jJZgPbM3B4nm3R4HoJ348HAm43n22Y5HLZJZc02Ab+XD7HI+GbbP4bP0k/MC7b7HY/Gw8EyZI+kxmmZLnY2N00"
+  want_quality:  20
+}
+want_fingerprint:  {
+  want_kind:  "VideoPHashRicop"
+  want_hash:  "f86e2e4a34601020.aa5555aa15aa5555"
+  want_quality:  20
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "1a7344a9395c576a"
+  want_nr90_hash:  "efe0e0f8c8ccc4c0.eb793454e6c7e6fc"
+}
+video_phash:  {
+  want_ricop_hash:  "f86e2e4a34601020.aa5555aa15aa5555"
+}

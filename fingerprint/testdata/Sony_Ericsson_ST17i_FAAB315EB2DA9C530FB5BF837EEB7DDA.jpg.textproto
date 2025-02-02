@@ -1,17 +1,21 @@
-source_file:  "Sony Ericsson ST17i FAAB315EB2DA9C530FB5BF837EEB7DDA.jpg"
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "FAAB315EB2DA9C530FB5BF837EEB7DDA"
-  want_quality:  100
+source_file: "Sony Ericsson ST17i FAAB315EB2DA9C530FB5BF837EEB7DDA.jpg"
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "FAAB315EB2DA9C530FB5BF837EEB7DDA"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "Sony Ericsson ST17i"
-  want_photo_id:  "2011-12-11 16:41:52 +0000 UTC"
+exif: {
+  want_camera_model: "Sony Ericsson ST17i"
+  want_photo_id: "2011-12-11 16:41:52 +0000 UTC"
 }
-xmp:  {
-  want_document_id:  "FAAB315EB2DA9C530FB5BF837EEB7DDA"
+xmp: {
+  want_document_id: "FAAB315EB2DA9C530FB5BF837EEB7DDA"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

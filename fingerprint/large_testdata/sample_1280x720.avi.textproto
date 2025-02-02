@@ -1,0 +1,13 @@
+source_file:  "sample_1280x720.avi"
+want_err:  true
+want_fingerprint:  {
+  want_kind:  "VideoPHashRicop"
+  want_hash:  "f801e7384147b7c9.2a55aa55aa55aa55"
+  want_quality:  20
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+video_phash:  {
+  want_ricop_hash:  "f801e7384147b7c9.2a55aa55aa55aa55"
+}

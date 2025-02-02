@@ -1,19 +1,23 @@
-source_file:  "iPhone15ProMax-0003-tele-5x.dng"
-want_err:  true
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
-  want_quality:  100
+source_file: "iPhone15ProMax-0003-tele-5x.dng"
+want_err: true
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 15 Pro Max"
-  want_photo_id:  "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
-  want_unique_photo_id:  true
+exif: {
+  want_camera_model: "Apple iPhone 15 Pro Max"
+  want_photo_id: "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_unique_photo_id: true
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
 img_phash: {
   comment: "TODO: implement decoding dng"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
   skip: true
 }

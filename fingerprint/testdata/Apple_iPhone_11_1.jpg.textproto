@@ -1,17 +1,21 @@
-source_file:  "Apple iPhone 11 1.jpg"
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "659BC91A3E511BBC12D0BB30818DF9CB"
-  want_quality:  100
+source_file: "Apple iPhone 11 1.jpg"
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "659BC91A3E511BBC12D0BB30818DF9CB"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 11"
-  want_photo_id:  "2020-08-06 11:49:24.491 +0000 UTC"
+exif: {
+  want_camera_model: "Apple iPhone 11"
+  want_photo_id: "2020-08-06 11:49:24.491 +0000 UTC"
 }
-xmp:  {
-  want_document_id:  "659BC91A3E511BBC12D0BB30818DF9CB"
+xmp: {
+  want_document_id: "659BC91A3E511BBC12D0BB30818DF9CB"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

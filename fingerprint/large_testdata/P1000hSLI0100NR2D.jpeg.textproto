@@ -31,3 +31,7 @@ img_phash: {
   want_azr_hash: "64fb68d47244d5e"
   want_nr90_hash: "bf03a1c3e78190db.929ab44861c8cacc"
 }
+video_phash: {
+  comment: "No Video Data"
+  skip: true
+}

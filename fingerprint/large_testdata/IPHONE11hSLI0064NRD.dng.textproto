@@ -1,24 +1,28 @@
-source_file:  "IPHONE11hSLI0064NRD.dng"
-want_err:  true
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPhone 11  D0BA9B66-D3D0-4C71-854D-3A46A36753FE"
-  want_quality:  100
+source_file: "IPHONE11hSLI0064NRD.dng"
+want_err: true
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 11  D0BA9B66-D3D0-4C71-854D-3A46A36753FE"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "CEE8F641053E12334BCAE205E585F5DB"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "CEE8F641053E12334BCAE205E585F5DB"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 11"
-  want_photo_id:  "D0BA9B66-D3D0-4C71-854D-3A46A36753FE"
-  want_unique_photo_id:  true
+exif: {
+  want_camera_model: "Apple iPhone 11"
+  want_photo_id: "D0BA9B66-D3D0-4C71-854D-3A46A36753FE"
+  want_unique_photo_id: true
 }
-xmp:  {
-  want_document_id:  "CEE8F641053E12334BCAE205E585F5DB"
+xmp: {
+  want_document_id: "CEE8F641053E12334BCAE205E585F5DB"
 }
 img_phash: {
   comment: "TODO: implement decoding dng"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
   skip: true
 }

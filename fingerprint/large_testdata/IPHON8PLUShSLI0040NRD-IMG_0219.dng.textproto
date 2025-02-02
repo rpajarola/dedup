@@ -1,13 +1,17 @@
-source_file:  "IPHON8PLUShSLI0040NRD-IMG_0219.dng"
-want_err:  true
-exif:  {
-  want_camera_model:  "Apple iPhone 8 Plus"
-  want_photo_id:  "2017-10-10 12:07:41.194 +0000 UTC"
+source_file: "IPHON8PLUShSLI0040NRD-IMG_0219.dng"
+want_err: true
+exif: {
+  want_camera_model: "Apple iPhone 8 Plus"
+  want_photo_id: "2017-10-10 12:07:41.194 +0000 UTC"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
 img_phash: {
   comment: "TODO: implement decoding dng"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
   skip: true
 }

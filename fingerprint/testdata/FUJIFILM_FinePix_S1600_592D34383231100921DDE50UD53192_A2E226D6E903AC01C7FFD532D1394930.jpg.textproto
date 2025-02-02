@@ -1,17 +1,21 @@
-source_file:  "FUJIFILM FinePix S1600 592D34383231100921DDE50UD53192 A2E226D6E903AC01C7FFD532D1394930.jpg"
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "A2E226D6E903AC01C7FFD532D1394930"
-  want_quality:  100
+source_file: "FUJIFILM FinePix S1600 592D34383231100921DDE50UD53192 A2E226D6E903AC01C7FFD532D1394930.jpg"
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "A2E226D6E903AC01C7FFD532D1394930"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "FUJIFILM FinePix S1600"
-  want_photo_id:  "2010-01-07 22:07:48 +0000 UTC"
+exif: {
+  want_camera_model: "FUJIFILM FinePix S1600"
+  want_photo_id: "2010-01-07 22:07:48 +0000 UTC"
 }
-xmp:  {
-  want_document_id:  "A2E226D6E903AC01C7FFD532D1394930"
+xmp: {
+  want_document_id: "A2E226D6E903AC01C7FFD532D1394930"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

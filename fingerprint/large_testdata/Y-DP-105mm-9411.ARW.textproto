@@ -1,16 +1,20 @@
-source_file:  "Y-DP-105mm-9411.ARW"
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY ILCE-7M3 28ff00008809 6020"
-  want_quality:  90
+source_file: "Y-DP-105mm-9411.ARW"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCE-7M3 28ff00008809 6020"
+  want_quality: 90
 }
-exif:  {
-  want_camera_model:  "SONY ILCE-7M3"
-  want_camera_serial:  "28ff00008809"
-  want_photo_id:  "6020"
+exif: {
+  want_camera_model: "SONY ILCE-7M3"
+  want_camera_serial: "28ff00008809"
+  want_photo_id: "6020"
 }
-xmp:  {}
-img_phash:  {
-  comment:  "TODO: no thumbnail?"
-  skip:  true
+xmp: {}
+img_phash: {
+  comment: "TODO: no thumbnail?"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

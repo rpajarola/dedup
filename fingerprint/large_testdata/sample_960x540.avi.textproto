@@ -1,0 +1,13 @@
+source_file:  "sample_960x540.avi"
+want_err:  true
+want_fingerprint:  {
+  want_kind:  "VideoPHashRicop"
+  want_hash:  "dbeb74760b8b0403.2a55aa55aa55aa55"
+  want_quality:  20
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+video_phash:  {
+  want_ricop_hash:  "dbeb74760b8b0403.2a55aa55aa55aa55"
+}

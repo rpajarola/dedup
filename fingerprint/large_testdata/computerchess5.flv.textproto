@@ -1,0 +1,13 @@
+source_file: "computerchess5.flv"
+want_err: true
+want_fingerprint: {
+  want_kind: "VideoPHashRicop"
+  want_hash: "c7c01795a798700c.b3ff00de0a5e5a40"
+  want_quality: 20
+}
+xmp: {
+  comment: "No XMP data"
+}
+video_phash: {
+  want_ricop_hash: "c7c01795a798700c.b3ff00de0a5e5a40"
+}

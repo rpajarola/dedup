@@ -14,6 +14,7 @@ message FingerprintTestCase {
 	EXIFTestCase exif = 7;
 	XMPTestCase xmp = 8;
 	ImgPHashTestCase img_phash = 9;
+	VideoPHashTestCase video_phash = 10;
 }
 
 message WantFingerprint {
@@ -43,4 +44,10 @@ message ImgPHashTestCase {
 	bool skip = 2;
 	string want_azr_hash = 3;
 	string want_nr90_hash = 4;
+}
+
+message VideoPHashTestCase {
+	repeated string comment = 1;
+	bool skip = 2;
+	string want_ricop_hash = 3;
 }

@@ -1,17 +1,21 @@
-source_file:  "SONY DSC-W120 4F2F5344AE5360FA280CC70C2F7C5D6C.jpg"
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "4F2F5344AE5360FA280CC70C2F7C5D6C"
-  want_quality:  100
+source_file: "SONY DSC-W120 4F2F5344AE5360FA280CC70C2F7C5D6C.jpg"
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "4F2F5344AE5360FA280CC70C2F7C5D6C"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "SONY DSC-W120"
-  want_photo_id:  "2011-04-17 18:08:26 +0000 UTC"
+exif: {
+  want_camera_model: "SONY DSC-W120"
+  want_photo_id: "2011-04-17 18:08:26 +0000 UTC"
 }
-xmp:  {
-  want_document_id:  "4F2F5344AE5360FA280CC70C2F7C5D6C"
+xmp: {
+  want_document_id: "4F2F5344AE5360FA280CC70C2F7C5D6C"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

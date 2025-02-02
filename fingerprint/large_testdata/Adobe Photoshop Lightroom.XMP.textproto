@@ -10,3 +10,7 @@ img_phash:  {
   comment:  "no image data"
   skip:  true
 }
+video_phash: {
+  comment:  "no video data"
+  skip:  true
+}

@@ -1,10 +1,14 @@
-source_file:  "sony_a7s_iii_07.arw"
-exif:  {
-  want_camera_model:  "SONY MODEL-NAME"
-  want_photo_id:  "2022-09-09 21:29:51.627 +0000 UTC"
+source_file: "sony_a7s_iii_07.arw"
+exif: {
+  want_camera_model: "SONY MODEL-NAME"
+  want_photo_id: "2022-09-09 21:29:51.627 +0000 UTC"
 }
-xmp:  {}
-img_phash:  {
-  comment:  "TODO: no thumbnail?"
-  skip:  true
+xmp: {}
+img_phash: {
+  comment: "TODO: no thumbnail?"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

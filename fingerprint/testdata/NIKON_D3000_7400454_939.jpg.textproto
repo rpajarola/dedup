@@ -1,18 +1,22 @@
-source_file:  "NIKON D3000 7400454 939.jpg"
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "NIKON D3000 7400454 939 BASIC"
-  want_quality:  90
+source_file: "NIKON D3000 7400454 939.jpg"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "NIKON D3000 7400454 939 BASIC"
+  want_quality: 90
 }
-exif:  {
-  want_camera_model:  "NIKON D3000"
-  want_camera_serial:  "7400454"
-  want_photo_id:  "939 BASIC"
+exif: {
+  want_camera_model: "NIKON D3000"
+  want_camera_serial: "7400454"
+  want_photo_id: "939 BASIC"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

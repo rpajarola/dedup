@@ -1,17 +1,21 @@
-source_file:  "Panasonic DMC-FZ28 7f050b14-53d6-4d30-9672-20e3a0f6ff94.jpg"
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "7f050b14-53d6-4d30-9672-20e3a0f6ff94"
-  want_quality:  100
+source_file: "Panasonic DMC-FZ28 7f050b14-53d6-4d30-9672-20e3a0f6ff94.jpg"
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "7f050b14-53d6-4d30-9672-20e3a0f6ff94"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "Panasonic DMC-FZ28"
-  want_photo_id:  "2009-07-21 22:16:00 +0000 UTC"
+exif: {
+  want_camera_model: "Panasonic DMC-FZ28"
+  want_photo_id: "2009-07-21 22:16:00 +0000 UTC"
 }
-xmp:  {
-  want_document_id:  "7f050b14-53d6-4d30-9672-20e3a0f6ff94"
+xmp: {
+  want_document_id: "7f050b14-53d6-4d30-9672-20e3a0f6ff94"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

@@ -1,18 +1,22 @@
-source_file:  "SONY Alpha 77 II 7613018102 24260.jpg"
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY ILCA-77M2 173014736 24260"
-  want_quality:  90
+source_file: "SONY Alpha 77 II 7613018102 24260.jpg"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCA-77M2 173014736 24260"
+  want_quality: 90
 }
-exif:  {
-  want_camera_model:  "SONY ILCA-77M2"
-  want_camera_serial:  "173014736"
-  want_photo_id:  "24260"
+exif: {
+  want_camera_model: "SONY ILCA-77M2"
+  want_camera_serial: "173014736"
+  want_photo_id: "24260"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

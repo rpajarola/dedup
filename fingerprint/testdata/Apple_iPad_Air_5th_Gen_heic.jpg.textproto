@@ -1,22 +1,22 @@
-source_file:  "Apple iPad Air 5th Gen heic.jpg"
-
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPad Air (5th generation)  4D481A26-0D20-441E-B467-AA57627B73DD"
-  want_quality:  100
+source_file: "Apple iPad Air 5th Gen heic.jpg"
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPad Air (5th generation)  4D481A26-0D20-441E-B467-AA57627B73DD"
+  want_quality: 100
 }
-
-exif:  {
-  want_camera_model:  "Apple iPad Air (5th generation)"
-  want_photo_id:  "4D481A26-0D20-441E-B467-AA57627B73DD"
-  want_unique_photo_id:  true
+exif: {
+  want_camera_model: "Apple iPad Air (5th generation)"
+  want_photo_id: "4D481A26-0D20-441E-B467-AA57627B73DD"
+  want_unique_photo_id: true
 }
-
-xmp:  {
+xmp: {
   comment: "no XMP data"
 }
-
 img_phash: {
   comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
   skip: true
 }

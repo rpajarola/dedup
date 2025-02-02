@@ -1,14 +1,16 @@
-source_file:  "Canon_EOS_R10_IMG_0683.CR3"
-want_err:  true
+source_file: "Canon_EOS_R10_IMG_0683.CR3"
 comment: "TODO: implement reading CR3"
-
-xmp: {
-	skip: true
-}
-
+want_err: true
 exif: {
-	skip: true
+  skip: true
+}
+xmp: {
+  skip: true
 }
 img_phash: {
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
   skip: true
 }

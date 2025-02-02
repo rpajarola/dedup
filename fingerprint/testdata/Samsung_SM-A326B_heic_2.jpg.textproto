@@ -1,12 +1,16 @@
-source_file:  "Samsung SM-A326B heic 2.jpg"
-exif:  {
-  want_camera_model:  "samsung SM-A326B"
-  want_photo_id:  "2023-12-12 18:39:16.576 +0000 UTC"
+source_file: "Samsung SM-A326B heic 2.jpg"
+exif: {
+  want_camera_model: "samsung SM-A326B"
+  want_photo_id: "2023-12-12 18:39:16.576 +0000 UTC"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
+}
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }
