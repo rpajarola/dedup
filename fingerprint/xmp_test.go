@@ -15,13 +15,18 @@ func TestXMPFingerprinter(t *testing.T) {
 			if tc.Got.Xmp.Skip {
 				t.Skip()
 			}
-			if e := fp.Init(tc.SourceFile); e != nil {
+			fps, e := fp.Init(tc.SourceFile)
+			if e != nil {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
 			}
-			if fp.xmp == nil {
+			if fps == nil {
 				tc.Got.Xmp.Comment = []string{"No XMP data"}
 			} else {
-				tc.Got.Xmp.WantDocumentId, _, _ = fp.getDocumentID()
+				xfps := fps.(*xmpFingerprinterState)
+				if xfps.xmp == nil {
+				} else {
+					tc.Got.Xmp.WantDocumentId, _, _ = xfps.getDocumentID()
+				}
 			}
 			maybeUpdateTestCase(t, tc)
 		})

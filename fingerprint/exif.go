@@ -12,7 +12,9 @@ import (
 	"github.com/rpajarola/exiftools/mknote"
 )
 
-type EXIFFingerprinter struct {
+type EXIFFingerprinter struct{}
+
+type exifFingerprinterState struct {
 	xf *exif.Exif
 }
 
@@ -22,32 +24,30 @@ func init() {
 	fingerprinters = append(fingerprinters, &EXIFFingerprinter{})
 }
 
-func (xfp *EXIFFingerprinter) Init(filename string) error {
-	xfp.xf = nil
+func (xfp *EXIFFingerprinter) Init(filename string) (FingerprinterState, error) {
 	f, err := os.Open(filename)
 	if err != nil {
-		return err
+		return nil, err
 	}
 	defer f.Close()
 
-	xfp.xf, err = exif.Decode(f)
+	xfps := exifFingerprinterState{}
+	xfps.xf, err = exif.Decode(f)
 	if err != nil && !errors.Is(err, io.EOF) {
-		return err
+		return nil, err
 	}
-
-	return nil
-}
-
-func (xfp *EXIFFingerprinter) Get() ([]Fingerprint, error) {
-	if xfp.xf == nil {
+	if xfps.xf == nil {
 		return nil, nil
 	}
+	return &xfps, nil
+}
 
+func (xfps *exifFingerprinterState) Get() ([]Fingerprint, error) {
 	var res []Fingerprint
-	for _, f := range []func(*EXIFFingerprinter) (Fingerprint, error){
-		(*EXIFFingerprinter).getModelSerialPhotoIDFP,
+	for _, f := range []func(*exifFingerprinterState) (Fingerprint, error){
+		(*exifFingerprinterState).getModelSerialPhotoIDFP,
 	} {
-		if fp, err := f(xfp); err == nil && fp.Hash != "" {
+		if fp, err := f(xfps); err == nil && fp.Hash != "" {
 			res = append(res, fp)
 		}
 	}
@@ -55,10 +55,10 @@ func (xfp *EXIFFingerprinter) Get() ([]Fingerprint, error) {
 	return res, nil
 }
 
-func (xfp *EXIFFingerprinter) getModelSerialPhotoIDFP() (Fingerprint, error) {
-	cameraModel := xfp.getCameraModel()
-	cameraSerial := xfp.getCameraSerial()
-	photoID, photoIDIsUnique, photoIDQuality := xfp.getPhotoID()
+func (xfps *exifFingerprinterState) getModelSerialPhotoIDFP() (Fingerprint, error) {
+	cameraModel := xfps.getCameraModel()
+	cameraSerial := xfps.getCameraSerial()
+	photoID, photoIDIsUnique, photoIDQuality := xfps.getPhotoID()
 	if cameraModel == "" {
 		// There isn't even basic EXIF information
 		return NoFingerprint, nil
@@ -74,16 +74,18 @@ func (xfp *EXIFFingerprinter) getModelSerialPhotoIDFP() (Fingerprint, error) {
 	}, nil
 }
 
+func (xfps *exifFingerprinterState) Cleanup() {}
+
 func trim(s string) string {
 	return strings.Trim(s, "\" 	")
 }
 
-func (xfp *EXIFFingerprinter) getCameraModel() string {
-	make, err := xfp.xf.Get(exif.Make)
+func (xfps *exifFingerprinterState) getCameraModel() string {
+	make, err := xfps.xf.Get(exif.Make)
 	if err != nil {
 		return ""
 	}
-	model, err := xfp.xf.Get(exif.Model)
+	model, err := xfps.xf.Get(exif.Model)
 	if err != nil {
 		return ""
 	}
@@ -101,28 +103,28 @@ func (xfp *EXIFFingerprinter) getCameraModel() string {
 	return makestr + " " + modelstr
 }
 
-func (xfp *EXIFFingerprinter) getCameraSerial() string {
-	if v, err := xfp.xf.Get(mknote.SerialNumber); err == nil {
+func (xfps *exifFingerprinterState) getCameraSerial() string {
+	if v, err := xfps.xf.Get(mknote.SerialNumber); err == nil {
 		return trim(v.String())
 	}
-	if v, err := xfp.xf.Get(mknote.InternalSerialNumber); err == nil {
+	if v, err := xfps.xf.Get(mknote.InternalSerialNumber); err == nil {
 		return trim(v.String())
 	}
-	if v, err := xfp.xf.Get(mknote.NikonSerialNO); err == nil {
+	if v, err := xfps.xf.Get(mknote.NikonSerialNO); err == nil {
 		return trim(v.String())
 	}
-	if v, err := xfp.xf.Get(mknote.SonyInternalSerialNumber); err == nil {
+	if v, err := xfps.xf.Get(mknote.SonyInternalSerialNumber); err == nil {
 		return trim(v.String())
 	}
-	if v, err := xfp.xf.Get(mknote.SonyInternalSerialNumber2); err == nil {
+	if v, err := xfps.xf.Get(mknote.SonyInternalSerialNumber2); err == nil {
 		return trim(v.String())
 	}
 	return ""
 }
 
-func (xfp *EXIFFingerprinter) getPhotoID() (string, bool, int) {
+func (xfps *exifFingerprinterState) getPhotoID() (string, bool, int) {
 	quality := ""
-	if v, err := xfp.xf.Get(mknote.Quality); err == nil {
+	if v, err := xfps.xf.Get(mknote.Quality); err == nil {
 		quality = " " + trim(v.String())
 	}
 	for _, t := range []struct {
@@ -140,7 +142,7 @@ func (xfp *EXIFFingerprinter) getPhotoID() (string, bool, int) {
 		{mknote.SonyShutterCount3, false, 90, false},
 		{mknote.FileNumber, false, 90, false},
 	} {
-		if v, err := xfp.xf.Get(t.field); err == nil {
+		if v, err := xfps.xf.Get(t.field); err == nil {
 			if t.hexify {
 				return hex.EncodeToString(v.Val) + quality, t.unique, t.quality
 			}
@@ -148,7 +150,7 @@ func (xfp *EXIFFingerprinter) getPhotoID() (string, bool, int) {
 		}
 	}
 
-	if v, err := xfp.xf.DateTime(exif.DateTimeOriginal); err == nil {
+	if v, err := xfps.xf.DateTime(exif.DateTimeOriginal); err == nil {
 		return fmt.Sprintf("%v", v) + quality, false, 80
 	}
 

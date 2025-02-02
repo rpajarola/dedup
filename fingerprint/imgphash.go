@@ -31,7 +31,9 @@ var (
 	}
 )
 
-type ImgPHashFingerprinter struct {
+type ImgPHashFingerprinter struct{}
+
+type imgPHashFingerprinterState struct {
 	cfg image.Config
 	img image.Image
 }
@@ -40,46 +42,46 @@ func init() {
 	fingerprinters = append(fingerprinters, &ImgPHashFingerprinter{})
 }
 
-func (d *ImgPHashFingerprinter) Init(filename string) error {
-	d.img = nil
+func (ipfp *ImgPHashFingerprinter) Init(filename string) (FingerprinterState, error) {
+	ipfps := imgPHashFingerprinterState{}
 	f, err := os.Open(filename)
 	if err != nil {
-		return fmt.Errorf("Open(%v): %w", filename, err)
+		return nil, fmt.Errorf("Open(%v): %w", filename, err)
 	}
 	defer f.Close()
 	cfg, format, err := image.DecodeConfig(f)
 	if err != nil {
-		return fmt.Errorf("image.DecodeConfig(%v): %w", filename, err)
+		return nil, fmt.Errorf("image.DecodeConfig(%v): %w", filename, err)
 	}
-	d.cfg = cfg
+	ipfps.cfg = cfg
 	decodeFunc, ok := extensions[format]
 	if !ok {
-		return fmt.Errorf("%v: unknown file format: %v", filename, format)
+		return nil, fmt.Errorf("%v: unknown file format: %v", filename, format)
 	}
 	f.Seek(0, 0)
-	if d.img, err = decodeFunc(f); err != nil {
-		return fmt.Errorf("decode(%v): %w", filename, err)
+	if ipfps.img, err = decodeFunc(f); err != nil {
+		return nil, fmt.Errorf("decode(%v): %w", filename, err)
 	}
 
-	return nil
+	return &ipfps, nil
 }
 
-func (d *ImgPHashFingerprinter) Get() ([]Fingerprint, error) {
-	if d.img == nil {
+func (ipfps *imgPHashFingerprinterState) Get() ([]Fingerprint, error) {
+	if ipfps.img == nil {
 		return nil, nil
 	}
-	if d.cfg.Height < 10 || d.cfg.Width < 10 {
+	if ipfps.cfg.Height < 10 || ipfps.cfg.Width < 10 {
 		return nil, nil
 	}
 
 	var res []Fingerprint
-	for _, f := range []func(*ImgPHashFingerprinter) (Fingerprint, error){
-		(*ImgPHashFingerprinter).getAzr,
-		(*ImgPHashFingerprinter).getNr90,
-		// TODO: unstable between platforms (arm/x86) (*ImgPHashFingerprinter).getAjdnikCM,
-		(*ImgPHashFingerprinter).getAjdnikMH,
+	for _, f := range []func(*imgPHashFingerprinterState) (Fingerprint, error){
+		(*imgPHashFingerprinterState).getAzr,
+		(*imgPHashFingerprinterState).getNr90,
+		// TODO: unstable between platforms (arm/x86) (*imgPHashFingerprinterState).getAjdnikCM,
+		(*imgPHashFingerprinterState).getAjdnikMH,
 	} {
-		if fp, err := f(d); err == nil && fp.Hash != "" {
+		if fp, err := f(ipfps); err == nil && fp.Hash != "" {
 			res = append(res, fp)
 		}
 	}
@@ -87,8 +89,10 @@ func (d *ImgPHashFingerprinter) Get() ([]Fingerprint, error) {
 	return res, nil
 }
 
-func (d *ImgPHashFingerprinter) getAzr() (Fingerprint, error) {
-	h := azr.DTC(d.img)
+func (ipfps *imgPHashFingerprinterState) Cleanup() {}
+
+func (ipfps *imgPHashFingerprinterState) getAzr() (Fingerprint, error) {
+	h := azr.DTC(ipfps.img)
 	return Fingerprint{
 		Kind:    "ImgPHashAzr",
 		Hash:    fmt.Sprintf("%08x", h),
@@ -96,9 +100,9 @@ func (d *ImgPHashFingerprinter) getAzr() (Fingerprint, error) {
 	}, nil
 }
 
-func (d *ImgPHashFingerprinter) getNr90() (Fingerprint, error) {
-	avg := nr90.AverageHash(d.img)
-	dif := nr90.DifferenceHash(d.img)
+func (ipfps *imgPHashFingerprinterState) getNr90() (Fingerprint, error) {
+	avg := nr90.AverageHash(ipfps.img)
+	dif := nr90.DifferenceHash(ipfps.img)
 	return Fingerprint{
 		Kind:    "ImgPHashNr90",
 		Hash:    fmt.Sprintf("%08x.%08x", uint64(avg), uint64(dif)),
@@ -106,9 +110,9 @@ func (d *ImgPHashFingerprinter) getNr90() (Fingerprint, error) {
 	}, nil
 }
 
-func (d *ImgPHashFingerprinter) getAjdnikCM() (Fingerprint, error) {
+func (ipfps *imgPHashFingerprinterState) getAjdnikCM() (Fingerprint, error) {
 	cmhash := ajdnik.NewColorMoment()
-	h := cmhash.Calculate(d.img)
+	h := cmhash.Calculate(ipfps.img)
 	buf := make([]byte, 8*len(h))
 	for i, f := range h {
 		binary.LittleEndian.PutUint64(buf[8*i:], math.Float64bits(f))
@@ -121,9 +125,9 @@ func (d *ImgPHashFingerprinter) getAjdnikCM() (Fingerprint, error) {
 	}, nil
 }
 
-func (d *ImgPHashFingerprinter) getAjdnikMH() (Fingerprint, error) {
+func (ipfps *imgPHashFingerprinterState) getAjdnikMH() (Fingerprint, error) {
 	mhhash := ajdnik.NewMarrHildreth()
-	h := mhhash.Calculate(d.img)
+	h := mhhash.Calculate(ipfps.img)
 	return Fingerprint{
 		Kind:    "ImgPHashAjdnikMH",
 		Hash:    base64.StdEncoding.EncodeToString(h),

@@ -15,19 +15,22 @@ func TestEXIFFingerprinter(t *testing.T) {
 			if tc.Got.Exif.Skip {
 				t.Skip()
 			}
-			if e := fp.Init(tc.SourceFile); e != nil {
+			fps, e := fp.Init(tc.SourceFile)
+			if e != nil {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
 			}
-
-			if fp.xf == nil {
+			if fps == nil {
 				tc.Got.Exif.Comment = []string{"No EXIF data"}
-			} else {
-				photoID, isUnique, _ := fp.getPhotoID()
-				tc.Got.Exif.WantCameraModel = fp.getCameraModel()
-				tc.Got.Exif.WantCameraSerial = fp.getCameraSerial()
-				tc.Got.Exif.WantPhotoId = photoID
-				tc.Got.Exif.WantUniquePhotoId = isUnique
+				maybeUpdateTestCase(t, tc)
+				return
 			}
+
+			xfps := fps.(*exifFingerprinterState)
+			photoID, isUnique, _ := xfps.getPhotoID()
+			tc.Got.Exif.WantCameraModel = xfps.getCameraModel()
+			tc.Got.Exif.WantCameraSerial = xfps.getCameraSerial()
+			tc.Got.Exif.WantPhotoId = photoID
+			tc.Got.Exif.WantUniquePhotoId = isUnique
 			maybeUpdateTestCase(t, tc)
 		})
 	}

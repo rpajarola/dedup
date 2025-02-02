@@ -12,26 +12,32 @@ type Fingerprint struct {
 var NoFingerprint = Fingerprint{}
 
 type Fingerprinter interface {
-	Init(filename string) error
+	Init(filename string) (FingerprinterState, error)
+}
+
+type FingerprinterState interface {
 	Get() ([]Fingerprint, error)
+	Cleanup()
 }
 
 var fingerprinters = []Fingerprinter{}
-
-// XMPFingerprinter,
-// PerceptionHashFingerprinter,
 
 func GetFingerprint(filename string) ([]Fingerprint, error) {
 	var err error
 	var res []Fingerprint
 	for _, fp := range fingerprinters {
-		if e := fp.Init(filename); e != nil {
+		fps, e := fp.Init(filename)
+		if e != nil {
 			err = errors.Join(err, e)
 			continue
 		}
-		f, e := fp.Get()
+		if fps == nil {
+			continue
+		}
+		f, e := fps.Get()
 		res = append(res, f...)
 		err = errors.Join(err, e)
+		fps.Cleanup()
 	}
 	return res, err
 }

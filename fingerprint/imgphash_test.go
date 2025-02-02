@@ -18,14 +18,16 @@ func TestImgPHashFingerprinter(t *testing.T) {
 			if tc.Got.ImgPhash.Skip {
 				t.Skip()
 			}
-			if e := fp.Init(tc.SourceFile); e != nil {
+			fps, e := fp.Init(tc.SourceFile)
+			if e != nil {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
 			}
-			azrHash, err := fp.getAzr()
+			ipfps := fps.(*imgPHashFingerprinterState)
+			azrHash, err := ipfps.getAzr()
 			if err != nil {
 				t.Fatalf("getAzr(%v): %v", tc.SourceFile, err)
 			}
-			nr90Hash, err := fp.getNr90()
+			nr90Hash, err := ipfps.getNr90()
 			if err != nil {
 				t.Fatalf("getNr90(%v): %v", tc.SourceFile, err)
 			}
