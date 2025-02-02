@@ -53,6 +53,7 @@ func (vpfp *VideoPHashFingerprinter) Init(filename string) (FingerprinterState, 
 	if err != nil {
 		return nil, err
 	}
+	fmt.Printf("XXX %v %v %v\n", kind.MIME.Value, filetype.IsVideo(head), kind.Extension)
 	if kind.MIME.Value != "image/gif" && !filetype.IsVideo(head) {
 		return nil, nil
 	}
