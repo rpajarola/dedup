@@ -10,7 +10,6 @@ import (
 
 	"github.com/asticode/go-astiav"
 	azr "github.com/azr/phash"
-	"github.com/h2non/filetype"
 )
 
 type VideoPHashFingerprinter struct{}
@@ -46,15 +45,8 @@ func (vpfp *VideoPHashFingerprinter) Init(filename string) (FingerprinterState, 
 	if err != nil {
 		return nil, fmt.Errorf("open %v: %v", filename, err)
 	}
-	// We only have to pass the file header = first 261 bytes
-	head := make([]byte, 261)
-	f.Read(head)
-	kind, err := filetype.Match(head)
-	if err != nil {
-		return nil, err
-	}
-	fmt.Printf("XXX %v %v %v\n", kind.MIME.Value, filetype.IsVideo(head), kind.Extension)
-	if kind.MIME.Value != "image/gif" && !filetype.IsVideo(head) {
+	ft := getFiletype(f)
+	if !strings.HasPrefix(ft, "video/") && ft != "image/gif" {
 		return nil, nil
 	}
 
