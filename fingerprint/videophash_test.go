@@ -12,6 +12,7 @@ func TestVideoPHashFingerprinter(t *testing.T) {
 			if tc.Got.GetVideoPhash() == nil {
 				tc.Got.VideoPhash = &VideoPHashTestCase{}
 			}
+			tc.Got.VideoPhash.WantRicopHash = ""
 			if tc.Got.VideoPhash.Skip {
 				t.Skip()
 			}
@@ -21,7 +22,7 @@ func TestVideoPHashFingerprinter(t *testing.T) {
 			}
 			if fps == nil {
 				tc.Got.VideoPhash.Comment = []string{"No Video Data"}
-				maybeUpdateTestCase(t, tc)
+				tc.Got.VideoPhash.Skip = true
 				return
 			}
 			vpfps := fps.(*videoPHashFingerprinterState)
@@ -30,13 +31,11 @@ func TestVideoPHashFingerprinter(t *testing.T) {
 				t.Fatalf("getRicop(%v): %v", tc.SourceFile, err)
 			}
 			if ricopHash == NoFingerprint {
-				tc.Got.VideoPhash.Comment = append(tc.Got.ImgPhash.Comment, "no video data")
+				tc.Got.VideoPhash.Comment = []string{"No Video Data"}
 				tc.Got.VideoPhash.Skip = true
-				tc.Got.VideoPhash.WantRicopHash = ""
-			} else {
-				tc.Got.VideoPhash.WantRicopHash = ricopHash.Hash
 			}
-			maybeUpdateTestCase(t, tc)
+			tc.Got.VideoPhash.WantRicopHash = ricopHash.Hash
 		})
+		maybeUpdateTestCase(t, tc)
 	}
 }
