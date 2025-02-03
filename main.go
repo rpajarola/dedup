@@ -39,8 +39,7 @@ func printFPs(filename string, fps []fingerprint.Fingerprint) {
 func main() {
 	var imageDir string
 	if len(os.Args) != 2 {
-		imageDir = "testdata"
-		//log.Fatal("Usage: program <image_directory>")
+		log.Fatal("Usage: program <image_directory>")
 	} else {
 		imageDir = os.Args[1]
 	}
