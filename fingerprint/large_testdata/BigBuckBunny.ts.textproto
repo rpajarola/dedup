@@ -1,4 +1,9 @@
 source_file:  "BigBuckBunny.ts"
+want_fingerprint:  {
+  want_kind:  "VideoPHashRicop"
+  want_hash:  "52c4fd5de1755969.5aaad654a92a5595"
+  want_quality:  20
+}
 exif:  {
   comment:  "No EXIF data"
 }
