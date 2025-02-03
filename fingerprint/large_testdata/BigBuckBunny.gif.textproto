@@ -20,6 +20,10 @@ want_fingerprint:  {
   want_hash:  "f86e2e4a34601020.aa5555aa15aa5555"
   want_quality:  20
 }
+exif: {
+  comment:  "No EXIF data"
+  skip: true
+}
 xmp:  {
   comment:  "No XMP data"
 }
