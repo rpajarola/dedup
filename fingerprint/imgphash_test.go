@@ -20,6 +20,7 @@ func TestImgPHashFingerprinter(t *testing.T) {
 			if tc.Got.ImgPhash.Skip {
 				t.Skip()
 			}
+
 			fps, e := fp.Init(tc.SourceFile)
 			if e != nil {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
@@ -29,6 +30,7 @@ func TestImgPHashFingerprinter(t *testing.T) {
 				tc.Got.ImgPhash.Skip = true
 				return
 			}
+
 			ipfps := fps.(*imgPHashFingerprinterState)
 			azrHash, err := ipfps.getAzr()
 			if err != nil {
