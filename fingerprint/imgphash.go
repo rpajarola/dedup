@@ -11,6 +11,7 @@ import (
 	"io"
 	"math"
 	"os"
+	"strings"
 
 	nr90 "github.com/Nr90/imgsim"
 	ajdnik "github.com/ajdnik/imghash"
@@ -49,6 +50,9 @@ func (ipfp *ImgPHashFingerprinter) Init(filename string) (FingerprinterState, er
 		return nil, fmt.Errorf("Open(%v): %w", filename, err)
 	}
 	defer f.Close()
+	if !strings.HasPrefix(getFiletype(f), "image/") {
+		return nil, nil
+	}
 	cfg, format, err := image.DecodeConfig(f)
 	if err != nil {
 		return nil, fmt.Errorf("image.DecodeConfig(%v): %w", filename, err)

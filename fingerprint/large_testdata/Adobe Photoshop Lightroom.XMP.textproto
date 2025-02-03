@@ -1,16 +1,15 @@
-source_file:  "Adobe Photoshop Lightroom.XMP"
-want_err:  true
-exif:  {
-  comment:  "No EXIF data"
+source_file: "Adobe Photoshop Lightroom.XMP"
+exif: {
+  comment: "No EXIF data"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "no image data"
-  skip:  true
+img_phash: {
+  comment: "no image data"
+  skip: true
 }
 video_phash: {
-  comment:  "no video data"
-  skip:  true
+  comment: "no video data"
+  skip: true
 }

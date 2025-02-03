@@ -30,7 +30,9 @@ func (xfp *EXIFFingerprinter) Init(filename string) (FingerprinterState, error) 
 		return nil, err
 	}
 	defer f.Close()
-
+	if !strings.HasPrefix(getFiletype(f), "image/") {
+		return nil, nil
+	}
 	xfps := exifFingerprinterState{}
 	xfps.xf, err = exif.Decode(f)
 	if err != nil && !errors.Is(err, io.EOF) {

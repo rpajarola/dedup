@@ -1,13 +1,19 @@
-source_file: "druid_peak_trailer_2014.mp4"
-want_err: true
-want_fingerprint: {
-  want_kind: "VideoPHashRicop"
-  want_hash: "5d996a10283cb445.e06ecc68fdff1"
-  want_quality: 20
+source_file:  "druid_peak_trailer_2014.mp4"
+want_fingerprint:  {
+  want_kind:  "VideoPHashRicop"
+  want_hash:  "5d996a10283cb445.e06ecc68fdff1"
+  want_quality:  20
 }
-xmp: {
-  comment: "No XMP data"
+exif:  {
+  comment:  "No EXIF data"
 }
-video_phash: {
-  want_ricop_hash: "5d996a10283cb445.e06ecc68fdff1"
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  comment:  "No image data"
+  skip:  true
+}
+video_phash:  {
+  want_ricop_hash:  "5d996a10283cb445.e06ecc68fdff1"
 }
