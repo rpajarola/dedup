@@ -6,9 +6,11 @@ import (
 )
 
 func TestVideoPHashFingerprinter(t *testing.T) {
+	t.Parallel()
 	fp := &VideoPHashFingerprinter{}
 	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
+			t.Parallel()
 			if tc.Got.GetVideoPhash() == nil {
 				tc.Got.VideoPhash = &VideoPHashTestCase{}
 			}

@@ -105,8 +105,10 @@ func maybeUpdateTestCase(t *testing.T, tc TestCase) {
 }
 
 func TestGetFingerprint(t *testing.T) {
+	t.Parallel()
 	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
+			t.Parallel()
 			gotFps, gotErr := GetFingerprint(tc.SourceFile)
 			tc.Got.WantErr = gotErr != nil
 			tc.Got.WantFingerprint = nil
