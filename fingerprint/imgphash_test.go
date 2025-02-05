@@ -27,7 +27,6 @@ func TestImgPHashFingerprinter(t *testing.T) {
 			}
 			if fps == nil {
 				tc.Got.ImgPhash.Comment = []string{"No image data"}
-				tc.Got.ImgPhash.Skip = true
 				return
 			}
 
@@ -43,7 +42,6 @@ func TestImgPHashFingerprinter(t *testing.T) {
 
 			if azrHash.Hash == "00000000" {
 				tc.Got.ImgPhash.Comment = []string{"No image data"}
-				tc.Got.ImgPhash.Skip = true
 				return
 			}
 			tc.Got.ImgPhash.WantAzrHash = azrHash.Hash
