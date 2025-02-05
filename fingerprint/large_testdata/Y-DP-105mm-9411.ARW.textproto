@@ -16,5 +16,4 @@ img_phash: {
 }
 video_phash: {
   comment: "No Video Data"
-  skip: true
 }

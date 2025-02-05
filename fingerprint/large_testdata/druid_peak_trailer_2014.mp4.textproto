@@ -12,7 +12,6 @@ xmp:  {
 }
 img_phash:  {
   comment:  "No image data"
-  skip:  true
 }
 video_phash:  {
   want_ricop_hash:  "5d996a10283cb445.e06ecc68fdff1"

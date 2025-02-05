@@ -21,7 +21,7 @@ want_fingerprint:  {
   want_quality:  20
 }
 exif: {
-  comment:  "No EXIF data"
+  comment:  "TODO: gif files have no EXIF data"
   skip: true
 }
 xmp:  {
