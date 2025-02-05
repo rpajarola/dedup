@@ -1,21 +1,19 @@
-source_file: "RICOH Caplio R6 E28C28641A206811822AD273C1F9B4D6.jpg"
-want_fingerprint: {
-  want_kind: "XMPDocumentID"
-  want_hash: "E28C28641A206811822AD273C1F9B4D6"
-  want_quality: 100
+source_file:  "RICOH Caplio R6 E28C28641A206811822AD273C1F9B4D6.jpg"
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "E28C28641A206811822AD273C1F9B4D6"
+  want_quality:  100
 }
-exif: {
-  want_camera_model: "RICOH Caplio R6"
-  want_photo_id: "2009-01-17 14:22:26 +0000 UTC"
+exif:  {
+  want_camera_model:  "RICOH Caplio R6"
+  want_photo_id:  "2009-01-17 14:22:26 +0000 UTC"
 }
-xmp: {
-  want_document_id: "E28C28641A206811822AD273C1F9B4D6"
+xmp:  {
+  want_document_id:  "E28C28641A206811822AD273C1F9B4D6"
 }
-img_phash: {
-  comment: "no image data"
-  skip: true
+img_phash:  {
+  comment:  "No image data"
 }
-video_phash: {
-  comment: "No Video Data"
-  skip: true
+video_phash:  {
+  comment:  "No video data"
 }

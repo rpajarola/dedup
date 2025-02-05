@@ -1,3 +1,20 @@
-source_file: "SONY A6000 6CC282B869DD24459D027F4391356B1E xmp.jpg"
-skip: true
-comment: "TODO: bad exif data"
+source_file:  "SONY A6000 6CC282B869DD24459D027F4391356B1E xmp.jpg"
+want_err:  true
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "6CC282B869DD24459D027F4391356B1E"
+  want_quality:  100
+}
+xmp:  {
+  want_document_id:  "6CC282B869DD24459D027F4391356B1E"
+}
+exif:  {
+  comment:  "exiftools fail with 'failed to find exif intro marker'"
+  skip:  true
+}
+img_phash:  {
+  comment:  "No image data"
+}
+video_phash:  {
+  comment:  "No video data"
+}

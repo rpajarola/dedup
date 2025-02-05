@@ -1,22 +1,20 @@
-source_file: "NIKON D300 4085317 69139_nef.jpg"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "NIKON D300 4085317 69139 RAW"
-  want_quality: 90
+source_file:  "NIKON D300 4085317 69139_nef.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "NIKON D300 4085317 69139 RAW"
+  want_quality:  90
 }
-exif: {
-  want_camera_model: "NIKON D300"
-  want_camera_serial: "4085317"
-  want_photo_id: "69139 RAW"
+exif:  {
+  want_camera_model:  "NIKON D300"
+  want_camera_serial:  "4085317"
+  want_photo_id:  "69139 RAW"
 }
-xmp: {
-  comment: "No XMP data"
+xmp:  {
+  comment:  "No XMP data"
 }
-img_phash: {
-  comment: "no image data"
-  skip: true
+img_phash:  {
+  comment:  "No image data"
 }
-video_phash: {
-  comment: "No Video Data"
-  skip: true
+video_phash:  {
+  comment:  "No video data"
 }

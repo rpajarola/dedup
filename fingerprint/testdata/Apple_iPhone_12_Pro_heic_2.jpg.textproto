@@ -1,22 +1,20 @@
-source_file: "Apple iPhone 12 Pro heic 2.jpg"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Apple iPhone 12 Pro  8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
-  want_quality: 100
+source_file:  "Apple iPhone 12 Pro heic 2.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Apple iPhone 12 Pro  8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
+  want_quality:  100
 }
-exif: {
-  want_camera_model: "Apple iPhone 12 Pro"
-  want_photo_id: "8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
-  want_unique_photo_id: true
+exif:  {
+  want_camera_model:  "Apple iPhone 12 Pro"
+  want_photo_id:  "8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
+  want_unique_photo_id:  true
 }
-xmp: {
-  comment: "No XMP data"
+xmp:  {
+  comment:  "No XMP data"
 }
-img_phash: {
-  comment: "no image data"
-  skip: true
+img_phash:  {
+  comment:  "No image data"
 }
-video_phash: {
-  comment: "No Video Data"
-  skip: true
+video_phash:  {
+  comment:  "No video data"
 }

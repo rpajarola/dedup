@@ -1,13 +1,27 @@
-source_file: "Canon EOS-1D Mark II 237359 227906.jpg"
-skip: true
-comment: "TODO: implement Canon Shutter Count"
-
-exif {
-	want_camera_model: "Canon EOS-1D Mark II"
-	want_camera_serial: "237359"
-	comment: "photo_id = shutter count"
-	want_photo_id: "227906"
+source_file:  "Canon EOS-1D Mark II 237359 227906.jpg"
+comment:  "TODO: implement Canon Shutter Count"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Canon EOS-1D Mark II 237359 2011-05-07 10:29:11 +0000 UTC"
+  want_quality:  80
 }
-xmp {
-  comment: "No XMP data"
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "f67fd7d6-20a9-4899-a33c-39613bdbb5d0"
+  want_quality:  100
+}
+exif:  {
+  comment:  "photo_id = shutter count"
+  want_camera_model:  "Canon EOS-1D Mark II"
+  want_camera_serial:  "237359"
+  want_photo_id:  "2011-05-07 10:29:11 +0000 UTC"
+}
+xmp:  {
+  want_document_id:  "f67fd7d6-20a9-4899-a33c-39613bdbb5d0"
+}
+img_phash:  {
+  comment:  "No image data"
+}
+video_phash:  {
+  comment:  "No video data"
 }

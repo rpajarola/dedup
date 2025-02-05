@@ -1,28 +1,26 @@
-source_file: "Canon EOS 60D 570303637 07F841A781C68B8736F3B32FE3AD8E52.jpg"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Canon EOS 60D 0570303637 2014-11-25 09:03:21.37 +0000 UTC"
-  want_quality: 80
+source_file:  "Canon EOS 60D 570303637 07F841A781C68B8736F3B32FE3AD8E52.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Canon EOS 60D 0570303637 2014-11-25 09:03:21.37 +0000 UTC"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "XMPDocumentID"
-  want_hash: "07F841A781C68B8736F3B32FE3AD8E52"
-  want_quality: 100
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "07F841A781C68B8736F3B32FE3AD8E52"
+  want_quality:  100
 }
-exif: {
-  comment: "TODO: CanonCameraInfo60D?"
-  want_camera_model: "Canon EOS 60D"
-  want_camera_serial: "0570303637"
-  want_photo_id: "2014-11-25 09:03:21.37 +0000 UTC"
+exif:  {
+  comment:  "TODO: CanonCameraInfo60D?"
+  want_camera_model:  "Canon EOS 60D"
+  want_camera_serial:  "0570303637"
+  want_photo_id:  "2014-11-25 09:03:21.37 +0000 UTC"
 }
-xmp: {
-  want_document_id: "07F841A781C68B8736F3B32FE3AD8E52"
+xmp:  {
+  want_document_id:  "07F841A781C68B8736F3B32FE3AD8E52"
 }
-img_phash: {
-  comment: "no image data"
-  skip: true
+img_phash:  {
+  comment:  "No image data"
 }
-video_phash: {
-  comment: "No Video Data"
-  skip: true
+video_phash:  {
+  comment:  "No video data"
 }

@@ -12,10 +12,8 @@ xmp: {
   want_document_id: "B9AEA6B8FE2068118083C9A827F66721"
 }
 img_phash: {
-  comment: "no image data"
-  skip: true
+  comment: "No image data"
 }
 video_phash: {
-  comment: "No Video Data"
-  skip: true
+  comment: "No video data"
 }

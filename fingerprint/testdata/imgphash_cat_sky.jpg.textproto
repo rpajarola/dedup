@@ -1,34 +1,32 @@
-source_file: "imgphash_cat_sky.jpg"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "c80126ef91b87cad"
-  want_quality: 20
+source_file:  "imgphash_cat_sky.jpg"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "c80126ef91b87cad"
+  want_quality:  20
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "fff07fffff181800.d5df3a39d98a1715"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "fff07fffff181800.d5df3a39d98a1715"
+  want_quality:  20
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "/Mkk0kmhL7MkE3Y20klhb6Wg3lkycnE7JWQ3G7M/HY8HI+Hkm0kbE2bWJfHg24/H4m8HBA4G20m22kkxb22020m20kB5b2jJ"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "/Mkk0kmhL7MkE3Y20klhb6Wg3lkycnE7JWQ3G7M/HY8HI+Hkm0kbE2bWJfHg24/H4m8HBA4G20m22kkxb22020m20kB5b2jJ"
+  want_quality:  20
 }
-exif: {
-  comment: "No EXIF data"
-  want_camera_model: "fixme"
-  want_camera_serial: "fixme"
-  want_photo_id: "fixme"
+exif:  {
+  comment:  "No EXIF data"
+  want_camera_model:  "fixme"
+  want_camera_serial:  "fixme"
+  want_photo_id:  "fixme"
 }
-xmp: {
-  comment: "No XMP data"
-  want_document_id: "fixme"
+xmp:  {
+  comment:  "No XMP data"
 }
-img_phash: {
-  want_azr_hash: "c80126ef91b87cad"
-  want_nr90_hash: "fff07fffff181800.d5df3a39d98a1715"
+img_phash:  {
+  want_azr_hash:  "c80126ef91b87cad"
+  want_nr90_hash:  "fff07fffff181800.d5df3a39d98a1715"
 }
-video_phash: {
-  comment: "No Video Data"
-  skip: true
+video_phash:  {
+  comment:  "No video data"
 }

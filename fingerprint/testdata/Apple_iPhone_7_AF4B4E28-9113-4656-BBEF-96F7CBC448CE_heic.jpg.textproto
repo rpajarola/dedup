@@ -1,22 +1,20 @@
-source_file: "Apple iPhone 7 AF4B4E28-9113-4656-BBEF-96F7CBC448CE heic.jpg"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Apple iPhone 7  AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
-  want_quality: 100
+source_file:  "Apple iPhone 7 AF4B4E28-9113-4656-BBEF-96F7CBC448CE heic.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Apple iPhone 7  AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
+  want_quality:  100
 }
-exif: {
-  want_camera_model: "Apple iPhone 7"
-  want_photo_id: "AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
-  want_unique_photo_id: true
+exif:  {
+  want_camera_model:  "Apple iPhone 7"
+  want_photo_id:  "AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
+  want_unique_photo_id:  true
 }
-xmp: {
-  comment: "No XMP data"
+xmp:  {
+  comment:  "No XMP data"
 }
-img_phash: {
-  comment: "no image data"
-  skip: true
+img_phash:  {
+  comment:  "No image data"
 }
-video_phash: {
-  comment: "No Video Data"
-  skip: true
+video_phash:  {
+  comment:  "No video data"
 }

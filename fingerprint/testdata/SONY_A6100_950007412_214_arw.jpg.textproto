@@ -1,20 +1,18 @@
-source_file: "SONY A6100 950007412 214_arw.jpg"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "SONY ILCE-6100 5f0000004a0c 214"
-  want_quality: 90
+source_file:  "SONY A6100 950007412 214_arw.jpg"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "SONY ILCE-6100 5f0000004a0c 214"
+  want_quality:  90
 }
-exif: {
-  want_camera_model: "SONY ILCE-6100"
-  want_camera_serial: "5f0000004a0c"
-  want_photo_id: "214"
+exif:  {
+  want_camera_model:  "SONY ILCE-6100"
+  want_camera_serial:  "5f0000004a0c"
+  want_photo_id:  "214"
 }
-xmp: {}
-img_phash: {
-  comment: "no image data"
-  skip: true
+xmp:  {}
+img_phash:  {
+  comment:  "No image data"
 }
-video_phash: {
-  comment: "No Video Data"
-  skip: true
+video_phash:  {
+  comment:  "No video data"
 }
