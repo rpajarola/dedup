@@ -17,12 +17,12 @@ want_fingerprint:  {
 }
 want_fingerprint:  {
   want_kind:  "VideoPHashRicop"
-  want_hash:  "f86e2e4a34601020.aa5555aa15aa5555"
+  want_hash:  "f86e2e4a34601020.aa55aa550055aa55"
   want_quality:  20
 }
-exif: {
+exif:  {
   comment:  "TODO: gif files have no EXIF data"
-  skip: true
+  skip:  true
 }
 xmp:  {
   comment:  "No XMP data"

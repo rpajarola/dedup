@@ -221,13 +221,17 @@ func (vpfps *videoPHashFingerprinterState) GetRicop() (Fingerprint, error) {
 		if d < 10 {
 			l++
 		} else {
-			scenes = append(scenes, l)
-			scenefps = append(scenefps, h)
-			l = 0
+			if l == 0 {
+				scenes[len(scenes)-1]++
+			} else {
+				scenes = append(scenes, l+1)
+				scenefps = append(scenefps, h)
+				l = 0
+			}
 		}
 		prevH = h
 	}
-	if nframes == 1 {
+	if nframes <= 1 {
 		return NoFingerprint, nil
 	}
 	scenes = append(scenes, l)
