@@ -10,6 +10,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/protocolbuffers/txtpbfmt/parser"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/testing/protocmp"
@@ -88,6 +89,10 @@ func updateTestCase(t *testing.T, tc TestCase) {
 	t.Helper()
 	fname := tc.Name + ".new"
 	raw := []byte(prototext.Format(tc.Got))
+	raw, err := parser.Format(raw)
+	if err != nil {
+		t.Fatalf("parser.Format(%v): %v", fname, err)
+	}
 	if err := os.WriteFile(fname, raw, 0644); err != nil {
 		t.Fatalf("os.WriteFile(%v): %v", fname, err)
 	}

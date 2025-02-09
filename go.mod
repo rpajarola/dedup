@@ -10,6 +10,7 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/h2non/filetype v1.1.3
 	github.com/jdeng/goheif v0.0.0-20241115163857-e2bbb197c985
+	github.com/protocolbuffers/txtpbfmt v0.0.0-20250129171521-feedd8250727
 	github.com/rpajarola/exiftools v0.0.0-20250203083034-4c644d89d27c
 	github.com/trimmer-io/go-xmp v1.0.0
 	golang.org/x/image v0.24.0
@@ -20,6 +21,7 @@ require (
 	github.com/asticode/go-astikit v0.51.1 // indirect
 	github.com/azr/gift v1.1.2 // indirect
 	github.com/disintegration/imaging v1.6.2 // indirect
+	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/mjibson/go-dsp v0.0.0-20180508042940-11479a337f12 // indirect
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 // indirect
 	github.com/r9y9/gossp v0.0.1 // indirect
