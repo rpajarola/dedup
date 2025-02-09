@@ -6,6 +6,7 @@
 
 ```
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install github.com/protocolbuffers/txtpbfmt/cmd/txtpbfmt@latest
 export PATH="$PATH:$(go env GOPATH)/bin"
 ```
 
