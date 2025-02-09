@@ -1,45 +1,45 @@
-source_file:  "Y-GooglePixel2-PortraitMode-005.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "d9cf8486"
-  want_quality:  50
+source_file: "Y-GooglePixel2-PortraitMode-005.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "d9cf8486"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "0d0b443d870332e66a15f1f7085b6e39"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "0d0b443d870332e66a15f1f7085b6e39"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "27ab68a384d16b948c1d9d7b1fa85fd45179b58a"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "27ab68a384d16b948c1d9d7b1fa85fd45179b58a"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "8992ac9e535c3c1d"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "8992ac9e535c3c1d"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "f979692b2b181c3f.e743435a48d8704"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "f979692b2b181c3f.e743435a48d8704"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "tHanEkJcJE4P/DZ8hm+DbB70/H4fH4HA4/G4mwPZPk4XHA3A/G4JJ4ZP40gbkpbfH28DbDZHl5fB4/G4HbHYg6B45HB/Jn4n"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "tHanEkJcJE4P/DZ8hm+DbB70/H4fH4HA4/G4mwPZPk4XHA3A/G4JJ4ZP40gbkpbfH28DbDZHl5fB4/G4HbHYg6B45HB/Jn4n"
+  want_quality: 20
 }
-exif:  {
-  want_camera_model:  "Google Pixel 2"
-  want_photo_id:  "2018-03-22 13:17:17.68342 +0000 UTC"
+exif: {
+  want_camera_model: "Google Pixel 2"
+  want_photo_id: "2018-03-22 13:17:17.68342 +0000 UTC"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  want_azr_hash:  "8992ac9e535c3c1d"
-  want_nr90_hash:  "f979692b2b181c3f.e743435a48d8704"
+img_phash: {
+  want_azr_hash: "8992ac9e535c3c1d"
+  want_nr90_hash: "f979692b2b181c3f.e743435a48d8704"
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

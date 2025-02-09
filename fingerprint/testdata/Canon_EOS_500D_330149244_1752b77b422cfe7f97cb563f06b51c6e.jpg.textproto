@@ -1,34 +1,34 @@
-source_file:  "Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "e84738f7"
-  want_quality:  50
+source_file: "Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "e84738f7"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "998663d319a4345cbb529a5085886cad"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "998663d319a4345cbb529a5085886cad"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "c9949d69ddb6e8a7bce79cf748f7c69df77af75b"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "c9949d69ddb6e8a7bce79cf748f7c69df77af75b"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "Canon EOS 500D"
-  want_camera_serial:  "330149244"
-  want_photo_id:  "1752b77b422cfe7f97cb563f06b51c6e"
-  want_unique_photo_id:  true
+exif: {
+  want_camera_model: "Canon EOS 500D"
+  want_camera_serial: "330149244"
+  want_photo_id: "1752b77b422cfe7f97cb563f06b51c6e"
+  want_unique_photo_id: true
 }
-xmp:  {}
-img_phash:  {
-  comment:  "No image data"
+xmp: {}
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

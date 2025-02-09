@@ -1,41 +1,41 @@
-source_file:  "Canon EOS 60D 570303637 07F841A781C68B8736F3B32FE3AD8E52.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "4bda025a"
-  want_quality:  50
+source_file: "Canon EOS 60D 570303637 07F841A781C68B8736F3B32FE3AD8E52.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "4bda025a"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "5e6f910ebb31929cac09b6f0c1309c82"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "5e6f910ebb31929cac09b6f0c1309c82"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "2998f92770f6d19d7f29886d0ae6a32d533f9bce"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "2998f92770f6d19d7f29886d0ae6a32d533f9bce"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Canon EOS 60D 0570303637 2014-11-25 09:03:21.37 +0000 UTC"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Canon EOS 60D 0570303637 2014-11-25 09:03:21.37 +0000 UTC"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "07F841A781C68B8736F3B32FE3AD8E52"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "07F841A781C68B8736F3B32FE3AD8E52"
+  want_quality: 100
 }
-exif:  {
-  comment:  "TODO: CanonCameraInfo60D?"
-  want_camera_model:  "Canon EOS 60D"
-  want_camera_serial:  "0570303637"
-  want_photo_id:  "2014-11-25 09:03:21.37 +0000 UTC"
+exif: {
+  comment: "TODO: CanonCameraInfo60D?"
+  want_camera_model: "Canon EOS 60D"
+  want_camera_serial: "0570303637"
+  want_photo_id: "2014-11-25 09:03:21.37 +0000 UTC"
 }
-xmp:  {
-  want_document_id:  "07F841A781C68B8736F3B32FE3AD8E52"
+xmp: {
+  want_document_id: "07F841A781C68B8736F3B32FE3AD8E52"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

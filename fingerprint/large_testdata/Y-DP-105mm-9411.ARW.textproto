@@ -1,34 +1,34 @@
-source_file:  "Y-DP-105mm-9411.ARW"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "1206c6bd"
-  want_quality:  50
+source_file: "Y-DP-105mm-9411.ARW"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "1206c6bd"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "f11b685aa88cc4509c935f66f7e4814d"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "f11b685aa88cc4509c935f66f7e4814d"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "d74a8e6640396b8286211bedce801b0cfedb5c80"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "d74a8e6640396b8286211bedce801b0cfedb5c80"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY ILCE-7M3 28ff00008809 6020"
-  want_quality:  90
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCE-7M3 28ff00008809 6020"
+  want_quality: 90
 }
-exif:  {
-  want_camera_model:  "SONY ILCE-7M3"
-  want_camera_serial:  "28ff00008809"
-  want_photo_id:  "6020"
+exif: {
+  want_camera_model: "SONY ILCE-7M3"
+  want_camera_serial: "28ff00008809"
+  want_photo_id: "6020"
 }
-xmp:  {}
-img_phash:  {
-  comment:  "TODO: no thumbnail?"
-  skip:  true
+xmp: {}
+img_phash: {
+  comment: "TODO: no thumbnail?"
+  skip: true
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

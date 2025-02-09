@@ -1,32 +1,32 @@
-source_file:  "Panasonic DMC-LX5 F101104180107 none rw2.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "c120d552"
-  want_quality:  50
+source_file: "Panasonic DMC-LX5 F101104180107 none rw2.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "c120d552"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "d832fb3e38fd7538576ccd66b7fad791"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "d832fb3e38fd7538576ccd66b7fad791"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "5c5456f663e4af0ed19314220818eb862a77bd0c"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "5c5456f663e4af0ed19314220818eb862a77bd0c"
+  want_quality: 99
 }
-exif:  {
-  comment:  "TODO: implement MakerNotePanasonic"
-  comment:  "TODO: MakerNotePanasonic.InternalSerialNumber"
-  comment:  "want_camera_serial: F101104180107"
-  want_camera_model:  "Panasonic DMC-LX5"
-  want_photo_id:  "2011-11-17 12:24:26 +0000 UTC"
+exif: {
+  comment: "TODO: implement MakerNotePanasonic"
+  comment: "TODO: MakerNotePanasonic.InternalSerialNumber"
+  comment: "want_camera_serial: F101104180107"
+  want_camera_model: "Panasonic DMC-LX5"
+  want_photo_id: "2011-11-17 12:24:26 +0000 UTC"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

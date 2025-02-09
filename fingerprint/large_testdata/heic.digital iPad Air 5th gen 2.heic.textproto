@@ -1,51 +1,51 @@
-source_file:  "heic.digital iPad Air 5th gen 2.heic"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "fd8afd29"
-  want_quality:  50
+source_file: "heic.digital iPad Air 5th gen 2.heic"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "fd8afd29"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "5ec94b19184acacf316a73cd0bc4fe2e"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "5ec94b19184acacf316a73cd0bc4fe2e"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "dc4b7686fa68393bc4aaec0c5ce1ad5a67625c76"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "dc4b7686fa68393bc4aaec0c5ce1ad5a67625c76"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPad Air (5th generation)  39247AF2-FA9F-41B3-92DF-2E53D34D582B"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPad Air (5th generation)  39247AF2-FA9F-41B3-92DF-2E53D34D582B"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "4cf0f8c7c3121ed4"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "4cf0f8c7c3121ed4"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "ffff7f143c3c1800.1a1a0b0a1a1a0e00"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ffff7f143c3c1800.1a1a0b0a1a1a0e00"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "L5LA4HG3kE5LJZJ7Ho2m0LLaH+24HH4HIZLL8G07PZ/EmnX4E823A7H4+8HI2A3E4HA8M/GbD5Pg8nw0mtuXG4Hw0nm02E4T"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "L5LA4HG3kE5LJZJ7Ho2m0LLaH+24HH4HIZLL8G07PZ/EmnX4E823A7H4+8HI2A3E4HA8M/GbD5Pg8nw0mtuXG4Hw0nm02E4T"
+  want_quality: 20
 }
-exif:  {
-  want_camera_model:  "Apple iPad Air (5th generation)"
-  want_photo_id:  "39247AF2-FA9F-41B3-92DF-2E53D34D582B"
-  want_unique_photo_id:  true
+exif: {
+  want_camera_model: "Apple iPad Air (5th generation)"
+  want_photo_id: "39247AF2-FA9F-41B3-92DF-2E53D34D582B"
+  want_unique_photo_id: true
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  want_azr_hash:  "4cf0f8c7c3121ed4"
-  want_nr90_hash:  "ffff7f143c3c1800.1a1a0b0a1a1a0e00"
+img_phash: {
+  want_azr_hash: "4cf0f8c7c3121ed4"
+  want_nr90_hash: "ffff7f143c3c1800.1a1a0b0a1a1a0e00"
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

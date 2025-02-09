@@ -1,51 +1,51 @@
-source_file:  "D300hSLI0100.NEF"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "6cb80435"
-  want_quality:  50
+source_file: "D300hSLI0100.NEF"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "6cb80435"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "4af3f6b1b23b903ef814e956ce16f66c"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "4af3f6b1b23b903ef814e956ce16f66c"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "5d2966f079eba2c9184cbbc6145cf605e27308e9"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "5d2966f079eba2c9184cbbc6145cf605e27308e9"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "NIKON D300 3005346 1803 RAW"
-  want_quality:  90
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "NIKON D300 3005346 1803 RAW"
+  want_quality: 90
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "4cc9b6cb63a34d14"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "4cc9b6cb63a34d14"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "87a1c7efd1f900.909a9048f1d8c82c"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "87a1c7efd1f900.909a9048f1d8c82c"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "2wPA4HJ5bLZJ2xb02BJ4bZ5J2xmzAnA6W8hJ23Z/EnbOkbZJ2w/Hbgy5O3JJ2wbD8kLfkbZJ2zb+Hk4BbkhJ23AZGZH/A5BJ"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "2wPA4HJ5bLZJ2xb02BJ4bZ5J2xmzAnA6W8hJ23Z/EnbOkbZJ2w/Hbgy5O3JJ2wbD8kLfkbZJ2zb+Hk4BbkhJ23AZGZH/A5BJ"
+  want_quality: 20
 }
-exif:  {
-  want_camera_model:  "NIKON D300"
-  want_camera_serial:  "3005346"
-  want_photo_id:  "1803 RAW"
+exif: {
+  want_camera_model: "NIKON D300"
+  want_camera_serial: "3005346"
+  want_photo_id: "1803 RAW"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  want_azr_hash:  "4cc9b6cb63a34d14"
-  want_nr90_hash:  "87a1c7efd1f900.909a9048f1d8c82c"
+img_phash: {
+  want_azr_hash: "4cc9b6cb63a34d14"
+  want_nr90_hash: "87a1c7efd1f900.909a9048f1d8c82c"
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

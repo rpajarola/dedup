@@ -1,51 +1,51 @@
-source_file:  "heic.digital iPhone 12 Pro 2.heic"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "91975cf4"
-  want_quality:  50
+source_file: "heic.digital iPhone 12 Pro 2.heic"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "91975cf4"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "4c1aec701f97b66e756cbc44b8306efe"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "4c1aec701f97b66e756cbc44b8306efe"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "1b61164290f0153999d1ecb14ff7df9978f3fbcd"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "1b61164290f0153999d1ecb14ff7df9978f3fbcd"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPhone 12 Pro  8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 12 Pro  8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "788e0831fcff1f00"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "788e0831fcff1f00"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "7070f0f0f0f0f03.93c3c2c2c3c39119"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "7070f0f0f0f0f03.93c3c2c2c3c39119"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "LjI0Hw23I7HYk00+nI7A7H5P2w3k3IZJbk5b2QHgoHA4HA4fZHYDYHA8H4PAG5LLcDE4PA3AB4bJ7J7H4/HwH4/NjY5Hg8HA"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "LjI0Hw23I7HYk00+nI7A7H5P2w3k3IZJbk5b2QHgoHA4HA4fZHYDYHA8H4PAG5LLcDE4PA3AB4bJ7J7H4/HwH4/NjY5Hg8HA"
+  want_quality: 20
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 12 Pro"
-  want_photo_id:  "8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
-  want_unique_photo_id:  true
+exif: {
+  want_camera_model: "Apple iPhone 12 Pro"
+  want_photo_id: "8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
+  want_unique_photo_id: true
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  want_azr_hash:  "788e0831fcff1f00"
-  want_nr90_hash:  "7070f0f0f0f0f03.93c3c2c2c3c39119"
+img_phash: {
+  want_azr_hash: "788e0831fcff1f00"
+  want_nr90_hash: "7070f0f0f0f0f03.93c3c2c2c3c39119"
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

@@ -1,43 +1,43 @@
-source_file:  "Sony A6100 4078921458.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "184f4179"
-  want_quality:  50
+source_file: "Sony A6100 4078921458.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "184f4179"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "26ba9964fad692b052d60cc1ca54aadc"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "26ba9964fad692b052d60cc1ca54aadc"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "fee4268097442948b94095af72ed97a68f2eab84"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "fee4268097442948b94095af72ed97a68f2eab84"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "74ab07f1f083067c"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "74ab07f1f083067c"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "8f0f0f0fffccf1ff.c0c080c7d7463037"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "8f0f0f0fffccf1ff.c0c080c7d7463037"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "2mmB7s5O0GxL2jb5FpZPJ2xL0jb2hZ/JLG5bkjbkrZYxbDZbDH4HY4Ha4H4+kxJbY/bY+D82mxtYBLbYbbH0mwmLZLZPw4GA"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "2mmB7s5O0GxL2jb5FpZPJ2xL0jb2hZ/JLG5bkjbkrZYxbDZbDH4HY4Ha4H4+kxJbY/bY+D82mxtYBLbYbbH0mwmLZLZPw4GA"
+  want_quality: 20
 }
-exif:  {
-  want_camera_model:  "SONY ILCE-6100"
-  want_photo_id:  "2019-11-04 16:02:21 +0000 UTC"
+exif: {
+  want_camera_model: "SONY ILCE-6100"
+  want_photo_id: "2019-11-04 16:02:21 +0000 UTC"
 }
-xmp:  {}
-img_phash:  {
-  want_azr_hash:  "74ab07f1f083067c"
-  want_nr90_hash:  "8f0f0f0fffccf1ff.c0c080c7d7463037"
+xmp: {}
+img_phash: {
+  want_azr_hash: "74ab07f1f083067c"
+  want_nr90_hash: "8f0f0f0fffccf1ff.c0c080c7d7463037"
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

@@ -1,34 +1,34 @@
-source_file:  "SONY DSC-HX30V E98D7E10665FCE21467A13D385232CB3.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "72e51cfa"
-  want_quality:  50
+source_file: "SONY DSC-HX30V E98D7E10665FCE21467A13D385232CB3.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "72e51cfa"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "85b5158e30df166137ef932296755fed"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "85b5158e30df166137ef932296755fed"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "b9672304ef47e893780226975b9a570128f96ad7"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "b9672304ef47e893780226975b9a570128f96ad7"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "E98D7E10665FCE21467A13D385232CB3"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "E98D7E10665FCE21467A13D385232CB3"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "SONY DSC-HX30V"
-  want_photo_id:  "2012-12-17 19:34:17 +0000 UTC"
+exif: {
+  want_camera_model: "SONY DSC-HX30V"
+  want_photo_id: "2012-12-17 19:34:17 +0000 UTC"
 }
-xmp:  {
-  want_document_id:  "E98D7E10665FCE21467A13D385232CB3"
+xmp: {
+  want_document_id: "E98D7E10665FCE21467A13D385232CB3"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

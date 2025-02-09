@@ -1,27 +1,27 @@
-source_file:  "Google Pixel 2 none.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "a98f9c32"
-  want_quality:  50
+source_file: "Google Pixel 2 none.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "a98f9c32"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "663895e2c6bf83c54c1312579fd2ae92"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "663895e2c6bf83c54c1312579fd2ae92"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "03f6b5dc165dc6ad451f6f70970e7cea022ab980"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "03f6b5dc165dc6ad451f6f70970e7cea022ab980"
+  want_quality: 99
 }
-exif:  {
-  want_camera_model:  "Google Pixel 2"
-  want_photo_id:  "2018-03-22 13:17:17.68342 +0000 UTC"
+exif: {
+  want_camera_model: "Google Pixel 2"
+  want_photo_id: "2018-03-22 13:17:17.68342 +0000 UTC"
 }
-xmp:  {}
-img_phash:  {
-  comment:  "No image data"
+xmp: {}
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

@@ -1,35 +1,35 @@
-source_file:  "NIKON COOLPIX P1000 30001701 0.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "1b6a6056"
-  want_quality:  50
+source_file: "NIKON COOLPIX P1000 30001701 0.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "1b6a6056"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "f11d8521720313335f75e64c45fb6a81"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "f11d8521720313335f75e64c45fb6a81"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "dce9a917d1cc529fac112974c12cff21ae29ed17"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "dce9a917d1cc529fac112974c12cff21ae29ed17"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "NIKON COOLPIX P1000 30001701 2019-03-13 02:52:52 +0000 UTC FINE"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "NIKON COOLPIX P1000 30001701 2019-03-13 02:52:52 +0000 UTC FINE"
+  want_quality: 80
 }
-exif:  {
-  want_camera_model:  "NIKON COOLPIX P1000"
-  want_camera_serial:  "30001701"
-  want_photo_id:  "2019-03-13 02:52:52 +0000 UTC FINE"
+exif: {
+  want_camera_model: "NIKON COOLPIX P1000"
+  want_camera_serial: "30001701"
+  want_photo_id: "2019-03-13 02:52:52 +0000 UTC FINE"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

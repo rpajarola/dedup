@@ -1,51 +1,51 @@
-source_file:  "BigBuckBunny.gif"
-want_err:  true
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "ebc05db5"
-  want_quality:  50
+source_file: "BigBuckBunny.gif"
+want_err: true
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "ebc05db5"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "3c931dc0ce4bb84a4bb6666da811cb7d"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "3c931dc0ce4bb84a4bb6666da811cb7d"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "799e9651e92ac4e5468584a8819f8e398392ce4a"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "799e9651e92ac4e5468584a8819f8e398392ce4a"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "1a7344a9395c576a"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "1a7344a9395c576a"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "efe0e0f8c8ccc4c0.eb793454e6c7e6fc"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "efe0e0f8c8ccc4c0.eb793454e6c7e6fc"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "k5ZmzZbJp2jJZgPbM3B4nm3R4HoJ348HAm43n22Y5HLZJZc02Ab+XD7HI+GbbP4bP0k/MC7b7HY/Gw8EyZI+kxmmZLnY2N00"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "k5ZmzZbJp2jJZgPbM3B4nm3R4HoJ348HAm43n22Y5HLZJZc02Ab+XD7HI+GbbP4bP0k/MC7b7HY/Gw8EyZI+kxmmZLnY2N00"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "VideoPHashRicop"
-  want_hash:  "f86e2e4a34601020.aa55aa550055aa55"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "VideoPHashRicop"
+  want_hash: "f86e2e4a34601020.aa55aa550055aa55"
+  want_quality: 20
 }
-exif:  {
-  comment:  "TODO: gif files have no EXIF data"
-  skip:  true
+exif: {
+  comment: "TODO: gif files have no EXIF data"
+  skip: true
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  want_azr_hash:  "1a7344a9395c576a"
-  want_nr90_hash:  "efe0e0f8c8ccc4c0.eb793454e6c7e6fc"
+img_phash: {
+  want_azr_hash: "1a7344a9395c576a"
+  want_nr90_hash: "efe0e0f8c8ccc4c0.eb793454e6c7e6fc"
 }
-video_phash:  {
-  want_ricop_hash:  "f86e2e4a34601020.aa5555aa15aa5555"
+video_phash: {
+  want_ricop_hash: "f86e2e4a34601020.aa5555aa15aa5555"
 }

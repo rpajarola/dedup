@@ -1,43 +1,43 @@
-source_file:  "SONY A7s III jpeg none 6d2a79cc-d7bf-416d-bdb4-643a667b1ef4.jpg"
-comment:  "pre-release model of SONY A7s III"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "2d8def22"
-  want_quality:  50
+source_file: "SONY A7s III jpeg none 6d2a79cc-d7bf-416d-bdb4-643a667b1ef4.jpg"
+comment: "pre-release model of SONY A7s III"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "2d8def22"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "355f5ae7d13537f4a44e6906e3d9edb2"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "355f5ae7d13537f4a44e6906e3d9edb2"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "541d5ad64d72e8b00b254e23ea280b2e31b924b9"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "541d5ad64d72e8b00b254e23ea280b2e31b924b9"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "A1B59EAF9BAAEC3F0C97603358445EF3"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "A1B59EAF9BAAEC3F0C97603358445EF3"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "SONY MODEL-NAME"
-  want_photo_id:  "2022-09-09 21:29:51.627 +0000 UTC"
+exif: {
+  want_camera_model: "SONY MODEL-NAME"
+  want_photo_id: "2022-09-09 21:29:51.627 +0000 UTC"
 }
-xmp:  {
-  comment:  "TODO"
-  comment:  "OriginalDocumentID = A1B59EAF9BAAEC3F0C97603358445EF3"
-  comment:  "DocumentID = xmp.did:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4"
-  comment:  "InstanceID = xmp.iid:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4"
-  comment:  "HistoryInstanceID = xmp.iid:58fe1404-10fe-4f7e-afc9-84155fa2fecc"
-  comment:  "HistoryInstanceID = xmp.iid:29d5c88b-b77f-4175-9587-9e8cf3388f80"
-  comment:  "HistoryInstanceID = xmp.iid:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4"
-  comment:  "LookUUID = B952C231111CD8E0ECCF14B86BAA7077"
-  want_document_id:  "A1B59EAF9BAAEC3F0C97603358445EF3"
+xmp: {
+  comment: "TODO"
+  comment: "OriginalDocumentID = A1B59EAF9BAAEC3F0C97603358445EF3"
+  comment: "DocumentID = xmp.did:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4"
+  comment: "InstanceID = xmp.iid:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4"
+  comment: "HistoryInstanceID = xmp.iid:58fe1404-10fe-4f7e-afc9-84155fa2fecc"
+  comment: "HistoryInstanceID = xmp.iid:29d5c88b-b77f-4175-9587-9e8cf3388f80"
+  comment: "HistoryInstanceID = xmp.iid:6d2a79cc-d7bf-416d-bdb4-643a667b1ef4"
+  comment: "LookUUID = B952C231111CD8E0ECCF14B86BAA7077"
+  want_document_id: "A1B59EAF9BAAEC3F0C97603358445EF3"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

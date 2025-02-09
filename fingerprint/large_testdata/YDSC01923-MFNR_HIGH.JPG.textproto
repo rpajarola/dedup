@@ -1,51 +1,51 @@
-source_file:  "YDSC01923-MFNR_HIGH.JPG"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "d32ad391"
-  want_quality:  50
+source_file: "YDSC01923-MFNR_HIGH.JPG"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "d32ad391"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "452cbe07fa486f970cd38021d7507efb"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "452cbe07fa486f970cd38021d7507efb"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "b8ca5a2b2807365b272fa0a93f1a8824b6e94061"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "b8ca5a2b2807365b272fa0a93f1a8824b6e94061"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY ILCA-77M2 173014736 24260"
-  want_quality:  90
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCA-77M2 173014736 24260"
+  want_quality: 90
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "116743e1c3e347e1"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "116743e1c3e347e1"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "7fcfcfdf20218101.14e26763a730b0f8"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "7fcfcfdf20218101.14e26763a730b0f8"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "E42BKf0hJkz2kgnG/0kjbbWzm8kmwLGzYJI80gbk202xmB582zQ+G22jxJck5H4+Hg/H48Em4A2DY2knE7OBkjDbcmkwmZLJ"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "E42BKf0hJkz2kgnG/0kjbbWzm8kmwLGzYJI80gbk202xmB582zQ+G22jxJck5H4+Hg/H48Em4A2DY2knE7OBkjDbcmkwmZLJ"
+  want_quality: 20
 }
-exif:  {
-  want_camera_model:  "SONY ILCA-77M2"
-  want_camera_serial:  "173014736"
-  want_photo_id:  "24260"
+exif: {
+  want_camera_model: "SONY ILCA-77M2"
+  want_camera_serial: "173014736"
+  want_photo_id: "24260"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  want_azr_hash:  "116743e1c3e347e1"
-  want_nr90_hash:  "7fcfcfdf20218101.14e26763a730b0f8"
+img_phash: {
+  want_azr_hash: "116743e1c3e347e1"
+  want_nr90_hash: "7fcfcfdf20218101.14e26763a730b0f8"
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

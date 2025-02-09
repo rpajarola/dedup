@@ -1,35 +1,35 @@
-source_file:  "SONY A7 III 27.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "44b6b451"
-  want_quality:  50
+source_file: "SONY A7 III 27.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "44b6b451"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "0727e40a9885391f3afdc8ad15fe3a67"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "0727e40a9885391f3afdc8ad15fe3a67"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "7398608008728045456c05720a3a32f885a13190"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "7398608008728045456c05720a3a32f885a13190"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY ILCE-7M3 28ff00008809 27"
-  want_quality:  90
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCE-7M3 28ff00008809 27"
+  want_quality: 90
 }
-exif:  {
-  want_camera_model:  "SONY ILCE-7M3"
-  want_camera_serial:  "28ff00008809"
-  want_photo_id:  "27"
+exif: {
+  want_camera_model: "SONY ILCE-7M3"
+  want_camera_serial: "28ff00008809"
+  want_photo_id: "27"
 }
-xmp:  {
-  comment:  "No EXIF data"
+xmp: {
+  comment: "No EXIF data"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

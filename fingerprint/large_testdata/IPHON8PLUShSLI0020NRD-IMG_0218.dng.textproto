@@ -1,32 +1,32 @@
-source_file:  "IPHON8PLUShSLI0020NRD-IMG_0218.dng"
-want_err:  true
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "04faf813"
-  want_quality:  50
+source_file: "IPHON8PLUShSLI0020NRD-IMG_0218.dng"
+want_err: true
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "04faf813"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "886f3e000c3ecb59de2e494416c5b51e"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "886f3e000c3ecb59de2e494416c5b51e"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "a247716c5344178a55af6f471da9b0bde9cc4255"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "a247716c5344178a55af6f471da9b0bde9cc4255"
+  want_quality: 99
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 8 Plus"
-  want_photo_id:  "2017-10-10 12:07:28.526 +0000 UTC"
+exif: {
+  want_camera_model: "Apple iPhone 8 Plus"
+  want_photo_id: "2017-10-10 12:07:28.526 +0000 UTC"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "TODO: implement decoding dng"
-  skip:  true
+img_phash: {
+  comment: "TODO: implement decoding dng"
+  skip: true
 }
-video_phash:  {
-  comment:  "No Video Data"
-  skip:  true
+video_phash: {
+  comment: "No Video Data"
+  skip: true
 }

@@ -1,35 +1,35 @@
-source_file:  "SONY Alpha 77 II 7613018102 24265.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "df9a5aa6"
-  want_quality:  50
+source_file: "SONY Alpha 77 II 7613018102 24265.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "df9a5aa6"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "c3b2d75dd26c0c55a46ddfb74e1ed847"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "c3b2d75dd26c0c55a46ddfb74e1ed847"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "10b2b89d0e094c630135a896edfd99c31ac0e133"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "10b2b89d0e094c630135a896edfd99c31ac0e133"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY ILCA-77M2 173014736 24265"
-  want_quality:  90
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCA-77M2 173014736 24265"
+  want_quality: 90
 }
-exif:  {
-  want_camera_model:  "SONY ILCA-77M2"
-  want_camera_serial:  "173014736"
-  want_photo_id:  "24265"
+exif: {
+  want_camera_model: "SONY ILCA-77M2"
+  want_camera_serial: "173014736"
+  want_photo_id: "24265"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

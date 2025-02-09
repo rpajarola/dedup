@@ -1,51 +1,51 @@
-source_file:  "Nikon D3000 2539678715.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "e026659d"
-  want_quality:  50
+source_file: "Nikon D3000 2539678715.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "e026659d"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "6a855569f88c28d70778dd39aebca776"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "6a855569f88c28d70778dd39aebca776"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "441b4a4b061397daf1350345325484e9c69efd8a"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "441b4a4b061397daf1350345325484e9c69efd8a"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "NIKON D3000 7400454 939 BASIC"
-  want_quality:  90
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "NIKON D3000 7400454 939 BASIC"
+  want_quality: 90
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "ec3143461c9a3ee5"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "ec3143461c9a3ee5"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "fbffffbdb13e0c00.3c682bae985337b5"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "fbffffbdb13e0c00.3c682bae985337b5"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "/A5khGHZaluLA4G/Ez8OkD22D+kJbb2zIkyTE4nJ46nD48DI/Gg22JD4fH7w4GHB4n5Gw0lkH/gkn4nIn0gL4Ev20k4HAkzZ"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "/A5khGHZaluLA4G/Ez8OkD22D+kJbb2zIkyTE4nJ46nD48DI/Gg22JD4fH7w4GHB4n5Gw0lkH/gkn4nIn0gL4Ev20k4HAkzZ"
+  want_quality: 20
 }
-exif:  {
-  want_camera_model:  "NIKON D3000"
-  want_camera_serial:  "7400454"
-  want_photo_id:  "939 BASIC"
+exif: {
+  want_camera_model: "NIKON D3000"
+  want_camera_serial: "7400454"
+  want_photo_id: "939 BASIC"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  want_azr_hash:  "ec3143461c9a3ee5"
-  want_nr90_hash:  "fbffffbdb13e0c00.3c682bae985337b5"
+img_phash: {
+  want_azr_hash: "ec3143461c9a3ee5"
+  want_nr90_hash: "fbffffbdb13e0c00.3c682bae985337b5"
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

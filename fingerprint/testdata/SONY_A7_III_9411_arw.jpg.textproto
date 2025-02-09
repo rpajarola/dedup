@@ -1,35 +1,35 @@
-source_file:  "SONY A7 III 9411 arw.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "9a8f635c"
-  want_quality:  50
+source_file: "SONY A7 III 9411 arw.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "9a8f635c"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "6d3f78199d0e0bbd5bcdf493168c0b0a"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "6d3f78199d0e0bbd5bcdf493168c0b0a"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "faea88a3421ba69ddb3bbcc293e5d5938de3cc89"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "faea88a3421ba69ddb3bbcc293e5d5938de3cc89"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY ILCE-7M3 28ff00008809 6020"
-  want_quality:  90
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCE-7M3 28ff00008809 6020"
+  want_quality: 90
 }
-exif:  {
-  want_camera_model:  "SONY ILCE-7M3"
-  want_camera_serial:  "28ff00008809"
-  want_photo_id:  "6020"
+exif: {
+  want_camera_model: "SONY ILCE-7M3"
+  want_camera_serial: "28ff00008809"
+  want_photo_id: "6020"
 }
-xmp:  {
-  comment:  "No EXIF data"
+xmp: {
+  comment: "No EXIF data"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

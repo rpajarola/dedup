@@ -1,37 +1,37 @@
-source_file:  "iPhone15ProMax-0003-tele-5x.dng"
-want_err:  true
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "e15dbeb4"
-  want_quality:  50
+source_file: "iPhone15ProMax-0003-tele-5x.dng"
+want_err: true
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "e15dbeb4"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "7f0b241c211c8f6f4e194d4d3a711d04"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "7f0b241c211c8f6f4e194d4d3a711d04"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "7a2d3d79a232455d6bf082375471af908aa57dee"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "7a2d3d79a232455d6bf082375471af908aa57dee"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 15 Pro Max"
-  want_photo_id:  "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
-  want_unique_photo_id:  true
+exif: {
+  want_camera_model: "Apple iPhone 15 Pro Max"
+  want_photo_id: "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_unique_photo_id: true
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "TODO: implement decoding dng"
-  skip:  true
+img_phash: {
+  comment: "TODO: implement decoding dng"
+  skip: true
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }

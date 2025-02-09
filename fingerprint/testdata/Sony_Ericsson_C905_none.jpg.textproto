@@ -1,27 +1,27 @@
-source_file:  "Sony Ericsson C905 none.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "66d15f7d"
-  want_quality:  50
+source_file: "Sony Ericsson C905 none.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "66d15f7d"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "0cfdcb25468fde39c95187ce2eb9adc8"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "0cfdcb25468fde39c95187ce2eb9adc8"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "30eb734f604f67c77215ad7b7d3087b0b1a115ec"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "30eb734f604f67c77215ad7b7d3087b0b1a115ec"
+  want_quality: 99
 }
-exif:  {
-  want_camera_model:  "Sony Ericsson C905"
-  want_photo_id:  "2009-02-05 10:37:36 +0000 UTC"
+exif: {
+  want_camera_model: "Sony Ericsson C905"
+  want_photo_id: "2009-02-05 10:37:36 +0000 UTC"
 }
-xmp:  {}
-img_phash:  {
-  comment:  "No image data"
+xmp: {}
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

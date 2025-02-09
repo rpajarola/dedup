@@ -1,29 +1,29 @@
-source_file:  "Apple iPhone 8 Plus 1.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "7eecace0"
-  want_quality:  50
+source_file: "Apple iPhone 8 Plus 1.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "7eecace0"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "c8b4b511381b2b28a84ea0f480f19fec"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "c8b4b511381b2b28a84ea0f480f19fec"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "9adaeb4def4c879dce4cd566e2c5a5214609e3e3"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "9adaeb4def4c879dce4cd566e2c5a5214609e3e3"
+  want_quality: 99
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 8 Plus"
-  want_photo_id:  "2017-10-10 12:07:28.518 +0000 UTC"
+exif: {
+  want_camera_model: "Apple iPhone 8 Plus"
+  want_photo_id: "2017-10-10 12:07:28.518 +0000 UTC"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

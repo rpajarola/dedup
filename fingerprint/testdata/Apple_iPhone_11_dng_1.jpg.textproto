@@ -1,40 +1,40 @@
-source_file:  "Apple iPhone 11 dng 1.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "5b7c27ad"
-  want_quality:  50
+source_file: "Apple iPhone 11 dng 1.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "5b7c27ad"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "c36b469be12abc66847714756d732c80"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "c36b469be12abc66847714756d732c80"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "86a614dc78777cbbdfbda8ef6dbee0944bcedd99"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "86a614dc78777cbbdfbda8ef6dbee0944bcedd99"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "Apple iPhone 11  2ABA6EB7-5DF7-44CA-BD23-590BE8B4D533"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 11  2ABA6EB7-5DF7-44CA-BD23-590BE8B4D533"
+  want_quality: 100
 }
-want_fingerprint:  {
-  want_kind:  "XMPDocumentID"
-  want_hash:  "659BC91A3E511BBC12D0BB30818DF9CB"
-  want_quality:  100
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "659BC91A3E511BBC12D0BB30818DF9CB"
+  want_quality: 100
 }
-exif:  {
-  want_camera_model:  "Apple iPhone 11"
-  want_photo_id:  "2ABA6EB7-5DF7-44CA-BD23-590BE8B4D533"
-  want_unique_photo_id:  true
+exif: {
+  want_camera_model: "Apple iPhone 11"
+  want_photo_id: "2ABA6EB7-5DF7-44CA-BD23-590BE8B4D533"
+  want_unique_photo_id: true
 }
-xmp:  {
-  want_document_id:  "659BC91A3E511BBC12D0BB30818DF9CB"
+xmp: {
+  want_document_id: "659BC91A3E511BBC12D0BB30818DF9CB"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

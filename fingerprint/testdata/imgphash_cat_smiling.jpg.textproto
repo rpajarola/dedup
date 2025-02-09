@@ -1,40 +1,40 @@
-source_file:  "imgphash_cat_smiling.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "e98b7c29"
-  want_quality:  50
+source_file: "imgphash_cat_smiling.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "e98b7c29"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "17feae7e21d5307706484dbaf0f4a9f4"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "17feae7e21d5307706484dbaf0f4a9f4"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "00d1f73cf3497590a58576c0935d8e7fe481ef2a"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "00d1f73cf3497590a58576c0935d8e7fe481ef2a"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "2629d6c458f9a476"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "2629d6c458f9a476"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "ff2d858df95b4000.cca6a2c64c686413"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ff2d858df95b4000.cca6a2c64c686413"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "DYWwSSeMnbYm8HIG4PH8+F8mbebE7Tk02ZM2G4k+Hw5KbE3S6Arm4HPbbmzbB405MnbP00CWTMkZH4fEnD+0n8nA4HB7I5Eg"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "DYWwSSeMnbYm8HIG4PH8+F8mbebE7Tk02ZM2G4k+Hw5KbE3S6Arm4HPbbmzbB405MnbP00CWTMkZH4fEnD+0n8nA4HB7I5Eg"
+  want_quality: 20
 }
-exif:  {}
-xmp:  {}
-img_phash:  {
-  want_azr_hash:  "2629d6c458f9a476"
-  want_nr90_hash:  "ff2d858df95b4000.cca6a2c64c686413"
+exif: {}
+xmp: {}
+img_phash: {
+  want_azr_hash: "2629d6c458f9a476"
+  want_nr90_hash: "ff2d858df95b4000.cca6a2c64c686413"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

@@ -1,33 +1,33 @@
-source_file:  "sample_640x360.avi"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "ce2a6e29"
-  want_quality:  50
+source_file: "sample_640x360.avi"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "ce2a6e29"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "b39d431faee0e783c1ce4310cfe37771"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "b39d431faee0e783c1ce4310cfe37771"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "63dfca438e276bfc43ff1555710ad970312bba3e"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "63dfca438e276bfc43ff1555710ad970312bba3e"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "VideoPHashRicop"
-  want_hash:  "dbeb74760b8b0403.2a55aa55aa55aa55"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "VideoPHashRicop"
+  want_hash: "dbeb74760b8b0403.2a55aa55aa55aa55"
+  want_quality: 20
 }
-exif:  {
-  comment:  "No EXIF data"
+exif: {
+  comment: "No EXIF data"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "No image data"
+img_phash: {
+  comment: "No image data"
 }
-video_phash:  {
-  want_ricop_hash:  "dbeb74760b8b0403.2a55aa55aa55aa55"
+video_phash: {
+  want_ricop_hash: "dbeb74760b8b0403.2a55aa55aa55aa55"
 }

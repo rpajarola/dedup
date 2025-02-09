@@ -1,47 +1,47 @@
-source_file:  "imgphash_cat_medium.jpg"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "00626187"
-  want_quality:  50
+source_file: "imgphash_cat_medium.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "00626187"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "6cd734d76877500e09ea919fb9ef0f85"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "6cd734d76877500e09ea919fb9ef0f85"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "f0c104543c27f7bf4ded295209c5d4cdbf6995a7"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "f0c104543c27f7bf4ded295209c5d4cdbf6995a7"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAzr"
-  want_hash:  "f4d05e07c1a43aad"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "f4d05e07c1a43aad"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashNr90"
-  want_hash:  "fff83838b8183800.919b8d8f9e9f5d97"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "fff83838b8183800.919b8d8f9e9f5d97"
+  want_quality: 20
 }
-want_fingerprint:  {
-  want_kind:  "ImgPHashAjdnikMH"
-  want_hash:  "7H520kZI3Lfg/hP2BLG4v7E02z42F4bAL4gnm7MDfw8HI2H42m2BMmLeZb34EwnH4n43BA4Ww3JyxPkxZ220F05wPJ6LJkzJ"
-  want_quality:  20
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "7H520kZI3Lfg/hP2BLG4v7E02z42F4bAL4gnm7MDfw8HI2H42m2BMmLeZb34EwnH4n43BA4Ww3JyxPkxZ220F05wPJ6LJkzJ"
+  want_quality: 20
 }
-exif:  {
-  comment:  "No EXIF data"
-  want_camera_model:  "fixme"
-  want_camera_serial:  "fixme"
-  want_photo_id:  "fixme"
+exif: {
+  comment: "No EXIF data"
+  want_camera_model: "fixme"
+  want_camera_serial: "fixme"
+  want_photo_id: "fixme"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  want_azr_hash:  "f4d05e07c1a43aad"
-  want_nr90_hash:  "fff83838b8183800.919b8d8f9e9f5d97"
+img_phash: {
+  want_azr_hash: "f4d05e07c1a43aad"
+  want_nr90_hash: "fff83838b8183800.919b8d8f9e9f5d97"
 }
-video_phash:  {
-  comment:  "No video data"
+video_phash: {
+  comment: "No video data"
 }

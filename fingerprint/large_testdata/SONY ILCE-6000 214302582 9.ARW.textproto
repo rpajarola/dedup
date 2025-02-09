@@ -1,36 +1,36 @@
-source_file:  "SONY ILCE-6000 214302582 9.ARW"
-want_fingerprint:  {
-  want_kind:  "CRC32"
-  want_hash:  "96fe23d5"
-  want_quality:  50
+source_file: "SONY ILCE-6000 214302582 9.ARW"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "96fe23d5"
+  want_quality: 50
 }
-want_fingerprint:  {
-  want_kind:  "MD5"
-  want_hash:  "bd247f6bd85b7807d0587aca10496ac7"
-  want_quality:  80
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "bd247f6bd85b7807d0587aca10496ac7"
+  want_quality: 80
 }
-want_fingerprint:  {
-  want_kind:  "SHA1"
-  want_hash:  "2c616d7fc4c249d062c7bd0954f304524ac27ac9"
-  want_quality:  99
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "2c616d7fc4c249d062c7bd0954f304524ac27ac9"
+  want_quality: 99
 }
-want_fingerprint:  {
-  want_kind:  "EXIFModelSerialPhotoID"
-  want_hash:  "SONY ILCE-6000 214302582 9"
-  want_quality:  90
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SONY ILCE-6000 214302582 9"
+  want_quality: 90
 }
-exif:  {
-  want_camera_model:  "SONY ILCE-6000"
-  want_camera_serial:  "214302582"
-  want_photo_id:  "9"
+exif: {
+  want_camera_model: "SONY ILCE-6000"
+  want_camera_serial: "214302582"
+  want_photo_id: "9"
 }
-xmp:  {
-  comment:  "No XMP data"
+xmp: {
+  comment: "No XMP data"
 }
-img_phash:  {
-  comment:  "TODO: no thumbnail?"
-  skip:  true
+img_phash: {
+  comment: "TODO: no thumbnail?"
+  skip: true
 }
-video_phash:  {
-  comment:  "No Video Data"
+video_phash: {
+  comment: "No Video Data"
 }
