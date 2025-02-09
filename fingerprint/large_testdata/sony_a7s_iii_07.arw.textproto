@@ -1,13 +1,28 @@
-source_file: "sony_a7s_iii_07.arw"
-exif: {
-  want_camera_model: "SONY MODEL-NAME"
-  want_photo_id: "2022-09-09 21:29:51.627 +0000 UTC"
+source_file:  "sony_a7s_iii_07.arw"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "7cf18601"
+  want_quality:  50
 }
-xmp: {}
-img_phash: {
-  comment: "TODO: no thumbnail?"
-  skip: true
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "13c18ca746cef70c15ce0707f7f76417"
+  want_quality:  80
 }
-video_phash: {
-  comment: "No Video Data"
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "df5c724e973b2b0c7a273de0ffb8d1468527cb37"
+  want_quality:  99
+}
+exif:  {
+  want_camera_model:  "SONY MODEL-NAME"
+  want_photo_id:  "2022-09-09 21:29:51.627 +0000 UTC"
+}
+xmp:  {}
+img_phash:  {
+  comment:  "TODO: no thumbnail?"
+  skip:  true
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

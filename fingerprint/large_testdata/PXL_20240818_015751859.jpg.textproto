@@ -1,28 +1,43 @@
-source_file: "PXL_20240818_015751859.jpg"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "ce4cc3c34cccc3c3"
-  want_quality: 20
+source_file:  "PXL_20240818_015751859.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "f5e75a80"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "803800f8ffffff.f8f88f4f0f7ffcf8"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "09c8c63fe04c87b9dd860d6359a99a41"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "m0msnbbLYlJbm022jJbO2LZb2202jZbe0Lbb2200hI7GgbLZ2m00klbZJbLZ2m02hLbcnZLZ2mk0jbbY3ZLZ2mk0hbbe2ZLZ"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "cb5c68b3d556e2bbe94528cb4a285717514f671d"
+  want_quality:  99
 }
-exif: {
-  want_camera_model: "Google Pixel 9 Pro"
-  want_photo_id: "2024-08-17 19:57:51.859 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "ce4cc3c34cccc3c3"
+  want_quality:  20
 }
-xmp: {}
-img_phash: {
-  want_azr_hash: "ce4cc3c34cccc3c3"
-  want_nr90_hash: "803800f8ffffff.f8f88f4f0f7ffcf8"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "803800f8ffffff.f8f88f4f0f7ffcf8"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "m0msnbbLYlJbm022jJbO2LZb2202jZbe0Lbb2200hI7GgbLZ2m00klbZJbLZ2m02hLbcnZLZ2mk0jbbY3ZLZ2mk0hbbe2ZLZ"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Google Pixel 9 Pro"
+  want_photo_id:  "2024-08-17 19:57:51.859 +0000 UTC"
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "ce4cc3c34cccc3c3"
+  want_nr90_hash:  "803800f8ffffff.f8f88f4f0f7ffcf8"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

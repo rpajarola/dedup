@@ -1,4 +1,19 @@
 source_file:  "Samsung SM-A326B heic 1.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "39b83413"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "40d19d209127362ed0ade45974bc1e6a"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "86fbf9f23dcd55b990c57ef22ceef0d87d13dd20"
+  want_quality:  99
+}
 exif:  {
   want_camera_model:  "samsung SM-A326B"
   want_photo_id:  "2023-12-13 13:03:39.016 +0000 UTC"

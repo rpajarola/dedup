@@ -1,28 +1,43 @@
-source_file: "Sony Ericsson C905.JPG"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "dc98ad46724b158e"
-  want_quality: 20
+source_file:  "Sony Ericsson C905.JPG"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "1bb835e6"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "1f0f0f0717802b3f.4745a3a292d51555"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "165590979254bfb988e63eb5733d9d5e"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "7FsQ+kA44HHwBY/G/E4XE5I2JMkbMkwwbJMkZMnB4f2gnbGkfHA4FkB4fk4mA4nB8m7H4fE30kmbMbD42mfIH430zJ5HgZYH"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "6d31dd7a9dafbf72187770b63bdfae8bc7c3bf52"
+  want_quality:  99
 }
-exif: {
-  want_camera_model: "Sony Ericsson C905"
-  want_photo_id: "2009-02-05 10:37:36 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "dc98ad46724b158e"
+  want_quality:  20
 }
-xmp: {}
-img_phash: {
-  want_azr_hash: "dc98ad46724b158e"
-  want_nr90_hash: "1f0f0f0717802b3f.4745a3a292d51555"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "1f0f0f0717802b3f.4745a3a292d51555"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "7FsQ+kA44HHwBY/G/E4XE5I2JMkbMkwwbJMkZMnB4f2gnbGkfHA4FkB4fk4mA4nB8m7H4fE30kmbMbD42mfIH430zJ5HgZYH"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Sony Ericsson C905"
+  want_photo_id:  "2009-02-05 10:37:36 +0000 UTC"
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "dc98ad46724b158e"
+  want_nr90_hash:  "1f0f0f0717802b3f.4745a3a292d51555"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

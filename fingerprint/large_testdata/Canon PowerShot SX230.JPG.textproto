@@ -1,34 +1,49 @@
-source_file: "Canon PowerShot SX230.JPG"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Canon PowerShot SX230 HS  a0d2aa0209df07a36eb503a1e039ca22"
-  want_quality: 100
+source_file:  "Canon PowerShot SX230.JPG"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "12fdc000"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "de3b4bf583071902"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "a154344ce843d70fdd61b66a3c671f94"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "373b3be0c1c1b1f1.98880cb4fad29c9a"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "7dfc443310791c7f7ac4084aea7a63d21b9146ec"
+  want_quality:  99
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "mzJA5LLUi0nI2A/D/4CYmkxPB/Z0g3+nYE4m7O0Dfw2ZGZOYLHY7LZeEnLfkBYZMvY8A7L2hZI3Y34HJfD+kB/A5E3ZBbbH4"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Canon PowerShot SX230 HS  a0d2aa0209df07a36eb503a1e039ca22"
+  want_quality:  100
 }
-exif: {
-  want_camera_model: "Canon PowerShot SX230 HS"
-  want_photo_id: "a0d2aa0209df07a36eb503a1e039ca22"
-  want_unique_photo_id: true
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "de3b4bf583071902"
+  want_quality:  20
 }
-xmp: {}
-img_phash: {
-  want_azr_hash: "de3b4bf583071902"
-  want_nr90_hash: "373b3be0c1c1b1f1.98880cb4fad29c9a"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "373b3be0c1c1b1f1.98880cb4fad29c9a"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "mzJA5LLUi0nI2A/D/4CYmkxPB/Z0g3+nYE4m7O0Dfw2ZGZOYLHY7LZeEnLfkBYZMvY8A7L2hZI3Y34HJfD+kB/A5E3ZBbbH4"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "Canon PowerShot SX230 HS"
+  want_photo_id:  "a0d2aa0209df07a36eb503a1e039ca22"
+  want_unique_photo_id:  true
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "de3b4bf583071902"
+  want_nr90_hash:  "373b3be0c1c1b1f1.98880cb4fad29c9a"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

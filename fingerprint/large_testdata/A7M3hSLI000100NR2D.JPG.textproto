@@ -1,34 +1,49 @@
-source_file: "A7M3hSLI000100NR2D.JPG"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "SONY ILCE-7M3 28ff00008809 27"
-  want_quality: 90
+source_file:  "A7M3hSLI000100NR2D.JPG"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "72745a09"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "4d41968987274d7e"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "7151d0bdc99e1179f4d458096b9733b6"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "bf8181c3e78391db.9692986861c8cacc"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "848e6ee0189507fc75effa5f83b0441e14a011ab"
+  want_quality:  99
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "+AHA4H4gbJekJZb02BA5bJ8kbbH24/A6f8uWZHY/A/bembckB4/H/HWxe+MkD4vF/YbeHJcm5P4/Hk4Lb22yZHA4DZH/A5Og"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "SONY ILCE-7M3 28ff00008809 27"
+  want_quality:  90
 }
-exif: {
-  want_camera_model: "SONY ILCE-7M3"
-  want_camera_serial: "28ff00008809"
-  want_photo_id: "27"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "4d41968987274d7e"
+  want_quality:  20
 }
-xmp: {}
-img_phash: {
-  want_azr_hash: "4d41968987274d7e"
-  want_nr90_hash: "bf8181c3e78391db.9692986861c8cacc"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "bf8181c3e78391db.9692986861c8cacc"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "+AHA4H4gbJekJZb02BA5bJ8kbbH24/A6f8uWZHY/A/bembckB4/H/HWxe+MkD4vF/YbeHJcm5P4/Hk4Lb22yZHA4DZH/A5Og"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "SONY ILCE-7M3"
+  want_camera_serial:  "28ff00008809"
+  want_photo_id:  "27"
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "4d41968987274d7e"
+  want_nr90_hash:  "bf8181c3e78391db.9692986861c8cacc"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

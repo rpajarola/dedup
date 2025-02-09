@@ -1,30 +1,45 @@
-source_file: "heic.digital Samsung Galaxy A32 3.heic"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "c58c6a9da54c24ed"
-  want_quality: 20
+source_file:  "heic.digital Samsung Galaxy A32 3.heic"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "9d3172cf"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "6c03a0abbd5088ffce4ac40e2b75c26e"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "2gnG3A4HBB70bH4+HY/DIyPGH4HH4+F4fD4fB/k2g0C7c/LGhejLz0pYbH44jeg+hL8D06R50j0gOgJfA2HJk+2+AF2hLm7L"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "ae78e4fa92b179f946abe7814a41e86bf215f897"
+  want_quality:  99
 }
-exif: {
-  want_camera_model: "samsung SM-A326B"
-  want_photo_id: "2024-01-21 18:27:07.962 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "c58c6a9da54c24ed"
+  want_quality:  20
 }
-xmp: {
-  comment: "No XMP data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
+  want_quality:  20
 }
-img_phash: {
-  want_azr_hash: "c58c6a9da54c24ed"
-  want_nr90_hash: "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "2gnG3A4HBB70bH4+HY/DIyPGH4HH4+F4fD4fB/k2g0C7c/LGhejLz0pYbH44jeg+hL8D06R50j0gOgJfA2HJk+2+AF2hLm7L"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+exif:  {
+  want_camera_model:  "samsung SM-A326B"
+  want_photo_id:  "2024-01-21 18:27:07.962 +0000 UTC"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "c58c6a9da54c24ed"
+  want_nr90_hash:  "e3c3c397cbc38100.f0eaeaaa60a8e8d4"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

@@ -1,5 +1,20 @@
 source_file:  "NIKON D3000 7400454 939.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "d0a6bb59"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "130a70be5749bb1f257a583fa8b7138b"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "bd5c96e43aef3a33f2f9340abdcb75db1d7f5038"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "NIKON D3000 7400454 939 BASIC"
   want_quality:  90

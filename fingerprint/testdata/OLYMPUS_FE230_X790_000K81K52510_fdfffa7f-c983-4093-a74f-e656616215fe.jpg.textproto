@@ -1,5 +1,20 @@
 source_file:  "OLYMPUS FE230_X790 000K81K52510 fdfffa7f-c983-4093-a74f-e656616215fe.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "76555fb9"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "66be278306c46bcd463988ac22c85233"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "87b3dfa503015805ba317d08740b30f1c7f702e8"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "OLYMPUS FE230/X790 000K81K52510 2009-08-04 10:50:40 +0000 UTC"
   want_quality:  80

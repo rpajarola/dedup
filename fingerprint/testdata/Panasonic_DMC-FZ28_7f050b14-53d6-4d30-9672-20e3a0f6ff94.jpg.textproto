@@ -1,5 +1,20 @@
 source_file:  "Panasonic DMC-FZ28 7f050b14-53d6-4d30-9672-20e3a0f6ff94.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "2d28be22"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "217e438702ae2b6f7bcf3484b20ba037"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "6b369ec4da9efac37e36735c7c952029c011be27"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "XMPDocumentID"
   want_hash:  "7f050b14-53d6-4d30-9672-20e3a0f6ff94"
   want_quality:  100

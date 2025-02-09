@@ -1,4 +1,19 @@
 source_file:  "Apple iPhone 8 Plus dng 2.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "86ca0c79"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "3b16f6a2e48075d909a020e3ff679323"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "24bb93fd2635caeeebbcfb41dc55ccfcda18c865"
+  want_quality:  99
+}
 exif:  {
   want_camera_model:  "Apple iPhone 8 Plus"
   want_photo_id:  "2017-10-10 12:07:41.194 +0000 UTC"

@@ -1,28 +1,43 @@
-source_file: "Y-DP-105mm-9411.jpeg"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "a59a2a52aaa955b3"
-  want_quality: 20
+source_file:  "Y-DP-105mm-9411.jpeg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "3d9ceb93"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "10003cffffff7e00.71307051b030b0f"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "da0450f0765da013d15996e400192930"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "2mk2GwbLJZLb0mk0HJbds5La2m2khJbdtJP40mk21tZNJJLY20kktsJItJe220nJILJdtLcnk02E5JbZLJqbm02F5NbZPlrb"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "574330ebb09ee099f095a998330574800353354b"
+  want_quality:  99
 }
-exif: {
-  want_camera_model: "SONY ILCE-7M3"
-  want_photo_id: "2018-05-16 05:08:34 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "a59a2a52aaa955b3"
+  want_quality:  20
 }
-xmp: {}
-img_phash: {
-  want_azr_hash: "a59a2a52aaa955b3"
-  want_nr90_hash: "10003cffffff7e00.71307051b030b0f"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "10003cffffff7e00.71307051b030b0f"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "2mk2GwbLJZLb0mk0HJbds5La2m2khJbdtJP40mk21tZNJJLY20kktsJItJe220nJILJdtLcnk02E5JbZLJqbm02F5NbZPlrb"
+  want_quality:  20
+}
+exif:  {
+  want_camera_model:  "SONY ILCE-7M3"
+  want_photo_id:  "2018-05-16 05:08:34 +0000 UTC"
+}
+xmp:  {}
+img_phash:  {
+  want_azr_hash:  "a59a2a52aaa955b3"
+  want_nr90_hash:  "10003cffffff7e00.71307051b030b0f"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

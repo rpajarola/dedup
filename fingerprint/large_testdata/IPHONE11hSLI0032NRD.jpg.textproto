@@ -1,35 +1,50 @@
-source_file: "IPHONE11hSLI0032NRD.jpg"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "8cc726cb4720d9bc"
-  want_quality: 20
+source_file:  "IPHONE11hSLI0032NRD.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "1fae19cb"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "ff0581c3e7c380d9.978a946861c9cecc"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "d8abd1e7bedc2fb72e83ea0163325f15"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "4IHGw0ZIPA/ILbZmwLF+0T/obJ/2wbF+0E5JZHY/AfbFH2xLJo+PEHnvg2xIH4LF7Z2gHm4H5P4+HAYbbskmZGA4gZPnI2Eg"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "a1f791bad09d43b67ca4b28a913ab16f93c5e451"
+  want_quality:  99
 }
-want_fingerprint: {
-  want_kind: "XMPDocumentID"
-  want_hash: "659BC91A3E511BBC12D0BB30818DF9CB"
-  want_quality: 100
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "8cc726cb4720d9bc"
+  want_quality:  20
 }
-exif: {
-  want_camera_model: "Apple iPhone 11"
-  want_photo_id: "2020-08-06 11:49:24.491 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "ff0581c3e7c380d9.978a946861c9cecc"
+  want_quality:  20
 }
-xmp: {
-  want_document_id: "659BC91A3E511BBC12D0BB30818DF9CB"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "4IHGw0ZIPA/ILbZmwLF+0T/obJ/2wbF+0E5JZHY/AfbFH2xLJo+PEHnvg2xIH4LF7Z2gHm4H5P4+HAYbbskmZGA4gZPnI2Eg"
+  want_quality:  20
 }
-img_phash: {
-  want_azr_hash: "8cc726cb4720d9bc"
-  want_nr90_hash: "ff0581c3e7c380d9.978a946861c9cecc"
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "659BC91A3E511BBC12D0BB30818DF9CB"
+  want_quality:  100
 }
-video_phash: {
-  comment: "No Video Data"
+exif:  {
+  want_camera_model:  "Apple iPhone 11"
+  want_photo_id:  "2020-08-06 11:49:24.491 +0000 UTC"
+}
+xmp:  {
+  want_document_id:  "659BC91A3E511BBC12D0BB30818DF9CB"
+}
+img_phash:  {
+  want_azr_hash:  "8cc726cb4720d9bc"
+  want_nr90_hash:  "ff0581c3e7c380d9.978a946861c9cecc"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

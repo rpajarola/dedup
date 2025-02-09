@@ -1,4 +1,19 @@
 source_file:  "SONY A7 III 9411.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "f27032a2"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "8bee3df957934e8332acb6d4840f131a"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "f279f652142c710be16c72bd67ca2ebab7f5da7f"
+  want_quality:  99
+}
 exif:  {
   want_camera_model:  "SONY ILCE-7M3"
   want_photo_id:  "2018-05-16 05:08:34 +0000 UTC"

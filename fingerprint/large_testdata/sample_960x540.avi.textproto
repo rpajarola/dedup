@@ -1,5 +1,20 @@
 source_file:  "sample_960x540.avi"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "56340627"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "7d1255bc1411981b7141fd03bf8523dc"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "819b814bfbda464b8244a8e00c53d0fc96dd9da0"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "VideoPHashRicop"
   want_hash:  "dbeb74760b8b0403.2a55aa55aa55aa55"
   want_quality:  20

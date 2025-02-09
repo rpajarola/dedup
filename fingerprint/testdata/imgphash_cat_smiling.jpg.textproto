@@ -1,5 +1,20 @@
 source_file:  "imgphash_cat_smiling.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "e98b7c29"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "17feae7e21d5307706484dbaf0f4a9f4"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "00d1f73cf3497590a58576c0935d8e7fe481ef2a"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "ImgPHashAzr"
   want_hash:  "2629d6c458f9a476"
   want_quality:  20

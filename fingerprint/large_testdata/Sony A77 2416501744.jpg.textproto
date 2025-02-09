@@ -1,35 +1,50 @@
-source_file: "Sony A77 2416501744.jpg"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "fd38a1ca383ea605"
-  want_quality: 20
+source_file:  "Sony A77 2416501744.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "8c2f2f90"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "ff52161e141e0606.4d4d4bcb8a83a32b"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "6a76296b0bb83a9157bb9fabd092d221"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "2HZzDHB4/2Hw3B47H4nH5wMHQ4GB/4/BLY0lcwPJo+GxP0mk2zPkmD4/Hw3b0HAzInTDEk4+J4PJ7D4nE2mkDfg9GsPIZm4n"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "b6dc2f15ccb35c1e24d7a0d5f2532fad3dc36fbe"
+  want_quality:  99
 }
-want_fingerprint: {
-  want_kind: "XMPDocumentID"
-  want_hash: "DEF92186DF272963C04750273469F46C"
-  want_quality: 100
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "fd38a1ca383ea605"
+  want_quality:  20
 }
-exif: {
-  want_camera_model: "SONY ILCA-77M2"
-  want_photo_id: "2015-01-28 20:24:27 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "ff52161e141e0606.4d4d4bcb8a83a32b"
+  want_quality:  20
 }
-xmp: {
-  want_document_id: "DEF92186DF272963C04750273469F46C"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "2HZzDHB4/2Hw3B47H4nH5wMHQ4GB/4/BLY0lcwPJo+GxP0mk2zPkmD4/Hw3b0HAzInTDEk4+J4PJ7D4nE2mkDfg9GsPIZm4n"
+  want_quality:  20
 }
-img_phash: {
-  want_azr_hash: "fd38a1ca383ea605"
-  want_nr90_hash: "ff52161e141e0606.4d4d4bcb8a83a32b"
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "DEF92186DF272963C04750273469F46C"
+  want_quality:  100
 }
-video_phash: {
-  comment: "No Video Data"
+exif:  {
+  want_camera_model:  "SONY ILCA-77M2"
+  want_photo_id:  "2015-01-28 20:24:27 +0000 UTC"
+}
+xmp:  {
+  want_document_id:  "DEF92186DF272963C04750273469F46C"
+}
+img_phash:  {
+  want_azr_hash:  "fd38a1ca383ea605"
+  want_nr90_hash:  "ff52161e141e0606.4d4d4bcb8a83a32b"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

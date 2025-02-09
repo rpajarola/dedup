@@ -1,10 +1,25 @@
 source_file:  "Canon PowerShot A570 IS imageuniqueid.jpg"
 want_err:  true
-xmp:  {}
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "00840774"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "5b7eb4703caa303a5c92488733b0a712"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "2d495ddf0e678d96723a5df8f3d74441f94e2d96"
+  want_quality:  99
+}
 exif:  {
   comment:  "exiftool fails with 'tiff: tag type read failed: EOF'"
-  skip: true
+  skip:  true
 }
+xmp:  {}
 img_phash:  {
   comment:  "No image data"
 }

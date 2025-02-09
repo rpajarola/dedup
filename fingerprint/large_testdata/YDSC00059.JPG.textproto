@@ -1,36 +1,51 @@
-source_file: "YDSC00059.JPG"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "SONY SLT-A77V 0909622764 885"
-  want_quality: 90
+source_file:  "YDSC00059.JPG"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "e2369052"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "59ad6ece2c1b1521"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "5363c2e0a3ed0d3a58319ed5f2557637"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "f8e08199f30301f7.1ef7d4ce98407872"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "60f7882686aa030565c89269c8e14bab4fd4c8fc"
+  want_quality:  99
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "5DJkkkJMkD43HY2k1tW03ZE2ZIf3BP0hJH+2Lbb23IpKbA+kZLbkz0bZP6XkZLb2jNLYJ0k2JLbkkmbLQLIPZLZ2hLbGAJs8"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "SONY SLT-A77V 0909622764 885"
+  want_quality:  90
 }
-exif: {
-  want_camera_model: "SONY SLT-A77V"
-  want_camera_serial: "0909622764"
-  want_photo_id: "885"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "59ad6ece2c1b1521"
+  want_quality:  20
 }
-xmp: {
-  comment: "No XMP data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "f8e08199f30301f7.1ef7d4ce98407872"
+  want_quality:  20
 }
-img_phash: {
-  want_azr_hash: "59ad6ece2c1b1521"
-  want_nr90_hash: "f8e08199f30301f7.1ef7d4ce98407872"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "5DJkkkJMkD43HY2k1tW03ZE2ZIf3BP0hJH+2Lbb23IpKbA+kZLbkz0bZP6XkZLb2jNLYJ0k2JLbkkmbLQLIPZLZ2hLbGAJs8"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+exif:  {
+  want_camera_model:  "SONY SLT-A77V"
+  want_camera_serial:  "0909622764"
+  want_photo_id:  "885"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "59ad6ece2c1b1521"
+  want_nr90_hash:  "f8e08199f30301f7.1ef7d4ce98407872"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

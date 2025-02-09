@@ -1,16 +1,31 @@
-source_file: "Canon_EOS_R10_IMG_0683.CR3"
-comment: "TODO: implement reading CR3"
-want_err: true
-exif: {
-  skip: true
+source_file:  "Canon_EOS_R10_IMG_0683.CR3"
+comment:  "TODO: implement reading CR3"
+want_err:  true
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "fd13225d"
+  want_quality:  50
 }
-xmp: {
-  skip: true
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "e0066bfdcdcc7310420de9db091888ae"
+  want_quality:  80
 }
-img_phash: {
-  skip: true
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "c16dfe7df47476be99351e6937563fa957605be0"
+  want_quality:  99
 }
-video_phash: {
-  comment: "No Video Data"
-  skip: true
+exif:  {
+  skip:  true
+}
+xmp:  {
+  skip:  true
+}
+img_phash:  {
+  skip:  true
+}
+video_phash:  {
+  comment:  "No Video Data"
+  skip:  true
 }

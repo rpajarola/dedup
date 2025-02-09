@@ -1,4 +1,19 @@
 source_file:  "NIKON COOLPIX AW100 none.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "b48050b2"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "b33dd7b0a7622767c8b733eecf170933"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "897ddf159361d9f32435dd6fd81505b41e5299bc"
+  want_quality:  99
+}
 exif:  {
   want_camera_model:  "NIKON COOLPIX AW100"
   want_photo_id:  "2013-02-06 21:26:36 +0000 UTC NORMAL"

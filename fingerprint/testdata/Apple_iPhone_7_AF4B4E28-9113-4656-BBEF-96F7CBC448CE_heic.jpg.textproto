@@ -1,5 +1,20 @@
 source_file:  "Apple iPhone 7 AF4B4E28-9113-4656-BBEF-96F7CBC448CE heic.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "64c163ab"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "491ccf1291ab5164ee8e7741d900c4e0"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "738f986e6adbfd39a3c264309fc0dbdea300ec3e"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "Apple iPhone 7  AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
   want_quality:  100

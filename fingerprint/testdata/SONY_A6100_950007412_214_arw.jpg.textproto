@@ -1,5 +1,20 @@
 source_file:  "SONY A6100 950007412 214_arw.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "20fcf3d1"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "907ca41fb99b73b59aad6c25ab5a17c6"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "30646a62bfdd687d44ab72dc47dbcb374f57920b"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "SONY ILCE-6100 5f0000004a0c 214"
   want_quality:  90

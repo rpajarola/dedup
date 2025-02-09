@@ -1,5 +1,20 @@
 source_file:  "NIKON D300 4085317 69139_nef.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "37b36a86"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "a686a4cdd8c26df8dd60087e8fe6f1c8"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "df720b918596718c0b34578b8b1cec3d8bdfb62f"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "NIKON D300 4085317 69139 RAW"
   want_quality:  90

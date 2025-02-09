@@ -1,16 +1,31 @@
-source_file: "PXL_20240818_015751859.RAW-01.COVER.dng"
-want_err: true
-exif: {
-  want_camera_model: "Google Pixel 9 Pro"
-  want_photo_id: "2024-08-17 19:57:51.89255 +0000 UTC"
+source_file:  "PXL_20240818_015751859.RAW-01.COVER.dng"
+want_err:  true
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "be9154ef"
+  want_quality:  50
 }
-xmp: {
-  comment: "No XMP data"
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "e496d864ebce5f3eb5b7e98be6feb727"
+  want_quality:  80
 }
-img_phash: {
-  comment: "TODO: implement decoding dng"
-  skip: true
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "3ffe4629a828e45ecc9c16ddb91bed5057f417b6"
+  want_quality:  99
 }
-video_phash: {
-  comment: "No Video Data"
+exif:  {
+  want_camera_model:  "Google Pixel 9 Pro"
+  want_photo_id:  "2024-08-17 19:57:51.89255 +0000 UTC"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  comment:  "TODO: implement decoding dng"
+  skip:  true
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

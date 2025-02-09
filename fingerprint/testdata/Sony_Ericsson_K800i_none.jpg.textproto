@@ -1,4 +1,19 @@
 source_file:  "Sony Ericsson K800i none.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "03bb13e7"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "45c294425a3b4534ba25195007a3e4ef"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "149f7d448575bb62221a8c171e6dd9e3a7a78ba3"
+  want_quality:  99
+}
 exif:  {
   want_camera_model:  "Sony Ericsson K800i"
   want_photo_id:  "2006-03-07 15:55:10 +0000 UTC"

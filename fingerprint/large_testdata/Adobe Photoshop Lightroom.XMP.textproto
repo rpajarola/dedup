@@ -1,13 +1,28 @@
-source_file: "Adobe Photoshop Lightroom.XMP"
-exif: {
-  comment: "No EXIF data"
+source_file:  "Adobe Photoshop Lightroom.XMP"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "767d6278"
+  want_quality:  50
 }
-xmp: {
-  comment: "No XMP data"
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "5b437bb3efd84987e804187f658f2069"
+  want_quality:  80
 }
-img_phash: {
-  comment: "no image data"
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "1bf7e8a34aaba989df9d1674408b1e63f248dfcb"
+  want_quality:  99
 }
-video_phash: {
-  comment: "no video data"
+exif:  {
+  comment:  "No EXIF data"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  comment:  "no image data"
+}
+video_phash:  {
+  comment:  "no video data"
 }

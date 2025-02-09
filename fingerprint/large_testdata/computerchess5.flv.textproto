@@ -1,5 +1,20 @@
 source_file:  "computerchess5.flv"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "554613a0"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "3cd4aac28c8517064827047bccb9a290"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "89b2aee9bdcb3e96ad2616fbb2a9149ed48fdb41"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "VideoPHashRicop"
   want_hash:  "3f3cfab9dc5e0294.abdd0df7009de300"
   want_quality:  20

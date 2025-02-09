@@ -1,6 +1,21 @@
 source_file:  "Canon EOS-1D Mark II 237359 227906.jpg"
 comment:  "TODO: implement Canon Shutter Count"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "8105cfb9"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "c91232d458d36c65c906c380cdec74ec"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "2ac4266ab55ed2a2390dae6f0c29bbc2b4360f9b"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "Canon EOS-1D Mark II 237359 2011-05-07 10:29:11 +0000 UTC"
   want_quality:  80

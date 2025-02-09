@@ -1,5 +1,20 @@
 source_file:  "OLYMPUS E-PL1 B2Y517765 a30a9ea0-fefb-4af2-9ae3-0e8a4ad27af6.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "11690d1c"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "02d264ad8171b2e61873e186c7837ea0"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "cf45eb78abdddaacfccd7811a4f25ea2d42d911a"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "OLYMPUS E-PL1 B2Y517765 "
 }
@@ -9,7 +24,7 @@ want_fingerprint:  {
   want_quality:  100
 }
 exif:  {
-  comment: "TODO: photo id is empty"
+  comment:  "TODO: photo id is empty"
   want_camera_model:  "OLYMPUS E-PL1"
   want_camera_serial:  "B2Y517765"
 }

@@ -5,6 +5,21 @@ comment:  "  want_kind: \"EXIFModelSerialPhotoID\""
 comment:  "  want_hash: \"SONY MODEL-NAME 45810378 0\""
 comment:  "  want_quality: 90"
 comment:  "}"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "0444d36b"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "304451de96fa02f912db716a1f1747ba"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "241fb606155cb1bbca515ad218b1669cbca7f341"
+  want_quality:  99
+}
 exif:  {
   want_camera_model:  "SONY MODEL-NAME"
   want_photo_id:  "2022-09-09 21:29:51.627 +0000 UTC"

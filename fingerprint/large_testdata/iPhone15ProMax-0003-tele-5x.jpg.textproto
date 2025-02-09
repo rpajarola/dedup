@@ -1,36 +1,51 @@
-source_file: "iPhone15ProMax-0003-tele-5x.jpg"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
-  want_quality: 100
+source_file:  "iPhone15ProMax-0003-tele-5x.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "e194f57f"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "cc3339cc269966c9"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "dbab75a55bc60daa19b57845d9586fac"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "7ffffffff.80404249b930000"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "73226c045479dda13993b761665c36a572131064"
+  want_quality:  99
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "k0m2kmLazbegk022mkbLbA4Xm0k0mkZPIzcm20mA42LbZbHg2028nILYbLY9202m0m5IPZn420mk4HL7U4DMm022wLLfCPM2"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_quality:  100
 }
-exif: {
-  want_camera_model: "Apple iPhone 15 Pro Max"
-  want_photo_id: "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
-  want_unique_photo_id: true
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "cc3339cc269966c9"
+  want_quality:  20
 }
-xmp: {
-  comment: "No XMP data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "7ffffffff.80404249b930000"
+  want_quality:  20
 }
-img_phash: {
-  want_azr_hash: "cc3339cc269966c9"
-  want_nr90_hash: "7ffffffff.80404249b930000"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "k0m2kmLazbegk022mkbLbA4Xm0k0mkZPIzcm20mA42LbZbHg2028nILYbLY9202m0m5IPZn420mk4HL7U4DMm022wLLfCPM2"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+exif:  {
+  want_camera_model:  "Apple iPhone 15 Pro Max"
+  want_photo_id:  "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_unique_photo_id:  true
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "cc3339cc269966c9"
+  want_nr90_hash:  "7ffffffff.80404249b930000"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

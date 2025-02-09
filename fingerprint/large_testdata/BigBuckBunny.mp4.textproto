@@ -1,5 +1,20 @@
 source_file:  "BigBuckBunny.mp4"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "80d1b567"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "67c8df43dd6c968ac939350f6e54ef98"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "48cee7790ad12f15d83868edc2b16c54a8fc525f"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "VideoPHashRicop"
   want_hash:  "58c54663613cd75a.2a55aa55aa55aa55"
   want_quality:  20

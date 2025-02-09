@@ -1,5 +1,20 @@
 source_file:  "Samsung Galaxy Nexus OAEL01 21080E7590649EE95C9E9C6F3C98B425.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "577dc11d"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "be859be72e6d9a75d3e91a9424b2acb8"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "cf29b96446a5c81196cff220334b43c5462908c0"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "Samsung Galaxy Nexus  OAEL01"
   want_quality:  100

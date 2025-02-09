@@ -1,20 +1,35 @@
-source_file: "Canon_EOS_Rebel_T6_IMG_0501.CR2"
-want_err: true
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Canon EOS Rebel T6 342073058629 2023-07-21 12:43:29.44 +0000 UTC"
-  want_quality: 80
+source_file:  "Canon_EOS_Rebel_T6_IMG_0501.CR2"
+want_err:  true
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "183abc67"
+  want_quality:  50
 }
-exif: {
-  want_camera_model: "Canon EOS Rebel T6"
-  want_camera_serial: "342073058629"
-  want_photo_id: "2023-07-21 12:43:29.44 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "17dc6ce173c3a7c17a6d276301c0d0e1"
+  want_quality:  80
 }
-xmp: {}
-img_phash: {
-  comment: "TODO: decode CR2 format"
-  skip: true
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "32258d2ac6eef383631e121af6fb1d281423bb86"
+  want_quality:  99
 }
-video_phash: {
-  comment: "No Video Data"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Canon EOS Rebel T6 342073058629 2023-07-21 12:43:29.44 +0000 UTC"
+  want_quality:  80
+}
+exif:  {
+  want_camera_model:  "Canon EOS Rebel T6"
+  want_camera_serial:  "342073058629"
+  want_photo_id:  "2023-07-21 12:43:29.44 +0000 UTC"
+}
+xmp:  {}
+img_phash:  {
+  comment:  "TODO: decode CR2 format"
+  skip:  true
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

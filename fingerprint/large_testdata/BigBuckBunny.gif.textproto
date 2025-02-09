@@ -1,6 +1,21 @@
 source_file:  "BigBuckBunny.gif"
 want_err:  true
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "ebc05db5"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "3c931dc0ce4bb84a4bb6666da811cb7d"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "799e9651e92ac4e5468584a8819f8e398392ce4a"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "ImgPHashAzr"
   want_hash:  "1a7344a9395c576a"
   want_quality:  20

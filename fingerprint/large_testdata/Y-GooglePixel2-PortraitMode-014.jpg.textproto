@@ -1,30 +1,45 @@
-source_file: "Y-GooglePixel2-PortraitMode-014.jpg"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "31d34c943e3d6da0"
-  want_quality: 20
+source_file:  "Y-GooglePixel2-PortraitMode-014.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "e54aaf6a"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "190011a10113fbfb.c4eacbcac087c9c"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "04ba5660edc22cd572a7f9d5ebfc3d86"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "JMk2xLkxtLM2E+0hJzG4Hbc2c05J7Q/HMbOG4Ek5DY2HoZG20jbJpt2xLMw2kjbP/o0hbJfQXzbaYnw4X5Gymybb/A+HJL4L"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "b7d492f72ce9fc13eadafcf8de7f4954dca553fb"
+  want_quality:  99
 }
-exif: {
-  want_camera_model: "Google Pixel 2"
-  want_photo_id: "2018-03-22 12:42:17.318446 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "31d34c943e3d6da0"
+  want_quality:  20
 }
-xmp: {
-  comment: "No XMP data"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "190011a10113fbfb.c4eacbcac087c9c"
+  want_quality:  20
 }
-img_phash: {
-  want_azr_hash: "31d34c943e3d6da0"
-  want_nr90_hash: "190011a10113fbfb.c4eacbcac087c9c"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "JMk2xLkxtLM2E+0hJzG4Hbc2c05J7Q/HMbOG4Ek5DY2HoZG20jbJpt2xLMw2kjbP/o0hbJfQXzbaYnw4X5Gymybb/A+HJL4L"
+  want_quality:  20
 }
-video_phash: {
-  comment: "No Video Data"
+exif:  {
+  want_camera_model:  "Google Pixel 2"
+  want_photo_id:  "2018-03-22 12:42:17.318446 +0000 UTC"
+}
+xmp:  {
+  comment:  "No XMP data"
+}
+img_phash:  {
+  want_azr_hash:  "31d34c943e3d6da0"
+  want_nr90_hash:  "190011a10113fbfb.c4eacbcac087c9c"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

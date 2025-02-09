@@ -1,6 +1,21 @@
 source_file:  "SONY A7s III jpeg none 6d2a79cc-d7bf-416d-bdb4-643a667b1ef4.jpg"
 comment:  "pre-release model of SONY A7s III"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "2d8def22"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "355f5ae7d13537f4a44e6906e3d9edb2"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "541d5ad64d72e8b00b254e23ea280b2e31b924b9"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "XMPDocumentID"
   want_hash:  "A1B59EAF9BAAEC3F0C97603358445EF3"
   want_quality:  100

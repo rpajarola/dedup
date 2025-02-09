@@ -1,5 +1,20 @@
 source_file:  "SONY A6000 214302582 9_arw.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "d6e7a818"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "3249c10b81895c95b438af11b7491a36"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "99bf1350e30b6b9d80ed2341fb911dcc0c340530"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "SONY ILCE-6000 214302582 9"
   want_quality:  90

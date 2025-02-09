@@ -1,18 +1,33 @@
-source_file: "Canon PowerShot SX230 HS a0d2aa0209df07a36eb503a1e039ca22.jpg"
-want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Canon PowerShot SX230 HS  a0d2aa0209df07a36eb503a1e039ca22"
-  want_quality: 100
+source_file:  "Canon PowerShot SX230 HS a0d2aa0209df07a36eb503a1e039ca22.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "3776517e"
+  want_quality:  50
 }
-exif: {
-  want_camera_model: "Canon PowerShot SX230 HS"
-  want_photo_id: "a0d2aa0209df07a36eb503a1e039ca22"
-  want_unique_photo_id: true
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "4469b4f437096898db66531f2878ea9f"
+  want_quality:  80
 }
-xmp: {}
-img_phash: {
-  comment: "No image data"
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "619fe5c6947d7c8611650094adbf9efc9295aba1"
+  want_quality:  99
 }
-video_phash: {
-  comment: "No video data"
+want_fingerprint:  {
+  want_kind:  "EXIFModelSerialPhotoID"
+  want_hash:  "Canon PowerShot SX230 HS  a0d2aa0209df07a36eb503a1e039ca22"
+  want_quality:  100
+}
+exif:  {
+  want_camera_model:  "Canon PowerShot SX230 HS"
+  want_photo_id:  "a0d2aa0209df07a36eb503a1e039ca22"
+  want_unique_photo_id:  true
+}
+xmp:  {}
+img_phash:  {
+  comment:  "No image data"
+}
+video_phash:  {
+  comment:  "No video data"
 }

@@ -1,5 +1,20 @@
 source_file:  "Canon EOS DIGITAL REBEL XSi 520116695 a24f0db7-9fc8-40b2-bbc2-9bc64758fb38.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "62fa946f"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "48aa1d50be6897b795861b6f63e5514e"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "3da5bc7af8e042cc7c31f74fea95db3b348ff155"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "Canon EOS DIGITAL REBEL XSi 520116695 2010-10-12 12:47:51 +0000 UTC"
   want_quality:  80

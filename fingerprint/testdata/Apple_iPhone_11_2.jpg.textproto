@@ -1,5 +1,20 @@
 source_file:  "Apple iPhone 11 2.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "0c76e770"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "b3ae0a1b5262745af0e8a33a1c9cd212"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "08e23ebc563cbcb045659778229fd60c3b2ea31d"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "XMPDocumentID"
   want_hash:  "CEE8F641053E12334BCAE205E585F5DB"
   want_quality:  100

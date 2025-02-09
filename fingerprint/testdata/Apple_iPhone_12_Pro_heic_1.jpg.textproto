@@ -1,5 +1,20 @@
 source_file:  "Apple iPhone 12 Pro heic 1.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "00b6b7ab"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "dde94e098ff2b0a092868d12b9943dc0"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "8e90ac00bcdc1c8fdf866b3e82c23d90cf2b9eb8"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "Apple iPhone 12 Pro  3A0C50F8-C0D5-4C4A-B746-0329F218B46E"
   want_quality:  100

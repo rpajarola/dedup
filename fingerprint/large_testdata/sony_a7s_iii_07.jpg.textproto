@@ -1,35 +1,50 @@
-source_file: "sony_a7s_iii_07.jpg"
-want_fingerprint: {
-  want_kind: "ImgPHashAzr"
-  want_hash: "fc260606f8f8fc06"
-  want_quality: 20
+source_file:  "sony_a7s_iii_07.jpg"
+want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "247e9ce2"
+  want_quality:  50
 }
-want_fingerprint: {
-  want_kind: "ImgPHashNr90"
-  want_hash: "10f0f0f02020e02.100151415151a721"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "5d1f518ba1fbde1ab79031a9b4730678"
+  want_quality:  80
 }
-want_fingerprint: {
-  want_kind: "ImgPHashAjdnikMH"
-  want_hash: "ObJI+wkmyp/Q8HA5O0wTJ8obG3oH4bmiZJrb3g/H42A4HMo/20k4LY+HJtnYaG0H+mB5fm4PbRa8G00nLTcmbfAbE2GwPZc2"
-  want_quality: 20
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "e84301ac632448dea03fa43ca67008b13223a487"
+  want_quality:  99
 }
-want_fingerprint: {
-  want_kind: "XMPDocumentID"
-  want_hash: "A1B59EAF9BAAEC3F0C97603358445EF3"
-  want_quality: 100
+want_fingerprint:  {
+  want_kind:  "ImgPHashAzr"
+  want_hash:  "fc260606f8f8fc06"
+  want_quality:  20
 }
-exif: {
-  want_camera_model: "SONY MODEL-NAME"
-  want_photo_id: "2022-09-09 21:29:51.627 +0000 UTC"
+want_fingerprint:  {
+  want_kind:  "ImgPHashNr90"
+  want_hash:  "10f0f0f02020e02.100151415151a721"
+  want_quality:  20
 }
-xmp: {
-  want_document_id: "A1B59EAF9BAAEC3F0C97603358445EF3"
+want_fingerprint:  {
+  want_kind:  "ImgPHashAjdnikMH"
+  want_hash:  "ObJI+wkmyp/Q8HA5O0wTJ8obG3oH4bmiZJrb3g/H42A4HMo/20k4LY+HJtnYaG0H+mB5fm4PbRa8G00nLTcmbfAbE2GwPZc2"
+  want_quality:  20
 }
-img_phash: {
-  want_azr_hash: "fc260606f8f8fc06"
-  want_nr90_hash: "10f0f0f02020e02.100151415151a721"
+want_fingerprint:  {
+  want_kind:  "XMPDocumentID"
+  want_hash:  "A1B59EAF9BAAEC3F0C97603358445EF3"
+  want_quality:  100
 }
-video_phash: {
-  comment: "No Video Data"
+exif:  {
+  want_camera_model:  "SONY MODEL-NAME"
+  want_photo_id:  "2022-09-09 21:29:51.627 +0000 UTC"
+}
+xmp:  {
+  want_document_id:  "A1B59EAF9BAAEC3F0C97603358445EF3"
+}
+img_phash:  {
+  want_azr_hash:  "fc260606f8f8fc06"
+  want_nr90_hash:  "10f0f0f02020e02.100151415151a721"
+}
+video_phash:  {
+  comment:  "No Video Data"
 }

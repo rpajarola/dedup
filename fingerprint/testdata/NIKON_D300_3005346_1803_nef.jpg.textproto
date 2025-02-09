@@ -1,5 +1,20 @@
 source_file:  "NIKON D300 3005346 1803_nef.jpg"
 want_fingerprint:  {
+  want_kind:  "CRC32"
+  want_hash:  "e2838f32"
+  want_quality:  50
+}
+want_fingerprint:  {
+  want_kind:  "MD5"
+  want_hash:  "c4d8f3dbe7c3f79cd14c3fc611cc7d4b"
+  want_quality:  80
+}
+want_fingerprint:  {
+  want_kind:  "SHA1"
+  want_hash:  "08347e4cfd96b74d1a5f7add71fc6657f0eef0f1"
+  want_quality:  99
+}
+want_fingerprint:  {
   want_kind:  "EXIFModelSerialPhotoID"
   want_hash:  "NIKON D300 3005346 1803 RAW"
   want_quality:  90
