@@ -2,9 +2,19 @@
 
 ## Dependencies
 
+## Protobuf
+
+```
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+export PATH="$PATH:$(go env GOPATH)/bin"
+```
+
+(easier and more reliable than using the OS package even if it is
+available).
+
 ## FFMPEG
 
-This requires ffmpeg 7.x
+This requires ffmpeg >= 7.x
 
 ### Ubuntu
 
@@ -14,11 +24,19 @@ This requires ffmpeg 7.x
 ```
 
 ### MacOS X
+
 ```
   brew install ffmpeg
 ```
 
 ## Tests
+
+### Platforms
+
+I am testing on
+
+* Ubuntu 24.04 LTS on x64.
+* Mac OS X Sonoma 14.4 on ARM
 
 ### Fetch testdata
 
@@ -40,5 +58,3 @@ git annex copy large_testdata/new_file --to cave.servium.ch
 
 Decoding of video is fickly, and some of the hashes need fixing to be
 stable between platforms. (TODO)
-
-The canonical platform for tests is Ubuntu on x64.
