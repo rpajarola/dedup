@@ -2,6 +2,8 @@ module github.com/rpajarola/dedup
 
 go 1.23.4
 
+replace github.com/jdeng/goheif => github.com/rpajarola/goheif v0.0.0-20250202080004-35fd9cb3e7e1
+
 require (
 	github.com/Nr90/imgsim v0.0.0-20180202144352-5caa057144b0
 	github.com/ajdnik/imghash v1.0.0
