@@ -12,13 +12,3 @@ git annex list | while read where fname; do
     ;;
   esac
 done
-git annex sync
-
-#git annex list | while read where fname; do
-#  case "${where}:${fname}" in
-#  ??_**:*testdata*)
-#    echo "${fname}"
-#    git annex get "${fname}"
-#    ;;
-#  esac
-#done
