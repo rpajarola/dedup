@@ -1,6 +1,7 @@
 package fingerprint
 
 import (
+	"fmt"
 	"os"
 )
 
@@ -23,11 +24,16 @@ func (fsfp *FilestatFingerprinter) Init(filename string) (FingerprinterState, er
 
 func (fsfps *filestatFingerprinterState) Get() ([]Fingerprint, error) {
 	var res []Fingerprint
-	f, err := os.Stat(fsfps.filename)
+	s, err := os.Stat(fsfps.filename)
 	if err != nil {
 		return nil, fmt.Errorf("Open(%v): %w", fsfps.filename, err)
 	}
-	// size
+	res = append(res, Fingerprint{
+		Kind:    "filesize",
+		Hash:    fmt.Sprintf("%v", s.Size()),
+		Quality: 20,
+	})
+
 	// file date
 	// name+extension
 
