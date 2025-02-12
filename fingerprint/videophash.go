@@ -235,6 +235,7 @@ func (vpfps *videoPHashFingerprinterState) GetRicop() (Fingerprint, error) {
 		return NoFingerprint, nil
 	}
 	scenes = append(scenes, l)
+	fmt.Printf("%v\n", scenes)
 	pixels := make([]byte, 32*32)
 	var frame float64
 	framescale := float64(nframes) / 1024.0

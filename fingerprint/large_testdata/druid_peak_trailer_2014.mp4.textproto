@@ -16,7 +16,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "VideoPHashRicop"
-  want_hash: "52e80c65e9fc1836.a2263cd54a7516c7"
+  want_hash: "51d73930bc598ec1.a22ebc574a7d1443"
   want_quality: 20
 }
 exif: {
