@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "Apple iPhone 7  AF4B4E28-9113-4656-BBEF-96F7CBC448CE"
   want_quality: 100
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "2589"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Apple iPhone 7"
   want_photo_id: "AF4B4E28-9113-4656-BBEF-96F7CBC448CE"

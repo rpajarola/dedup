@@ -14,6 +14,11 @@ want_fingerprint: {
   want_hash: "1b93a17d482742a7a71b9f854aace204bb66649f"
   want_quality: 99
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "2131"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Apple iPhone 8 Plus"
   want_photo_id: "2017-10-10 12:07:28.526 +0000 UTC"

@@ -15,6 +15,11 @@ want_fingerprint: {
   want_hash: "3ffe4629a828e45ecc9c16ddb91bed5057f417b6"
   want_quality: 99
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "15382134"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Google Pixel 9 Pro"
   want_photo_id: "2024-08-17 19:57:51.89255 +0000 UTC"

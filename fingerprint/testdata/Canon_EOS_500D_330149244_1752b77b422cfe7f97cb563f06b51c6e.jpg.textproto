@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "Canon EOS 500D 330149244 1752b77b422cfe7f97cb563f06b51c6e"
   want_quality: 100
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "27194"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Canon EOS 500D"
   want_camera_serial: "330149244"

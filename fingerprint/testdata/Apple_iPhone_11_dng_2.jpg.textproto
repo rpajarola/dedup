@@ -20,6 +20,11 @@ want_fingerprint: {
   want_quality: 100
 }
 want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "15643"
+  want_quality: 20
+}
+want_fingerprint: {
   want_kind: "XMPDocumentID"
   want_hash: "CEE8F641053E12334BCAE205E585F5DB"
   want_quality: 100

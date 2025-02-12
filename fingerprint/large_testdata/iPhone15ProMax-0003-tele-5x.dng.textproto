@@ -20,6 +20,11 @@ want_fingerprint: {
   want_hash: "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
   want_quality: 100
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "16622022"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Apple iPhone 15 Pro Max"
   want_photo_id: "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"

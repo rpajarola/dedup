@@ -20,6 +20,11 @@ want_fingerprint: {
   want_quality: 100
 }
 want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "1960764"
+  want_quality: 20
+}
+want_fingerprint: {
   want_kind: "ImgPHashAzr"
   want_hash: "788e0831fcff1f00"
   want_quality: 20

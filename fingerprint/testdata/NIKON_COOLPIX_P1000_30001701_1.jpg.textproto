@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "NIKON COOLPIX P1000 30001701 2018-09-18 20:46:11 +0000 UTC FINE"
   want_quality: 80
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "21319"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "NIKON COOLPIX P1000"
   want_camera_serial: "30001701"

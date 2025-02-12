@@ -16,6 +16,11 @@ want_fingerprint: {
   want_hash: "c16dfe7df47476be99351e6937563fa957605be0"
   want_quality: 99
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "55910592"
+  want_quality: 20
+}
 exif: {
   skip: true
 }

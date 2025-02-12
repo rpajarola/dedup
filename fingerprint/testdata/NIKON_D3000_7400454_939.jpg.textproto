@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "NIKON D3000 7400454 939 BASIC"
   want_quality: 90
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "14601"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "NIKON D3000"
   want_camera_serial: "7400454"

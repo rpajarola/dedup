@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "NIKON D300S 7400341 154 FINE"
   want_quality: 90
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "20073"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "NIKON D300S"
   want_camera_serial: "7400341"

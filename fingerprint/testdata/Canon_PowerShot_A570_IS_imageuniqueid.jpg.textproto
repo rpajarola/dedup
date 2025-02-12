@@ -15,6 +15,11 @@ want_fingerprint: {
   want_hash: "2d495ddf0e678d96723a5df8f3d74441f94e2d96"
   want_quality: 99
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "10205"
+  want_quality: 20
+}
 exif: {
   comment: "exiftool fails with 'tiff: tag type read failed: EOF'"
   skip: true

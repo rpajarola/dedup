@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "OLYMPUS E-PL1 B2Y517765 "
 }
 want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "23935"
+  want_quality: 20
+}
+want_fingerprint: {
   want_kind: "XMPDocumentID"
   want_hash: "a30a9ea0-fefb-4af2-9ae3-0e8a4ad27af6"
   want_quality: 100

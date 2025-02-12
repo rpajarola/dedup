@@ -14,6 +14,11 @@ want_fingerprint: {
   want_hash: "f279f652142c710be16c72bd67ca2ebab7f5da7f"
   want_quality: 99
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "4949"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "SONY ILCE-7M3"
   want_photo_id: "2018-05-16 05:08:34 +0000 UTC"

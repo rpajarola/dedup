@@ -15,6 +15,11 @@ want_fingerprint: {
   want_quality: 99
 }
 want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "1446770"
+  want_quality: 20
+}
+want_fingerprint: {
   want_kind: "VideoPHashRicop"
   want_hash: "52c4fd5de1755969.aa4daa56aa49aa56"
   want_quality: 20

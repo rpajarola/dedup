@@ -14,6 +14,11 @@ want_fingerprint: {
   want_hash: "5c5456f663e4af0ed19314220818eb862a77bd0c"
   want_quality: 99
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "17195"
+  want_quality: 20
+}
 exif: {
   comment: "TODO: implement MakerNotePanasonic"
   comment: "TODO: MakerNotePanasonic.InternalSerialNumber"

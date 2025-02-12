@@ -20,6 +20,11 @@ want_fingerprint: {
   want_hash: "Canon EOS Rebel T6 342073058629 2023-07-21 12:43:29.44 +0000 UTC"
   want_quality: 80
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "21747089"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Canon EOS Rebel T6"
   want_camera_serial: "342073058629"

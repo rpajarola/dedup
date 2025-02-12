@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "Apple iPhone 12 Pro  3A0C50F8-C0D5-4C4A-B746-0329F218B46E"
   want_quality: 100
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "5619"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Apple iPhone 12 Pro"
   want_photo_id: "3A0C50F8-C0D5-4C4A-B746-0329F218B46E"

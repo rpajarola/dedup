@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "SONY ILCA-77M2 173014736 24260"
   want_quality: 90
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "52775"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "SONY ILCA-77M2"
   want_camera_serial: "173014736"

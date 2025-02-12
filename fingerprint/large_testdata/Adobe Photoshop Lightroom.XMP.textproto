@@ -14,6 +14,11 @@ want_fingerprint: {
   want_hash: "1bf7e8a34aaba989df9d1674408b1e63f248dfcb"
   want_quality: 99
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "8412"
+  want_quality: 20
+}
 exif: {
   comment: "No EXIF data"
 }

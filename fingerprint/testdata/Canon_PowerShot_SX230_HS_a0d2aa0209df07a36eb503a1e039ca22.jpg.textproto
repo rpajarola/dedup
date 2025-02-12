@@ -19,6 +19,11 @@ want_fingerprint: {
   want_hash: "Canon PowerShot SX230 HS  a0d2aa0209df07a36eb503a1e039ca22"
   want_quality: 100
 }
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "16092"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Canon PowerShot SX230 HS"
   want_photo_id: "a0d2aa0209df07a36eb503a1e039ca22"
