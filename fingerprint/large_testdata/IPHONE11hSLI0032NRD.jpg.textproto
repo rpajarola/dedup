@@ -53,3 +53,11 @@ img_phash: {
 video_phash: {
   comment: "No Video Data"
 }
+checksum: {
+  crc32: "1fae19cb"
+  verified_crc32: "1fae19cb"
+  md5: "d8abd1e7bedc2fb72e83ea0163325f15"
+  verified_md5: "d8abd1e7bedc2fb72e83ea0163325f15"
+  sha1: "a1f791bad09d43b67ca4b28a913ab16f93c5e451"
+  verified_sha1: "a1f791bad09d43b67ca4b28a913ab16f93c5e451"
+}

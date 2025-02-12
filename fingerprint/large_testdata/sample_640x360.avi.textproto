@@ -36,3 +36,11 @@ img_phash: {
 video_phash: {
   want_ricop_hash: "dbeb74760b8b0403.2a55aa55aa55aa55"
 }
+checksum: {
+  crc32: "ce2a6e29"
+  verified_crc32: "ce2a6e29"
+  md5: "b39d431faee0e783c1ce4310cfe37771"
+  verified_md5: "b39d431faee0e783c1ce4310cfe37771"
+  sha1: "63dfca438e276bfc43ff1555710ad970312bba3e"
+  verified_sha1: "63dfca438e276bfc43ff1555710ad970312bba3e"
+}
