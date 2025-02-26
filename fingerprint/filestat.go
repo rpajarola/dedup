@@ -33,9 +33,30 @@ func (fsfps *filestatFingerprinterState) Get() ([]Fingerprint, error) {
 		Hash:    fmt.Sprintf("%v", s.Size()),
 		Quality: 20,
 	})
-
-	// file date
-	// name+extension
+	res = append(res, Fingerprint{
+		Kind:    "filedate",
+		Hash:    fmt.Sprintf("%v", s.ModTime().Unix()),
+		Quality: 20,
+	})
+	res = append(res, Fingerprint{
+		Kind:    "filename",
+		Hash:    fsfps.filename,
+		Quality: 10,
+	})
+	ext := ""
+	if dot := len(fsfps.filename) - 1; dot >= 0 {
+		for i := dot; i >= 0; i-- {
+			if fsfps.filename[i] == '.' {
+				ext = fsfps.filename[i:]
+				break
+			}
+		}
+	}
+	res = append(res, Fingerprint{
+		Kind:    "fileextension",
+		Hash:    ext,
+		Quality: 10,
+	})
 
 	return res, nil
 }

@@ -7,6 +7,7 @@ import (
 	"math"
 	"os"
 	"strings"
+	"sync"
 
 	"github.com/asticode/go-astiav"
 	azr "github.com/azr/phash"
@@ -112,7 +113,8 @@ func (vpfps *videoPHashFingerprinterState) Cleanup() {
 	}
 }
 
-func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image) {
+func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image, wg *sync.WaitGroup) {
+	defer wg.Done()
 	pkt := astiav.AllocPacket()
 	defer pkt.Free()
 	frame := astiav.AllocFrame()
@@ -204,7 +206,13 @@ func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image) 
 // Hash format is {hashsum}.{scenehash} (128bit)
 func (vpfps *videoPHashFingerprinterState) GetRicop() (Fingerprint, error) {
 	images := make(chan *image.Image, 20)
-	go vpfps.readFrames(images)
+	var wg sync.WaitGroup
+	wg.Add(1)
+	go vpfps.readFrames(images, &wg)
+	go func() {
+		wg.Wait()
+		close(images)
+	}()
 	var prevH uint64
 	var l int
 	var scenes []int
