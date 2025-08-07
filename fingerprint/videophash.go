@@ -119,7 +119,6 @@ func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image, 
 	defer pkt.Free()
 	frame := astiav.AllocFrame()
 	defer frame.Free()
-	defer close(images)
 
 	// Create software scale context
 	swsCtx, err := astiav.CreateSoftwareScaleContext(
