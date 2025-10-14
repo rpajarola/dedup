@@ -10,6 +10,7 @@ import (
 
 	"github.com/rpajarola/exiftools/exif"
 	"github.com/rpajarola/exiftools/mknote"
+	"github.com/rpajarola/exiftools/models"
 )
 
 type EXIFFingerprinter struct{}
@@ -83,11 +84,11 @@ func trim(s string) string {
 }
 
 func (xfps *exifFingerprinterState) getCameraModel() string {
-	make, err := xfps.xf.Get(exif.Make)
+	make, err := xfps.xf.Get(models.Make)
 	if err != nil {
 		return ""
 	}
-	model, err := xfps.xf.Get(exif.Model)
+	model, err := xfps.xf.Get(models.Model)
 	if err != nil {
 		return ""
 	}
@@ -130,12 +131,12 @@ func (xfps *exifFingerprinterState) getPhotoID() (string, bool, int) {
 		quality = " " + trim(v.String())
 	}
 	for _, t := range []struct {
-		field   exif.FieldName
+		field   models.FieldName
 		unique  bool
 		quality int
 		hexify  bool
 	}{
-		{exif.ImageUniqueID, true, 100, false},
+		{models.ImageUniqueID, true, 100, false},
 		{mknote.CanonImageUniqueID, true, 100, true},
 		{mknote.ApplePhotoIdentifier, true, 100, false},
 		{mknote.ShutterCount, false, 90, false},
@@ -152,7 +153,7 @@ func (xfps *exifFingerprinterState) getPhotoID() (string, bool, int) {
 		}
 	}
 
-	if v, err := xfps.xf.DateTime(exif.DateTimeOriginal); err == nil {
+	if v, err := xfps.xf.DateTime(models.DateTimeOriginal); err == nil {
 		return fmt.Sprintf("%v", v) + quality, false, 80
 	}
 
