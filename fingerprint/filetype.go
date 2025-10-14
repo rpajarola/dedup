@@ -1,6 +1,7 @@
 package fingerprint
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/h2non/filetype"
@@ -18,6 +19,7 @@ func init() {
 }
 
 func (ftfp *FileTypeFingerprinter) Init(filename string) (FingerprinterState, error) {
+	f, err := os.Open(filename)
 	if err != nil {
 		return nil, fmt.Errorf("Open(%v): %w", filename, err)
 	}
@@ -29,18 +31,17 @@ func (ftfp *FileTypeFingerprinter) Init(filename string) (FingerprinterState, er
 }
 
 func (ftfps *fileTypeFingerprinterState) Get() ([]Fingerprint, error) {
-	if xfps == nil {
-		return nil, nil
-	}
 	fp := Fingerprint{
-		Kind:    "MIMEType",
+		Kind:    "mimetype",
 		Hash:    ftfps.mimeType,
 		Quality: 10,
 	}
 
-	return []Fingerprint{fp}, nilj
+	return []Fingerprint{fp}, nil
 
 }
+
+func (ftfps *fileTypeFingerprinterState) Cleanup() {}
 
 func getFiletype(f *os.File) string {
 	f.Seek(0, 0)
