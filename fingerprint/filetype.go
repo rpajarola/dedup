@@ -6,8 +6,40 @@ import (
 	"github.com/h2non/filetype"
 )
 
+type FileTypeFingerprinter struct{}
+
+type fileTypeFingerprinterState struct {
+	mimeType string
+}
+
 func init() {
 	filetype.AddMatcher(filetype.NewType("mp2t", "video/mp2t"), mp2tMatcher)
+	fingerprinters = append(fingerprinters, &FileTypeFingerprinter{})
+}
+
+func (ftfp *FileTypeFingerprinter) Init(filename string) (FingerprinterState, error) {
+	if err != nil {
+		return nil, fmt.Errorf("Open(%v): %w", filename, err)
+	}
+	defer f.Close()
+	ftfps := fileTypeFingerprinterState{
+		mimeType: getFiletype(f),
+	}
+	return &ftfps, nil
+}
+
+func (ftfps *fileTypeFingerprinterState) Get() ([]Fingerprint, error) {
+	if xfps == nil {
+		return nil, nil
+	}
+	fp := Fingerprint{
+		Kind:    "MIMEType",
+		Hash:    ftfps.mimeType,
+		Quality: 10,
+	}
+
+	return []Fingerprint{fp}, nilj
+
 }
 
 func getFiletype(f *os.File) string {
