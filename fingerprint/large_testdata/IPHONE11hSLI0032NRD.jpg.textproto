@@ -20,6 +20,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931769"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/IPHONE11hSLI0032NRD.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "ImgPHashAzr"
   want_hash: "8cc726cb4720d9bc"
   want_quality: 20

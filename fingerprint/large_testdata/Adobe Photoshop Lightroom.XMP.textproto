@@ -19,6 +19,25 @@ want_fingerprint: {
   want_hash: "8412"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931559"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/Adobe Photoshop Lightroom.XMP"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".XMP"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
 exif: {
   comment: "No EXIF data"
 }

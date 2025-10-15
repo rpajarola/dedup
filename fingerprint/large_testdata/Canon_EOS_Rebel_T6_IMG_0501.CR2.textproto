@@ -25,6 +25,26 @@ want_fingerprint: {
   want_hash: "21747089"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931632"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/Canon_EOS_Rebel_T6_IMG_0501.CR2"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".CR2"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/x-canon-cr2"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "Canon EOS Rebel T6"
   want_camera_serial: "342073058629"

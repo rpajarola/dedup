@@ -19,6 +19,26 @@ want_fingerprint: {
   want_hash: "10325"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932937"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/Sony Ericsson K800i none.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "Sony Ericsson K800i"
   want_photo_id: "2006-03-07 15:55:10 +0000 UTC"

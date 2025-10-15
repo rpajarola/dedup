@@ -24,6 +24,26 @@ want_fingerprint: {
   want_hash: "24849152"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932409"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/Y-DP-105mm-9411.ARW"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".ARW"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "SONY ILCE-7M3"
   want_camera_serial: "28ff00008809"

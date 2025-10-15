@@ -25,6 +25,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932868"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/Canon EOS 60D 570303637 07F841A781C68B8736F3B32FE3AD8E52.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "XMPDocumentID"
   want_hash: "07F841A781C68B8736F3B32FE3AD8E52"
   want_quality: 100

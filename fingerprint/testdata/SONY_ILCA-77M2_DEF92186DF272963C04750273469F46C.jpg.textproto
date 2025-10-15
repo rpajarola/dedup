@@ -20,6 +20,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932927"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/SONY ILCA-77M2 DEF92186DF272963C04750273469F46C.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "XMPDocumentID"
   want_hash: "DEF92186DF272963C04750273469F46C"
   want_quality: 100

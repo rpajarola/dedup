@@ -26,6 +26,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931781"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/IPHONE11hSLI0064NRD.dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "XMPDocumentID"
   want_hash: "CEE8F641053E12334BCAE205E585F5DB"
   want_quality: 100

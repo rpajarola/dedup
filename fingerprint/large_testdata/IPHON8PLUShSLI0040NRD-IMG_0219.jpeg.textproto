@@ -20,6 +20,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931732"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/IPHON8PLUShSLI0040NRD-IMG_0219.jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "ImgPHashAzr"
   want_hash: "44cf36094724d9fc"
   want_quality: 20

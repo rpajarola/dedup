@@ -25,6 +25,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931854"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/NIKON D300 4085317 69139.NEF"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".NEF"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "ImgPHashAzr"
   want_hash: "1c78610709f0fe3e"
   want_quality: 20

@@ -20,6 +20,26 @@ want_fingerprint: {
   want_hash: "15382134"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931993"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/PXL_20240818_015751859.RAW-01.COVER.dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "Google Pixel 9 Pro"
   want_photo_id: "2024-08-17 19:57:51.89255 +0000 UTC"

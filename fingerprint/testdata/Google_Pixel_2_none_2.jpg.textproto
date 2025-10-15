@@ -19,6 +19,26 @@ want_fingerprint: {
   want_hash: "41164"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932877"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/Google Pixel 2 none 2.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "Google Pixel 2"
   want_photo_id: "2018-03-22 12:42:17.318446 +0000 UTC"

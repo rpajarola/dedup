@@ -24,6 +24,26 @@ want_fingerprint: {
   want_hash: "24838144"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932090"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/SONY ILCE-6000 214302582 9.ARW"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".ARW"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "SONY ILCE-6000"
   want_camera_serial: "214302582"

@@ -20,6 +20,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785073"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/BigBuckBunny.ts"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".ts"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "video/mp2t"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "VideoPHashRicop"
   want_hash: "52c4fd5de1755969.aa55a955a255aa55"
   want_quality: 20

@@ -20,6 +20,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785156"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/sample_1920x1080.avi"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".avi"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "video/x-msvideo"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "VideoPHashRicop"
   want_hash: "f801e7384147b7c9.2a55aa55aa55aa55"
   want_quality: 20

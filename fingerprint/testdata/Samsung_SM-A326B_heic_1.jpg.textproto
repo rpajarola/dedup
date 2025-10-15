@@ -19,6 +19,26 @@ want_fingerprint: {
   want_hash: "1169"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932931"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/Samsung SM-A326B heic 1.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "samsung SM-A326B"
   want_photo_id: "2023-12-13 13:03:39.016 +0000 UTC"

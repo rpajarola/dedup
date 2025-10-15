@@ -21,6 +21,26 @@ want_fingerprint: {
   want_quality: 20
 }
 want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785059"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/BigBuckBunny.gif"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".gif"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/gif"
+  want_quality: 10
+}
+want_fingerprint: {
   want_kind: "ImgPHashAzr"
   want_hash: "1a7344a9395c576a"
   want_quality: 20
@@ -37,7 +57,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "VideoPHashRicop"
-  want_hash: "f86e2e4a34601020.aa55aa554555aa55"
+  want_hash: "f86e2e4a34601020.aa55aa550055aa55"
   want_quality: 20
 }
 exif: {

@@ -24,6 +24,26 @@ want_fingerprint: {
   want_hash: "5677"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932856"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/Apple iPhone 12 Pro heic 2.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "Apple iPhone 12 Pro"
   want_photo_id: "8836E8B5-A132-4292-8D7D-87CCE1CACD2A"

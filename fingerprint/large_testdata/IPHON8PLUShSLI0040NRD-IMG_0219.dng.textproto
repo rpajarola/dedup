@@ -20,6 +20,26 @@ want_fingerprint: {
   want_hash: "13109852"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931719"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/IPHON8PLUShSLI0040NRD-IMG_0219.dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "Apple iPhone 8 Plus"
   want_photo_id: "2017-10-10 12:07:41.194 +0000 UTC"

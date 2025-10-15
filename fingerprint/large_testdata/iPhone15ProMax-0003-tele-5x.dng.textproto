@@ -25,6 +25,26 @@ want_fingerprint: {
   want_hash: "16622022"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932760"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/iPhone15ProMax-0003-tele-5x.dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "Apple iPhone 15 Pro Max"
   want_photo_id: "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"

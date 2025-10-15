@@ -21,6 +21,25 @@ want_fingerprint: {
   want_hash: "55910592"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931606"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/Canon_EOS_R10_IMG_0683.CR3"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".CR3"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
 exif: {
   skip: true
 }

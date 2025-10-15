@@ -19,6 +19,26 @@ want_fingerprint: {
   want_hash: "16377"
   want_quality: 20
 }
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932881"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/NIKON COOLPIX AW100 none.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
 exif: {
   want_camera_model: "NIKON COOLPIX AW100"
   want_photo_id: "2013-02-06 21:26:36 +0000 UTC NORMAL"
