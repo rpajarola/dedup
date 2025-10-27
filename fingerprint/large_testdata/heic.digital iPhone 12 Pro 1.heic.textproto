@@ -1,4 +1,5 @@
 source_file: "heic.digital iPhone 12 Pro 1.heic"
+want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "7850bd11"
@@ -23,6 +24,26 @@ want_fingerprint: {
   want_kind: "filesize"
   want_hash: "1721433"
   want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932696"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "large_testdata/heic.digital iPhone 12 Pro 1.heic"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".heic"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/heif"
+  want_quality: 10
 }
 want_fingerprint: {
   want_kind: "ImgPHashAzr"

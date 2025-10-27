@@ -1,4 +1,5 @@
 source_file: "imgphash_cat_sky.jpg"
+want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "d460b446"
@@ -18,6 +19,26 @@ want_fingerprint: {
   want_kind: "filesize"
   want_hash: "104939"
   want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932942"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/imgphash_cat_sky.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
 }
 want_fingerprint: {
   want_kind: "ImgPHashAzr"
