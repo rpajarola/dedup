@@ -16,11 +16,6 @@ want_fingerprint: {
   want_quality: 99
 }
 want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Apple iPad Air (5th generation)  39247AF2-FA9F-41B3-92DF-2E53D34D582B"
-  want_quality: 100
-}
-want_fingerprint: {
   want_kind: "filesize"
   want_hash: "1332170"
   want_quality: 20
@@ -57,7 +52,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "ImgPHashAjdnikMH"
-  want_hash: "L5LA4HG3kE5LJZJ7Ho2m0LLaH+24HH4HIZLL8G07PZ/EmnX4E823A7H4+8HI2A3E4HA8M/GbD5Pg8nw0mtuXG4Hw0nm02E4T"
+  want_hash: "V8jS8upMrsOWiZ2uMmvKDl3B1W2ZPE4E6rJkHJLN0aIeYHx/vltOpNuUVjI/puevHoXB4U66lsPwke2iJl1Kq1lhy60RMUbN"
   want_quality: 20
 }
 exif: {

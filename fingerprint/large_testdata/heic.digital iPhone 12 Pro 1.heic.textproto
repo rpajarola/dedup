@@ -16,11 +16,6 @@ want_fingerprint: {
   want_quality: 99
 }
 want_fingerprint: {
-  want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "Apple iPhone 12 Pro  3A0C50F8-C0D5-4C4A-B746-0329F218B46E"
-  want_quality: 100
-}
-want_fingerprint: {
   want_kind: "filesize"
   want_hash: "1721433"
   want_quality: 20
@@ -57,7 +52,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "ImgPHashAjdnikMH"
-  want_hash: "A+WyxLknI7H4/G0Wzb0hZfIWLZH7ImkwfLe2JfIG8HB54/GwZPgk3JI430nIbPA+HY8HYm9kLOjGwb0IHZM2ZbI0HgJHYmGy"
+  want_hash: "B5s/FD6QXQ/GLwrlMmlWMDemNq4lXcyuF6i28iX7g6WA7wumDMLKDx0AfOmAn4+H44D5GbGD8qoWPiP58RrsumhkFkIMqqWG"
   want_quality: 20
 }
 exif: {

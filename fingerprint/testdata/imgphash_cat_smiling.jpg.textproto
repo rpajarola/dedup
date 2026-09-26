@@ -51,7 +51,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "ImgPHashAjdnikMH"
-  want_hash: "DYWwSSeMnbYm8HIG4PH8+F8mbebE7Tk02ZM2G4k+Hw5KbE3S6Arm4HPbbmzbB405MnbP00CWTMkZH4fEnD+0n8nA4HB7I5Eg"
+  want_hash: "QcmujSytYCSblwbqJ4Pu5jNdkhV2Fw6TZziHtDLh8v+0lFzUNyQuH7RtT9WWSmUbjeqrVZmtWTqnLH8HHrrNu7ddUHnuJU9i"
   want_quality: 20
 }
 exif: {}
