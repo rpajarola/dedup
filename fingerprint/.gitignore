@@ -1,0 +1,2 @@
+/large_testdata/*
+!/large_testdata/*.textproto

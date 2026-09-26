@@ -3,8 +3,12 @@ package fingerprint
 //go:generate protoc --go_out=. --go_opt=paths=source_relative fingerprint_test.proto
 
 import (
+	"archive/tar"
+	"compress/gzip"
 	"fmt"
+	"io"
 	"log"
+	"net/http"
 	"os"
 	"path/filepath"
 	"strconv"
@@ -22,13 +26,96 @@ import (
 const largeTestDataDir = "large_testdata"
 const testDataDir = "testdata"
 
-// TestMain fixes up the modification times of testdata files to match the
-// "filedate" fingerprint recorded in their .textproto file before running
-// tests. Checkouts don't preserve mtimes, so without this the filedate
-// fingerprint test case would never match.
+// largeTestdataAssets are the release assets on rpajarola/dedup-testdata
+// containing the large_testdata media files, grouped by type.
+var largeTestdataAssets = []string{"testdata-images.tar.gz", "testdata-videos.tar.gz"}
+
+const largeTestdataReleaseURL = "https://github.com/rpajarola/dedup-testdata/releases/latest/download/"
+
+// TestMain downloads the large_testdata media files if missing and fixes up
+// the modification times of testdata files to match the "filedate"
+// fingerprint recorded in their .textproto file before running tests.
+// Checkouts don't preserve mtimes, so without this the filedate fingerprint
+// test case would never match.
 func TestMain(m *testing.M) {
+	if err := fetchLargeTestdata(largeTestDataDir, largeTestdataAssets...); err != nil {
+		log.Printf("fetchLargeTestdata: %v", err)
+	}
 	fixTestdataDates(testDataDir, largeTestDataDir)
 	os.Exit(m.Run())
+}
+
+// fetchLargeTestdata downloads and extracts the given release tarballs into
+// dir, but only if any .textproto's source file is currently missing.
+func fetchLargeTestdata(dir string, assets ...string) error {
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		return fmt.Errorf("readdir %s: %w", dir, err)
+	}
+	complete := true
+	for _, e := range entries {
+		name := e.Name()
+		if !strings.HasSuffix(name, ".textproto") {
+			continue
+		}
+		sourceFile, _, err := readFiledate(filepath.Join(dir, name))
+		if err != nil {
+			continue
+		}
+		if _, err := os.Stat(filepath.Join(dir, sourceFile)); err != nil {
+			complete = false
+			break
+		}
+	}
+	if complete {
+		return nil
+	}
+	for _, asset := range assets {
+		if err := downloadAndExtract(largeTestdataReleaseURL+asset, dir); err != nil {
+			return fmt.Errorf("fetch %s: %w", asset, err)
+		}
+	}
+	return nil
+}
+
+// downloadAndExtract fetches a .tar.gz from url and extracts its regular
+// files flat into destDir.
+func downloadAndExtract(url, destDir string) error {
+	resp, err := http.Get(url)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("GET %s: %s", url, resp.Status)
+	}
+	gz, err := gzip.NewReader(resp.Body)
+	if err != nil {
+		return err
+	}
+	defer gz.Close()
+	tr := tar.NewReader(gz)
+	for {
+		hdr, err := tr.Next()
+		if err == io.EOF {
+			return nil
+		}
+		if err != nil {
+			return err
+		}
+		if hdr.Typeflag != tar.TypeReg {
+			continue
+		}
+		f, err := os.OpenFile(filepath.Join(destDir, filepath.Base(hdr.Name)), os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0644)
+		if err != nil {
+			return err
+		}
+		_, err = io.Copy(f, tr)
+		f.Close()
+		if err != nil {
+			return err
+		}
+	}
 }
 
 // fixTestdataDates sets the modification time of testdata files to match the
