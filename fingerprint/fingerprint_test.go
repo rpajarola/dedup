@@ -4,10 +4,13 @@ package fingerprint
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/protocolbuffers/txtpbfmt/parser"
@@ -18,6 +21,75 @@ import (
 
 const largeTestDataDir = "large_testdata"
 const testDataDir = "testdata"
+
+// TestMain fixes up the modification times of testdata files to match the
+// "filedate" fingerprint recorded in their .textproto file before running
+// tests. Checkouts don't preserve mtimes, so without this the filedate
+// fingerprint test case would never match.
+func TestMain(m *testing.M) {
+	fixTestdataDates(testDataDir, largeTestDataDir)
+	os.Exit(m.Run())
+}
+
+// fixTestdataDates sets the modification time of testdata files to match the
+// "filedate" fingerprint recorded in the corresponding .textproto file.
+func fixTestdataDates(dirs ...string) {
+	for _, dir := range dirs {
+		entries, err := os.ReadDir(dir)
+		if err != nil {
+			log.Printf("readdir %s: %v", dir, err)
+			continue
+		}
+		for _, e := range entries {
+			name := e.Name()
+			if !strings.HasSuffix(name, ".textproto") {
+				continue
+			}
+			protoPath := filepath.Join(dir, name)
+			dataPath := strings.TrimSuffix(protoPath, ".textproto")
+
+			ts, err := readFiledate(protoPath)
+			if err != nil {
+				log.Printf("skip %s: %v", protoPath, err)
+				continue
+			}
+
+			if _, err := os.Stat(dataPath); err != nil {
+				log.Printf("skip %s: source file not found: %v", dataPath, err)
+				continue
+			}
+
+			modTime := time.Unix(ts, 0)
+			if err := os.Chtimes(dataPath, modTime, modTime); err != nil {
+				log.Printf("chtimes %s: %v", dataPath, err)
+				continue
+			}
+		}
+	}
+}
+
+// readFiledate parses the textproto file and returns the Unix timestamp from
+// the "filedate" want_fingerprint entry.
+func readFiledate(path string) (int64, error) {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return 0, err
+	}
+	var tc FingerprintTestCase
+	if err := prototext.Unmarshal(data, &tc); err != nil {
+		return 0, fmt.Errorf("parse: %w", err)
+	}
+	for _, fp := range tc.WantFingerprint {
+		if fp.GetWantKind() == "filedate" {
+			ts, err := strconv.ParseInt(fp.GetWantHash(), 10, 64)
+			if err != nil {
+				return 0, fmt.Errorf("parse filedate %q: %w", fp.GetWantHash(), err)
+			}
+			return ts, nil
+		}
+	}
+	return 0, fmt.Errorf("no filedate fingerprint found")
+}
 
 type TestCase struct {
 	Name       string
