@@ -46,13 +46,13 @@ func fixTestdataDates(dirs ...string) {
 				continue
 			}
 			protoPath := filepath.Join(dir, name)
-			dataPath := strings.TrimSuffix(protoPath, ".textproto")
 
-			ts, err := readFiledate(protoPath)
+			sourceFile, ts, err := readFiledate(protoPath)
 			if err != nil {
 				log.Printf("skip %s: %v", protoPath, err)
 				continue
 			}
+			dataPath := filepath.Join(dir, sourceFile)
 
 			if _, err := os.Stat(dataPath); err != nil {
 				log.Printf("skip %s: source file not found: %v", dataPath, err)
@@ -68,27 +68,27 @@ func fixTestdataDates(dirs ...string) {
 	}
 }
 
-// readFiledate parses the textproto file and returns the Unix timestamp from
-// the "filedate" want_fingerprint entry.
-func readFiledate(path string) (int64, error) {
+// readFiledate parses the textproto file and returns its source file name
+// and the Unix timestamp from the "filedate" want_fingerprint entry.
+func readFiledate(path string) (string, int64, error) {
 	data, err := os.ReadFile(path)
 	if err != nil {
-		return 0, err
+		return "", 0, err
 	}
 	var tc FingerprintTestCase
 	if err := prototext.Unmarshal(data, &tc); err != nil {
-		return 0, fmt.Errorf("parse: %w", err)
+		return "", 0, fmt.Errorf("parse: %w", err)
 	}
 	for _, fp := range tc.WantFingerprint {
 		if fp.GetWantKind() == "filedate" {
 			ts, err := strconv.ParseInt(fp.GetWantHash(), 10, 64)
 			if err != nil {
-				return 0, fmt.Errorf("parse filedate %q: %w", fp.GetWantHash(), err)
+				return "", 0, fmt.Errorf("parse filedate %q: %w", fp.GetWantHash(), err)
 			}
-			return ts, nil
+			return tc.GetSourceFile(), ts, nil
 		}
 	}
-	return 0, fmt.Errorf("no filedate fingerprint found")
+	return "", 0, fmt.Errorf("no filedate fingerprint found")
 }
 
 type TestCase struct {
