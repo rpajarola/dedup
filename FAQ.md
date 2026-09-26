@@ -42,33 +42,29 @@ I am testing on
 
 ### Testdata
 
-Large testdata is stored in git annex.
-
-#### Ubuntu
-
-```
-sudo apt install git-annex
-```
-
-#### MacOS X
-
-```
-brew install git-annex
-```
+Large media files used by `fingerprint`'s tests live in the separate
+[rpajarola/dedup-testdata](https://github.com/rpajarola/dedup-testdata) repo, distributed as
+tarballs attached to its GitHub Releases (split by media type, e.g. `testdata-images.tar.gz`,
+`testdata-videos.tar.gz`).
 
 ### Fetch testdata
 
-Run `get_testdata.sh` to fetch files from web.
-
-Run `git annex sync` to sync (existing) testdata.
+Nothing to do manually: `go test` downloads and extracts the release tarballs into
+`fingerprint/large_testdata/` automatically whenever a file referenced by a `.textproto` is
+missing.
 
 ### Add testdata
 
-```
-WEBDAV_USERNAME=<user> WEBDAV_PASSWORD=<password> git annex enableremote cave.servium.ch
-git annex add large_testdata/new_file
-git annex copy large_testdata/new_file --to cave.servium.ch
-```
+1. Add the new source file plus its `.textproto` (with a `source_file` field pointing at it) to
+   `fingerprint/large_testdata/` locally.
+2. Add the file to the appropriate tarball (images/videos/etc.) and upload it as a new release
+   asset on `rpajarola/dedup-testdata`, e.g.:
+   ```
+   tar -czf testdata-images.tar.gz -C fingerprint/large_testdata <new_file>
+   gh release upload <version> testdata-images.tar.gz --clobber --repo rpajarola/dedup-testdata
+   ```
+3. Commit the `.textproto` in the main repo (the binary file itself is gitignored and fetched on
+   demand, so don't commit it here).
 
 ### Unstable tests
 
