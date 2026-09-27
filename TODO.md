@@ -34,13 +34,3 @@ fixtures, but not all:
   Not investigated further; possibly a different preview tag/IFD layout for this
   capture pipeline (iPhone 8 Plus DNG-from-jpeg workflow).
 
-## Checksum verification quirk
-
-`fingerprint/large_testdata/PXL_20240818_015751859.RAW-01.COVER.dng.textproto`'s
-`checksum.verified_crc32` reads `"be9154ef\tBAD be9154ef != 20240818"`. The
-`crc32` CLI tool that `checksum_test.go`'s `runCmd` shells out to appears to be
-parsing a digit sequence out of the filename itself (`..._20240818_...`) as an
-"expected" checksum to compare against, rather than treating it as opaque. Not
-a bug in this codebase per se, but the reliance on an external `crc32` binary
-with undocumented filename-parsing behavior is fragile — worth understanding or
-replacing with a pure-Go CRC32 comparison.

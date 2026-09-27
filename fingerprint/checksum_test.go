@@ -65,14 +65,18 @@ func runCmd(t *testing.T, algo string, filename string) string {
 	t.Helper()
 	cmd := exec.Command(algo, filename)
 	stdout, err := cmd.CombinedOutput()
-	checksum := string(stdout)
-	checksum = strings.Trim(checksum, "\n")
 	if err != nil {
 		t.Fatalf("run %v: %v", algo, err)
 	}
-	if strings.HasSuffix(checksum, filename) {
-		checksum, _ = strings.CutSuffix(checksum, filename)
+	// The hash is always the first whitespace-delimited token: md5sum/sha1sum
+	// follow it with "  filename", and crc32 (see /usr/bin/crc32) may append
+	// "\tOK" or "\tBAD <crc> != <hex-run-from-filename>" if the filename
+	// happens to contain an 8-hex-digit substring (a scene-release CRC32
+	// convention), which for a single file isn't preceded by the filename
+	// itself and would otherwise get kept as part of the checksum.
+	fields := strings.Fields(string(stdout))
+	if len(fields) == 0 {
+		t.Fatalf("run %v: no output", algo)
 	}
-	checksum = strings.Trim(checksum, " ()")
-	return string(checksum)
+	return fields[0]
 }

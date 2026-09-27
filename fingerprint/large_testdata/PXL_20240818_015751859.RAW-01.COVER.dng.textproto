@@ -70,7 +70,7 @@ video_phash: {
 }
 checksum: {
   crc32: "be9154ef"
-  verified_crc32: "be9154ef\tBAD be9154ef != 20240818"
+  verified_crc32: "be9154ef"
   md5: "e496d864ebce5f3eb5b7e98be6feb727"
   verified_md5: "e496d864ebce5f3eb5b7e98be6feb727"
   sha1: "3ffe4629a828e45ecc9c16ddb91bed5057f417b6"
