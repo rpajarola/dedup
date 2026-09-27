@@ -42,25 +42,27 @@ I am testing on
 
 ### Testdata
 
-Large media files used by `fingerprint`'s tests live in the separate
+Media files used by `fingerprint`'s tests live in the separate
 [rpajarola/dedup-testdata](https://github.com/rpajarola/dedup-testdata) repo, distributed as
-tarballs attached to its GitHub Releases (split by media type, e.g. `testdata-images.tar.gz`,
-`testdata-videos.tar.gz`).
+tarballs attached to its GitHub Releases (split by media type: `testdata-images.tar.gz`,
+`testdata-videos.tar.gz`, `testdata-noimage.tar.gz` for the EXIF-only placeholder fixtures).
+There's a single `fingerprint/testdata/` directory; only `.textproto` files are committed here,
+everything else is fetched on demand.
 
 ### Fetch testdata
 
 Nothing to do manually: `go test` downloads and extracts the release tarballs into
-`fingerprint/large_testdata/` automatically whenever a file referenced by a `.textproto` is
+`fingerprint/testdata/` automatically whenever a file referenced by a `.textproto` is
 missing.
 
 ### Add testdata
 
 1. Add the new source file plus its `.textproto` (with a `source_file` field pointing at it) to
-   `fingerprint/large_testdata/` locally.
+   `fingerprint/testdata/` locally.
 2. Add the file to the appropriate tarball (images/videos/etc.) and upload it as a new release
    asset on `rpajarola/dedup-testdata`, e.g.:
    ```
-   tar -czf testdata-images.tar.gz -C fingerprint/large_testdata <new_file>
+   tar -czf testdata-images.tar.gz -C fingerprint/testdata <new_file>
    gh release upload <version> testdata-images.tar.gz --clobber --repo rpajarola/dedup-testdata
    ```
 3. Commit the `.textproto` in the main repo (the binary file itself is gitignored and fetched on

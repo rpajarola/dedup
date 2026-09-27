@@ -1,2 +1,2 @@
-/large_testdata/*
-!/large_testdata/*.textproto
+/testdata/*
+!/testdata/*.textproto

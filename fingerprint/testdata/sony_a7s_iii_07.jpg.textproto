@@ -1,0 +1,83 @@
+source_file: "sony_a7s_iii_07.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "247e9ce2"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "5d1f518ba1fbde1ab79031a9b4730678"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "e84301ac632448dea03fa43ca67008b13223a487"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "1572754"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932845"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/sony_a7s_iii_07.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "fc260606f8f8fc06"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "10f0f0f02020e02.100151415151a721"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "cXOUPOaXNEx+LcgyZPny/aA4Hw/H4n6ZmQtqFv89CNV2Hks4+94uUqJsjG7CNriKr2LmqHUIo85Dvpc3GXCmmbl1ke1fKgpB"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "A1B59EAF9BAAEC3F0C97603358445EF3"
+  want_quality: 100
+}
+exif: {
+  want_camera_model: "SONY MODEL-NAME"
+  want_photo_id: "2022-09-09 21:29:51.627 +0000 UTC"
+}
+xmp: {
+  want_document_id: "A1B59EAF9BAAEC3F0C97603358445EF3"
+}
+img_phash: {
+  want_azr_hash: "fc260606f8f8fc06"
+  want_nr90_hash: "10f0f0f02020e02.100151415151a721"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "247e9ce2"
+  verified_crc32: "247e9ce2"
+  md5: "5d1f518ba1fbde1ab79031a9b4730678"
+  verified_md5: "5d1f518ba1fbde1ab79031a9b4730678"
+  sha1: "e84301ac632448dea03fa43ca67008b13223a487"
+  verified_sha1: "e84301ac632448dea03fa43ca67008b13223a487"
+}

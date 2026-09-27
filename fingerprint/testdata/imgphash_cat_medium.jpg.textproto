@@ -1,5 +1,4 @@
 source_file: "imgphash_cat_medium.jpg"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "00626187"

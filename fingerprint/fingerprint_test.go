@@ -23,31 +23,30 @@ import (
 	"google.golang.org/protobuf/testing/protocmp"
 )
 
-const largeTestDataDir = "large_testdata"
 const testDataDir = "testdata"
 
-// largeTestdataAssets are the release assets on rpajarola/dedup-testdata
-// containing the large_testdata media files, grouped by type.
-var largeTestdataAssets = []string{"testdata-images.tar.gz", "testdata-videos.tar.gz"}
+// testdataAssets are the release assets on rpajarola/dedup-testdata
+// containing testdata's media files, grouped by type.
+var testdataAssets = []string{"testdata-images.tar.gz", "testdata-videos.tar.gz", "testdata-noimage.tar.gz"}
 
-const largeTestdataReleaseURL = "https://github.com/rpajarola/dedup-testdata/releases/latest/download/"
+const testdataReleaseURL = "https://github.com/rpajarola/dedup-testdata/releases/latest/download/"
 
-// TestMain downloads the large_testdata media files if missing and fixes up
-// the modification times of testdata files to match the "filedate"
-// fingerprint recorded in their .textproto file before running tests.
-// Checkouts don't preserve mtimes, so without this the filedate fingerprint
-// test case would never match.
+// TestMain downloads testdata's media files if missing and fixes up the
+// modification times of testdata files to match the "filedate" fingerprint
+// recorded in their .textproto file before running tests. Checkouts don't
+// preserve mtimes, so without this the filedate fingerprint test case would
+// never match.
 func TestMain(m *testing.M) {
-	if err := fetchLargeTestdata(largeTestDataDir, largeTestdataAssets...); err != nil {
-		log.Printf("fetchLargeTestdata: %v", err)
+	if err := fetchTestdata(testDataDir, testdataAssets...); err != nil {
+		log.Printf("fetchTestdata: %v", err)
 	}
-	fixTestdataDates(testDataDir, largeTestDataDir)
+	fixTestdataDates(testDataDir)
 	os.Exit(m.Run())
 }
 
-// fetchLargeTestdata downloads and extracts the given release tarballs into
-// dir, but only if any .textproto's source file is currently missing.
-func fetchLargeTestdata(dir string, assets ...string) error {
+// fetchTestdata downloads and extracts the given release tarballs into dir,
+// but only if any .textproto's source file is currently missing.
+func fetchTestdata(dir string, assets ...string) error {
 	entries, err := os.ReadDir(dir)
 	if err != nil {
 		return fmt.Errorf("readdir %s: %w", dir, err)
@@ -71,7 +70,7 @@ func fetchLargeTestdata(dir string, assets ...string) error {
 		return nil
 	}
 	for _, asset := range assets {
-		if err := downloadAndExtract(largeTestdataReleaseURL+asset, dir); err != nil {
+		if err := downloadAndExtract(testdataReleaseURL+asset, dir); err != nil {
 			return fmt.Errorf("fetch %s: %w", asset, err)
 		}
 	}
@@ -270,7 +269,7 @@ func maybeUpdateTestCase(t *testing.T, tc TestCase) {
 
 func TestGetFingerprint(t *testing.T) {
 	t.Parallel()
-	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
+	for _, tc := range getTestCases(t, testDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			t.Parallel()
 			gotFps, gotErr := GetFingerprint(tc.SourceFile)

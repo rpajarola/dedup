@@ -1,0 +1,83 @@
+source_file: "Sony A77 III 6912738029.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "0905eaee"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "2345680a0fce5bc6983ba0ca62fd4397"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "fc77d2c02bc563ba7366be8de3b1a679c0f457fb"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "13484294"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932310"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/Sony A77 III 6912738029.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "87ed2b33e58a0a0b"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "204143f7f7f3f.2025c35b13442326"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "k22zZX8jIwRo5zjtiHTtUKTgWiqzUPKoxMqjaOvyKulsyqoipDiyYjRuidSidDW0rwsliYuasMeVvCVoe1dklQ2Wb0ldU5Tr"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "914F94B59194DECE1E03735B53FE61F9"
+  want_quality: 100
+}
+exif: {
+  want_camera_model: "SONY ILCA-77M2"
+  want_photo_id: "2014-07-06 15:24:32 +0000 UTC"
+}
+xmp: {
+  want_document_id: "914F94B59194DECE1E03735B53FE61F9"
+}
+img_phash: {
+  want_azr_hash: "87ed2b33e58a0a0b"
+  want_nr90_hash: "204143f7f7f3f.2025c35b13442326"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "0905eaee"
+  verified_crc32: "0905eaee"
+  md5: "2345680a0fce5bc6983ba0ca62fd4397"
+  verified_md5: "2345680a0fce5bc6983ba0ca62fd4397"
+  sha1: "fc77d2c02bc563ba7366be8de3b1a679c0f457fb"
+  verified_sha1: "fc77d2c02bc563ba7366be8de3b1a679c0f457fb"
+}

@@ -1,0 +1,84 @@
+source_file: "iPhone15ProMax-0003-tele-5x.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "e194f57f"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "dbab75a55bc60daa19b57845d9586fac"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "73226c045479dda13993b761665c36a572131064"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 15 Pro Max  EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_quality: 100
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "7356667"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932790"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/iPhone15ProMax-0003-tele-5x.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "cc3339cc269966c9"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "7ffffffff.80404249b930000"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "TeSNBtnj0msXazbklr001VTBmaZujSmh7RtMILS1tLtJ1itpKySZFYLcvxU1iRNZpkO2ocdhbZtNVc0ldVk7dGsTs03Ngcas"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "Apple iPhone 15 Pro Max"
+  want_photo_id: "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
+  want_unique_photo_id: true
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  want_azr_hash: "cc3339cc269966c9"
+  want_nr90_hash: "7ffffffff.80404249b930000"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "e194f57f"
+  verified_crc32: "e194f57f"
+  md5: "dbab75a55bc60daa19b57845d9586fac"
+  verified_md5: "dbab75a55bc60daa19b57845d9586fac"
+  sha1: "73226c045479dda13993b761665c36a572131064"
+  verified_sha1: "73226c045479dda13993b761665c36a572131064"
+}

@@ -1,0 +1,78 @@
+source_file: "Y-GooglePixel2-PortraitMode-014.jpg"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "e54aaf6a"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "04ba5660edc22cd572a7f9d5ebfc3d86"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "b7d492f72ce9fc13eadafcf8de7f4954dca553fb"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "3333659"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932482"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/Y-GooglePixel2-PortraitMode-014.jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".jpg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/jpeg"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "31d34c943e3d6da0"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "190011a10113fbfb.c4eacbcac087c9c"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "sOSqe0sjbS9pzrNPBJqb4UcSo6WVpLR0jmx+4JbTEPhqWmWDVpt1KaT0VTOYSUtQySoWkx4TtdkbtNU7HGWUSFsuU6w5znMy"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "Google Pixel 2"
+  want_photo_id: "2018-03-22 12:42:17.318446 +0000 UTC"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  want_azr_hash: "31d34c943e3d6da0"
+  want_nr90_hash: "190011a10113fbfb.c4eacbcac087c9c"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "e54aaf6a"
+  verified_crc32: "e54aaf6a"
+  md5: "04ba5660edc22cd572a7f9d5ebfc3d86"
+  verified_md5: "04ba5660edc22cd572a7f9d5ebfc3d86"
+  sha1: "b7d492f72ce9fc13eadafcf8de7f4954dca553fb"
+  verified_sha1: "b7d492f72ce9fc13eadafcf8de7f4954dca553fb"
+}

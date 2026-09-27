@@ -11,7 +11,7 @@ import (
 func TestImgPHashFingerprinter(t *testing.T) {
 	t.Parallel()
 	fp := &ImgPHashFingerprinter{}
-	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
+	for _, tc := range getTestCases(t, testDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			t.Parallel()
 			defer maybeUpdateTestCase(t, tc)

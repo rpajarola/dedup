@@ -10,7 +10,7 @@ import (
 func TestChecksumFingerprinter(t *testing.T) {
 	t.Parallel()
 	fp := &ChecksumFingerprinter{}
-	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
+	for _, tc := range getTestCases(t, testDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			t.Parallel()
 			if tc.Got.GetChecksum() == nil {

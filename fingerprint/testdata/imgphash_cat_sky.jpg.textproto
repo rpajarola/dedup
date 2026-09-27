@@ -1,5 +1,4 @@
 source_file: "imgphash_cat_sky.jpg"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "d460b446"

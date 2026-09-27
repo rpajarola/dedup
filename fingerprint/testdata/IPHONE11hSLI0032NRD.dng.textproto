@@ -1,0 +1,89 @@
+source_file: "IPHONE11hSLI0032NRD.dng"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "d51a3daa"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "53323222ee164f271968514b95085ffa"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "bc2cf67cf27c4be39e7ae7f2f036bd72dd4e6e22"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 11  2ABA6EB7-5DF7-44CA-BD23-590BE8B4D533"
+  want_quality: 100
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "14792226"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737931749"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/IPHONE11hSLI0032NRD.dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".dng"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "8cc726cb470899be"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ff8581c3c38381db.9c8a946860c9cecc"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "nZ47H4S3IA8k+hutSuqpozdikS443GpWG0HqJDGA6GongZznWU8Ff44GSRt8Hok6zY+P4D23O3EyppdA7VIFXE/4B3zfAOMg"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "XMPDocumentID"
+  want_hash: "659BC91A3E511BBC12D0BB30818DF9CB"
+  want_quality: 100
+}
+exif: {
+  want_camera_model: "Apple iPhone 11"
+  want_photo_id: "2ABA6EB7-5DF7-44CA-BD23-590BE8B4D533"
+  want_unique_photo_id: true
+}
+xmp: {
+  want_document_id: "659BC91A3E511BBC12D0BB30818DF9CB"
+}
+img_phash: {
+  want_azr_hash: "8cc726cb470899be"
+  want_nr90_hash: "ff8581c3c38381db.9c8a946860c9cecc"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "d51a3daa"
+  verified_crc32: "d51a3daa"
+  md5: "53323222ee164f271968514b95085ffa"
+  verified_md5: "53323222ee164f271968514b95085ffa"
+  sha1: "bc2cf67cf27c4be39e7ae7f2f036bd72dd4e6e22"
+  verified_sha1: "bc2cf67cf27c4be39e7ae7f2f036bd72dd4e6e22"
+}

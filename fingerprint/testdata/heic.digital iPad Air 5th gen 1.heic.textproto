@@ -1,0 +1,78 @@
+source_file: "heic.digital iPad Air 5th gen 1.heic"
+want_err: true
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "06941125"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "022f2c009f66978d1ba083e18b8eb691"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "4a24e01c9798131b338654579f7462e1f7b8e392"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "1618040"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1737932685"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/heic.digital iPad Air 5th gen 1.heic"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".heic"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/heif"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "cc622b0ccb946767"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ff7b7b7178000000.393d18383c0f3991"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "GpUjz8KRpk55wm0G8O4nE2Ql/i1ANGv3HxNonpy+GLg46uPYdi+NVjStG/D4SqBookT/Y+D5IdIsUzA4f20luKisEznJQJof"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "Apple iPad Air (5th generation)"
+  want_photo_id: "4D481A26-0D20-441E-B467-AA57627B73DD"
+  want_unique_photo_id: true
+}
+xmp: {}
+img_phash: {
+  want_azr_hash: "cc622b0ccb946767"
+  want_nr90_hash: "ff7b7b7178000000.393d18383c0f3991"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "06941125"
+  verified_crc32: "06941125"
+  md5: "022f2c009f66978d1ba083e18b8eb691"
+  verified_md5: "022f2c009f66978d1ba083e18b8eb691"
+  sha1: "4a24e01c9798131b338654579f7462e1f7b8e392"
+  verified_sha1: "4a24e01c9798131b338654579f7462e1f7b8e392"
+}
