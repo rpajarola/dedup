@@ -11,6 +11,7 @@ func TestXMPFingerprinter(t *testing.T) {
 	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			t.Parallel()
+			defer maybeUpdateTestCase(t, tc)
 			if tc.Got.GetXmp() == nil {
 				tc.Got.Xmp = &XMPTestCase{}
 			}
@@ -31,6 +32,5 @@ func TestXMPFingerprinter(t *testing.T) {
 				tc.Got.Xmp.WantDocumentId, _, _ = xfps.getDocumentID()
 			}
 		})
-		maybeUpdateTestCase(t, tc)
 	}
 }

@@ -1,6 +1,7 @@
 package fingerprint
 
 import (
+	"bytes"
 	"encoding/base64"
 	"encoding/binary"
 	"fmt"
@@ -17,6 +18,7 @@ import (
 	ajdnik "github.com/ajdnik/imghash"
 	azr "github.com/azr/phash"
 	heif "github.com/jdeng/goheif"
+	"github.com/rpajarola/exiftools/exif"
 	tiff "golang.org/x/image/tiff"
 )
 
@@ -53,21 +55,59 @@ func (ipfp *ImgPHashFingerprinter) Init(filename string) (FingerprinterState, er
 	if !strings.HasPrefix(getFiletype(f), "image/") {
 		return nil, nil
 	}
-	cfg, format, err := image.DecodeConfig(f)
-	if err != nil {
-		return nil, fmt.Errorf("image.DecodeConfig(%v): %w", filename, err)
+	if err := ipfps.decodeImage(f); err == nil {
+		return &ipfps, nil
 	}
-	ipfps.cfg = cfg
+	// RAW formats (ARW, CR2, CR3, DNG, ...) wrap sensor data the stdlib
+	// image package can't decode directly. Fall back to the JPEG/PNG
+	// preview or thumbnail embedded in the file's EXIF data.
+	if _, err := f.Seek(0, 0); err != nil {
+		return nil, nil
+	}
+	if err := ipfps.decodeEmbeddedPreview(f); err == nil {
+		return &ipfps, nil
+	}
+	return nil, nil
+}
+
+// decodeImage decodes r directly as one of the supported image formats.
+func (ipfps *imgPHashFingerprinterState) decodeImage(r io.ReadSeeker) error {
+	cfg, format, err := image.DecodeConfig(r)
+	if err != nil {
+		return err
+	}
 	decodeFunc, ok := extensions[format]
 	if !ok {
-		return nil, fmt.Errorf("%v: unknown file format: %v", filename, format)
+		return fmt.Errorf("unknown file format: %v", format)
 	}
-	f.Seek(0, 0)
-	if ipfps.img, err = decodeFunc(f); err != nil {
-		return nil, fmt.Errorf("decode(%v): %w", filename, err)
+	if _, err := r.Seek(0, 0); err != nil {
+		return err
 	}
+	img, err := decodeFunc(r)
+	if err != nil {
+		return err
+	}
+	ipfps.cfg = cfg
+	ipfps.img = img
+	return nil
+}
 
-	return &ipfps, nil
+// decodeEmbeddedPreview locates and decodes the preview/thumbnail image
+// embedded in r's EXIF data, for files whose primary image data isn't
+// directly decodable (e.g. RAW camera formats).
+func (ipfps *imgPHashFingerprinterState) decodeEmbeddedPreview(r io.Reader) error {
+	x, err := exif.Decode(r)
+	if err != nil {
+		return err
+	}
+	start, length, err := x.PreviewImage()
+	if err != nil {
+		return err
+	}
+	if length <= 0 || start < 0 || int(start+length) > len(x.Raw) {
+		return fmt.Errorf("no embedded preview image found")
+	}
+	return ipfps.decodeImage(bytes.NewReader(x.Raw[start : start+length]))
 }
 
 func (ipfps *imgPHashFingerprinterState) Get() ([]Fingerprint, error) {

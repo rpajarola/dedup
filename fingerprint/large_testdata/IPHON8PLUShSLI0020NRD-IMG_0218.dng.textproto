@@ -1,5 +1,4 @@
 source_file: "IPHON8PLUShSLI0020NRD-IMG_0218.dng"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "04faf813"
@@ -48,10 +47,17 @@ xmp: {
   comment: "No XMP data"
 }
 img_phash: {
-  comment: "TODO: implement decoding dng"
-  skip: true
+  comment: "No image data"
 }
 video_phash: {
   comment: "No Video Data"
   skip: true
+}
+checksum: {
+  crc32: "04faf813"
+  verified_crc32: "04faf813"
+  md5: "886f3e000c3ecb59de2e494416c5b51e"
+  verified_md5: "886f3e000c3ecb59de2e494416c5b51e"
+  sha1: "a247716c5344178a55af6f471da9b0bde9cc4255"
+  verified_sha1: "a247716c5344178a55af6f471da9b0bde9cc4255"
 }

@@ -14,6 +14,7 @@ func TestImgPHashFingerprinter(t *testing.T) {
 	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			t.Parallel()
+			defer maybeUpdateTestCase(t, tc)
 			if tc.Got.GetImgPhash() == nil {
 				tc.Got.ImgPhash = &ImgPHashTestCase{}
 			}
@@ -49,6 +50,5 @@ func TestImgPHashFingerprinter(t *testing.T) {
 			tc.Got.ImgPhash.WantAzrHash = azrHash.Hash
 			tc.Got.ImgPhash.WantNr90Hash = nr90Hash.Hash
 		})
-		maybeUpdateTestCase(t, tc)
 	}
 }

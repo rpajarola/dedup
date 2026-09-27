@@ -1,5 +1,4 @@
 source_file: "PXL_20240818_015751859.RAW-01.COVER.dng"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "be9154ef"
@@ -40,6 +39,21 @@ want_fingerprint: {
   want_hash: "image/tiff"
   want_quality: 10
 }
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "ce4cc3c34cccc3c3"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "803800f8ffffff.f8f88f4f0f7ffcf8"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "eJaYPb46sEnEXavI80n2uW0uSMHbdk9JlSUtKaPVaIlikW0sbSNVaTfkk21USWqu+x2yMkmlJOLitr2n2l3kYeDrGjtttTdm"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Google Pixel 9 Pro"
   want_photo_id: "2024-08-17 19:57:51.89255 +0000 UTC"
@@ -48,9 +62,17 @@ xmp: {
   comment: "No XMP data"
 }
 img_phash: {
-  comment: "TODO: implement decoding dng"
-  skip: true
+  want_azr_hash: "ce4cc3c34cccc3c3"
+  want_nr90_hash: "803800f8ffffff.f8f88f4f0f7ffcf8"
 }
 video_phash: {
-  comment: "No Video Data"
+  comment: "No video data"
+}
+checksum: {
+  crc32: "be9154ef"
+  verified_crc32: "be9154ef\tBAD be9154ef != 20240818"
+  md5: "e496d864ebce5f3eb5b7e98be6feb727"
+  verified_md5: "e496d864ebce5f3eb5b7e98be6feb727"
+  sha1: "3ffe4629a828e45ecc9c16ddb91bed5057f417b6"
+  verified_sha1: "3ffe4629a828e45ecc9c16ddb91bed5057f417b6"
 }

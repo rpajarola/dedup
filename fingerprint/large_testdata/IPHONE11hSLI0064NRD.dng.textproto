@@ -1,5 +1,4 @@
 source_file: "IPHONE11hSLI0064NRD.dng"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "4da35eb9"
@@ -46,6 +45,21 @@ want_fingerprint: {
   want_quality: 10
 }
 want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "8cc726cb470899be"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ff8581c3c38381db.9c8a946860c9cecc"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "lZc7H4S3IA8k+hutSuqpozcguS443GrWG0HoJDGA6GongZznWU8Ff44GSRt8HokyzY+O4D23OXAyppZA7VIETE/4FXzfAOMi"
+  want_quality: 20
+}
+want_fingerprint: {
   want_kind: "XMPDocumentID"
   want_hash: "CEE8F641053E12334BCAE205E585F5DB"
   want_quality: 100
@@ -59,9 +73,17 @@ xmp: {
   want_document_id: "CEE8F641053E12334BCAE205E585F5DB"
 }
 img_phash: {
-  comment: "TODO: implement decoding dng"
-  skip: true
+  want_azr_hash: "8cc726cb470899be"
+  want_nr90_hash: "ff8581c3c38381db.9c8a946860c9cecc"
 }
 video_phash: {
-  comment: "No Video Data"
+  comment: "No video data"
+}
+checksum: {
+  crc32: "4da35eb9"
+  verified_crc32: "4da35eb9"
+  md5: "e226791e8370c1f158351a371244f36b"
+  verified_md5: "e226791e8370c1f158351a371244f36b"
+  sha1: "2ba2194e32d084f4f95d553ed1e0048e990b82d5"
+  verified_sha1: "2ba2194e32d084f4f95d553ed1e0048e990b82d5"
 }

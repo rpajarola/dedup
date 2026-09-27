@@ -44,6 +44,21 @@ want_fingerprint: {
   want_hash: "image/tiff"
   want_quality: 10
 }
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "6633b9994766e111"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "3f171f0f071f00.e07192125018786"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "JI6B4/H4/C6SJPcY/CD4e0e0bdoepn44HEiSbaT4fIj67kiSbaXoY3GMTySSco/uXHw5ObaWJIN4rVnAzHW2QpHyYlacydKW"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "SONY ILCE-6000"
   want_camera_serial: "214302582"
@@ -53,9 +68,17 @@ xmp: {
   comment: "No XMP data"
 }
 img_phash: {
-  comment: "TODO: no thumbnail?"
-  skip: true
+  want_azr_hash: "6633b9994766e111"
+  want_nr90_hash: "3f171f0f071f00.e07192125018786"
 }
 video_phash: {
-  comment: "No Video Data"
+  comment: "No video data"
+}
+checksum: {
+  crc32: "96fe23d5"
+  verified_crc32: "96fe23d5"
+  md5: "bd247f6bd85b7807d0587aca10496ac7"
+  verified_md5: "bd247f6bd85b7807d0587aca10496ac7"
+  sha1: "2c616d7fc4c249d062c7bd0954f304524ac27ac9"
+  verified_sha1: "2c616d7fc4c249d062c7bd0954f304524ac27ac9"
 }

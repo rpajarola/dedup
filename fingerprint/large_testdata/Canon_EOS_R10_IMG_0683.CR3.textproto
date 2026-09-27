@@ -47,9 +47,17 @@ xmp: {
   skip: true
 }
 img_phash: {
-  skip: true
+  comment: "No image data"
 }
 video_phash: {
   comment: "No Video Data"
   skip: true
+}
+checksum: {
+  crc32: "fd13225d"
+  verified_crc32: "fd13225d"
+  md5: "e0066bfdcdcc7310420de9db091888ae"
+  verified_md5: "e0066bfdcdcc7310420de9db091888ae"
+  sha1: "c16dfe7df47476be99351e6937563fa957605be0"
+  verified_sha1: "c16dfe7df47476be99351e6937563fa957605be0"
 }

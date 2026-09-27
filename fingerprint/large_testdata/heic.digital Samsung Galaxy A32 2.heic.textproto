@@ -67,7 +67,7 @@ img_phash: {
   want_nr90_hash: "45cfcfe6eee464e.5353ab2b57375755"
 }
 video_phash: {
-  comment: "No Video Data"
+  comment: "No video data"
 }
 checksum: {
   crc32: "09c08ade"

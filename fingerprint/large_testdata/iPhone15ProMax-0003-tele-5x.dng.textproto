@@ -1,5 +1,4 @@
 source_file: "iPhone15ProMax-0003-tele-5x.dng"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "e15dbeb4"
@@ -45,6 +44,21 @@ want_fingerprint: {
   want_hash: "image/tiff"
   want_quality: 10
 }
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "8c3339cc269966d9"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "5ffffffff.424bb930000"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "VaSIBtnh2ljWazbklq001UhF2eJujSmhG5m/KLS1vLtKlbvRazabFYLYDJS2p5NJslGyff3+LZtN1c0lZaXieWsTs0xdJA7o"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "Apple iPhone 15 Pro Max"
   want_photo_id: "EAEF4E1F-D458-4EE8-AFFC-826251B7B9F6"
@@ -54,9 +68,17 @@ xmp: {
   comment: "No XMP data"
 }
 img_phash: {
-  comment: "TODO: implement decoding dng"
-  skip: true
+  want_azr_hash: "8c3339cc269966d9"
+  want_nr90_hash: "5ffffffff.424bb930000"
 }
 video_phash: {
-  comment: "No Video Data"
+  comment: "No video data"
+}
+checksum: {
+  crc32: "e15dbeb4"
+  verified_crc32: "e15dbeb4"
+  md5: "7f0b241c211c8f6f4e194d4d3a711d04"
+  verified_md5: "7f0b241c211c8f6f4e194d4d3a711d04"
+  sha1: "7a2d3d79a232455d6bf082375471af908aa57dee"
+  verified_sha1: "7a2d3d79a232455d6bf082375471af908aa57dee"
 }

@@ -11,6 +11,7 @@ func TestVideoPHashFingerprinter(t *testing.T) {
 	for _, tc := range getTestCases(t, testDataDir, largeTestDataDir) {
 		t.Run(filepath.Base(tc.Name), func(t *testing.T) {
 			t.Parallel()
+			defer maybeUpdateTestCase(t, tc)
 			if tc.Got.GetVideoPhash() == nil {
 				tc.Got.VideoPhash = &VideoPHashTestCase{}
 			}
@@ -36,6 +37,5 @@ func TestVideoPHashFingerprinter(t *testing.T) {
 			}
 			tc.Got.VideoPhash.WantRicopHash = ricopHash.Hash
 		})
-		maybeUpdateTestCase(t, tc)
 	}
 }

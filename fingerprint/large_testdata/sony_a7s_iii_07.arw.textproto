@@ -39,15 +39,38 @@ want_fingerprint: {
   want_hash: "image/tiff"
   want_quality: 10
 }
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "3e2282867e7e3c85"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "f0f0f02160602.1000015151118541"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "IKpOt4bTNFmSlvA5HJstGliyto+H43bYlhKylrT+dNA4HLWmJJsVezLu2G+2JLmM5HfgZKmyJOUjzpd1FLGmtqbY2ap+VoWW"
+  want_quality: 20
+}
 exif: {
   want_camera_model: "SONY MODEL-NAME"
   want_photo_id: "2022-09-09 21:29:51.627 +0000 UTC"
 }
 xmp: {}
 img_phash: {
-  comment: "TODO: no thumbnail?"
-  skip: true
+  want_azr_hash: "3e2282867e7e3c85"
+  want_nr90_hash: "f0f0f02160602.1000015151118541"
 }
 video_phash: {
-  comment: "No Video Data"
+  comment: "No video data"
+}
+checksum: {
+  crc32: "7cf18601"
+  verified_crc32: "7cf18601"
+  md5: "13c18ca746cef70c15ce0707f7f76417"
+  verified_md5: "13c18ca746cef70c15ce0707f7f76417"
+  sha1: "df5c724e973b2b0c7a273de0ffb8d1468527cb37"
+  verified_sha1: "df5c724e973b2b0c7a273de0ffb8d1468527cb37"
 }
