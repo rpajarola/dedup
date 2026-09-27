@@ -69,4 +69,5 @@ missing.
 ### Unstable tests
 
 Decoding of video is fickly, and some of the hashes need fixing to be
-stable between platforms. (TODO)
+stable between platforms. See [TODO.md](TODO.md) for the current list
+of known-flaky fixtures and other open issues.
