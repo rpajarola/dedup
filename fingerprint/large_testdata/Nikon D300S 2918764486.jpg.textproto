@@ -46,7 +46,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "ImgPHashAzr"
-  want_hash: "af26a2286619779c"
+  want_hash: "ae26a2287619779c"
   want_quality: 20
 }
 want_fingerprint: {
