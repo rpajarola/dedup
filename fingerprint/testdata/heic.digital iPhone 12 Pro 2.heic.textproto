@@ -1,5 +1,4 @@
 source_file: "heic.digital iPhone 12 Pro 2.heic"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "91975cf4"

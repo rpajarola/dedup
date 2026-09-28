@@ -1,5 +1,4 @@
 source_file: "heic.digital iPhone 12 Pro 1.heic"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "7850bd11"
@@ -14,6 +13,11 @@ want_fingerprint: {
   want_kind: "SHA1"
   want_hash: "a9e71ed5c57ab89ff01987105016cd5b3b9bbbfb"
   want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPhone 12 Pro  3A0C50F8-C0D5-4C4A-B746-0329F218B46E"
+  want_quality: 100
 }
 want_fingerprint: {
   want_kind: "filesize"

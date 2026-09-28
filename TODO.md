@@ -1,22 +1,32 @@
 # Known issues
 
-## Flaky test fixtures (non-deterministic across runs)
+## VideoPhash is experimental, not production-ready
 
-These produce different hash values on different `go test` runs, unrelated to any
-recent change. Cause not yet investigated — possibly race conditions in the
-underlying phash/decode libraries under `t.Parallel()`, or genuine algorithm
-non-determinism.
+`fingerprint/testdata/BigBuckBunny.avi.textproto`, `BigBuckBunny.gif.textproto`,
+`BigBuckBunny.ts.textproto`, `computerchess5.flv.textproto`, and
+`druid_peak_trailer_2014.mp4.textproto` all show a different `VideoPhash.WantRicopHash`
+on every `go test` run. `VideoPhash` is experimental and not ready for prime time — this
+is expected for now, not a bug to chase. Already called out in `FAQ.md`'s "Unstable
+tests" section.
 
-- `fingerprint/testdata/BigBuckBunny.avi.textproto`,
-  `BigBuckBunny.gif.textproto`, `BigBuckBunny.ts.textproto`,
-  `computerchess5.flv.textproto`, `druid_peak_trailer_2014.mp4.textproto` —
-  `VideoPhash.WantRicopHash` varies between runs. Already called out in
-  `FAQ.md`'s "Unstable tests" section.
-- `fingerprint/testdata/Nikon D300S 2918764486.jpg.textproto` —
-  `ImgPHash.WantAzrHash` / the `ImgPHashAzr` fingerprint varies between runs.
-- `fingerprint/testdata/heic.digital iPhone 12 Pro 2.heic.textproto` —
-  the `EXIFModelSerialPhotoID` fingerprint is intermittently missing from
-  `GetFingerprint`'s output.
+(Two other fixtures that looked flaky the same way — `Nikon D300S 2918764486.jpg.textproto`'s
+`ImgPHashAzr` and `heic.digital iPhone 12 Pro 2.heic.textproto`'s missing
+`EXIFModelSerialPhotoID` — turned out not to be flaky at all: both were deterministic bugs
+that happened to look intermittent because leftover `.new` files from a prior failing run
+were getting picked up by `readTestCase` as the new "want" baseline in later runs, e.g. across
+runs of a naive `for i in 1 2 3; do go test ...; done` loop. The Nikon one needed an updated
+hash; the heic one was actually a real HEIF EXIF-decode bug in `exiftools` — see below. Both
+are now fixed and no longer produce diffs.)
+
+## exiftools' TestDecode assumes every fixture has EXIF
+
+`exiftools/exif/exif_test.go`'s `TestDecode` iterates every `.jpg` in the shared testdata
+directory and fails if `Decode` doesn't return usable EXIF. It now fails on
+`imgphash_cat_sky.jpg`, `imgphash_cat_medium.jpg`, and `imgphash_cat_smiling.jpg` — real
+photos with no EXIF at all, added to the shared corpus when `dedup`'s `testdata/` and
+`large_testdata/` were merged. Pre-existing fallout from that merge, not from anything in
+this repo; needs a fix in `exiftools` itself (either skip files with no EXIF, or special-case
+these three).
 
 ## RAW preview/thumbnail extraction gaps
 

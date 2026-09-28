@@ -1,5 +1,4 @@
 source_file: "heic.digital iPad Air 5th gen 1.heic"
-want_err: true
 want_fingerprint: {
   want_kind: "CRC32"
   want_hash: "06941125"
@@ -14,6 +13,11 @@ want_fingerprint: {
   want_kind: "SHA1"
   want_hash: "4a24e01c9798131b338654579f7462e1f7b8e392"
   want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "Apple iPad Air (5th generation)  4D481A26-0D20-441E-B467-AA57627B73DD"
+  want_quality: 100
 }
 want_fingerprint: {
   want_kind: "filesize"
