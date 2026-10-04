@@ -54,7 +54,7 @@ img_phash: {
   comment: "No image data"
 }
 video_phash: {
-  want_ricop_hash: "5d996a10283cb445.e06ecc68fdff1"
+  want_ricop_hash: "f9a6b5d729bbf4c6.b6263c554a7d1643"
 }
 checksum: {
   crc32: "c4f3bc0b"

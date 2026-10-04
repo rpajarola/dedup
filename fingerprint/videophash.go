@@ -23,6 +23,13 @@ type videoPHashFingerprinterState struct {
 	width         int
 	height        int
 	pixelFormat   astiav.PixelFormat
+
+	// readErr is set by readFrames if frame decoding stops early due to an
+	// error rather than reaching EOF. It's written once, before readFrames
+	// returns (which signals wg.Done()), and only read after wg.Wait()
+	// returns in GetRicop, so the sync.WaitGroup provides the necessary
+	// happens-before edge without an explicit mutex.
+	readErr error
 }
 
 func init() {
@@ -79,6 +86,11 @@ func (vpfp *VideoPHashFingerprinter) Init(filename string) (FingerprinterState, 
 		if err := is.CodecParameters().ToCodecContext(vpfps.codecContext); err != nil {
 			return vpfps, fmt.Errorf("updating codec context failed: %w", err)
 		}
+		// Force single-threaded decoding so the frame sequence (and thus
+		// the resulting hash) is reproducible across machines/runs,
+		// rather than depending on however many threads ffmpeg's default
+		// (CPU-count-based) thread count happens to pick.
+		vpfps.codecContext.SetThreadCount(1)
 		if err := vpfps.codecContext.Open(vpfps.codec, nil); err != nil {
 			return vpfps, fmt.Errorf("opening codec context failed: %w", err)
 		}
@@ -127,8 +139,8 @@ func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image, 
 		astiav.PixelFormatGray8,
 		astiav.NewSoftwareScaleContextFlags(astiav.SoftwareScaleContextFlagBilinear))
 	if err != nil {
-		// TODO: return error
-		fmt.Printf("%v\n", fmt.Errorf("main: creating software scale context failed: %w", err))
+		vpfps.readErr = fmt.Errorf("creating software scale context failed: %w", err)
+		return
 	}
 	defer swsCtx.Free()
 	dstFrame := astiav.AllocFrame()
@@ -182,9 +194,8 @@ func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image, 
 			return false, nil
 		}()
 		if err != nil {
-			// TODO: return error
-			fmt.Printf("readFrame: %v", err)
-			break
+			vpfps.readErr = err
+			return
 		}
 		if stop {
 			return
@@ -212,6 +223,7 @@ func (vpfps *videoPHashFingerprinterState) GetRicop() (Fingerprint, error) {
 		wg.Wait()
 		close(images)
 	}()
+	var havePrevH bool
 	var prevH uint64
 	var l int
 	var scenes []int
@@ -220,7 +232,8 @@ func (vpfps *videoPHashFingerprinterState) GetRicop() (Fingerprint, error) {
 	for i := range images {
 		nframes++
 		h := azr.DTC(*i)
-		if prevH == 0 {
+		if !havePrevH {
+			havePrevH = true
 			prevH = h
 			scenefps = append(scenefps, h)
 		}
@@ -237,6 +250,9 @@ func (vpfps *videoPHashFingerprinterState) GetRicop() (Fingerprint, error) {
 			}
 		}
 		prevH = h
+	}
+	if err := vpfps.readErr; err != nil {
+		return NoFingerprint, fmt.Errorf("reading video frames: %w", err)
 	}
 	if nframes <= 1 {
 		return NoFingerprint, nil

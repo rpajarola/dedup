@@ -72,7 +72,7 @@ img_phash: {
   want_nr90_hash: "efe0e0f8c8ccc4c0.eb793454e6c7e6fc"
 }
 video_phash: {
-  want_ricop_hash: "f86e2e4a34601020.aa5555aa15aa5555"
+  want_ricop_hash: "f86e2e4a34601020.aa55aa554555aa55"
 }
 checksum: {
   crc32: "ebc05db5"
