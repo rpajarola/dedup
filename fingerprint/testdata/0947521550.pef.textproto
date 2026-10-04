@@ -1,0 +1,70 @@
+source_file: "0947521550.pef"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "985cf488"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "9a8affb00ac73d094c0bfe849f585f95"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "8a52b3745838ae76ec84e69f6d24501e8b6a58ae"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "43751568"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1791088437"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/0947521550.pef"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".pef"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/tiff"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "66262c1cd3c8fe85"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "257d393a3e0c.71121236141d1b17"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "tg4lIfnHDBw2tuAxUZ+OFE+wtpHdenj+ZZYtJJOD/wlvcqZ6msyG+H/Ae5ySJO4488M+0liSJMklbH7MltKSkrLfQnu1CEC2"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "RICOH IMAGING COMPANY, LTD. PENTAX K-1"
+  want_photo_id: "2016-05-28 20:35:32 -0400 EDT"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  want_azr_hash: "66262c1cd3c8fe85"
+  want_nr90_hash: "257d393a3e0c.71121236141d1b17"
+}
+video_phash: {
+  comment: "No video data"
+}

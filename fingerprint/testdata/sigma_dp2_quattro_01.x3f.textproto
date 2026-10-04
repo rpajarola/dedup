@@ -1,0 +1,77 @@
+source_file: "sigma_dp2_quattro_01.x3f"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "8c3aae0d"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "d848c7edb0af2bb906dce3232406b58f"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "46980021c840ead7b448d2c7f52f07da61191512"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "SIGMA dp2 Quattro 90804019 30303830343031390088F65335334636"
+  want_quality: 100
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "55765300"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1791088438"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/sigma_dp2_quattro_01.x3f"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".x3f"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/x-sigma-x3f"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "5e33c05beab0cab"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "ecececececec00.77576767f767272f"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "fX4/H4/HYfCQRI/H4HB4/I6WJLH4nA4F4g+S/H4/HI/H4/GwEoxQ4HA6FeGJAIu9Hw4HB4GGJPHo+q0OYHa2JH4HA/H4/g6G"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "SIGMA dp2 Quattro"
+  want_camera_serial: "90804019"
+  want_photo_id: "30303830343031390088F65335334636"
+  want_unique_photo_id: true
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  want_azr_hash: "5e33c05beab0cab"
+  want_nr90_hash: "ecececececec00.77576767f767272f"
+}
+video_phash: {
+  comment: "No video data"
+}

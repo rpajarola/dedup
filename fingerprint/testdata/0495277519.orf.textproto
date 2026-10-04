@@ -1,0 +1,70 @@
+source_file: "0495277519.orf"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "445b62d9"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "5eb7cec2b59107d27b5ee881a0533134"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "0df7b8c54cf6e9c66eb4960d4899669505514c2b"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "17155195"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1791088437"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/0495277519.orf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".orf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/x-olympus-orf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "f25c0c8ea902cb7e"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "20001c9cbcbaf89e.1a3687c69e893dc7"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "8b1afXAKcjmOiM04BTt9E/A5KC5fFVtdB1PqGKTW0askqUbsA57AZ8k16bVUlRQRuZYfO4eIj51j8ro7YJRqw8HfdF7ksxl+"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "OLYMPUS CORPORATION E-M1MarkII"
+  want_photo_id: "2016-11-04 11:25:16 -0400 EDT"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  want_azr_hash: "f25c0c8ea902cb7e"
+  want_nr90_hash: "20001c9cbcbaf89e.1a3687c69e893dc7"
+}
+video_phash: {
+  comment: "No video data"
+}

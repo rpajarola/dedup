@@ -1,0 +1,74 @@
+source_file: "0871315466.raf"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "1d4cf556"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "4116fd1e889f0c53c221a8f7fe12e872"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "c218660092dcd565b4bd305c3cea9c9acb6461d9"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "FUJIFILM GFX100S 11001859 2021-03-14 18:21:07 -0400 EDT"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "127576528"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1791088437"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/0871315466.raf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".raf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/x-fujifilm-raf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "66d334281bd66633"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "feffffffff.2413263d0f070707"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "HRLZsnrVOVpsbC3trbnOGpXSbNLbm2202ZJJtRwTe00O2ts8bUobO0LbbKUwZJrnUkTLJdmGKxHD8kS5JttWWNKS8iaJNlrL"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "FUJIFILM GFX100S"
+  want_camera_serial: "11001859"
+  want_photo_id: "2021-03-14 18:21:07 -0400 EDT"
+}
+xmp: {}
+img_phash: {
+  want_azr_hash: "66d334281bd66633"
+  want_nr90_hash: "feffffffff.2413263d0f070707"
+}
+video_phash: {
+  comment: "No video data"
+}

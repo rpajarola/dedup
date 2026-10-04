@@ -1,0 +1,68 @@
+source_file: "om_system_om_5_mark_ii_01.orf"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "6c1bf7db"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "dac5248750a4563733fb8bdee560ed6c"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "552c9bbbfb4c48580b8773f0ab767ca1ea1677be"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "19328315"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1791088437"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/om_system_om_5_mark_ii_01.orf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".orf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/x-olympus-orf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "361e919936d9cc4c"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "677f6c2400.4fc9e83434373737"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "QpspWwTssyetq6b2AbOzkLjRjtEIw8RuleBRxOuxD4cA8wzu/OTg4HHg5O1cHI6fE6KqBo+MY5WwbapaldkdfbxOjw6KNS7M"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "OM Digital Solutions OM-5MarkII"
+  want_photo_id: "2025-06-11 10:46:17 -0400 EDT"
+}
+xmp: {}
+img_phash: {
+  want_azr_hash: "361e919936d9cc4c"
+  want_nr90_hash: "677f6c2400.4fc9e83434373737"
+}
+video_phash: {
+  comment: "No video data"
+}

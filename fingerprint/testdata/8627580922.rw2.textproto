@@ -1,0 +1,68 @@
+source_file: "8627580922.rw2"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "41d6bf08"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "7518f15563567de5e821f8055ac3c905"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "89519063971dbac84fbd209d31b252e1b0eab978"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "24150016"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1791088437"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/8627580922.rw2"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".rw2"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/x-panasonic-rw2"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "88661b4c9bcb46e3"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "e0fcffffff.e4d0e33eb69300d6"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "vG2tw2u1JksZE22to5HpJo7bw2yts+HbUA7TPCWtl4csgsib0uytoHT8kyiSHqWtttq0q4SStEkssFC6sJqTo5btNtN+Wtqe"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "Panasonic DC-G9"
+  want_photo_id: "2017-11-06 14:58:46.053 -0500 EST"
+}
+xmp: {}
+img_phash: {
+  want_azr_hash: "88661b4c9bcb46e3"
+  want_nr90_hash: "e0fcffffff.e4d0e33eb69300d6"
+}
+video_phash: {
+  comment: "No video data"
+}

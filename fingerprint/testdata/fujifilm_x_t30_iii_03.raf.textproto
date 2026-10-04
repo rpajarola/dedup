@@ -1,0 +1,74 @@
+source_file: "fujifilm_x_t30_iii_03.raf"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "3f5c3505"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "a28e9958134f0e6f93c714967a43d7ed"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "790d0433e5bcac319191615c1febb4567ac1bc75"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "EXIFModelSerialPhotoID"
+  want_hash: "FUJIFILM X-T30 III 57013267 2025-10-17 11:37:25.28 -0400 EDT"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "58048768"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1791088437"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/fujifilm_x_t30_iii_03.raf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".raf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "image/x-fujifilm-raf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "d237d007788334db"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "81e1fbffb1e100.bcecfcb4b49c7c7c"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "JPA+ELGnh4+WJIWxs5HRln6SliSmU8PEiSSSIKREVaPp/WywttPpofobR0WUtre0QfNVGyWktpBHEb0cdbeGtu4Zq4tZcTaS"
+  want_quality: 20
+}
+exif: {
+  want_camera_model: "FUJIFILM X-T30 III"
+  want_camera_serial: "57013267"
+  want_photo_id: "2025-10-17 11:37:25.28 -0400 EDT"
+}
+xmp: {}
+img_phash: {
+  want_azr_hash: "d237d007788334db"
+  want_nr90_hash: "81e1fbffb1e100.bcecfcb4b49c7c7c"
+}
+video_phash: {
+  comment: "No video data"
+}
