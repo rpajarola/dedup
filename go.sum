@@ -34,8 +34,8 @@ github.com/protocolbuffers/txtpbfmt v0.0.0-20250129171521-feedd8250727 h1:A8EM8f
 github.com/protocolbuffers/txtpbfmt v0.0.0-20250129171521-feedd8250727/go.mod h1:VmWrOlMnBZNtToCWzRlZlIXcJqjo0hS5dwQbRD62gL8=
 github.com/r9y9/gossp v0.0.1 h1:G/aBnndFXkn4ILXAvBMwlvJt8sBjdLy05VGktBf8bc0=
 github.com/r9y9/gossp v0.0.1/go.mod h1:34aoHwIJFYI89DdjTHfplSkRIk1XTAMzTELRGEOfMg8=
-github.com/rpajarola/exiftools v0.0.0-20261004052352-1f619e59f572 h1:8q5z2477eAyJ2vGpBtVw+tpdU1SvHmnaReiMBJRWDak=
-github.com/rpajarola/exiftools v0.0.0-20261004052352-1f619e59f572/go.mod h1:FmE2U3485AJEVqrOlfCJNaCZCqO3rRhIJurTQQZ/teU=
+github.com/rpajarola/exiftools v0.0.0-20261004200342-d0826d9e51e2 h1:ar97ltBEQzl5pi3JZn7MsAVBJiuIQk6NFMq2LG/QUoI=
+github.com/rpajarola/exiftools v0.0.0-20261004200342-d0826d9e51e2/go.mod h1:FmE2U3485AJEVqrOlfCJNaCZCqO3rRhIJurTQQZ/teU=
 github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd h1:CmH9+J6ZSsIjUK3dcGsnCnO41eRBOnY12zwkn5qVwgc=
 github.com/rwcarlsen/goexif v0.0.0-20190401172101-9e8deecbddbd/go.mod h1:hPqNNc0+uJM6H+SuU8sEs5K5IQeKccPqeSjfgcKGgPk=
 github.com/steakknife/hamming v0.0.0-20180906055917-c99c65617cd3 h1:njlZPzLwU639dk2kqnCPPv+wNjq7Xb6EfUxe/oX0/NM=

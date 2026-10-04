@@ -5,10 +5,22 @@ import (
 	"io"
 	"os"
 	"strings"
+	"sync"
 
 	_ "github.com/trimmer-io/go-xmp/models"
 	"github.com/trimmer-io/go-xmp/xmp"
 )
+
+// xmpUnmarshalMu serializes calls into go-xmp's Unmarshal: it pools and
+// reuses *xmp.Node values internally via a package-level channel plus a
+// handful of unsynchronized counter variables (nodePool/npHits/npAllocs/
+// etc. in its node.go), which race under concurrent use (confirmed with
+// `go test -race`; this fingerprinter's Init can run concurrently with
+// itself across different files via t.Parallel()). The actual parsed XMP
+// data isn't affected -- only that internal bookkeeping -- but avoiding
+// undefined behavior entirely is worth a small amount of serialization,
+// since XMP parsing is not the bottleneck here.
+var xmpUnmarshalMu sync.Mutex
 
 type XMPFingerprinter struct{}
 
@@ -36,7 +48,10 @@ func (xfp *XMPFingerprinter) Init(filename string) (FingerprinterState, error) {
 		return nil, nil
 	}
 	xfps.xmp = &xmp.Document{}
-	if err := xmp.Unmarshal(bb[0], xfps.xmp); err != nil {
+	xmpUnmarshalMu.Lock()
+	err = xmp.Unmarshal(bb[0], xfps.xmp)
+	xmpUnmarshalMu.Unlock()
+	if err != nil {
 		return nil, fmt.Errorf("xmp.Unmarshal: %v", err)
 	}
 	return &xfps, nil

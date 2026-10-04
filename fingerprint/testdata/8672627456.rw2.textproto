@@ -56,7 +56,7 @@ want_fingerprint: {
 }
 exif: {
   want_camera_model: "Panasonic DC-G9"
-  want_photo_id: "2017-11-06 16:17:03.695 -0500 EST"
+  want_photo_id: "2017-11-06 16:17:03.695 +0000 UTC"
 }
 xmp: {}
 img_phash: {
@@ -65,4 +65,12 @@ img_phash: {
 }
 video_phash: {
   comment: "No video data"
+}
+checksum: {
+  crc32: "f88dd887"
+  verified_crc32: "f88dd887"
+  md5: "0049e564b9a2ffed59ad03964b0e5ed2"
+  verified_md5: "0049e564b9a2ffed59ad03964b0e5ed2"
+  sha1: "6829d361748030fb0c2c1b3d418a5166825240ee"
+  verified_sha1: "6829d361748030fb0c2c1b3d418a5166825240ee"
 }

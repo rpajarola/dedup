@@ -56,7 +56,7 @@ want_fingerprint: {
 }
 exif: {
   want_camera_model: "OLYMPUS CORPORATION E-M1MarkII"
-  want_photo_id: "2016-11-04 11:25:16 -0400 EDT"
+  want_photo_id: "2016-11-04 11:25:16 +0000 UTC"
 }
 xmp: {
   comment: "No XMP data"
@@ -67,4 +67,12 @@ img_phash: {
 }
 video_phash: {
   comment: "No video data"
+}
+checksum: {
+  crc32: "445b62d9"
+  verified_crc32: "445b62d9"
+  md5: "5eb7cec2b59107d27b5ee881a0533134"
+  verified_md5: "5eb7cec2b59107d27b5ee881a0533134"
+  sha1: "0df7b8c54cf6e9c66eb4960d4899669505514c2b"
+  verified_sha1: "0df7b8c54cf6e9c66eb4960d4899669505514c2b"
 }

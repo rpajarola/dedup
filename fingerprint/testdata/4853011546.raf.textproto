@@ -16,7 +16,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "FUJIFILM GFX100S 11001859 2021-03-16 18:15:18 -0400 EDT"
+  want_hash: "FUJIFILM GFX100S 11001859 2021-03-16 18:15:18 +0000 UTC"
   want_quality: 80
 }
 want_fingerprint: {
@@ -62,7 +62,7 @@ want_fingerprint: {
 exif: {
   want_camera_model: "FUJIFILM GFX100S"
   want_camera_serial: "11001859"
-  want_photo_id: "2021-03-16 18:15:18 -0400 EDT"
+  want_photo_id: "2021-03-16 18:15:18 +0000 UTC"
 }
 xmp: {}
 img_phash: {
@@ -71,4 +71,12 @@ img_phash: {
 }
 video_phash: {
   comment: "No video data"
+}
+checksum: {
+  crc32: "570d4a17"
+  verified_crc32: "570d4a17"
+  md5: "fd0a75df59d2576a7d2ed24bb5f68840"
+  verified_md5: "fd0a75df59d2576a7d2ed24bb5f68840"
+  sha1: "48520403a4498b099218faec58d42a39e3a8a83c"
+  verified_sha1: "48520403a4498b099218faec58d42a39e3a8a83c"
 }

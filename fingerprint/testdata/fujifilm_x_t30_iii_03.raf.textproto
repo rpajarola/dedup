@@ -16,7 +16,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "EXIFModelSerialPhotoID"
-  want_hash: "FUJIFILM X-T30 III 57013267 2025-10-17 11:37:25.28 -0400 EDT"
+  want_hash: "FUJIFILM X-T30 III 57013267 2025-10-17 11:37:25.28 +0000 UTC"
   want_quality: 80
 }
 want_fingerprint: {
@@ -62,7 +62,7 @@ want_fingerprint: {
 exif: {
   want_camera_model: "FUJIFILM X-T30 III"
   want_camera_serial: "57013267"
-  want_photo_id: "2025-10-17 11:37:25.28 -0400 EDT"
+  want_photo_id: "2025-10-17 11:37:25.28 +0000 UTC"
 }
 xmp: {}
 img_phash: {
@@ -71,4 +71,12 @@ img_phash: {
 }
 video_phash: {
   comment: "No video data"
+}
+checksum: {
+  crc32: "3f5c3505"
+  verified_crc32: "3f5c3505"
+  md5: "a28e9958134f0e6f93c714967a43d7ed"
+  verified_md5: "a28e9958134f0e6f93c714967a43d7ed"
+  sha1: "790d0433e5bcac319191615c1febb4567ac1bc75"
+  verified_sha1: "790d0433e5bcac319191615c1febb4567ac1bc75"
 }

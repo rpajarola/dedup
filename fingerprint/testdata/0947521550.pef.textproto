@@ -56,7 +56,7 @@ want_fingerprint: {
 }
 exif: {
   want_camera_model: "RICOH IMAGING COMPANY, LTD. PENTAX K-1"
-  want_photo_id: "2016-05-28 20:35:32 -0400 EDT"
+  want_photo_id: "2016-05-28 20:35:32 +0000 UTC"
 }
 xmp: {
   comment: "No XMP data"
@@ -67,4 +67,12 @@ img_phash: {
 }
 video_phash: {
   comment: "No video data"
+}
+checksum: {
+  crc32: "985cf488"
+  verified_crc32: "985cf488"
+  md5: "9a8affb00ac73d094c0bfe849f585f95"
+  verified_md5: "9a8affb00ac73d094c0bfe849f585f95"
+  sha1: "8a52b3745838ae76ec84e69f6d24501e8b6a58ae"
+  verified_sha1: "8a52b3745838ae76ec84e69f6d24501e8b6a58ae"
 }
