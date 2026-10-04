@@ -12,6 +12,7 @@ import (
 	"io"
 	"math"
 	"os"
+	"sort"
 	"strings"
 
 	nr90 "github.com/Nr90/imgsim"
@@ -19,8 +20,24 @@ import (
 	azr "github.com/azr/phash"
 	heif "github.com/jdeng/goheif"
 	"github.com/rpajarola/exiftools/exif"
+	"github.com/rpajarola/exiftools/mknote"
+	"github.com/rpajarola/exiftools/models"
 	tiff "golang.org/x/image/tiff"
 )
+
+// vendorPreviewImageTags lists maker-note-specific preview-image tags that
+// the generic IFD0/thumbnail tags exif.PreviewCandidates always checks
+// don't cover, for RAW formats whose real preview lives elsewhere.
+var vendorPreviewImageTags = []exif.PreviewImageTag{
+	mknote.OlympusPreviewImageTag,
+}
+
+// vendorPreviewBlobTags lists "blob" tags that hold a preview image
+// directly as their own value, rather than as a start/length pair into the
+// rest of the file.
+var vendorPreviewBlobTags = []models.FieldName{
+	models.PanasonicJpgFromRaw,
+}
 
 var (
 	extensions = map[string]func(io.Reader) (image.Image, error){
@@ -67,6 +84,15 @@ func (ipfp *ImgPHashFingerprinter) Init(filename string) (FingerprinterState, er
 	if err := ipfps.decodeEmbeddedPreview(f); err == nil {
 		return &ipfps, nil
 	}
+	// A few RAW formats (Fujifilm RAF, Sigma X3F) aren't EXIF/TIFF-based
+	// containers at all, so neither path above applies. Fall back to
+	// their own, format-specific container layout.
+	if _, err := f.Seek(0, 0); err != nil {
+		return nil, nil
+	}
+	if err := ipfps.decodeContainerPreview(f); err == nil {
+		return &ipfps, nil
+	}
 	return nil, nil
 }
 
@@ -95,19 +121,48 @@ func (ipfps *imgPHashFingerprinterState) decodeImage(r io.ReadSeeker) error {
 // decodeEmbeddedPreview locates and decodes the preview/thumbnail image
 // embedded in r's EXIF data, for files whose primary image data isn't
 // directly decodable (e.g. RAW camera formats).
+//
+// A file can have several preview-image tag candidates (e.g. a small EXIF
+// thumbnail in IFD1 and a much larger vendor-specific preview elsewhere),
+// and the largest one by claimed length isn't always a real, decodable
+// image: some RAW formats have a StripOffsets/StripByteCounts tag pair that
+// looks exactly like a preview-image tag but actually points at raw sensor
+// data. So candidates are tried largest-first, falling back to the next one
+// on decode failure, instead of trusting only the single biggest candidate.
 func (ipfps *imgPHashFingerprinterState) decodeEmbeddedPreview(r io.Reader) error {
 	x, err := exif.Decode(r)
 	if err != nil {
 		return err
 	}
-	start, length, err := x.PreviewImage()
-	if err != nil {
-		return err
+
+	// Gather every candidate's bytes up front so start/length pairs and
+	// self-contained "blob" tags (e.g. Panasonic RW2's JpgFromRaw, which
+	// holds its preview directly as the tag's own value rather than as an
+	// offset/length pair into the rest of the file) can be tried together
+	// in a single largest-first order.
+	var blobs [][]byte
+	for _, c := range x.PreviewCandidates(vendorPreviewImageTags...) {
+		start, length := int64(c.Start), int64(c.Length)
+		if length <= 0 || start < 0 || int(start+length) > len(x.Raw) {
+			continue
+		}
+		blobs = append(blobs, x.Raw[start:start+length])
 	}
-	if length <= 0 || start < 0 || int(start+length) > len(x.Raw) {
+	blobs = append(blobs, x.PreviewBlobCandidates(vendorPreviewBlobTags...)...)
+	sort.Slice(blobs, func(i, j int) bool { return len(blobs[i]) > len(blobs[j]) })
+
+	if len(blobs) == 0 {
 		return fmt.Errorf("no embedded preview image found")
 	}
-	return ipfps.decodeImage(bytes.NewReader(x.Raw[start : start+length]))
+	var lastErr error
+	for _, b := range blobs {
+		if err := ipfps.decodeImage(bytes.NewReader(b)); err != nil {
+			lastErr = err
+			continue
+		}
+		return nil
+	}
+	return lastErr
 }
 
 func (ipfps *imgPHashFingerprinterState) Get() ([]Fingerprint, error) {

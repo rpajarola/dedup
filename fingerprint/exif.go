@@ -4,7 +4,6 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"io"
 	"os"
 	"strings"
 
@@ -36,7 +35,7 @@ func (xfp *EXIFFingerprinter) Init(filename string) (FingerprinterState, error) 
 	}
 	xfps := exifFingerprinterState{}
 	xfps.xf, err = exif.Decode(f)
-	if err != nil && !errors.Is(err, io.EOF) {
+	if err != nil && !errors.Is(err, exif.ErrNoExif) {
 		return nil, err
 	}
 	if xfps.xf == nil {

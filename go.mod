@@ -13,7 +13,7 @@ require (
 	github.com/h2non/filetype v1.1.3
 	github.com/jdeng/goheif v0.1.2
 	github.com/protocolbuffers/txtpbfmt v0.0.0-20250129171521-feedd8250727
-	github.com/rpajarola/exiftools v0.0.0-20260928141522-28496965bab5
+	github.com/rpajarola/exiftools v0.0.0-20261004052352-1f619e59f572
 	github.com/trimmer-io/go-xmp v1.0.0
 	golang.org/x/image v0.46.0
 	google.golang.org/protobuf v1.36.12
