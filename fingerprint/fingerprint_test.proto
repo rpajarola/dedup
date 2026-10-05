@@ -16,6 +16,7 @@ message FingerprintTestCase {
 	ImgPHashTestCase img_phash = 9;
 	VideoPHashTestCase video_phash = 10;
 	ChecksumTestCase checksum = 11;
+	AudioTestCase audio = 12;
 }
 
 message WantFingerprint {
@@ -62,4 +63,13 @@ message ChecksumTestCase {
 	string verified_md5 = 6;
 	string sha1 = 7;
 	string verified_sha1 = 8;
+}
+
+message AudioTestCase {
+	repeated string comment = 1;
+	bool skip = 2;
+	// Compressed fingerprint as printed by fpcalc.
+	string want_chromaprint = 3;
+	// libchromaprint's chromaprint_hash_fingerprint, as hex.
+	string want_simhash = 4;
 }

@@ -27,7 +27,7 @@ const testDataDir = "testdata"
 
 // testdataAssets are the release assets on rpajarola/dedup-testdata
 // containing testdata's media files, grouped by type.
-var testdataAssets = []string{"testdata-images.tar.gz", "testdata-videos.tar.gz", "testdata-noimage.tar.gz"}
+var testdataAssets = []string{"testdata-images.tar.gz", "testdata-videos.tar.gz", "testdata-audio.tar.gz", "testdata-noimage.tar.gz"}
 
 const testdataReleaseURL = "https://github.com/rpajarola/dedup-testdata/releases/latest/download/"
 

@@ -1,4 +1,4 @@
-source_file: "druid_peak_trailer_2014.mp4"
+source_file: "druid_peak_trailer_2014_audio.flac"
 want_fingerprint: {
   want_kind: "AudioChromaprint"
   want_hash: "AQAA3ZKkS5sUPMOtIzwcJsmDLpqOeOtx4BcejcXzoteMJjqH40QeQeOPlEeplNiP_tiuEP1jlD_RZEmQi4fcKEeoM7gSIT8uiOuL8EzxnDgNv7gzdPux5fjw04j08MGnTvihJUzx5IePa9Pgo1QsBXmDLy_CJFeIyj-uZcfDo_k2PEwNXYrgCxfODF-OSs_x-aiqyNBy4lGOS-qRHz0fvOzgSqPxG19Y-C_uoBmZKrjyYD-e8ciDG1Oey8iXPShlVE_Q4ynxJ3jSG1c1NDkRtsdrHTp_RP9xrUGrkIMnHj_6Gf2SHVeDUvkRUQmSKd2DJ07wRiilHNEflMsVaHnOIWcC_CsJV9nxrvDxLMdFI7wTKHuoBr2ON8Sz4Dq0Thrhd_DeBZqTLMdFKjjSh8NFibgo7M6RKzqq2oNHIrSCF__RriM85TiHOD186EZtIr-QL7zwJdahZe-Q5QuN6sphHecuNMvoHKePhwePHq7kI3yip8LJI06O5_jxR8KnHpEsKQ6aQ5eO88h5_JikbAm86bhV9AifLfC5zbiYowxnVJpyOOmhncKPJw9CHrVC4csR5o1CaJQTDUFTSTn67Mcv9Dmm9DjK7njjILqgungSB9mPM7gB91WQ53CH6celCcc5tAcAwJgwAzDMDDJECAGQAIIJQggDQggBEBLOIMkMA0AYIYkQwCADBMAMG2OAEIQogRTQkBklgACKISIIE4AAK4gBgBnAkGQAAEFAY8gIZIQAAAEhCCAMECEsA4AxCZgBQAKhBCECKCAAAgACARBHQAhAhCaCUGCIc0IAI4QQCgMiCGCAKgAAEIIiJhAiAFkADEBYEGQUQIAYAAFRjihkBACKCIa8YhoBQBhAShhChgQ"
@@ -11,22 +11,22 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "CRC32"
-  want_hash: "c4f3bc0b"
+  want_hash: "06c3d717"
   want_quality: 50
 }
 want_fingerprint: {
   want_kind: "MD5"
-  want_hash: "f6c7e6ca619fc6756b47a7b80969c903"
+  want_hash: "69a1e8fe5af9f55fb6b95eeb905d2906"
   want_quality: 80
 }
 want_fingerprint: {
   want_kind: "SHA1"
-  want_hash: "0f7e34287bef079ca44c18ac0d304192e2d21f93"
+  want_hash: "6647de46947405b824eb8a2cf33c5e1080c3ab69"
   want_quality: 99
 }
 want_fingerprint: {
   want_kind: "filesize"
-  want_hash: "2619578"
+  want_hash: "5366776"
   want_quality: 20
 }
 want_fingerprint: {
@@ -36,23 +36,18 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "filename"
-  want_hash: "testdata/druid_peak_trailer_2014.mp4"
+  want_hash: "testdata/druid_peak_trailer_2014_audio.flac"
   want_quality: 10
 }
 want_fingerprint: {
   want_kind: "fileextension"
-  want_hash: ".mp4"
+  want_hash: ".flac"
   want_quality: 10
 }
 want_fingerprint: {
   want_kind: "mimetype"
-  want_hash: "video/mp4"
+  want_hash: "audio/x-flac"
   want_quality: 10
-}
-want_fingerprint: {
-  want_kind: "VideoPHashRicop"
-  want_hash: "f9a6b5d729bbf4c6.b6263c554a7d1643"
-  want_quality: 20
 }
 exif: {
   comment: "No EXIF data"
@@ -64,15 +59,15 @@ img_phash: {
   comment: "No image data"
 }
 video_phash: {
-  want_ricop_hash: "f9a6b5d729bbf4c6.b6263c554a7d1643"
+  comment: "No video data"
 }
 checksum: {
-  crc32: "c4f3bc0b"
-  verified_crc32: "c4f3bc0b"
-  md5: "f6c7e6ca619fc6756b47a7b80969c903"
-  verified_md5: "f6c7e6ca619fc6756b47a7b80969c903"
-  sha1: "0f7e34287bef079ca44c18ac0d304192e2d21f93"
-  verified_sha1: "0f7e34287bef079ca44c18ac0d304192e2d21f93"
+  crc32: "06c3d717"
+  verified_crc32: "06c3d717"
+  md5: "69a1e8fe5af9f55fb6b95eeb905d2906"
+  verified_md5: "69a1e8fe5af9f55fb6b95eeb905d2906"
+  sha1: "6647de46947405b824eb8a2cf33c5e1080c3ab69"
+  verified_sha1: "6647de46947405b824eb8a2cf33c5e1080c3ab69"
 }
 audio: {
   want_chromaprint: "AQAA3ZKkS5sUPMOtIzwcJsmDLpqOeOtx4BcejcXzoteMJjqH40QeQeOPlEeplNiP_tiuEP1jlD_RZEmQi4fcKEeoM7gSIT8uiOuL8EzxnDgNv7gzdPux5fjw04j08MGnTvihJUzx5IePa9Pgo1QsBXmDLy_CJFeIyj-uZcfDo_k2PEwNXYrgCxfODF-OSs_x-aiqyNBy4lGOS-qRHz0fvOzgSqPxG19Y-C_uoBmZKrjyYD-e8ciDG1Oey8iXPShlVE_Q4ynxJ3jSG1c1NDkRtsdrHTp_RP9xrUGrkIMnHj_6Gf2SHVeDUvkRUQmSKd2DJ07wRiilHNEflMsVaHnOIWcC_CsJV9nxrvDxLMdFI7wTKHuoBr2ON8Sz4Dq0Thrhd_DeBZqTLMdFKjjSh8NFibgo7M6RKzqq2oNHIrSCF__RriM85TiHOD186EZtIr-QL7zwJdahZe-Q5QuN6sphHecuNMvoHKePhwePHq7kI3yip8LJI06O5_jxR8KnHpEsKQ6aQ5eO88h5_JikbAm86bhV9AifLfC5zbiYowxnVJpyOOmhncKPJw9CHrVC4csR5o1CaJQTDUFTSTn67Mcv9Dmm9DjK7njjILqgungSB9mPM7gB91WQ53CH6celCcc5tAcAwJgwAzDMDDJECAGQAIIJQggDQggBEBLOIMkMA0AYIYkQwCADBMAMG2OAEIQogRTQkBklgACKISIIE4AAK4gBgBnAkGQAAEFAY8gIZIQAAAEhCCAMECEsA4AxCZgBQAKhBCECKCAAAgACARBHQAhAhCaCUGCIc0IAI4QQCgMiCGCAKgAAEIIiJhAiAFkADEBYEGQUQIAYAAFRjihkBACKCIa8YhoBQBhAShhChgQ"

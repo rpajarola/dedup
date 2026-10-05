@@ -45,7 +45,8 @@ I am testing on
 Media files used by `fingerprint`'s tests live in the separate
 [rpajarola/dedup-testdata](https://github.com/rpajarola/dedup-testdata) repo, distributed as
 tarballs attached to its GitHub Releases (split by media type: `testdata-images.tar.gz`,
-`testdata-videos.tar.gz`, `testdata-noimage.tar.gz` for the EXIF-only placeholder fixtures).
+`testdata-videos.tar.gz`, `testdata-audio.tar.gz`, `testdata-noimage.tar.gz` for the EXIF-only
+placeholder fixtures).
 There's a single `fingerprint/testdata/` directory; only `.textproto` files are committed here,
 everything else is fetched on demand.
 
@@ -59,7 +60,7 @@ missing.
 
 1. Add the new source file plus its `.textproto` (with a `source_file` field pointing at it) to
    `fingerprint/testdata/` locally.
-2. Add the file to the appropriate tarball (images/videos/etc.) and upload it as a new release
+2. Add the file to the appropriate tarball (images/videos/audio/etc.) and upload it as a new release
    asset on `rpajarola/dedup-testdata`, e.g.:
    ```
    tar -czf testdata-images.tar.gz -C fingerprint/testdata <new_file>
@@ -67,6 +68,17 @@ missing.
    ```
 3. Commit the `.textproto` in the main repo (the binary file itself is gitignored and fetched on
    demand, so don't commit it here).
+
+### Audio fingerprints
+
+`AudioChromaprint` is a pure Go port of Chromaprint (fingerprint/chromaprint.go)
+and is meant to be bit-identical to the reference implementation. To cross-check
+a file against it:
+
+```
+brew install chromaprint   # or: sudo apt install libchromaprint-tools
+fpcalc <file>              # FINGERPRINT= should equal AudioChromaprint
+```
 
 ### Unstable tests
 

@@ -1,0 +1,75 @@
+source_file: "druid_peak_trailer_2014_audio.mp3"
+want_fingerprint: {
+  want_kind: "AudioChromaprint"
+  want_hash: "AQAA3ZKkS5sUPMOtIzwcJsmDLpqOeOtx4BcejcXzoteMJjqH40QeQeOPlMdEpcSP_tiuENUfo_yJhkmQi4fcKEeoM7gSIT8uiOuL8EzxnDgNv7gzdPux5fgwkzTC88GnTvihJUzx5IePa9Pgo1RM5M2GLy-a5AoRyj-uZcfDo_k2PEwNXYrgCxfODF-OSs_x2UFVRdBy4lGOSz3yHD0fvOzgazTOG18YwteLO2hGpsOVJ9iPZzzy4D6mPBfyZQ9KGdUT9HhK_AmedMXfo4lJhO3x69B_RP9xrUGrkIMnHj_6Gf2SHVeDUvmRhEoQKl0VPHnwRiilHNEfNFuuQHtO5Elx_KsFV9nxrvDxLMdFE-HjQNnjBr2O08QX4oLWavAH712gOclyXKSCI304XJSIi8LuHLmio6o9eCRCK3jxH-06wtNxRojTQzxu1CZyWcgXXfhyHVr2Dlm-0KiuHI2OirvQLKNznM3xHDx6uJKP8ImeCiePODn-HD-eR8KnHpEsKQ6aQ5eO88h5_MMkZcvhTSxuFT3CZwt8bsPF_CjDGZWmHE56aKfwI08elEetUDiPMG6jEBrlREPQVFKOPvvxC32OKT2OsjveOIguqFTxxEH24wxuwL2CPD3cYfpxacJxDu0BwJgwAzDMDDJECAGQAEIKQggCQggBEBLOIMkMA0AYIQkwyAABMMPGGCAEIUogBTRkRgkgFENICCYAAcAJIgBgBjAkmQEACAIaQwYBIQQCAAIhCCAMECEsAwwwCZgRQFMgjCBEAAUEAAIoARBHQAhAhCaCWGCIdIIYIIQQChNBAENUAQCAEAYgJgwiAFkADEBYMGQUQAAQAyAQyhFlBACKCIa8YloBQJhCQBhChgQ"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "AudioChromaprintSimHash"
+  want_hash: "3e4ca00a"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "6d35fae0"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "dffa79588287aeffb33e2a929527cf69"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "e8cace2cee116de4572540e7c9f7f0cff7db7dc1"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "481717"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/druid_peak_trailer_2014_audio.mp3"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".mp3"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "audio/mpeg"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "6d35fae0"
+  verified_crc32: "6d35fae0"
+  md5: "dffa79588287aeffb33e2a929527cf69"
+  verified_md5: "dffa79588287aeffb33e2a929527cf69"
+  sha1: "e8cace2cee116de4572540e7c9f7f0cff7db7dc1"
+  verified_sha1: "e8cace2cee116de4572540e7c9f7f0cff7db7dc1"
+}
+audio: {
+  want_chromaprint: "AQAA3ZKkS5sUPMOtIzwcJsmDLpqOeOtx4BcejcXzoteMJjqH40QeQeOPlMdEpcSP_tiuENUfo_yJhkmQi4fcKEeoM7gSIT8uiOuL8EzxnDgNv7gzdPux5fgwkzTC88GnTvihJUzx5IePa9Pgo1RM5M2GLy-a5AoRyj-uZcfDo_k2PEwNXYrgCxfODF-OSs_x2UFVRdBy4lGOSz3yHD0fvOzgazTOG18YwteLO2hGpsOVJ9iPZzzy4D6mPBfyZQ9KGdUT9HhK_AmedMXfo4lJhO3x69B_RP9xrUGrkIMnHj_6Gf2SHVeDUvmRhEoQKl0VPHnwRiilHNEfNFuuQHtO5Elx_KsFV9nxrvDxLMdFE-HjQNnjBr2O08QX4oLWavAH712gOclyXKSCI304XJSIi8LuHLmio6o9eCRCK3jxH-06wtNxRojTQzxu1CZyWcgXXfhyHVr2Dlm-0KiuHI2OirvQLKNznM3xHDx6uJKP8ImeCiePODn-HD-eR8KnHpEsKQ6aQ5eO88h5_MMkZcvhTSxuFT3CZwt8bsPF_CjDGZWmHE56aKfwI08elEetUDiPMG6jEBrlREPQVFKOPvvxC32OKT2OsjveOIguqFTxxEH24wxuwL2CPD3cYfpxacJxDu0BwJgwAzDMDDJECAGQAEIKQggCQggBEBLOIMkMA0AYIQkwyAABMMPGGCAEIUogBTRkRgkgFENICCYAAcAJIgBgBjAkmQEACAIaQwYBIQQCAAIhCCAMECEsAwwwCZgRQFMgjCBEAAUEAAIoARBHQAhAhCaCWGCIdIIYIIQQChNBAENUAQCAEAYgJgwiAFkADEBYMGQUQAAQAyAQyhFlBACKCIa8YloBQJhCQBhChgQ"
+  want_simhash: "3e4ca00a"
+}

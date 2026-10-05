@@ -60,3 +60,6 @@ checksum: {
   sha1: "4fb8d0400c41cfef5256d81b1b2bee8027f86957"
   verified_sha1: "4fb8d0400c41cfef5256d81b1b2bee8027f86957"
 }
+audio: {
+  comment: "No audio data"
+}
