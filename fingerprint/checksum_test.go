@@ -16,7 +16,7 @@ func TestChecksumFingerprinter(t *testing.T) {
 			if tc.Got.GetChecksum() == nil {
 				tc.Got.Checksum = &ChecksumTestCase{}
 			}
-			if tc.Got.ImgPhash.Skip {
+			if tc.Got.Checksum.Skip {
 				t.Skip()
 			}
 			if tc.Got.Checksum.VerifiedCrc32 != "" &&

@@ -13,6 +13,7 @@ import (
 	"path/filepath"
 	"strconv"
 	"strings"
+	"sync"
 	"testing"
 	"time"
 
@@ -20,6 +21,7 @@ import (
 	"github.com/protocolbuffers/txtpbfmt/parser"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/testing/protocmp"
 )
 
@@ -184,8 +186,24 @@ type TestCase struct {
 	Want       *FingerprintTestCase
 }
 
+// Every test function reads all test cases and writes its own section of
+// each one back to a shared .new file. To keep those from clobbering each
+// other, test cases are only read from disk once per run (so a .new file
+// written mid-run by one test isn't picked up as the baseline by another),
+// and updates are merged field by field into a single result per file.
+var (
+	testCaseMu      sync.Mutex
+	testCaseCache   = map[string]*FingerprintTestCase{} // by .textproto name
+	testCaseUpdates = map[string]*FingerprintTestCase{} // by .textproto name
+)
+
 func readTestCase(t *testing.T, fname string) *FingerprintTestCase {
 	t.Helper()
+	testCaseMu.Lock()
+	defer testCaseMu.Unlock()
+	if tc, ok := testCaseCache[fname]; ok {
+		return proto.Clone(tc).(*FingerprintTestCase)
+	}
 	raw, err := os.ReadFile(fname + ".new")
 	if err != nil {
 		if raw, err = os.ReadFile(fname); err != nil {
@@ -196,7 +214,8 @@ func readTestCase(t *testing.T, fname string) *FingerprintTestCase {
 	if err := prototext.Unmarshal(raw, tc); err != nil {
 		t.Fatalf("prototext.Unmarshal(%v): %v", fname, err)
 	}
-	return tc
+	testCaseCache[fname] = tc
+	return proto.Clone(tc).(*FingerprintTestCase)
 }
 
 func getTestCases(t *testing.T, tcDirs ...string) []TestCase {
@@ -243,10 +262,49 @@ func getTestCasesFromDir(t *testing.T, tcDir string) []TestCase {
 	return res
 }
 
+// mergeChangedFields copies every top-level field that differs between want
+// and got from got into dst.
+func mergeChangedFields(dst, want, got proto.Message) {
+	d, w, g := dst.ProtoReflect(), want.ProtoReflect(), proto.Clone(got).ProtoReflect()
+	fields := d.Descriptor().Fields()
+	for i := range fields.Len() {
+		fd := fields.Get(i)
+		if fieldEqual(w, g, fd) {
+			continue
+		}
+		if g.Has(fd) {
+			d.Set(fd, g.Get(fd))
+		} else {
+			d.Clear(fd)
+		}
+	}
+}
+
+func fieldEqual(a, b protoreflect.Message, fd protoreflect.FieldDescriptor) bool {
+	a1, b1 := a.New(), b.New()
+	if a.Has(fd) {
+		a1.Set(fd, a.Get(fd))
+	}
+	if b.Has(fd) {
+		b1.Set(fd, b.Get(fd))
+	}
+	return proto.Equal(a1.Interface(), b1.Interface())
+}
+
+// updateTestCase merges tc's changes into the pending update for tc.Name
+// (see testCaseUpdates) and writes the result to tc.Name + ".new".
 func updateTestCase(t *testing.T, tc TestCase) {
 	t.Helper()
+	testCaseMu.Lock()
+	defer testCaseMu.Unlock()
+	merged, ok := testCaseUpdates[tc.Name]
+	if !ok {
+		merged = proto.Clone(tc.Want).(*FingerprintTestCase)
+		testCaseUpdates[tc.Name] = merged
+	}
+	mergeChangedFields(merged, tc.Want, tc.Got)
 	fname := tc.Name + ".new"
-	raw := []byte(prototext.Format(tc.Got))
+	raw := []byte(prototext.Format(merged))
 	raw, err := parser.Format(raw)
 	if err != nil {
 		t.Fatalf("parser.Format(%v): %v", fname, err)
@@ -284,5 +342,48 @@ func TestGetFingerprint(t *testing.T) {
 			}
 			maybeUpdateTestCase(t, tc)
 		})
+	}
+}
+
+// TestUpdateTestCaseMerges checks that updates from different test
+// functions to the same test case are merged rather than overwriting each
+// other.
+func TestUpdateTestCaseMerges(t *testing.T) {
+	t.Parallel()
+	fname := filepath.Join(t.TempDir(), "x.textproto")
+	if err := os.WriteFile(fname, []byte(`source_file: "x"
+xmp: { comment: "old" }
+`), 0644); err != nil {
+		t.Fatal(err)
+	}
+	newTC := func() TestCase {
+		want := readTestCase(t, fname)
+		return TestCase{Name: fname, Got: proto.Clone(want).(*FingerprintTestCase), Want: want}
+	}
+	tc1 := newTC()
+	tc1.Got.Exif = &EXIFTestCase{WantCameraModel: "cam"}
+	tc2 := newTC()
+	tc2.Got.Xmp = nil
+	tc2.Got.Audio = &AudioTestCase{WantSimhash: "1234"}
+	tc3 := newTC() // no changes: must not revert the others
+	updateTestCase(t, tc1)
+	updateTestCase(t, tc2)
+	updateTestCase(t, tc3)
+
+	raw, err := os.ReadFile(fname + ".new")
+	if err != nil {
+		t.Fatal(err)
+	}
+	got := &FingerprintTestCase{}
+	if err := prototext.Unmarshal(raw, got); err != nil {
+		t.Fatal(err)
+	}
+	want := &FingerprintTestCase{
+		SourceFile: "x",
+		Exif:       &EXIFTestCase{WantCameraModel: "cam"},
+		Audio:      &AudioTestCase{WantSimhash: "1234"},
+	}
+	if diff := cmp.Diff(want, got, protocmp.Transform()); diff != "" {
+		t.Errorf("merged .new mismatch, +=got, -=want:\n%v", diff)
 	}
 }
