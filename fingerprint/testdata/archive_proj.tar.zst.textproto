@@ -1,0 +1,78 @@
+source_file: "archive_proj.tar.zst"
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "da5397d0"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "10c56d7544b06dd64bc2798edf6514bf"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "93430bcad1743dd9ce88ac778d72f6ae1f4c71a5"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "66463"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/archive_proj.tar.zst"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".zst"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "application/zstd"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "da5397d0"
+  verified_crc32: "da5397d0"
+  md5: "10c56d7544b06dd64bc2798edf6514bf"
+  verified_md5: "10c56d7544b06dd64bc2798edf6514bf"
+  sha1: "93430bcad1743dd9ce88ac778d72f6ae1f4c71a5"
+  verified_sha1: "93430bcad1743dd9ce88ac778d72f6ae1f4c71a5"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  want_content_tree: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
+  want_content_set: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+}

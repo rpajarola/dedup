@@ -1,0 +1,70 @@
+source_file: "archive_proj_solid.rar"
+comment: "rardecode v2.4.1 fails after an empty file in a solid RAR5 archive: https://github.com/nwaples/rardecode/issues/70"
+want_err: true
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "bb49333f"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "6d405b0d33d4211fa56ae68913355c08"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "38f891a4dfd1413ca9a921aa9de81d419b53d719"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "66552"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/archive_proj_solid.rar"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".rar"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "application/vnd.rar"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "bb49333f"
+  verified_crc32: "bb49333f"
+  md5: "6d405b0d33d4211fa56ae68913355c08"
+  verified_md5: "6d405b0d33d4211fa56ae68913355c08"
+  sha1: "38f891a4dfd1413ca9a921aa9de81d419b53d719"
+  verified_sha1: "38f891a4dfd1413ca9a921aa9de81d419b53d719"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  comment: "rardecode v2.4.1 fails after an empty file in a solid RAR5 archive: https://github.com/nwaples/rardecode/issues/70"
+  want_err: true
+}

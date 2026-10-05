@@ -1,0 +1,78 @@
+source_file: "archive_proj_with_noise.zip"
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "e3863c08"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "d11b3fc166d0f70526777e2e5fa19a87"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "8d5ce2664e2f9f5b9c27095b6d1a3930d9cc9a73"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "68803"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/archive_proj_with_noise.zip"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".zip"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "application/zip"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "e3863c08"
+  verified_crc32: "e3863c08"
+  md5: "d11b3fc166d0f70526777e2e5fa19a87"
+  verified_md5: "d11b3fc166d0f70526777e2e5fa19a87"
+  sha1: "8d5ce2664e2f9f5b9c27095b6d1a3930d9cc9a73"
+  verified_sha1: "8d5ce2664e2f9f5b9c27095b6d1a3930d9cc9a73"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  want_content_tree: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
+  want_content_set: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+}

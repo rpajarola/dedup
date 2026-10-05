@@ -9,22 +9,35 @@ require (
 	github.com/ajdnik/imghash v1.1.0
 	github.com/asticode/go-astiav v0.43.0
 	github.com/azr/phash v0.2.0
+	github.com/bodgit/sevenzip v1.6.5
 	github.com/google/go-cmp v0.7.0
 	github.com/h2non/filetype v1.1.3
 	github.com/jdeng/goheif v0.1.2
+	github.com/klauspost/compress v1.20.1
+	github.com/nwaples/rardecode/v2 v2.4.1
 	github.com/protocolbuffers/txtpbfmt v0.0.0-20250129171521-feedd8250727
 	github.com/rpajarola/exiftools v0.0.0-20261004200342-d0826d9e51e2
 	github.com/trimmer-io/go-xmp v1.0.0
+	github.com/ulikunitz/xz v0.5.17
 	golang.org/x/image v0.46.0
+	golang.org/x/text v0.42.0
 	google.golang.org/protobuf v1.36.12
 )
 
 require (
+	github.com/andybalholm/brotli v1.2.2 // indirect
 	github.com/asticode/go-astikit v0.59.0 // indirect
 	github.com/azr/gift v1.1.2 // indirect
+	github.com/bodgit/plumbing v1.3.0 // indirect
+	github.com/bodgit/windows v1.0.1 // indirect
 	github.com/disintegration/imaging v1.6.2 // indirect
+	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.1 // indirect
 	github.com/mjibson/go-dsp v1.0.0 // indirect
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 // indirect
+	github.com/pierrec/lz4/v4 v4.1.27 // indirect
 	github.com/r9y9/gossp v0.0.1 // indirect
+	github.com/spf13/afero v1.15.0 // indirect
+	github.com/stangelandcl/ppmd v0.1.1 // indirect
+	go4.org v0.0.0-20260112195520-a5071408f32f // indirect
 )

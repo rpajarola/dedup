@@ -17,6 +17,7 @@ message FingerprintTestCase {
 	VideoPHashTestCase video_phash = 10;
 	ChecksumTestCase checksum = 11;
 	AudioTestCase audio = 12;
+	ArchiveTestCase archive = 13;
 }
 
 message WantFingerprint {
@@ -72,4 +73,12 @@ message AudioTestCase {
 	string want_chromaprint = 3;
 	// libchromaprint's chromaprint_hash_fingerprint, as hex.
 	string want_simhash = 4;
+}
+
+message ArchiveTestCase {
+	repeated string comment = 1;
+	bool skip = 2;
+	string want_content_tree = 3;
+	string want_content_set = 4;
+	bool want_err = 5;
 }

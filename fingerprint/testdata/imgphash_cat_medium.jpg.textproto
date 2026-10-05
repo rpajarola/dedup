@@ -81,3 +81,6 @@ checksum: {
 audio: {
   comment: "No audio data"
 }
+archive: {
+  comment: "Not an archive"
+}

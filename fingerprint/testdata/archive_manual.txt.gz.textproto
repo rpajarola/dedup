@@ -1,0 +1,78 @@
+source_file: "archive_manual.txt.gz"
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "30110bcad6012d369aaf65e0ae144f191f9dfe980ae1a7780b85ab81abaf9b21"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "84befa1624587f732f8d779e4569c86ad3b4eeff033ff1df4413d8e5a3d99bdf"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "4cb43cdc"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "061e080d7b020c684194636b5cb9ee2e"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "b3806a41affbdbf29190f50898b43139ed367276"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "101"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/archive_manual.txt.gz"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".gz"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_hash: "application/gzip"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "4cb43cdc"
+  verified_crc32: "4cb43cdc"
+  md5: "061e080d7b020c684194636b5cb9ee2e"
+  verified_md5: "061e080d7b020c684194636b5cb9ee2e"
+  sha1: "b3806a41affbdbf29190f50898b43139ed367276"
+  verified_sha1: "b3806a41affbdbf29190f50898b43139ed367276"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  want_content_tree: "30110bcad6012d369aaf65e0ae144f191f9dfe980ae1a7780b85ab81abaf9b21"
+  want_content_set: "84befa1624587f732f8d779e4569c86ad3b4eeff033ff1df4413d8e5a3d99bdf"
+}
