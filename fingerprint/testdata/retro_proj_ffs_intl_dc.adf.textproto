@@ -1,0 +1,80 @@
+source_file: "retro_proj_ffs_intl_dc.adf"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "6d6f2bd6"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "447df8aeaed357787e9e4b60e7280ad8"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "3ae57d99cd4e6568e73a345de6ba26d6519f63c8"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "901120"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/retro_proj_ffs_intl_dc.adf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".adf"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "6d6f2bd6"
+  verified_crc32: "6d6f2bd6"
+  md5: "447df8aeaed357787e9e4b60e7280ad8"
+  verified_md5: "447df8aeaed357787e9e4b60e7280ad8"
+  sha1: "3ae57d99cd4e6568e73a345de6ba26d6519f63c8"
+  verified_sha1: "3ae57d99cd4e6568e73a345de6ba26d6519f63c8"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  comment: "Not an archive"
+}
+disk_image: {
+  want_content_tree: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
+  want_content_set: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+}

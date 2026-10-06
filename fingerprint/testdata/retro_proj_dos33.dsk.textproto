@@ -1,0 +1,80 @@
+source_file: "retro_proj_dos33.dsk"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "fde384e0"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "b2935995593569e4ee9e14c2c1b6eea9"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "d8ed4c9228b5fd2dfbaf15cb34a5bbebf443baf6"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "72f671bb1069bccc87fa6dd37cfcac194cf397ef0937605d32711206272bdc07"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "8b5109121bea3965b954d6c80977ccd8e9f3ace3f5d1a573546e87a92a7427d1"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "143360"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/retro_proj_dos33.dsk"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".dsk"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "fde384e0"
+  verified_crc32: "fde384e0"
+  md5: "b2935995593569e4ee9e14c2c1b6eea9"
+  verified_md5: "b2935995593569e4ee9e14c2c1b6eea9"
+  sha1: "d8ed4c9228b5fd2dfbaf15cb34a5bbebf443baf6"
+  verified_sha1: "d8ed4c9228b5fd2dfbaf15cb34a5bbebf443baf6"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  comment: "Not an archive"
+}
+disk_image: {
+  want_content_tree: "72f671bb1069bccc87fa6dd37cfcac194cf397ef0937605d32711206272bdc07"
+  want_content_set: "8b5109121bea3965b954d6c80977ccd8e9f3ace3f5d1a573546e87a92a7427d1"
+}

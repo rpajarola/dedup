@@ -1,0 +1,80 @@
+source_file: "retro_proj_dos2ed.atr"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "b3c67bb4"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "4337e921893dc594e4cab8e365a836ad"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "b86a2ef2a763f223007d30495633c40f2aa211e2"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "10978a3c8cf5a156cd4627849650a2533626aaf320a25f2732dfe3c53f54b035"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "ffe67d8907da54e3fe2a132d69444beea93414db4a99a5146764f58ac66fcbaa"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "133136"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/retro_proj_dos2ed.atr"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".atr"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "b3c67bb4"
+  verified_crc32: "b3c67bb4"
+  md5: "4337e921893dc594e4cab8e365a836ad"
+  verified_md5: "4337e921893dc594e4cab8e365a836ad"
+  sha1: "b86a2ef2a763f223007d30495633c40f2aa211e2"
+  verified_sha1: "b86a2ef2a763f223007d30495633c40f2aa211e2"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  comment: "Not an archive"
+}
+disk_image: {
+  want_content_tree: "10978a3c8cf5a156cd4627849650a2533626aaf320a25f2732dfe3c53f54b035"
+  want_content_set: "ffe67d8907da54e3fe2a132d69444beea93414db4a99a5146764f58ac66fcbaa"
+}

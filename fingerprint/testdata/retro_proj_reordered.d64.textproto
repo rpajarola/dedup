@@ -1,0 +1,80 @@
+source_file: "retro_proj_reordered.d64"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "032a6bb2"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "6419ae1d19f795dc71ed76c95edf0bab"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "fff2ce1fe65a8f417a61f84d1c7d73b567f91044"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "0d0a9f3f7d82b94d72718ae81fa8064bc1365391b9436ac1f4c6b830721e088f"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "ffe67d8907da54e3fe2a132d69444beea93414db4a99a5146764f58ac66fcbaa"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "174848"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/retro_proj_reordered.d64"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".d64"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "032a6bb2"
+  verified_crc32: "032a6bb2"
+  md5: "6419ae1d19f795dc71ed76c95edf0bab"
+  verified_md5: "6419ae1d19f795dc71ed76c95edf0bab"
+  sha1: "fff2ce1fe65a8f417a61f84d1c7d73b567f91044"
+  verified_sha1: "fff2ce1fe65a8f417a61f84d1c7d73b567f91044"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  comment: "Not an archive"
+}
+disk_image: {
+  want_content_tree: "0d0a9f3f7d82b94d72718ae81fa8064bc1365391b9436ac1f4c6b830721e088f"
+  want_content_set: "ffe67d8907da54e3fe2a132d69444beea93414db4a99a5146764f58ac66fcbaa"
+}

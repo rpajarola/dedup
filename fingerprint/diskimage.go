@@ -18,9 +18,10 @@ import (
 )
 
 // DiskImageFingerprinter fingerprints the files inside disk images: ISO
-// 9660 CD/DVD images (with Rock Ridge/Joliet names), and raw disk images
+// 9660 CD/DVD images (with Rock Ridge/Joliet names), raw disk images
 // holding FAT12/16/32, ext2/3/4 or squashfs filesystems, either directly
-// ("superfloppy") or in MBR/GPT partitions.
+// ("superfloppy") or in MBR/GPT partitions, and retro computer disk
+// images (see retroDiskFormats).
 //
 // It emits the same ArchiveContentTree/ArchiveContentSet fingerprints as
 // ArchiveFingerprinter (with the same canonicalization), so a disk image
@@ -31,6 +32,22 @@ type DiskImageFingerprinter struct{}
 
 type diskImageFingerprinterState struct {
 	filename string
+	// read, if set, reads a retro disk image format (see
+	// retroDiskFormats); otherwise go-diskfs is used.
+	read func(data []byte) ([]archiveEntry, error)
+}
+
+// retroDiskFormats are disk image formats of old home computers, read
+// by our own parsers (go-diskfs doesn't support them). Their images are
+// at most a few MB, so they're read into memory whole.
+var retroDiskFormats = []struct {
+	detect func(r io.ReaderAt, size int64) bool
+	read   func(data []byte) ([]archiveEntry, error)
+}{
+	{isADF, readADF},
+	{isD64, readD64},
+	{isApple2, readApple2},
+	{isATR, readATR},
 }
 
 func init() {
@@ -50,14 +67,33 @@ func (dfp *DiskImageFingerprinter) Init(filename string) (FingerprinterState, er
 	}
 	head := make([]byte, 34*1024)
 	n, _ := io.ReadFull(f, head)
-	if !isDiskImage(head[:n]) {
+	head = head[:n]
+	st, err := f.Stat()
+	if err != nil {
+		return nil, err
+	}
+	for _, rf := range retroDiskFormats {
+		if rf.detect(f, st.Size()) {
+			return &diskImageFingerprinterState{filename: filename, read: rf.read}, nil
+		}
+	}
+	if !isDiskImage(head) {
 		return nil, nil
 	}
 	return &diskImageFingerprinterState{filename: filename}, nil
 }
 
 func (dfps *diskImageFingerprinterState) Get() ([]Fingerprint, error) {
-	entries, err := readDiskImage(dfps.filename)
+	var entries []archiveEntry
+	var err error
+	if dfps.read != nil {
+		var data []byte
+		if data, err = os.ReadFile(dfps.filename); err == nil {
+			entries, err = dfps.read(data)
+		}
+	} else {
+		entries, err = readDiskImage(dfps.filename)
+	}
 	if err != nil {
 		return nil, fmt.Errorf("reading disk image %v: %w", dfps.filename, err)
 	}

@@ -1,0 +1,80 @@
+source_file: "retro_proj_prodos.po"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "f5fb3cb7"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "f2df59a240c5ccb0a8ca2fa72d914a53"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "c2f6ae1b74442ac714289231b5e895fd6d160929"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "72a6dd89543147775581aca514408ff77d515def3d0be38970369661e0c59b6f"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "143360"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/retro_proj_prodos.po"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".po"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "f5fb3cb7"
+  verified_crc32: "f5fb3cb7"
+  md5: "f2df59a240c5ccb0a8ca2fa72d914a53"
+  verified_md5: "f2df59a240c5ccb0a8ca2fa72d914a53"
+  sha1: "c2f6ae1b74442ac714289231b5e895fd6d160929"
+  verified_sha1: "c2f6ae1b74442ac714289231b5e895fd6d160929"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  comment: "Not an archive"
+}
+disk_image: {
+  want_content_tree: "72a6dd89543147775581aca514408ff77d515def3d0be38970369661e0c59b6f"
+  want_content_set: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+}
