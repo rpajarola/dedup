@@ -69,3 +69,6 @@ audio: {
 archive: {
   comment: "Not an archive"
 }
+disk_image: {
+  comment: "Not a disk image"
+}

@@ -76,3 +76,6 @@ archive: {
   want_content_tree: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
   want_content_set: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
 }
+disk_image: {
+  comment: "Not a disk image"
+}

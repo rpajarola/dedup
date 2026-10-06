@@ -18,6 +18,7 @@ message FingerprintTestCase {
 	ChecksumTestCase checksum = 11;
 	AudioTestCase audio = 12;
 	ArchiveTestCase archive = 13;
+	DiskImageTestCase disk_image = 14;
 }
 
 message WantFingerprint {
@@ -78,6 +79,14 @@ message AudioTestCase {
 }
 
 message ArchiveTestCase {
+	repeated string comment = 1;
+	bool skip = 2;
+	string want_content_tree = 3;
+	string want_content_set = 4;
+	bool want_err = 5;
+}
+
+message DiskImageTestCase {
 	repeated string comment = 1;
 	bool skip = 2;
 	string want_content_tree = 3;

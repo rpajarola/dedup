@@ -1,0 +1,80 @@
+source_file: "disk_proj_plain.iso"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "65a7807a"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "043eb943d78fa8f9ea393b39e69fde88"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "062aafc7d5a1724599891b68c2dca25c742cd930"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "de417da85a2dcf3967e61d80af312f2806fa62fea8bd564c13dd0f0d0449b11d"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "524288"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/disk_proj_plain.iso"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".iso"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "65a7807a"
+  verified_crc32: "65a7807a"
+  md5: "043eb943d78fa8f9ea393b39e69fde88"
+  verified_md5: "043eb943d78fa8f9ea393b39e69fde88"
+  sha1: "062aafc7d5a1724599891b68c2dca25c742cd930"
+  verified_sha1: "062aafc7d5a1724599891b68c2dca25c742cd930"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  comment: "Not an archive"
+}
+disk_image: {
+  want_content_tree: "de417da85a2dcf3967e61d80af312f2806fa62fea8bd564c13dd0f0d0449b11d"
+  want_content_set: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+}

@@ -77,15 +77,22 @@ func (afps *archiveFingerprinterState) Get() ([]Fingerprint, error) {
 	if err != nil {
 		return nil, fmt.Errorf("reading archive %v: %w", afps.filename, err)
 	}
+	return archiveFingerprints(entries), nil
+}
+
+// archiveFingerprints returns the ArchiveContentTree and ArchiveContentSet
+// fingerprints of a list of files (from an archive or disk image), or nil
+// if there are no files left after canonicalization.
+func archiveFingerprints(entries []archiveEntry) []Fingerprint {
 	entries = canonicalizeArchiveEntries(entries)
 	if len(entries) == 0 {
-		return nil, nil
+		return nil
 	}
 	tree, set := archiveHashes(entries)
 	return []Fingerprint{
 		{Kind: "ArchiveContentTree", Hash: tree, Quality: 20},
 		{Kind: "ArchiveContentSet", Hash: set, Quality: 20},
-	}, nil
+	}
 }
 
 func (afps *archiveFingerprinterState) Cleanup() {}

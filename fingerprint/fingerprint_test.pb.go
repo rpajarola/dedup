@@ -36,6 +36,7 @@ type FingerprintTestCase struct {
 	Checksum        *ChecksumTestCase      `protobuf:"bytes,11,opt,name=checksum,proto3" json:"checksum,omitempty"`
 	Audio           *AudioTestCase         `protobuf:"bytes,12,opt,name=audio,proto3" json:"audio,omitempty"`
 	Archive         *ArchiveTestCase       `protobuf:"bytes,13,opt,name=archive,proto3" json:"archive,omitempty"`
+	DiskImage       *DiskImageTestCase     `protobuf:"bytes,14,opt,name=disk_image,json=diskImage,proto3" json:"disk_image,omitempty"`
 	unknownFields   protoimpl.UnknownFields
 	sizeCache       protoimpl.SizeCache
 }
@@ -157,6 +158,13 @@ func (x *FingerprintTestCase) GetAudio() *AudioTestCase {
 func (x *FingerprintTestCase) GetArchive() *ArchiveTestCase {
 	if x != nil {
 		return x.Archive
+	}
+	return nil
+}
+
+func (x *FingerprintTestCase) GetDiskImage() *DiskImageTestCase {
+	if x != nil {
+		return x.DiskImage
 	}
 	return nil
 }
@@ -747,11 +755,87 @@ func (x *ArchiveTestCase) GetWantErr() bool {
 	return false
 }
 
+type DiskImageTestCase struct {
+	state           protoimpl.MessageState `protogen:"open.v1"`
+	Comment         []string               `protobuf:"bytes,1,rep,name=comment,proto3" json:"comment,omitempty"`
+	Skip            bool                   `protobuf:"varint,2,opt,name=skip,proto3" json:"skip,omitempty"`
+	WantContentTree string                 `protobuf:"bytes,3,opt,name=want_content_tree,json=wantContentTree,proto3" json:"want_content_tree,omitempty"`
+	WantContentSet  string                 `protobuf:"bytes,4,opt,name=want_content_set,json=wantContentSet,proto3" json:"want_content_set,omitempty"`
+	WantErr         bool                   `protobuf:"varint,5,opt,name=want_err,json=wantErr,proto3" json:"want_err,omitempty"`
+	unknownFields   protoimpl.UnknownFields
+	sizeCache       protoimpl.SizeCache
+}
+
+func (x *DiskImageTestCase) Reset() {
+	*x = DiskImageTestCase{}
+	mi := &file_fingerprint_test_proto_msgTypes[9]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *DiskImageTestCase) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*DiskImageTestCase) ProtoMessage() {}
+
+func (x *DiskImageTestCase) ProtoReflect() protoreflect.Message {
+	mi := &file_fingerprint_test_proto_msgTypes[9]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use DiskImageTestCase.ProtoReflect.Descriptor instead.
+func (*DiskImageTestCase) Descriptor() ([]byte, []int) {
+	return file_fingerprint_test_proto_rawDescGZIP(), []int{9}
+}
+
+func (x *DiskImageTestCase) GetComment() []string {
+	if x != nil {
+		return x.Comment
+	}
+	return nil
+}
+
+func (x *DiskImageTestCase) GetSkip() bool {
+	if x != nil {
+		return x.Skip
+	}
+	return false
+}
+
+func (x *DiskImageTestCase) GetWantContentTree() string {
+	if x != nil {
+		return x.WantContentTree
+	}
+	return ""
+}
+
+func (x *DiskImageTestCase) GetWantContentSet() string {
+	if x != nil {
+		return x.WantContentSet
+	}
+	return ""
+}
+
+func (x *DiskImageTestCase) GetWantErr() bool {
+	if x != nil {
+		return x.WantErr
+	}
+	return false
+}
+
 var File_fingerprint_test_proto protoreflect.FileDescriptor
 
 const file_fingerprint_test_proto_rawDesc = "" +
 	"\n" +
-	"\x16fingerprint_test.proto\x12\vfingerprint\"\xda\x04\n" +
+	"\x16fingerprint_test.proto\x12\vfingerprint\"\x99\x05\n" +
 	"\x13FingerprintTestCase\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x1f\n" +
 	"\vsource_file\x18\x02 \x01(\tR\n" +
@@ -768,7 +852,9 @@ const file_fingerprint_test_proto_rawDesc = "" +
 	"videoPhash\x129\n" +
 	"\bchecksum\x18\v \x01(\v2\x1d.fingerprint.ChecksumTestCaseR\bchecksum\x120\n" +
 	"\x05audio\x18\f \x01(\v2\x1a.fingerprint.AudioTestCaseR\x05audio\x126\n" +
-	"\aarchive\x18\r \x01(\v2\x1c.fingerprint.ArchiveTestCaseR\aarchive\"\x88\x01\n" +
+	"\aarchive\x18\r \x01(\v2\x1c.fingerprint.ArchiveTestCaseR\aarchive\x12=\n" +
+	"\n" +
+	"disk_image\x18\x0e \x01(\v2\x1e.fingerprint.DiskImageTestCaseR\tdiskImage\"\x88\x01\n" +
 	"\x0fWantFingerprint\x12\x18\n" +
 	"\acomment\x18\x01 \x03(\tR\acomment\x12\x1b\n" +
 	"\twant_kind\x18\x02 \x01(\tR\bwantKind\x12\x1b\n" +
@@ -813,6 +899,12 @@ const file_fingerprint_test_proto_rawDesc = "" +
 	"\x04skip\x18\x02 \x01(\bR\x04skip\x12*\n" +
 	"\x11want_content_tree\x18\x03 \x01(\tR\x0fwantContentTree\x12(\n" +
 	"\x10want_content_set\x18\x04 \x01(\tR\x0ewantContentSet\x12\x19\n" +
+	"\bwant_err\x18\x05 \x01(\bR\awantErr\"\xb2\x01\n" +
+	"\x11DiskImageTestCase\x12\x18\n" +
+	"\acomment\x18\x01 \x03(\tR\acomment\x12\x12\n" +
+	"\x04skip\x18\x02 \x01(\bR\x04skip\x12*\n" +
+	"\x11want_content_tree\x18\x03 \x01(\tR\x0fwantContentTree\x12(\n" +
+	"\x10want_content_set\x18\x04 \x01(\tR\x0ewantContentSet\x12\x19\n" +
 	"\bwant_err\x18\x05 \x01(\bR\awantErrB(Z&github.com/rpajarola/dedup/fingerprintb\x06proto3"
 
 var (
@@ -827,7 +919,7 @@ func file_fingerprint_test_proto_rawDescGZIP() []byte {
 	return file_fingerprint_test_proto_rawDescData
 }
 
-var file_fingerprint_test_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
+var file_fingerprint_test_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_fingerprint_test_proto_goTypes = []any{
 	(*FingerprintTestCase)(nil), // 0: fingerprint.FingerprintTestCase
 	(*WantFingerprint)(nil),     // 1: fingerprint.WantFingerprint
@@ -838,6 +930,7 @@ var file_fingerprint_test_proto_goTypes = []any{
 	(*ChecksumTestCase)(nil),    // 6: fingerprint.ChecksumTestCase
 	(*AudioTestCase)(nil),       // 7: fingerprint.AudioTestCase
 	(*ArchiveTestCase)(nil),     // 8: fingerprint.ArchiveTestCase
+	(*DiskImageTestCase)(nil),   // 9: fingerprint.DiskImageTestCase
 }
 var file_fingerprint_test_proto_depIdxs = []int32{
 	1, // 0: fingerprint.FingerprintTestCase.want_fingerprint:type_name -> fingerprint.WantFingerprint
@@ -848,11 +941,12 @@ var file_fingerprint_test_proto_depIdxs = []int32{
 	6, // 5: fingerprint.FingerprintTestCase.checksum:type_name -> fingerprint.ChecksumTestCase
 	7, // 6: fingerprint.FingerprintTestCase.audio:type_name -> fingerprint.AudioTestCase
 	8, // 7: fingerprint.FingerprintTestCase.archive:type_name -> fingerprint.ArchiveTestCase
-	8, // [8:8] is the sub-list for method output_type
-	8, // [8:8] is the sub-list for method input_type
-	8, // [8:8] is the sub-list for extension type_name
-	8, // [8:8] is the sub-list for extension extendee
-	0, // [0:8] is the sub-list for field type_name
+	9, // 8: fingerprint.FingerprintTestCase.disk_image:type_name -> fingerprint.DiskImageTestCase
+	9, // [9:9] is the sub-list for method output_type
+	9, // [9:9] is the sub-list for method input_type
+	9, // [9:9] is the sub-list for extension type_name
+	9, // [9:9] is the sub-list for extension extendee
+	0, // [0:9] is the sub-list for field type_name
 }
 
 func init() { file_fingerprint_test_proto_init() }
@@ -866,7 +960,7 @@ func file_fingerprint_test_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_fingerprint_test_proto_rawDesc), len(file_fingerprint_test_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   9,
+			NumMessages:   10,
 			NumExtensions: 0,
 			NumServices:   0,
 		},

@@ -45,8 +45,9 @@ I am testing on
 Media files used by `fingerprint`'s tests live in the separate
 [rpajarola/dedup-testdata](https://github.com/rpajarola/dedup-testdata) repo, distributed as
 tarballs attached to its GitHub Releases (split by media type: `testdata-images.tar.gz`,
-`testdata-videos.tar.gz`, `testdata-audio.tar.gz`, `testdata-archives.tar.gz`, and
-`testdata-noimage.tar.gz` for the EXIF-only placeholder fixtures).
+`testdata-videos.tar.gz`, `testdata-audio.tar.gz`, `testdata-archives.tar.gz`,
+`testdata-diskimages.tar.gz`, and `testdata-noimage.tar.gz` for the EXIF-only placeholder
+fixtures).
 There's a single `fingerprint/testdata/` directory; only `.textproto` files are committed here,
 everything else is fetched on demand.
 
@@ -60,7 +61,7 @@ missing.
 
 1. Add the new source file plus its `.textproto` (with a `source_file` field pointing at it) to
    `fingerprint/testdata/` locally.
-2. Add the file to the appropriate tarball (images/videos/audio/archives/etc.) and upload it as a new release
+2. Add the file to the appropriate tarball (images/videos/audio/archives/diskimages/etc.) and upload it as a new release
    asset on `rpajarola/dedup-testdata`, e.g.:
    ```
    tar -czf testdata-images.tar.gz -C fingerprint/testdata <new_file>

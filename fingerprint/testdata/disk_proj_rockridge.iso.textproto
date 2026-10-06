@@ -1,0 +1,80 @@
+source_file: "disk_proj_rockridge.iso"
+want_fingerprint: {
+  want_kind: "CRC32"
+  want_hash: "316ad2c6"
+  want_quality: 50
+}
+want_fingerprint: {
+  want_kind: "MD5"
+  want_hash: "dbecde9d8ee5c83aee54d8e640fa06bf"
+  want_quality: 80
+}
+want_fingerprint: {
+  want_kind: "SHA1"
+  want_hash: "8ba1e1cf022b7eb81ad1ac7ca3b9625020a25098"
+  want_quality: 99
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentTree"
+  want_hash: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ArchiveContentSet"
+  want_hash: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filesize"
+  want_hash: "454656"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filedate"
+  want_hash: "1739785102"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "filename"
+  want_hash: "testdata/disk_proj_rockridge.iso"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "fileextension"
+  want_hash: ".iso"
+  want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "mimetype"
+  want_quality: 10
+}
+exif: {
+  comment: "No EXIF data"
+}
+xmp: {
+  comment: "No XMP data"
+}
+img_phash: {
+  comment: "No image data"
+}
+video_phash: {
+  comment: "No video data"
+}
+checksum: {
+  crc32: "316ad2c6"
+  verified_crc32: "316ad2c6"
+  md5: "dbecde9d8ee5c83aee54d8e640fa06bf"
+  verified_md5: "dbecde9d8ee5c83aee54d8e640fa06bf"
+  sha1: "8ba1e1cf022b7eb81ad1ac7ca3b9625020a25098"
+  verified_sha1: "8ba1e1cf022b7eb81ad1ac7ca3b9625020a25098"
+}
+audio: {
+  comment: "No audio data"
+}
+archive: {
+  comment: "Not an archive"
+}
+disk_image: {
+  want_content_tree: "fb232804f8102c09af5fccdbb0277e8b28b5d7134a12f8b00a14f728a90f8475"
+  want_content_set: "379a4bca804ff7efffed94bee9907e1f7792538e4239e6efe29ff29995099143"
+}

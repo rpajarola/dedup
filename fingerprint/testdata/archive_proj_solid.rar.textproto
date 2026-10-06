@@ -68,3 +68,6 @@ archive: {
   comment: "rardecode v2.4.1 fails after an empty file in a solid RAR5 archive: https://github.com/nwaples/rardecode/issues/70"
   want_err: true
 }
+disk_image: {
+  comment: "Not a disk image"
+}
