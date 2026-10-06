@@ -82,7 +82,11 @@ fpcalc <file>              # FINGERPRINT= should equal AudioChromaprint
 
 ### Unstable tests
 
-Video and audio hashes are deterministic from run to run (ffmpeg's
-decoders are pinned to one thread), but haven't been verified to be
-identical across platforms or ffmpeg versions, which can decode
-slightly differently. See [TODO.md](TODO.md) for other open issues.
+All fixtures produce identical results on macOS/ARM and Ubuntu/x86
+(both with ffmpeg 9.0.2). Video decoding is pinned to one thread, the
+C reference IDCT and bit-exact scaling, since ffmpeg's CPU-specific
+code paths otherwise decode to slightly different pixels on x86 and
+ARM; flat (solid color) frames are left out of VideoPHashSimHash, as
+their perceptual hash is just floating point rounding noise. Other
+ffmpeg versions haven't been verified and may still decode slightly
+differently. See [TODO.md](TODO.md) for other open issues.

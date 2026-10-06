@@ -51,7 +51,7 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "VideoPHashSimHash"
-  want_hash: "4821b4d2a808aa67"
+  want_hash: "4821b4d28808aa67"
   want_quality: 20
 }
 exif: {
@@ -64,7 +64,7 @@ img_phash: {
   comment: "No image data"
 }
 video_phash: {
-  want_simhash: "4821b4d2a808aa67"
+  want_simhash: "4821b4d28808aa67"
 }
 checksum: {
   crc32: "554613a0"

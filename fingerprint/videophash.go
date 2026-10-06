@@ -90,7 +90,17 @@ func (vpfp *VideoPHashFingerprinter) Init(filename string) (FingerprinterState, 
 		// rather than depending on however many threads ffmpeg's default
 		// (CPU-count-based) thread count happens to pick.
 		vpfps.codecContext.SetThreadCount(1)
-		if err := vpfps.codecContext.Open(vpfps.codec, nil); err != nil {
+		// Use the C reference IDCT: codecs with a DCT-based transform
+		// (MPEG-2, MPEG-4 Part 2, H.263/FLV1, ...) otherwise use
+		// CPU-specific IDCTs that decode to slightly different pixels
+		// on x86 and ARM. (H.264/HEVC are bit-exact by spec; decoders
+		// without an "idct" option just ignore it.)
+		opts := astiav.NewDictionary()
+		defer opts.Free()
+		if err := opts.Set("idct", "simple", astiav.NewDictionaryFlags()); err != nil {
+			return vpfps, fmt.Errorf("setting decoder options failed: %w", err)
+		}
+		if err := vpfps.codecContext.Open(vpfps.codec, opts); err != nil {
 			return vpfps, fmt.Errorf("opening codec context failed: %w", err)
 		}
 		vpfps.width = is.CodecParameters().Width()
@@ -139,7 +149,10 @@ func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image, 
 		vpfps.width, vpfps.height, vpfps.pixelFormat,
 		32 /*dst width*/, 32, /*dst height*/
 		astiav.PixelFormatGray8,
-		astiav.NewSoftwareScaleContextFlags(astiav.SoftwareScaleContextFlagBilinear))
+		// Bit-exact/accurate rounding: swscale's SIMD paths otherwise
+		// round differently on x86 and ARM.
+		astiav.NewSoftwareScaleContextFlags(astiav.SoftwareScaleContextFlagBilinear,
+			astiav.SoftwareScaleContextFlagBitexact, astiav.SoftwareScaleContextFlagAccurateRnd))
 	if err != nil {
 		vpfps.readErr = fmt.Errorf("creating software scale context failed: %w", err)
 		return
@@ -205,8 +218,8 @@ func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image, 
 	}
 }
 
-// frameHashes decodes every frame of the video and returns its azr.DTC
-// perceptual hash.
+// frameHashes decodes every frame of the video and returns the azr.DTC
+// perceptual hashes of all frames that aren't flat (see isFlatFrame).
 func (vpfps *videoPHashFingerprinterState) frameHashes() ([]uint64, error) {
 	images := make(chan *image.Image, 20)
 	var wg sync.WaitGroup
@@ -218,12 +231,36 @@ func (vpfps *videoPHashFingerprinterState) frameHashes() ([]uint64, error) {
 	}()
 	var hs []uint64
 	for i := range images {
+		if isFlatFrame(*i) {
+			continue
+		}
 		hs = append(hs, azr.DTC(*i))
 	}
 	if err := vpfps.readErr; err != nil {
 		return nil, fmt.Errorf("reading video frames: %w", err)
 	}
 	return hs, nil
+}
+
+// isFlatFrame reports whether a (32x32 grayscale) frame is (nearly) a
+// single solid color, like the black frames at the start of a video or
+// between scenes. All of a flat frame's DCT coefficients are ~0, so its
+// perceptual hash is decided by floating point rounding noise: it carries
+// no information, and comes out differently on different CPUs (e.g. with
+// and without fused multiply-add).
+func isFlatFrame(img image.Image) bool {
+	g, ok := img.(*image.Gray)
+	if !ok || len(g.Pix) == 0 {
+		return false
+	}
+	var sum, sq float64
+	for _, p := range g.Pix {
+		sum += float64(p)
+		sq += float64(p) * float64(p)
+	}
+	n := float64(len(g.Pix))
+	mean := sum / n
+	return sq/n-mean*mean < 1 // variance < 1, i.e. stddev < 1 gray level
 }
 
 // videoSimHash returns the bitwise majority of the frames' perceptual
