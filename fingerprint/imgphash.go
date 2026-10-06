@@ -84,9 +84,10 @@ func (ipfp *ImgPHashFingerprinter) Init(filename string) (FingerprinterState, er
 	if err := ipfps.decodeEmbeddedPreview(f); err == nil {
 		return &ipfps, nil
 	}
-	// A few RAW formats (Fujifilm RAF, Sigma X3F) aren't EXIF/TIFF-based
-	// containers at all, so neither path above applies. Fall back to
-	// their own, format-specific container layout.
+	// A few RAW formats (Fujifilm RAF, Sigma X3F, Canon CR3) aren't
+	// EXIF/TIFF-based containers at all, so neither path above applies.
+	// Fall back to their own, format-specific container layout, and for
+	// DNGs without any embedded preview, to rendering the raw data.
 	if _, err := f.Seek(0, 0); err != nil {
 		return nil, nil
 	}

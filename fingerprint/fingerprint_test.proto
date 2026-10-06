@@ -52,7 +52,9 @@ message ImgPHashTestCase {
 message VideoPHashTestCase {
 	repeated string comment = 1;
 	bool skip = 2;
-	string want_ricop_hash = 3;
+	reserved 3;
+	reserved "want_ricop_hash";
+	string want_simhash = 4;
 }
 
 message ChecksumTestCase {

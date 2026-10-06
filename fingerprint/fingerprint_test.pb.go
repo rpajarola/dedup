@@ -445,7 +445,7 @@ type VideoPHashTestCase struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Comment       []string               `protobuf:"bytes,1,rep,name=comment,proto3" json:"comment,omitempty"`
 	Skip          bool                   `protobuf:"varint,2,opt,name=skip,proto3" json:"skip,omitempty"`
-	WantRicopHash string                 `protobuf:"bytes,3,opt,name=want_ricop_hash,json=wantRicopHash,proto3" json:"want_ricop_hash,omitempty"`
+	WantSimhash   string                 `protobuf:"bytes,4,opt,name=want_simhash,json=wantSimhash,proto3" json:"want_simhash,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -494,9 +494,9 @@ func (x *VideoPHashTestCase) GetSkip() bool {
 	return false
 }
 
-func (x *VideoPHashTestCase) GetWantRicopHash() string {
+func (x *VideoPHashTestCase) GetWantSimhash() string {
 	if x != nil {
-		return x.WantRicopHash
+		return x.WantSimhash
 	}
 	return ""
 }
@@ -789,11 +789,11 @@ const file_fingerprint_test_proto_rawDesc = "" +
 	"\acomment\x18\x01 \x03(\tR\acomment\x12\x12\n" +
 	"\x04skip\x18\x02 \x01(\bR\x04skip\x12\"\n" +
 	"\rwant_azr_hash\x18\x03 \x01(\tR\vwantAzrHash\x12$\n" +
-	"\x0ewant_nr90_hash\x18\x04 \x01(\tR\fwantNr90Hash\"j\n" +
+	"\x0ewant_nr90_hash\x18\x04 \x01(\tR\fwantNr90Hash\"|\n" +
 	"\x12VideoPHashTestCase\x12\x18\n" +
 	"\acomment\x18\x01 \x03(\tR\acomment\x12\x12\n" +
-	"\x04skip\x18\x02 \x01(\bR\x04skip\x12&\n" +
-	"\x0fwant_ricop_hash\x18\x03 \x01(\tR\rwantRicopHash\"\xeb\x01\n" +
+	"\x04skip\x18\x02 \x01(\bR\x04skip\x12!\n" +
+	"\fwant_simhash\x18\x04 \x01(\tR\vwantSimhashJ\x04\b\x03\x10\x04R\x0fwant_ricop_hash\"\xeb\x01\n" +
 	"\x10ChecksumTestCase\x12\x18\n" +
 	"\acomment\x18\x01 \x03(\tR\acomment\x12\x12\n" +
 	"\x04skip\x18\x02 \x01(\bR\x04skip\x12\x14\n" +

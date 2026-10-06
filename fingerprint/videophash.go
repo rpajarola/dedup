@@ -4,7 +4,6 @@ import (
 	"errors"
 	"fmt"
 	"image"
-	"math"
 	"os"
 	"strings"
 	"sync"
@@ -27,7 +26,7 @@ type videoPHashFingerprinterState struct {
 	// readErr is set by readFrames if frame decoding stops early due to an
 	// error rather than reaching EOF. It's written once, before readFrames
 	// returns (which signals wg.Done()), and only read after wg.Wait()
-	// returns in GetRicop, so the sync.WaitGroup provides the necessary
+	// returns in frameHashes, so the sync.WaitGroup provides the necessary
 	// happens-before edge without an explicit mutex.
 	readErr error
 }
@@ -106,11 +105,14 @@ func (vpfp *VideoPHashFingerprinter) Init(filename string) (FingerprinterState, 
 }
 
 func (vpfps *videoPHashFingerprinterState) Get() ([]Fingerprint, error) {
-	h, err := vpfps.GetRicop()
-	if h == NoFingerprint {
+	hs, err := vpfps.frameHashes()
+	if err != nil {
 		return nil, err
 	}
-	return []Fingerprint{h}, err
+	if len(hs) <= 1 {
+		return nil, nil
+	}
+	return []Fingerprint{videoSimHash(hs)}, nil
 }
 
 func (vpfps *videoPHashFingerprinterState) Cleanup() {
@@ -203,18 +205,9 @@ func (vpfps *videoPHashFingerprinterState) readFrames(images chan *image.Image, 
 	}
 }
 
-// algorithm:
-// detect scene transitions (azr.DTC hash dist >=10)
-// hash #1 (hashsum):
-//
-//	calculate azr.DTC for first image of each scene and xor all
-//
-// hash #2 (sceneHash):
-//
-//	plot number of scene transitions into a 32x32 image and run azr.DTC on it
-//
-// Hash format is {hashsum}.{scenehash} (128bit)
-func (vpfps *videoPHashFingerprinterState) GetRicop() (Fingerprint, error) {
+// frameHashes decodes every frame of the video and returns its azr.DTC
+// perceptual hash.
+func (vpfps *videoPHashFingerprinterState) frameHashes() ([]uint64, error) {
 	images := make(chan *image.Image, 20)
 	var wg sync.WaitGroup
 	wg.Add(1)
@@ -223,66 +216,39 @@ func (vpfps *videoPHashFingerprinterState) GetRicop() (Fingerprint, error) {
 		wg.Wait()
 		close(images)
 	}()
-	var havePrevH bool
-	var prevH uint64
-	var l int
-	var scenes []int
-	var scenefps []uint64
-	var nframes int
+	var hs []uint64
 	for i := range images {
-		nframes++
-		h := azr.DTC(*i)
-		if !havePrevH {
-			havePrevH = true
-			prevH = h
-			scenefps = append(scenefps, h)
-		}
-		d := azr.Distance(prevH, h)
-		if d < 10 {
-			l++
-		} else {
-			if l == 0 {
-				scenes[len(scenes)-1]++
-			} else {
-				scenes = append(scenes, l+1)
-				scenefps = append(scenefps, h)
-				l = 0
-			}
-		}
-		prevH = h
+		hs = append(hs, azr.DTC(*i))
 	}
 	if err := vpfps.readErr; err != nil {
-		return NoFingerprint, fmt.Errorf("reading video frames: %w", err)
+		return nil, fmt.Errorf("reading video frames: %w", err)
 	}
-	if nframes <= 1 {
-		return NoFingerprint, nil
-	}
-	scenes = append(scenes, l)
-	fmt.Printf("%v\n", scenes)
-	pixels := make([]byte, 32*32)
-	var frame float64
-	framescale := float64(nframes) / 1024.0
-	for _, n := range scenes {
-		frame += float64(n)
-		pos := uint(math.Floor(frame / framescale))
-		if pos >= 1024 {
-			pos = 1023
+	return hs, nil
+}
+
+// videoSimHash returns the bitwise majority of the frames' perceptual
+// hashes: bit i is set iff it's set in more than half of the frames (like
+// Chromaprint's SimHash for audio). It ignores frame order and count, so
+// it's robust to re-encoding, resolution and frame rate changes, and
+// dropped or duplicated frames; similar videos get hashes within a small
+// Hamming distance of each other (re-encodes of the same clip are
+// typically within 0-6 bits, unrelated videos 24+ bits apart).
+func videoSimHash(hs []uint64) Fingerprint {
+	var v [64]int
+	for _, h := range hs {
+		for j := range v {
+			v[j] += int(h >> j & 1)
 		}
-		pixels[pos]++
 	}
-	sceneImg := &image.Gray{
-		Rect:   image.Rect(0, 0, 32, 32),
-		Pix:    pixels,
-		Stride: 32,
-	}
-	sceneHash := azr.DTC(sceneImg)
-	var hashsum uint64
-	for _, h1 := range scenefps {
-		hashsum ^= h1
+	var hash uint64
+	for j, n := range v {
+		if 2*n > len(hs) {
+			hash |= 1 << j
+		}
 	}
 	return Fingerprint{
-		Kind:    "VideoPHashRicop",
-		Hash:    fmt.Sprintf("%08x.%08x", hashsum, sceneHash),
+		Kind:    "VideoPHashSimHash",
+		Hash:    fmt.Sprintf("%016x", hash),
 		Quality: 20,
-	}, nil
+	}
 }

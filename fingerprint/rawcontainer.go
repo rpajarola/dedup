@@ -4,13 +4,14 @@ import (
 	"bytes"
 	"encoding/binary"
 	"fmt"
+	"image"
 	"io"
 )
 
 // decodeContainerPreview locates and decodes the preview image embedded in
 // a RAW format whose container isn't EXIF/TIFF-based at all, so neither
-// decodeImage nor decodeEmbeddedPreview applies: Fujifilm RAF and Sigma
-// X3F. r is read in full, since both formats need to inspect more than
+// decodeImage nor decodeEmbeddedPreview applies: Fujifilm RAF, Sigma X3F
+// and Canon CR3. r is read in full, since both formats need to inspect more than
 // just a small header (RAF's preview is sized relative to the rest of the
 // file; X3F's directory lives at the very end of the file).
 func (ipfps *imgPHashFingerprinterState) decodeContainerPreview(r io.Reader) error {
@@ -23,6 +24,17 @@ func (ipfps *imgPHashFingerprinterState) decodeContainerPreview(r io.Reader) err
 	}
 	if jpg, err := x3fPreview(data); err == nil {
 		return ipfps.decodeImage(bytes.NewReader(jpg))
+	}
+	if jpg, err := cr3Preview(data); err == nil {
+		return ipfps.decodeImage(bytes.NewReader(jpg))
+	}
+	// Last resort for DNGs without any embedded preview: render the raw
+	// sensor data.
+	if img, err := decodeDNGRaw(data); err == nil {
+		b := img.Bounds()
+		ipfps.cfg = image.Config{ColorModel: img.ColorModel(), Width: b.Dx(), Height: b.Dy()}
+		ipfps.img = img
+		return nil
 	}
 	return fmt.Errorf("no known RAW container preview found")
 }
@@ -117,4 +129,102 @@ func x3fPreview(data []byte) ([]byte, error) {
 		return nil, fmt.Errorf("X3F: no JPEG preview block found")
 	}
 	return best, nil
+}
+
+// cr3PreviewUUID and cr3MetaUUID identify Canon's top-level preview box
+// and its metadata box inside "moov" in a CR3 file.
+var (
+	cr3PreviewUUID = []byte{0xea, 0xf4, 0x2b, 0x5e, 0x1c, 0x98, 0x4b, 0x88, 0xb9, 0xfb, 0xb7, 0xdc, 0x40, 0x6e, 0x4d, 0x16}
+	cr3MetaUUID    = []byte{0x85, 0xc0, 0xb6, 0x87, 0x82, 0x0f, 0x11, 0xe0, 0x81, 0x11, 0xf4, 0xce, 0x46, 0x2b, 0x6a, 0x48}
+)
+
+// cr3Preview returns the embedded JPEG preview from a Canon CR3 file's
+// data. CR3 is an ISO-BMFF (MP4-like) container: a top-level "uuid" box
+// (cr3PreviewUUID) holds, after 8 unknown bytes, a "PRVW" box with a
+// medium-sized (e.g. 1620x1080) JPEG; "moov" holds another "uuid" box
+// (cr3MetaUUID) whose "THMB" box has a 160x120 thumbnail, used as a
+// fallback. Both PRVW and THMB start with a 16-byte header (4 unknown
+// bytes, 2-byte unknown, 2-byte width, 2-byte height, 2-byte unknown,
+// 4-byte JPEG length; all big-endian), followed by the JPEG itself.
+// (The full-resolution JPEG in the first "trak" isn't used: the preview
+// is plenty for perceptual hashing.)
+func cr3Preview(data []byte) ([]byte, error) {
+	if len(data) < 12 || string(data[4:12]) != "ftypcrx " {
+		return nil, fmt.Errorf("not a CR3 file")
+	}
+	if b, ok := bmffFindUUID(data, cr3PreviewUUID); ok && len(b) > 8 {
+		if jpg, err := cr3JPEGBox(b[8:], "PRVW"); err == nil {
+			return jpg, nil
+		}
+	}
+	if moov, ok := bmffFind(data, "moov"); ok {
+		if meta, ok := bmffFindUUID(moov, cr3MetaUUID); ok {
+			if jpg, err := cr3JPEGBox(meta, "THMB"); err == nil {
+				return jpg, nil
+			}
+		}
+	}
+	return nil, fmt.Errorf("CR3: no JPEG preview found")
+}
+
+// cr3JPEGBox returns the JPEG in the PRVW/THMB box named typ in data.
+func cr3JPEGBox(data []byte, typ string) ([]byte, error) {
+	b, ok := bmffFind(data, typ)
+	if !ok || len(b) < 16 {
+		return nil, fmt.Errorf("CR3: no %v box", typ)
+	}
+	n := binary.BigEndian.Uint32(b[12:16])
+	if uint64(n) > uint64(len(b)-16) {
+		return nil, fmt.Errorf("CR3: %v JPEG length %d out of bounds", typ, n)
+	}
+	return b[16 : 16+n], nil
+}
+
+// bmffBoxes calls f with the type and payload of each ISO-BMFF box in
+// data, until f returns false.
+func bmffBoxes(data []byte, f func(typ string, payload []byte) bool) {
+	for len(data) >= 8 {
+		size := uint64(binary.BigEndian.Uint32(data[:4]))
+		typ := string(data[4:8])
+		hdr := uint64(8)
+		switch size {
+		case 0:
+			size = uint64(len(data))
+		case 1:
+			if len(data) < 16 {
+				return
+			}
+			size, hdr = binary.BigEndian.Uint64(data[8:16]), 16
+		}
+		if size < hdr || size > uint64(len(data)) {
+			return
+		}
+		if !f(typ, data[hdr:size]) {
+			return
+		}
+		data = data[size:]
+	}
+}
+
+// bmffFind returns the payload of the first box of type typ in data.
+func bmffFind(data []byte, typ string) (res []byte, found bool) {
+	bmffBoxes(data, func(t string, payload []byte) bool {
+		if t == typ {
+			res, found = payload, true
+		}
+		return !found
+	})
+	return res, found
+}
+
+// bmffFindUUID returns the payload (after the 16-byte UUID) of the first
+// "uuid" box with the given UUID in data.
+func bmffFindUUID(data []byte, uuid []byte) (res []byte, found bool) {
+	bmffBoxes(data, func(t string, payload []byte) bool {
+		if t == "uuid" && len(payload) >= 16 && bytes.Equal(payload[:16], uuid) {
+			res, found = payload[16:], true
+		}
+		return !found
+	})
+	return res, found
 }

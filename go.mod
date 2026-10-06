@@ -16,7 +16,7 @@ require (
 	github.com/klauspost/compress v1.20.1
 	github.com/nwaples/rardecode/v2 v2.4.1
 	github.com/protocolbuffers/txtpbfmt v0.0.0-20250129171521-feedd8250727
-	github.com/rpajarola/exiftools v0.0.0-20261004200342-d0826d9e51e2
+	github.com/rpajarola/exiftools v0.0.0-20261005001228-68b5e111c335
 	github.com/trimmer-io/go-xmp v1.0.0
 	github.com/ulikunitz/xz v0.5.17
 	golang.org/x/image v0.46.0

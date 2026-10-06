@@ -16,6 +16,7 @@ func TestXMPFingerprinter(t *testing.T) {
 				tc.Got.Xmp = &XMPTestCase{}
 			}
 			tc.Got.Xmp.WantDocumentId = ""
+			tc.Got.Xmp.Comment = withoutComment(tc.Got.Xmp.Comment, "No XMP data")
 			if tc.Got.Xmp.Skip {
 				t.Skip()
 			}
@@ -24,7 +25,7 @@ func TestXMPFingerprinter(t *testing.T) {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
 			}
 			if fps == nil {
-				tc.Got.Xmp.Comment = []string{"No XMP data"}
+				tc.Got.Xmp.Comment = append(tc.Got.Xmp.Comment, "No XMP data")
 				return
 			}
 			xfps := fps.(*xmpFingerprinterState)

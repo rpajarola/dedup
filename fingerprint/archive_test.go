@@ -22,6 +22,7 @@ func TestArchiveFingerprinter(t *testing.T) {
 			tc.Got.Archive.WantContentTree = ""
 			tc.Got.Archive.WantContentSet = ""
 			tc.Got.Archive.WantErr = false
+			tc.Got.Archive.Comment = withoutComment(tc.Got.Archive.Comment, "Not an archive")
 			if tc.Got.Archive.Skip {
 				t.Skip()
 			}
@@ -30,7 +31,7 @@ func TestArchiveFingerprinter(t *testing.T) {
 				t.Fatalf("afp.Init(%v): %v", tc.SourceFile, err)
 			}
 			if fps == nil {
-				tc.Got.Archive.Comment = []string{"Not an archive"}
+				tc.Got.Archive.Comment = append(tc.Got.Archive.Comment, "Not an archive")
 				return
 			}
 			defer fps.Cleanup()

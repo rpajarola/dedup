@@ -25,6 +25,7 @@ func init() {
 	filetype.AddMatcher(filetype.NewType("rw2", "image/x-panasonic-rw2"), rw2Matcher)
 	filetype.AddMatcher(filetype.NewType("raf", "image/x-fujifilm-raf"), rafMatcher)
 	filetype.AddMatcher(filetype.NewType("x3f", "image/x-sigma-x3f"), x3fMatcher)
+	filetype.AddMatcher(filetype.NewType("cr3", "image/x-canon-cr3"), cr3Matcher)
 	fingerprinters = append(fingerprinters, &FileTypeFingerprinter{})
 }
 
@@ -66,8 +67,8 @@ func getFiletype(f *os.File) string {
 	return kind.MIME.Value
 }
 
-// orfMatcher matches Olympus ORF raw images: "II" + 'R''O' (little-endian
-// variant; big-endian "MM"+'O''R' also exists in the wild but hasn't been
+// orfMatcher matches Olympus ORF raw images: "IIRO" (little-endian
+// variant; big-endian "MMOR" also exists in the wild but hasn't been
 // observed in practice here).
 func orfMatcher(buf []byte) bool {
 	return len(buf) > 3 && buf[0] == 'I' && buf[1] == 'I' && buf[2] == 'R' && buf[3] == 'O'
@@ -88,6 +89,12 @@ func rafMatcher(buf []byte) bool {
 // the 4-byte ASCII magic "FOVb".
 func x3fMatcher(buf []byte) bool {
 	return len(buf) >= 4 && string(buf[:4]) == "FOVb"
+}
+
+// cr3Matcher matches Canon CR3 raw images: an ISO-BMFF "ftyp" box with
+// major brand "crx ".
+func cr3Matcher(buf []byte) bool {
+	return len(buf) >= 12 && string(buf[4:12]) == "ftypcrx "
 }
 
 // Match MPEG-2 Transport Stream

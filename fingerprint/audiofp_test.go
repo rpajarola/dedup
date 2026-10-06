@@ -18,6 +18,7 @@ func TestAudioFingerprinter(t *testing.T) {
 			}
 			tc.Got.Audio.WantChromaprint = ""
 			tc.Got.Audio.WantSimhash = ""
+			tc.Got.Audio.Comment = withoutComment(tc.Got.Audio.Comment, "No audio data")
 			if tc.Got.Audio.Skip {
 				t.Skip()
 			}
@@ -26,7 +27,7 @@ func TestAudioFingerprinter(t *testing.T) {
 				t.Fatalf("afp.Init(%v): %v", tc.SourceFile, err)
 			}
 			if fps == nil {
-				tc.Got.Audio.Comment = []string{"No audio data"}
+				tc.Got.Audio.Comment = append(tc.Got.Audio.Comment, "No audio data")
 				return
 			}
 			defer fps.Cleanup()
@@ -35,7 +36,7 @@ func TestAudioFingerprinter(t *testing.T) {
 				t.Fatalf("getChromaprint(%v): %v", tc.SourceFile, err)
 			}
 			if len(fp) == 0 {
-				tc.Got.Audio.Comment = []string{"No audio data"}
+				tc.Got.Audio.Comment = append(tc.Got.Audio.Comment, "No audio data")
 				return
 			}
 			tc.Got.Audio.WantChromaprint = chromaprintEncode(fp)

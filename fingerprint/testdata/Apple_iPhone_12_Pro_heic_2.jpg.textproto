@@ -49,9 +49,7 @@ exif: {
   want_photo_id: "8836E8B5-A132-4292-8D7D-87CCE1CACD2A"
   want_unique_photo_id: true
 }
-xmp: {
-  comment: "No XMP data"
-}
+xmp: {}
 img_phash: {
   comment: "No image data"
 }

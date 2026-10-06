@@ -14,6 +14,7 @@ func TestEXIFFingerprinter(t *testing.T) {
 			if tc.Got.GetExif() == nil {
 				tc.Got.Exif = &EXIFTestCase{}
 			}
+			tc.Got.Exif.Comment = withoutComment(tc.Got.Exif.Comment, "No EXIF data")
 			if tc.Got.Exif.Skip {
 				t.Skip()
 			}
@@ -22,7 +23,7 @@ func TestEXIFFingerprinter(t *testing.T) {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
 			}
 			if fps == nil {
-				tc.Got.Exif.Comment = []string{"No EXIF data"}
+				tc.Got.Exif.Comment = append(tc.Got.Exif.Comment, "No EXIF data")
 				maybeUpdateTestCase(t, tc)
 				return
 			}

@@ -58,9 +58,7 @@ exif: {
   want_camera_model: "Google Pixel 9 Pro"
   want_photo_id: "2024-08-17 19:57:51.89255 +0000 UTC"
 }
-xmp: {
-  comment: "No XMP data"
-}
+xmp: {}
 img_phash: {
   want_azr_hash: "ce4cc3c34cccc3c3"
   want_nr90_hash: "803800f8ffffff.f8f88f4f0f7ffcf8"

@@ -20,6 +20,7 @@ func TestImgPHashFingerprinter(t *testing.T) {
 			}
 			tc.Got.ImgPhash.WantAzrHash = ""
 			tc.Got.ImgPhash.WantNr90Hash = ""
+			tc.Got.ImgPhash.Comment = withoutComment(tc.Got.ImgPhash.Comment, "No image data")
 			if tc.Got.ImgPhash.Skip {
 				t.Skip()
 			}
@@ -29,7 +30,7 @@ func TestImgPHashFingerprinter(t *testing.T) {
 				t.Fatalf("fp.Init(%v): %v", tc.SourceFile, e)
 			}
 			if fps == nil {
-				tc.Got.ImgPhash.Comment = []string{"No image data"}
+				tc.Got.ImgPhash.Comment = append(tc.Got.ImgPhash.Comment, "No image data")
 				return
 			}
 
@@ -44,7 +45,7 @@ func TestImgPHashFingerprinter(t *testing.T) {
 			}
 
 			if azrHash.Hash == "00000000" {
-				tc.Got.ImgPhash.Comment = []string{"No image data"}
+				tc.Got.ImgPhash.Comment = append(tc.Got.ImgPhash.Comment, "No image data")
 				return
 			}
 			tc.Got.ImgPhash.WantAzrHash = azrHash.Hash

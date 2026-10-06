@@ -38,7 +38,23 @@ want_fingerprint: {
 }
 want_fingerprint: {
   want_kind: "mimetype"
+  want_hash: "image/x-canon-cr3"
   want_quality: 10
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAzr"
+  want_hash: "8fc686324b0f9cc6"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashNr90"
+  want_hash: "c060602007effff.874303015105080a"
+  want_quality: 20
+}
+want_fingerprint: {
+  want_kind: "ImgPHashAjdnikMH"
+  want_hash: "svDoB24Y3SQVJw9OxZg+8SaGplK2ysMUxzWRX4/HOUi7q9gjvy1WyZasqxOTaK16TaqVVj1iwtarWgpK0StZWcROs7ETVZxs"
+  want_quality: 20
 }
 exif: {
   skip: true
@@ -47,7 +63,8 @@ xmp: {
   skip: true
 }
 img_phash: {
-  comment: "No image data"
+  want_azr_hash: "8fc686324b0f9cc6"
+  want_nr90_hash: "c060602007effff.874303015105080a"
 }
 video_phash: {
   comment: "No Video Data"

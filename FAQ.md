@@ -82,6 +82,7 @@ fpcalc <file>              # FINGERPRINT= should equal AudioChromaprint
 
 ### Unstable tests
 
-Decoding of video is fickly, and some of the hashes need fixing to be
-stable between platforms. See [TODO.md](TODO.md) for the current list
-of known-flaky fixtures and other open issues.
+Video and audio hashes are deterministic from run to run (ffmpeg's
+decoders are pinned to one thread), but haven't been verified to be
+identical across platforms or ffmpeg versions, which can decode
+slightly differently. See [TODO.md](TODO.md) for other open issues.

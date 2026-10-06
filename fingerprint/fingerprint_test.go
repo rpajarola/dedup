@@ -315,6 +315,20 @@ func updateTestCase(t *testing.T, tc TestCase) {
 	fmt.Printf("updated test case: %v\n", fname)
 }
 
+// withoutComment returns comments without c. Tests use it to clear the
+// comment they add for "nothing to fingerprint" (e.g. "No image data")
+// before re-running, so it doesn't outlive the condition, while keeping
+// any hand-written comments.
+func withoutComment(comments []string, c string) []string {
+	var res []string
+	for _, s := range comments {
+		if s != c {
+			res = append(res, s)
+		}
+	}
+	return res
+}
+
 func maybeUpdateTestCase(t *testing.T, tc TestCase) {
 	t.Helper()
 	got := prototext.Format(tc.Got)
